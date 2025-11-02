@@ -1,0 +1,390 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue library="false" id="74e6-0dfa-c12e-1334" name="Tollyn Maeryn" gameSystemId="sys-dbd1-1d4a-43f9-1e9c" gameSystemRevision="6" revision="1" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <sharedSelectionEntries>
+    <selectionEntry type="upgrade" import="true" name="Bostad rev53 Rhyfle" hidden="false" id="3538-2208-f905-40bf" sortIndex="0">
+      <profiles>
+        <profile name="Bostad rev53 Rhyfle" typeId="0b63-6947-fb08-66eb" typeName="Weapon" hidden="false" id="fc43-2307-b671-2390">
+          <characteristics>
+            <characteristic name="Range" typeId="5b6c-828e-fe65-26a5">8</characteristic>
+            <characteristic name="SN" typeId="b1d6-1660-ac56-c22a">-3</characteristic>
+            <characteristic name="Abilities" typeId="ed37-dbdc-d41b-3af6"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d1e3-a727-22aa-b6b0" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="aeb0-54a7-9980-786e" includeChildSelections="false"/>
+      </constraints>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Rhyfle Grenades" hidden="false" id="9631-65ba-c1aa-08bf" sortIndex="0">
+      <profiles>
+        <profile name="Rhyfle Grenades" typeId="0b63-6947-fb08-66eb" typeName="Weapon" hidden="false" id="355b-060a-bc29-a8e0">
+          <characteristics>
+            <characteristic name="Range" typeId="5b6c-828e-fe65-26a5">8</characteristic>
+            <characteristic name="SN" typeId="b1d6-1660-ac56-c22a">N/A</characteristic>
+            <characteristic name="Abilities" typeId="ed37-dbdc-d41b-3af6">Indirect Fire, Blast (M, 1d6+2)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1e40-9572-5917-7511" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cb09-bf28-df1c-b802" includeChildSelections="false"/>
+      </constraints>
+      <infoLinks>
+        <infoLink name="Blast (X,Y)" id="63df-c159-4329-fdf0" hidden="false" type="rule" targetId="b4b8-45d7-e9bb-1444"/>
+        <infoLink name="Indirect Fire" id="8305-f629-40bf-0fb4" hidden="false" type="rule" targetId="dcad-8f82-bf82-81ec"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Aup rev27 SMG" hidden="false" id="54e2-a3ea-9763-2fff" sortIndex="0">
+      <profiles>
+        <profile name="Aup rev27 SMG" typeId="0b63-6947-fb08-66eb" typeName="Weapon" hidden="false" id="6023-36e8-08e1-91ad">
+          <characteristics>
+            <characteristic name="Range" typeId="5b6c-828e-fe65-26a5">6</characteristic>
+            <characteristic name="SN" typeId="b1d6-1660-ac56-c22a">-2</characteristic>
+            <characteristic name="Abilities" typeId="ed37-dbdc-d41b-3af6">Select Fire (2)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b28c-fe64-bdb9-4ecd" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5cb6-3cf4-dbe7-1615" includeChildSelections="false"/>
+      </constraints>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Bolt-Action Rhyfle" hidden="false" id="6cad-69e4-95db-787c" sortIndex="0">
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c2bb-8599-b54c-fd9d" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2cd9-327f-7edb-0def" includeChildSelections="false"/>
+      </constraints>
+      <profiles>
+        <profile name="Bolt-Action Rhyfle" typeId="0b63-6947-fb08-66eb" typeName="Weapon" hidden="false" id="6a48-0f0d-11c2-06ae">
+          <characteristics>
+            <characteristic name="Range" typeId="5b6c-828e-fe65-26a5">10</characteristic>
+            <characteristic name="SN" typeId="b1d6-1660-ac56-c22a">-2</characteristic>
+            <characteristic name="Abilities" typeId="ed37-dbdc-d41b-3af6">Bolt Action</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Bolt Action" id="7d5c-15fc-f0ea-f01b" hidden="false" type="rule" targetId="7dca-e5c7-0f9d-62a1"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="AuS rev44 LMG" hidden="false" id="0092-5833-9a5a-8ce0" sortIndex="0">
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d7f8-2b14-95bc-5c23" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6e36-a698-4c67-100d" includeChildSelections="false"/>
+      </constraints>
+      <profiles>
+        <profile name="AuS rev44 LMG" typeId="0b63-6947-fb08-66eb" typeName="Weapon" hidden="false" id="5087-66bb-cf94-6702">
+          <characteristics>
+            <characteristic name="Range" typeId="5b6c-828e-fe65-26a5">10</characteristic>
+            <characteristic name="SN" typeId="b1d6-1660-ac56-c22a">-3</characteristic>
+            <characteristic name="Abilities" typeId="ed37-dbdc-d41b-3af6">Automatic (1) Braced</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Automatic" id="c59c-3f40-c909-52b3" hidden="false" type="rule" targetId="321d-91fa-c981-2ce1"/>
+        <infoLink name="Braced" id="f536-af6e-95ed-a617" hidden="false" type="rule" targetId="0b83-b784-dae8-503c"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Single-Action Revolver" hidden="false" id="9f90-0e8e-ade4-c871" sortIndex="0">
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d54c-0583-4439-4575" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6edb-99b6-1105-4cd1" includeChildSelections="false"/>
+      </constraints>
+      <profiles>
+        <profile name="Single-Action Revolver" typeId="0b63-6947-fb08-66eb" typeName="Weapon" hidden="false" id="5827-c3ae-c098-7ced">
+          <characteristics>
+            <characteristic name="Range" typeId="5b6c-828e-fe65-26a5">4</characteristic>
+            <characteristic name="SN" typeId="b1d6-1660-ac56-c22a">-1</characteristic>
+            <characteristic name="Abilities" typeId="ed37-dbdc-d41b-3af6">Bolt Action</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Bolt Action" id="a3e4-e135-a3f4-d01e" hidden="false" type="rule" targetId="7dca-e5c7-0f9d-62a1"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Grifkis Shotgun" hidden="false" id="5536-85b4-b70b-8d64" sortIndex="0">
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2f63-e599-a809-9220" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f4f6-2ffd-8e3a-30b2" includeChildSelections="false"/>
+      </constraints>
+      <profiles>
+        <profile name="Grifkis Shotgun" typeId="0b63-6947-fb08-66eb" typeName="Weapon" hidden="false" id="af8e-ae22-d3e9-d62d">
+          <characteristics>
+            <characteristic name="Range" typeId="5b6c-828e-fe65-26a5">4</characteristic>
+            <characteristic name="SN" typeId="b1d6-1660-ac56-c22a">-1</characteristic>
+            <characteristic name="Abilities" typeId="ed37-dbdc-d41b-3af6">Shotgun</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Shotgun" id="a869-7d10-cc31-f41b" hidden="false" type="rule" targetId="d633-ee5f-c6cf-c931"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Militia Rhyfler" hidden="false" id="e5b2-706e-e148-2514" sortIndex="1">
+      <costs>
+        <cost name="Points" typeId="0bc1-1233-3e53-72ca" value="18"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="de6b-6ec2-9294-541d" id="0140-a7f3-d90e-ed94" primary="true" name="Unit"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink import="true" name="Bostad rev53 Rhyfle" hidden="false" id="aa69-9dd5-85cb-6037" type="selectionEntry" targetId="3538-2208-f905-40bf"/>
+      </entryLinks>
+      <profiles>
+        <profile name="Militia Rhyfler" typeId="7040-9c4e-1119-a3c5" typeName="Unit" hidden="false" id="3a28-5a56-e833-222a">
+          <characteristics>
+            <characteristic name="Sk" typeId="0014-9871-f278-b5f3">10</characteristic>
+            <characteristic name="Mt" typeId="d8ef-e518-8f49-8a7b">1d6+2</characteristic>
+            <characteristic name="MA" typeId="4cd7-b825-6660-1758">5</characteristic>
+            <characteristic name="Toughness" typeId="197d-1c5e-af24-ee6e">4</characteristic>
+            <characteristic name="Special Abilities" typeId="94ec-89a2-8f77-66c3">Green, Support</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Militia Grenadiers" hidden="false" id="7e19-2954-f52b-15d4" sortIndex="1">
+      <costs>
+        <cost name="Points" typeId="0bc1-1233-3e53-72ca" value="22"/>
+      </costs>
+      <constraints>
+        <constraint type="max" value="2" field="selections" scope="roster" shared="true" id="bb49-5c48-b7a7-52e9" includeChildSelections="true" includeChildForces="true"/>
+      </constraints>
+      <entryLinks>
+        <entryLink import="true" name="Bostad rev53 Rhyfle" hidden="false" id="eaad-56f2-9609-5532" type="selectionEntry" targetId="3538-2208-f905-40bf"/>
+        <entryLink import="true" name="Rhyfle Grenades" hidden="false" id="4418-2c36-4b10-7cc0" type="selectionEntry" targetId="9631-65ba-c1aa-08bf"/>
+      </entryLinks>
+      <profiles>
+        <profile name="Militia Grenadiers" typeId="7040-9c4e-1119-a3c5" typeName="Unit" hidden="false" id="30b4-4be0-007c-b631">
+          <characteristics>
+            <characteristic name="Sk" typeId="0014-9871-f278-b5f3">10</characteristic>
+            <characteristic name="Mt" typeId="d8ef-e518-8f49-8a7b">1d6+2</characteristic>
+            <characteristic name="MA" typeId="4cd7-b825-6660-1758">5</characteristic>
+            <characteristic name="Toughness" typeId="197d-1c5e-af24-ee6e">4</characteristic>
+            <characteristic name="Special Abilities" typeId="94ec-89a2-8f77-66c3">Green</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Milwer" hidden="false" id="1085-258a-f24f-90a5" sortIndex="2">
+      <costs>
+        <cost name="Points" typeId="0bc1-1233-3e53-72ca" value="35"/>
+      </costs>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="c078-0a80-88fe-6405" includeChildSelections="true"/>
+      </constraints>
+      <entryLinks>
+        <entryLink import="true" name="AuS rev44 LMG" hidden="false" id="e50f-ee74-1faa-fd56" type="selectionEntry" targetId="0092-5833-9a5a-8ce0"/>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Auld Buck Yawdryl (Bostad)" hidden="false" id="bb4e-186e-c2f4-1d67" sortIndex="-1">
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="cbd7-eba2-b0f8-86b0" includeChildSelections="true"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c59e-41e0-a70b-bb9c" includeChildSelections="false"/>
+      </constraints>
+      <entryLinks>
+        <entryLink import="true" name="Bostad rev53 Rhyfle" hidden="false" id="b419-d9b6-62a9-edc7" type="selectionEntry" targetId="3538-2208-f905-40bf">
+          <infoLinks>
+            <infoLink name="Leader (X/Y)" id="f33d-c0fb-8d86-8987" hidden="false" type="rule" targetId="ba90-37ff-4384-2bc5"/>
+          </infoLinks>
+        </entryLink>
+      </entryLinks>
+      <profiles>
+        <profile name="Auld Buck Yawdryl (Bostad)" typeId="7040-9c4e-1119-a3c5" typeName="Unit" hidden="false" id="8a75-b4c1-6438-145b">
+          <characteristics>
+            <characteristic name="Sk" typeId="0014-9871-f278-b5f3">12</characteristic>
+            <characteristic name="Mt" typeId="d8ef-e518-8f49-8a7b">2d6-1</characteristic>
+            <characteristic name="MA" typeId="4cd7-b825-6660-1758">5</characteristic>
+            <characteristic name="Toughness" typeId="197d-1c5e-af24-ee6e">4</characteristic>
+            <characteristic name="Special Abilities" typeId="94ec-89a2-8f77-66c3">Leader (3/5)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="parent" childId="453d-47a1-e030-02f3" shared="true" includeChildSelections="false"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Auld Buck Yawdryl (Aup rev27 SMG)" hidden="false" id="453d-47a1-e030-02f3" sortIndex="-1">
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="4222-a85e-106e-96b3" includeChildSelections="true"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a09b-5fd3-68f2-9afd" includeChildSelections="false"/>
+      </constraints>
+      <entryLinks>
+        <entryLink import="true" name="Bostad rev53 Rhyfle" hidden="false" id="c70b-1178-82bc-7e06" type="selectionEntry" targetId="3538-2208-f905-40bf">
+          <infoLinks>
+            <infoLink name="Leader (X/Y)" id="d59b-a066-0579-456c" hidden="false" type="rule" targetId="ba90-37ff-4384-2bc5"/>
+          </infoLinks>
+        </entryLink>
+      </entryLinks>
+      <profiles>
+        <profile name="Auld Buck Yawdryl (Bostad)" typeId="7040-9c4e-1119-a3c5" typeName="Unit" hidden="false" id="2738-50d7-7a34-e61b">
+          <characteristics>
+            <characteristic name="Sk" typeId="0014-9871-f278-b5f3">12</characteristic>
+            <characteristic name="Mt" typeId="d8ef-e518-8f49-8a7b">2d6-1</characteristic>
+            <characteristic name="MA" typeId="4cd7-b825-6660-1758">5</characteristic>
+            <characteristic name="Toughness" typeId="197d-1c5e-af24-ee6e">4</characteristic>
+            <characteristic name="Special Abilities" typeId="94ec-89a2-8f77-66c3">Leader (3/5)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="parent" childId="bb4e-186e-c2f4-1d67" shared="true" includeChildSelections="false"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Auld Buck Yawdryl" hidden="false" id="9b3f-c8b6-7977-c7d7" sortIndex="2">
+      <entryLinks>
+        <entryLink import="true" name="Auld Buck Yawdryl (Aup rev27 SMG)" hidden="false" id="1716-1b33-a935-1779" type="selectionEntry" targetId="453d-47a1-e030-02f3"/>
+        <entryLink import="true" name="Auld Buck Yawdryl (Aup rev27 SMG)" hidden="false" id="cad2-f0dc-c46f-43df" type="selectionEntry" targetId="453d-47a1-e030-02f3"/>
+      </entryLinks>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="9ac6-4018-b9b8-c844" includeChildSelections="true"/>
+      </constraints>
+      <costs>
+        <cost name="Points" typeId="0bc1-1233-3e53-72ca" value="33"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Auld Buck Veteran" hidden="false" id="749e-783a-22b3-0f8b" sortIndex="2">
+      <costs>
+        <cost name="Points" typeId="0bc1-1233-3e53-72ca" value="45"/>
+      </costs>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="f8ae-ef50-f1b5-e80c" includeChildSelections="true"/>
+      </constraints>
+      <entryLinks>
+        <entryLink import="true" name="Single-Action Revolver" hidden="false" id="8de5-dada-2b06-39fb" type="selectionEntry" targetId="9f90-0e8e-ade4-c871"/>
+      </entryLinks>
+      <profiles>
+        <profile name="Auld Buck Veteran" typeId="7040-9c4e-1119-a3c5" typeName="Unit" hidden="false" id="e503-3079-ae06-e372">
+          <characteristics>
+            <characteristic name="Sk" typeId="0014-9871-f278-b5f3">12</characteristic>
+            <characteristic name="Mt" typeId="d8ef-e518-8f49-8a7b">2d6+1</characteristic>
+            <characteristic name="MA" typeId="4cd7-b825-6660-1758">5</characteristic>
+            <characteristic name="Toughness" typeId="197d-1c5e-af24-ee6e">4</characteristic>
+            <characteristic name="Special Abilities" typeId="94ec-89a2-8f77-66c3">Leader (3/5), &quot;Like This!!&quot;</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="&quot;Like This&quot;" id="2e60-490d-03e4-317b" hidden="false" type="rule" targetId="f2c2-98a7-623b-ac44"/>
+        <infoLink name="Leader (X/Y)" id="262d-3de3-21f0-b0d3" hidden="false" type="rule" targetId="ba90-37ff-4384-2bc5"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Militia Pykpluckers" hidden="false" id="8cfa-6adb-c45b-097b" sortIndex="3">
+      <costs>
+        <cost name="Points" typeId="0bc1-1233-3e53-72ca" value="25"/>
+      </costs>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="44bc-6f4f-a7bf-6431" includeChildSelections="true"/>
+      </constraints>
+      <entryLinks>
+        <entryLink import="true" name="Bostad rev53 Rhyfle" hidden="false" id="0450-6dd5-7764-2089" type="selectionEntry" targetId="3538-2208-f905-40bf"/>
+      </entryLinks>
+      <profiles>
+        <profile name="Militia Pykpluckers" typeId="7040-9c4e-1119-a3c5" typeName="Unit" hidden="false" id="4e29-c671-8663-ebc4">
+          <characteristics>
+            <characteristic name="Sk" typeId="0014-9871-f278-b5f3">11</characteristic>
+            <characteristic name="Mt" typeId="d8ef-e518-8f49-8a7b">1d6+2</characteristic>
+            <characteristic name="MA" typeId="4cd7-b825-6660-1758">5</characteristic>
+            <characteristic name="Toughness" typeId="197d-1c5e-af24-ee6e">4</characteristic>
+            <characteristic name="Special Abilities" typeId="94ec-89a2-8f77-66c3">Communications</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Communications" id="e53a-0ea1-42d0-2302" hidden="false" type="rule" targetId="3922-1607-2a89-5acb"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Home Dyna" hidden="false" id="204d-3bf2-bdeb-dde3" sortIndex="3">
+      <costs>
+        <cost name="Points" typeId="0bc1-1233-3e53-72ca" value="30"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="de6b-6ec2-9294-541d" id="4254-b95f-bbdb-1d4e" primary="true" name="Unit"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Home Dyna" typeId="7040-9c4e-1119-a3c5" typeName="Unit" hidden="false" id="fff0-8843-169c-8af3">
+          <characteristics>
+            <characteristic name="Sk" typeId="0014-9871-f278-b5f3">11</characteristic>
+            <characteristic name="Mt" typeId="d8ef-e518-8f49-8a7b">---</characteristic>
+            <characteristic name="MA" typeId="4cd7-b825-6660-1758">5</characteristic>
+            <characteristic name="Toughness" typeId="197d-1c5e-af24-ee6e">4</characteristic>
+            <characteristic name="Special Abilities" typeId="94ec-89a2-8f77-66c3">Home Army</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="635f-29e2-c48d-6c17" includeChildSelections="true"/>
+      </constraints>
+      <infoLinks>
+        <infoLink name="Home Army" id="fd77-bdb6-1242-36fe" hidden="false" type="rule" targetId="95d9-afdc-170c-1691"/>
+        <infoLink name="Medic" id="32d8-7f05-5d6e-884a" hidden="false" type="rule" targetId="0de6-c532-1b9e-df58"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Irascible Lone Buck" hidden="false" id="c3a2-1b85-564e-1230" sortIndex="3">
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="5c74-a970-31a1-cfdf" includeChildSelections="true"/>
+      </constraints>
+      <entryLinks>
+        <entryLink import="true" name="Bolt-Action Rhyfle" hidden="false" id="0e36-8ae2-da86-1484" type="selectionEntry" targetId="6cad-69e4-95db-787c"/>
+      </entryLinks>
+      <profiles>
+        <profile name="Irascible Lone Buck" typeId="7040-9c4e-1119-a3c5" typeName="Unit" hidden="false" id="edd9-2acd-3bce-2e68">
+          <characteristics>
+            <characteristic name="Sk" typeId="0014-9871-f278-b5f3">13</characteristic>
+            <characteristic name="Mt" typeId="d8ef-e518-8f49-8a7b">2d6</characteristic>
+            <characteristic name="MA" typeId="4cd7-b825-6660-1758">6</characteristic>
+            <characteristic name="Toughness" typeId="197d-1c5e-af24-ee6e">4</characteristic>
+            <characteristic name="Special Abilities" typeId="94ec-89a2-8f77-66c3">Infiltrate, Resilient</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="Points" typeId="0bc1-1233-3e53-72ca" value="45"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="de6b-6ec2-9294-541d" id="eaaa-116f-048f-ad86" primary="true" name="Unit"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Crusader Advisor" hidden="false" id="73b3-b7d1-be77-f4e3" sortIndex="4">
+      <costs>
+        <cost name="Points" typeId="0bc1-1233-3e53-72ca" value="36"/>
+      </costs>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="299c-cb13-8051-33db" includeChildSelections="true"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink targetId="de6b-6ec2-9294-541d" id="eaa7-bd16-df8a-6dbb" primary="true" name="Unit"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink import="true" name="Grifkis Shotgun" hidden="false" id="24cc-1a57-2a22-ce63" type="selectionEntry" targetId="5536-85b4-b70b-8d64"/>
+      </entryLinks>
+      <profiles>
+        <profile name="Crusader Advisor" typeId="7040-9c4e-1119-a3c5" typeName="Unit" hidden="false" id="33d7-d6d7-8fed-73f4">
+          <characteristics>
+            <characteristic name="Sk" typeId="0014-9871-f278-b5f3">12</characteristic>
+            <characteristic name="Mt" typeId="d8ef-e518-8f49-8a7b">2d6-1</characteristic>
+            <characteristic name="MA" typeId="4cd7-b825-6660-1758">5</characteristic>
+            <characteristic name="Toughness" typeId="197d-1c5e-af24-ee6e">4</characteristic>
+            <characteristic name="Special Abilities" typeId="94ec-89a2-8f77-66c3">Leader (3,6)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule name="Advisor" id="0bb5-4f92-d0ae-bbc9" hidden="false" noindex="true">
+          <description>Selection of a Crusader Advisor allows the commander to select up to 2 Crusader Specialist rhyflers to add to the Patrol.
+The points total of the specialists and advisor may not exceed the points total of the Patrol&apos;s basic Militia Rhyfler.</description>
+        </rule>
+      </rules>
+    </selectionEntry>
+  </sharedSelectionEntries>
+</catalogue>

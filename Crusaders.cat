@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="80cd-b846-90e0-dd6f" name="Crusaders" gameSystemId="sys-dbd1-1d4a-43f9-1e9c" gameSystemRevision="2" revision="5" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="80cd-b846-90e0-dd6f" name="Crusaders" gameSystemId="sys-dbd1-1d4a-43f9-1e9c" gameSystemRevision="2" revision="6" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedProfiles>
     <profile name="Bogen" typeId="0b63-6947-fb08-66eb" typeName="Weapon" hidden="false" id="d73e-9bd0-b2e0-2432">
       <characteristics>
@@ -19,7 +19,7 @@
       <characteristics>
         <characteristic name="Range" typeId="5b6c-828e-fe65-26a5">10</characteristic>
         <characteristic name="SN" typeId="b1d6-1660-ac56-c22a">-3</characteristic>
-        <characteristic name="Abilities" typeId="ed37-dbdc-d41b-3af6">Automatic, Loader</characteristic>
+        <characteristic name="Abilities" typeId="ed37-dbdc-d41b-3af6">Automatic (2), Loader</characteristic>
       </characteristics>
     </profile>
     <profile name="Grifkis Shotgun" typeId="0b63-6947-fb08-66eb" typeName="Weapon" hidden="false" id="b5a9-43b0-8537-42e3">
@@ -47,7 +47,14 @@
       <characteristics>
         <characteristic name="Range" typeId="5b6c-828e-fe65-26a5">6</characteristic>
         <characteristic name="SN" typeId="b1d6-1660-ac56-c22a">n/a</characteristic>
-        <characteristic name="Abilities" typeId="ed37-dbdc-d41b-3af6">Blast (1,2d6-1), Loader</characteristic>
+        <characteristic name="Abilities" typeId="ed37-dbdc-d41b-3af6">Blast (Small,2d6-1), Loader</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Pistol" typeId="0b63-6947-fb08-66eb" typeName="Weapon" hidden="false" id="264f-b3e9-bc3c-3a44">
+      <characteristics>
+        <characteristic name="Range" typeId="5b6c-828e-fe65-26a5">4</characteristic>
+        <characteristic name="SN" typeId="b1d6-1660-ac56-c22a">-1</characteristic>
+        <characteristic name="Abilities" typeId="ed37-dbdc-d41b-3af6"/>
       </characteristics>
     </profile>
   </sharedProfiles>
@@ -857,6 +864,31 @@
         <infoLink name="Playtest Profile" id="5527-20a1-ef6e-a816" hidden="false" type="rule" targetId="a1d3-d6aa-6b8f-d230"/>
       </infoLinks>
     </selectionEntry>
+    <selectionEntry type="model" import="true" name="Bicycle Cook" hidden="false" id="53b4-bd2f-6be6-faad" sortIndex="0">
+      <categoryLinks>
+        <categoryLink targetId="de6b-6ec2-9294-541d" id="65c7-c545-c3da-d95f" primary="true" name="Unit"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Points" typeId="0bc1-1233-3e53-72ca" value="38"/>
+      </costs>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="f6ce-1696-3e45-8e86" includeChildSelections="true"/>
+      </constraints>
+      <profiles>
+        <profile name="Bicycle Cook" typeId="7040-9c4e-1119-a3c5" typeName="Unit" hidden="false" id="e6a2-9726-4710-e103">
+          <characteristics>
+            <characteristic name="Sk" typeId="0014-9871-f278-b5f3">12</characteristic>
+            <characteristic name="Mt" typeId="d8ef-e518-8f49-8a7b">1d6+1</characteristic>
+            <characteristic name="MA" typeId="4cd7-b825-6660-1758">7</characteristic>
+            <characteristic name="Toughness" typeId="197d-1c5e-af24-ee6e">4</characteristic>
+            <characteristic name="Special Abilities" typeId="94ec-89a2-8f77-66c3">Medic</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Pistol" id="2364-10cf-7b62-bb89" hidden="false" type="profile" targetId="264f-b3e9-bc3c-3a44"/>
+      </infoLinks>
+    </selectionEntry>
   </sharedSelectionEntries>
   <entryLinks>
     <entryLink import="true" name="Rhyfler (Bogen)" hidden="false" id="3655-aaf6-a5b0-7814" type="selectionEntry" targetId="ba33-bdfb-fce5-f396"/>
@@ -881,6 +913,7 @@
     <entryLink import="true" name="Master Yawdryl" hidden="false" id="1188-0396-6c78-3ad8" type="selectionEntry" targetId="904b-3278-1d82-aff3"/>
     <entryLink import="true" name="Cook" hidden="false" id="23ef-704b-42fe-9e90" type="selectionEntry" targetId="73f3-6405-d012-f199"/>
     <entryLink import="true" name=" Ailthean" hidden="false" id="c6f9-991b-5c4d-2826" type="selectionEntry" targetId="b74c-184d-c68f-9378"/>
+    <entryLink import="true" name="Bicycle Cook" hidden="false" id="bfa1-748b-b84c-44bc" type="selectionEntry" page="" targetId="53b4-bd2f-6be6-faad"/>
   </entryLinks>
   <categoryEntries>
     <categoryEntry name="Pathfinder" id="8e16-bde7-3ecc-3a44" hidden="false"/>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="sys-dbd1-1d4a-43f9-1e9c" name="Quar - Clash of Rhyfles" battleScribeVersion="2.03" revision="6" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" authorName="Jim Jambo" authorUrl="jimjambo.gay">
+<gameSystem id="sys-dbd1-1d4a-43f9-1e9c" name="Quar - Clash of Rhyfles" battleScribeVersion="2.03" revision="7" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" authorName="Jim Jambo" authorUrl="jimjambo.gay">
   <categoryEntries>
     <categoryEntry name="Unit" id="de6b-6ec2-9294-541d" hidden="false"/>
     <categoryEntry name="Tractor" id="e009-498c-bf4e-66d2" hidden="false"/>
@@ -9,8 +9,8 @@
     <forceEntry name="Army" hidden="false" id="default-force">
       <categoryLinks>
         <categoryLink name="Unit" hidden="false" id="default-force-category-link" targetId="de6b-6ec2-9294-541d"/>
-        <categoryLink name="Squad Tractor" hidden="false" id="2de1-7d46-6d4e-da48" targetId="5b87-53fe-4166-448b" type="categoryEntry"/>
-        <categoryLink name="Tractor" hidden="false" id="7b1a-d3d0-5296-c316" targetId="e009-498c-bf4e-66d2" type="categoryEntry"/>
+        <categoryLink name="Squad Tractor" hidden="false" id="2de1-7d46-6d4e-da48" targetId="5b87-53fe-4166-448b"/>
+        <categoryLink name="Tractor" hidden="false" id="7b1a-d3d0-5296-c316" targetId="e009-498c-bf4e-66d2"/>
       </categoryLinks>
     </forceEntry>
   </forceEntries>
@@ -294,6 +294,50 @@ If you are using it, you should confirm with your opponent that they are okay wi
     </rule>
     <rule name="Closed Hull" id="f20b-dfaa-f5ed-a396" hidden="false">
       <description>This tractor does not have a top hatch or other easy access. It is always considered Buttoned Up, so the Crew Commander is limited by that status for Spotting and Defending against assaults.</description>
+    </rule>
+    <rule name="Indirect Fire" id="dcad-8f82-bf82-81ec" hidden="false">
+      <description>Weapons with this Trait may perform the Indirect Fire Task.
+Indirect Fire (Prepare Weapon) – This attack ignores any Cover modifiers when establishing the Blast
+Point but always gathers a -1 penalty due to the inaccurate nature of the weapon. Any Dispersion due to
+a failed Skill Check is determined by the opposing commander as though the check result was &gt;13 (the
+template scatters 3+d3” in the direction of the opposing commander ’s choice, pg 22).
+The attacking commander may target a unit they do not have within Line of Sight at an additional -2
+penalty (for a total Indirect Fire penalty of -3). Rhyflers in enclosed spaces with a roof cannot be the target of
+an Indirect Fire Task.</description>
+    </rule>
+    <rule name="Bolt Action" id="7dca-e5c7-0f9d-62a1" hidden="false">
+      <description>These civilian weapons are often handmade family artifacts. While they may send less
+fire down field, they do it with much more accuracy. Bolt Action weapons have the Slow
+Reload trait.
+A rhyfler armed with a Bolt Action weapon may perform the Crack Shot Task
+instead of a standard Ranged Attack.
+Crack Shot – This rhyfler may perform a Ranged Attack without incurring penalties
+from the distance to the target. Do not gather Range Band modifiers for this attack.
+This does not apply to interruptions such as Return Fire and Snapshots, nor to attacks
+performed while on Overwatch.</description>
+    </rule>
+    <rule name="Green" id="62fc-01f2-3c05-82d0" hidden="false">
+      <description>Eager teenage kits and patriotic tradesquar may find themselves volunteering for stints with a local militia or Home Guard. These Quar may not be as drilled as professional soldiers, but tend to do alright under the watchful eye of their NCOs. When within a rhyfler with Leadership’s range (Y), Green rhyflers gain the Ranged (+1) ability and gather +1 to Skill when making Take Cover checks.</description>
+    </rule>
+    <rule name="&quot;Like This&quot;" id="f2c2-98a7-623b-ac44" hidden="false">
+      <description>Once per battle after a Militia Rhyfler within their Leadership Range (Y) fails a Ranged Attack Skill Check the Auld Buck Veteran may spend 1 or more Pluck to make an immediate Crack Shot Attack against the missed enemy, provided they too have Line of Sight to the target. This attack gathers an additional bonus equal to the amount of Pluck spent. This attack does not count as the Auld Buck Veteran’s only Combat Task for the current Round.</description>
+    </rule>
+    <rule name="Home Army" id="95d9-afdc-170c-1691" hidden="false">
+      <description>The rhyflers of the Tollyn Maeryn Militia are gathered from local youth, both bucks and dynas, enlisted to protect their homes and families. Often local elder dynas form ad-hoc Home Volunteer Armies to provide support to their kits on the front lines. They enter the field of battle armed only with mothcakes and good cheer. Woe to the errant rhyfler that mistakenly targets a member of the Home Army. These dynas have the Medic ability as though they were a Cook.
+If a Home Dyna is taken as part of a Tollyn Maeryn Patrol her commander adds two Event Card to the Activation Deck. The Home Dyna may only activate when an Event Card is drawn.
+She may then perform up to two Tasks. She must either Sprint to the nearest Gobsmacked or Out of Action rhyfler from either Patrol, friend or foe, or if she is near a non-Ready rhyfler she may perform a
+Tend Wounded or Recovery Task as appropriate.
+If a Home Dyna is Gobsmacked or taken OOA from a wayward Blast template—or purposefully by a dastardly
+commander—a roll must be made on the They Shot Mum! Chart.
+
+
+They Shot Mum!
+6/6 She’s Ok, She’s Ok!! – The Home Dyna was missed by the attack, and all breathe a sigh of relief. The Dyna’s commander gains d3+2 Pluck as they gather their strength in her defense. The attacking commander loses d3 Pluck as they think about their mistake.
+6/- That Was a Close One! – The close call has rung the Dyna’s bell. She is Gobsmacked. Her fellow rhyflers gather d3 Pluck in outrage!
+6/1 You Shot Mum! You Ancestor-less Savages! – The Dyna’s commander may perform an immediate free attack with the rhyfler nearest to her. She is marked as Gobsmacked.
+-/- Is She Hurt – Both sides rush to the Home Dyna’s aid. Until the Home Dyna is Tended to, the only Tasks that can be performed by all rhyflers,friend and foe, are Moving toward the Dyna and Tend Wounded. When she is Tended to do not roll on the chart, use the 4 result instead. Which ever side gets there first will gather d3 Pluck for aiding in her recuperation.
+1/- What did I do!?! – The attacking unit is Gobsmacked with regret. The Home Dyna is marked as Out of Action. When she is Tended to do not roll on the chart, instead use the 3 result.
+1/1 Nooooooo!! – The attacking rhyfler is taken Out of Action with despair as the Dyna is marked as Out of Action. When she is Tended to do not roll on the chart, instead use the 2 result.</description>
     </rule>
   </sharedRules>
 </gameSystem>
