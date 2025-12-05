@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="80cd-b846-90e0-dd6f" name="Crusaders" gameSystemId="sys-dbd1-1d4a-43f9-1e9c" gameSystemRevision="2" revision="6" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="80cd-b846-90e0-dd6f" name="Crusaders" gameSystemId="sys-dbd1-1d4a-43f9-1e9c" gameSystemRevision="2" revision="7" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedProfiles>
     <profile name="Bogen" typeId="0b63-6947-fb08-66eb" typeName="Weapon" hidden="false" id="d73e-9bd0-b2e0-2432">
       <characteristics>
@@ -15,11 +15,11 @@
         <characteristic name="Abilities" typeId="ed37-dbdc-d41b-3af6">Large Caliber</characteristic>
       </characteristics>
     </profile>
-    <profile name="h-11a" typeId="0b63-6947-fb08-66eb" typeName="Weapon" hidden="false" id="ca8d-f53e-7b6b-43fb">
+    <profile name="h-11a" typeId="18ca-a698-c38f-f8de" typeName="Integral Weapon" hidden="false" id="ca8d-f53e-7b6b-43fb">
       <characteristics>
-        <characteristic name="Range" typeId="5b6c-828e-fe65-26a5">10</characteristic>
-        <characteristic name="SN" typeId="b1d6-1660-ac56-c22a">-3</characteristic>
-        <characteristic name="Abilities" typeId="ed37-dbdc-d41b-3af6">Automatic (2), Loader</characteristic>
+        <characteristic name="Range" typeId="c5be-3871-71dd-dfae">10</characteristic>
+        <characteristic name="Arc" typeId="07d6-44a1-b3f8-b02e">90</characteristic>
+        <characteristic name="Abilities" typeId="8ceb-604c-397c-d679">Automatic (1)</characteristic>
       </characteristics>
     </profile>
     <profile name="Grifkis Shotgun" typeId="0b63-6947-fb08-66eb" typeName="Weapon" hidden="false" id="b5a9-43b0-8537-42e3">
@@ -39,7 +39,7 @@
     <profile name="Gorga MOD(2)" typeId="0b63-6947-fb08-66eb" typeName="Weapon" hidden="false" id="b315-919e-f6aa-889c">
       <characteristics>
         <characteristic name="Range" typeId="5b6c-828e-fe65-26a5">6</characteristic>
-        <characteristic name="SN" typeId="b1d6-1660-ac56-c22a">-1</characteristic>
+        <characteristic name="SN" typeId="b1d6-1660-ac56-c22a">-2</characteristic>
         <characteristic name="Abilities" typeId="ed37-dbdc-d41b-3af6">Shotgun</characteristic>
       </characteristics>
     </profile>
@@ -102,7 +102,7 @@
         <infoLink name="Loader" id="8e03-27f9-b4c3-a83d" hidden="false" type="rule" targetId="877f-75ce-5dc9-010e"/>
       </infoLinks>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Rhyfler (Bogen)" hidden="false" id="ba33-bdfb-fce5-f396" sortIndex="0">
+    <selectionEntry type="unit" import="true" name="Rhyfler (Bogen)" hidden="false" id="ba33-bdfb-fce5-f396" sortIndex="2">
       <categoryLinks>
         <categoryLink targetId="de6b-6ec2-9294-541d" id="f01e-341e-bb76-b483" primary="true" name="Unit"/>
       </categoryLinks>
@@ -111,24 +111,24 @@
       </costs>
       <entryLinks>
         <entryLink import="true" name="Bogen" hidden="false" id="267f-9e5d-f5a4-bcc0" type="selectionEntry" targetId="caf9-e75a-bf81-1229">
-          <profiles>
-            <profile name="Bogen" typeId="7040-9c4e-1119-a3c5" typeName="Unit" hidden="false" id="c6af-ee9a-ed43-ffd8">
-              <characteristics>
-                <characteristic name="Sk" typeId="0014-9871-f278-b5f3">12</characteristic>
-                <characteristic name="Mt" typeId="d8ef-e518-8f49-8a7b">1d6+2</characteristic>
-                <characteristic name="MA" typeId="4cd7-b825-6660-1758">5</characteristic>
-                <characteristic name="Toughness" typeId="197d-1c5e-af24-ee6e">4</characteristic>
-                <characteristic name="Special Abilities" typeId="94ec-89a2-8f77-66c3">Support</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
           <infoLinks>
             <infoLink name="Support" id="3a17-e200-b8a7-02ab" hidden="false" type="rule" targetId="c0d3-909a-ca80-1be2"/>
           </infoLinks>
         </entryLink>
       </entryLinks>
+      <profiles>
+        <profile name="Rhyfler" typeId="7040-9c4e-1119-a3c5" typeName="Unit" hidden="false" id="c6af-ee9a-ed43-ffd8">
+          <characteristics>
+            <characteristic name="Sk" typeId="0014-9871-f278-b5f3">12</characteristic>
+            <characteristic name="Mt" typeId="d8ef-e518-8f49-8a7b">1d6+2</characteristic>
+            <characteristic name="MA" typeId="4cd7-b825-6660-1758">5</characteristic>
+            <characteristic name="Toughness" typeId="197d-1c5e-af24-ee6e">4</characteristic>
+            <characteristic name="Special Abilities" typeId="94ec-89a2-8f77-66c3">Support</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Rhyfler (Ryshi)" hidden="false" id="44eb-b83b-f110-160c" sortIndex="0">
+    <selectionEntry type="unit" import="true" name="Rhyfler (Ryshi)" hidden="false" id="44eb-b83b-f110-160c" sortIndex="2">
       <constraints>
         <constraint type="max" value="3" field="selections" scope="roster" shared="true" id="d175-6637-5ebd-6cc2" includeChildSelections="true"/>
       </constraints>
@@ -153,7 +153,7 @@
         </profile>
       </profiles>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Squad Marksquar" hidden="false" id="2997-5fb1-6ae7-94c8" sortIndex="0">
+    <selectionEntry type="unit" import="true" name="Squad Marksquar" hidden="false" id="2997-5fb1-6ae7-94c8" sortIndex="2">
       <costs>
         <cost name="Points" typeId="0bc1-1233-3e53-72ca" value="30"/>
       </costs>
@@ -181,7 +181,7 @@
         <infoLink name="Dead-Eye" id="ae36-3abe-1711-8292" hidden="false" type="rule" targetId="d190-c1b5-6dbb-6129"/>
       </infoLinks>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Milwer" hidden="false" id="f110-328c-09f0-9ea3" sortIndex="0">
+    <selectionEntry type="unit" import="true" name="Milwer" hidden="false" id="f110-328c-09f0-9ea3" sortIndex="2">
       <costs>
         <cost name="Points" typeId="0bc1-1233-3e53-72ca" value="28"/>
       </costs>
@@ -209,7 +209,7 @@
         <categoryLink targetId="de6b-6ec2-9294-541d" id="e7d9-b747-f71b-f94b" primary="true" name="Unit"/>
       </categoryLinks>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Yawdryl" hidden="false" id="f4c9-2ba9-f864-43f1" sortIndex="0">
+    <selectionEntry type="unit" import="true" name="Yawdryl" hidden="false" id="f4c9-2ba9-f864-43f1" sortIndex="2">
       <costs>
         <cost name="Points" typeId="0bc1-1233-3e53-72ca" value="30"/>
       </costs>
@@ -321,12 +321,13 @@
             <characteristic name="Mt" typeId="d8ef-e518-8f49-8a7b">2d6-1</characteristic>
             <characteristic name="MA" typeId="4cd7-b825-6660-1758">5</characteristic>
             <characteristic name="Toughness" typeId="197d-1c5e-af24-ee6e">4</characteristic>
-            <characteristic name="Special Abilities" typeId="94ec-89a2-8f77-66c3">Leader (2/4)</characteristic>
+            <characteristic name="Special Abilities" typeId="94ec-89a2-8f77-66c3">Leader (2/5), Inspiring Presence (2)</characteristic>
           </characteristics>
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink name="Leader (X/Y)" id="5edc-1c7c-08bc-3169" hidden="false" type="rule" targetId="ba90-37ff-4384-2bc5"/>
+        <infoLink name="Inspiring Presence (X)" id="5edc-1c7c-08bc-3169" hidden="false" type="rule" targetId="7ebb-1cf5-bdb6-2c2e"/>
+        <infoLink name="Leader (X/Y)" id="2959-1dbc-9365-259e" hidden="false" type="rule" targetId="ba90-37ff-4384-2bc5"/>
       </infoLinks>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Caerten (Bogen)" hidden="false" id="166c-a39b-2322-4aec" sortIndex="2">
@@ -341,7 +342,7 @@
       </constraints>
       <infoLinks>
         <infoLink name="Leader (X/Y)" id="333a-d046-37e9-6d99" hidden="false" type="rule" targetId="ba90-37ff-4384-2bc5"/>
-        <infoLink name="Ranged (X)" id="8256-928f-a0e4-9dfe" hidden="false" type="rule" targetId="54f4-6c58-08c6-8d46"/>
+        <infoLink name="Inspiring Presence (X)" id="c0ef-6301-d50d-e508" hidden="false" type="rule" targetId="7ebb-1cf5-bdb6-2c2e"/>
       </infoLinks>
       <profiles>
         <profile name="Caerten (Bogen)" typeId="7040-9c4e-1119-a3c5" typeName="Unit" hidden="false" id="554a-6fb1-f0b2-0012">
@@ -350,7 +351,7 @@
             <characteristic name="Mt" typeId="d8ef-e518-8f49-8a7b">1d6+2</characteristic>
             <characteristic name="MA" typeId="4cd7-b825-6660-1758">5</characteristic>
             <characteristic name="Toughness" typeId="197d-1c5e-af24-ee6e">4</characteristic>
-            <characteristic name="Special Abilities" typeId="94ec-89a2-8f77-66c3">Leader (2/4), Melee</characteristic>
+            <characteristic name="Special Abilities" typeId="94ec-89a2-8f77-66c3">Leader (2/5), Inspiring Presence (2)</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -358,7 +359,7 @@
         <entryLink import="true" name="Bogen" hidden="false" id="cc3b-5c14-f110-2865" type="selectionEntry" targetId="caf9-e75a-bf81-1229"/>
       </entryLinks>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Master Yawdryl" hidden="false" id="904b-3278-1d82-aff3" sortIndex="0">
+    <selectionEntry type="unit" import="true" name="Master Yawdryl" hidden="false" id="904b-3278-1d82-aff3" sortIndex="3">
       <costs>
         <cost name="Points" typeId="0bc1-1233-3e53-72ca" value="36"/>
       </costs>
@@ -390,7 +391,7 @@
         </modifier>
       </modifiers>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Caerten" hidden="false" id="686c-e894-bd41-beec" sortIndex="0">
+    <selectionEntry type="upgrade" import="true" name="Caerten" hidden="false" id="686c-e894-bd41-beec" sortIndex="3">
       <entryLinks>
         <entryLink import="true" name="Caerten (Bogen)" hidden="false" id="2902-d20e-d004-eee7" type="selectionEntry" targetId="166c-a39b-2322-4aec">
           <modifiers>
@@ -412,7 +413,7 @@
         </entryLink>
       </entryLinks>
       <costs>
-        <cost name="Points" typeId="0bc1-1233-3e53-72ca" value="33"/>
+        <cost name="Points" typeId="0bc1-1233-3e53-72ca" value="38"/>
       </costs>
       <constraints>
         <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="e4c4-b15e-1e65-ea67" includeChildSelections="true"/>
@@ -421,7 +422,7 @@
         <categoryLink targetId="de6b-6ec2-9294-541d" id="28e8-5ef8-f4b8-f03f" primary="true" name="Unit"/>
       </categoryLinks>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="is-Caerten" hidden="false" id="de89-5fe9-2fca-0d29" sortIndex="0">
+    <selectionEntry type="unit" import="true" name="is-Caerten" hidden="false" id="de89-5fe9-2fca-0d29" sortIndex="3">
       <costs>
         <cost name="Points" typeId="0bc1-1233-3e53-72ca" value="36"/>
       </costs>
@@ -436,7 +437,7 @@
         <categoryLink targetId="de6b-6ec2-9294-541d" id="b4b5-d43a-0b21-1ca0" primary="true" name="Unit"/>
       </categoryLinks>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Cook" hidden="false" id="73f3-6405-d012-f199" sortIndex="0">
+    <selectionEntry type="unit" import="true" name="Cook" hidden="false" id="73f3-6405-d012-f199" sortIndex="3">
       <costs>
         <cost name="Points" typeId="0bc1-1233-3e53-72ca" value="30"/>
       </costs>
@@ -464,7 +465,7 @@
         <categoryLink targetId="de6b-6ec2-9294-541d" id="4b03-fd49-441d-70f3" primary="true" name="Unit"/>
       </categoryLinks>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Musician" hidden="false" id="4f9a-8ce1-451e-e8cf" sortIndex="0">
+    <selectionEntry type="unit" import="true" name="Musician" hidden="false" id="4f9a-8ce1-451e-e8cf" sortIndex="3">
       <categoryLinks>
         <categoryLink targetId="de6b-6ec2-9294-541d" id="d2d3-214c-8767-21e8" primary="true" name="Unit"/>
       </categoryLinks>
@@ -489,7 +490,7 @@
         </profile>
       </profiles>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Standard Bearer" hidden="false" id="20e3-2b59-1fcb-e6a8" sortIndex="0">
+    <selectionEntry type="unit" import="true" name="Standard Bearer" hidden="false" id="20e3-2b59-1fcb-e6a8" sortIndex="3">
       <costs>
         <cost name="Points" typeId="0bc1-1233-3e53-72ca" value="30"/>
       </costs>
@@ -517,7 +518,7 @@
         <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="7225-266b-5eb5-0d16" includeChildSelections="true"/>
       </constraints>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Squirrel Handler" hidden="false" id="452d-8b67-afb0-22de" sortIndex="0">
+    <selectionEntry type="unit" import="true" name="Squirrel Handler" hidden="false" id="452d-8b67-afb0-22de" sortIndex="3">
       <costs>
         <cost name="Points" typeId="0bc1-1233-3e53-72ca" value="30"/>
       </costs>
@@ -545,7 +546,7 @@
         </profile>
       </profiles>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="LMG Rhyfler" hidden="false" id="fe54-8a8c-87db-ffec" sortIndex="0">
+    <selectionEntry type="unit" import="true" name="LMG Rhyfler" hidden="false" id="fe54-8a8c-87db-ffec" sortIndex="2">
       <costs>
         <cost name="Points" typeId="0bc1-1233-3e53-72ca" value="35"/>
       </costs>
@@ -570,7 +571,7 @@
         </profile>
       </profiles>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Torpedo Rhyfler" hidden="false" id="28f0-2c0b-8528-0650" sortIndex="0">
+    <selectionEntry type="unit" import="true" name="Torpedo Rhyfler" hidden="false" id="28f0-2c0b-8528-0650" sortIndex="2">
       <costs>
         <cost name="Points" typeId="0bc1-1233-3e53-72ca" value="39"/>
       </costs>
@@ -595,7 +596,7 @@
         <categoryLink targetId="de6b-6ec2-9294-541d" id="b976-2b61-7d0c-1580" primary="true" name="Unit"/>
       </categoryLinks>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Weapon Team Loader" hidden="false" id="a91b-0f41-45dd-11b3" sortIndex="0">
+    <selectionEntry type="unit" import="true" name="Weapon Team Loader" hidden="false" id="a91b-0f41-45dd-11b3" sortIndex="2">
       <costs>
         <cost name="Points" typeId="0bc1-1233-3e53-72ca" value="28"/>
       </costs>
@@ -617,9 +618,9 @@
         </profile>
       </profiles>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Trench Raider" hidden="false" id="58a0-6a93-88c7-3348" sortIndex="0">
+    <selectionEntry type="unit" import="true" name="Trench Raider" hidden="false" id="58a0-6a93-88c7-3348" sortIndex="4">
       <costs>
-        <cost name="Points" typeId="0bc1-1233-3e53-72ca" value="43"/>
+        <cost name="Points" typeId="0bc1-1233-3e53-72ca" value="42"/>
       </costs>
       <categoryLinks>
         <categoryLink targetId="de6b-6ec2-9294-541d" id="77ef-86a7-d412-a986" primary="true" name="Unit"/>
@@ -646,7 +647,7 @@
         <infoLink name="Infiltrate" id="1eec-d3c0-7918-319c" hidden="false" type="rule" targetId="84eb-5fff-bb46-d164"/>
       </infoLinks>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Trench Raider Yawdryl" hidden="false" id="e8bf-67f4-d423-8d0e" sortIndex="0">
+    <selectionEntry type="unit" import="true" name="Trench Raider Yawdryl" hidden="false" id="e8bf-67f4-d423-8d0e" sortIndex="4">
       <costs>
         <cost name="Points" typeId="0bc1-1233-3e53-72ca" value="50"/>
       </costs>
@@ -682,9 +683,9 @@
         <infoLink name="Leader (X/Y)" id="bc0c-62dd-dcc5-ba35" hidden="false" type="rule" targetId="ba90-37ff-4384-2bc5"/>
       </infoLinks>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Pathfinder (Shotgun)" hidden="false" id="3fbb-da68-ef51-e220" sortIndex="0">
+    <selectionEntry type="unit" import="true" name="Pathfinder (Shotgun)" hidden="false" id="3fbb-da68-ef51-e220" sortIndex="4">
       <costs>
-        <cost name="Points" typeId="0bc1-1233-3e53-72ca" value="36"/>
+        <cost name="Points" typeId="0bc1-1233-3e53-72ca" value="38"/>
       </costs>
       <categoryLinks>
         <categoryLink targetId="de6b-6ec2-9294-541d" id="57a0-bccf-d948-ed3c" primary="true" name="Unit"/>
@@ -707,10 +708,13 @@
       <infoLinks>
         <infoLink name="Skirmisher" id="c56e-e76f-b4c8-b63b" hidden="false" type="rule" targetId="8095-39f1-1cd6-a7d5"/>
       </infoLinks>
+      <constraints>
+        <constraint type="max" value="2" field="selections" scope="roster" shared="true" id="0870-e597-c56f-7982" includeChildSelections="true"/>
+      </constraints>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Pathfinder (Bogen)" hidden="false" id="40a9-7c5f-0b9a-6ad8" sortIndex="0">
+    <selectionEntry type="unit" import="true" name="Pathfinder (Bogen)" hidden="false" id="40a9-7c5f-0b9a-6ad8" sortIndex="4">
       <costs>
-        <cost name="Points" typeId="0bc1-1233-3e53-72ca" value="37"/>
+        <cost name="Points" typeId="0bc1-1233-3e53-72ca" value="38"/>
       </costs>
       <categoryLinks>
         <categoryLink targetId="de6b-6ec2-9294-541d" id="0a6d-f66c-7393-43bb" primary="true" name="Unit"/>
@@ -734,7 +738,7 @@
         <infoLink name="Skirmisher" id="76d4-2b78-5fe3-1d11" hidden="false" type="rule" targetId="8095-39f1-1cd6-a7d5"/>
       </infoLinks>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Pathfinder Yawdryl" hidden="false" id="5ef9-a50f-9960-f49d" sortIndex="0">
+    <selectionEntry type="unit" import="true" name="Pathfinder Yawdryl" hidden="false" id="5ef9-a50f-9960-f49d" sortIndex="4">
       <costs>
         <cost name="Points" typeId="0bc1-1233-3e53-72ca" value="50"/>
       </costs>
@@ -770,7 +774,7 @@
         <infoLink name="Scout (X/Y)" id="5f0b-0e65-825e-d8ee" hidden="false" type="rule" targetId="0d68-8b95-5793-02aa"/>
       </infoLinks>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Pathfinder is-Caerten" hidden="false" id="68c0-8895-2f9b-8669" sortIndex="0">
+    <selectionEntry type="unit" import="true" name="Pathfinder is-Caerten" hidden="false" id="68c0-8895-2f9b-8669" sortIndex="4">
       <costs>
         <cost name="Points" typeId="0bc1-1233-3e53-72ca" value="50"/>
       </costs>
@@ -801,38 +805,31 @@
             <characteristic name="Mt" typeId="d8ef-e518-8f49-8a7b">1d6_2</characteristic>
             <characteristic name="MA" typeId="4cd7-b825-6660-1758">5</characteristic>
             <characteristic name="Toughness" typeId="197d-1c5e-af24-ee6e">4</characteristic>
-            <characteristic name="Special Abilities" typeId="94ec-89a2-8f77-66c3">Melee (+1)</characteristic>
+            <characteristic name="Special Abilities" typeId="94ec-89a2-8f77-66c3">Scout (3/4), Melee (+1)</characteristic>
           </characteristics>
         </profile>
       </profiles>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name=" Ailthean" hidden="false" id="b74c-184d-c68f-9378" sortIndex="0">
+    <selectionEntry type="unit" import="true" name=" Ailthean" hidden="false" id="b74c-184d-c68f-9378" sortIndex="5">
       <costs>
-        <cost name="Points" typeId="0bc1-1233-3e53-72ca" value="185"/>
+        <cost name="Points" typeId="0bc1-1233-3e53-72ca" value="130"/>
       </costs>
       <categoryLinks>
         <categoryLink targetId="e009-498c-bf4e-66d2" id="ea72-8526-d599-b543" primary="true" name="Tractor"/>
       </categoryLinks>
       <profiles>
-        <profile name=" Ailthean" typeId="c0d6-dd04-e4e2-90bb" typeName="Tractor" hidden="false" id="2f8d-a85f-4a31-1f5c">
+        <profile name=" Ailthean" typeId="75e9-4c28-c81b-5327" typeName="Armored Vehicle" hidden="false" id="2f8d-a85f-4a31-1f5c">
           <characteristics>
-            <characteristic name="Crew" typeId="dd29-0845-6869-58e6">3</characteristic>
-            <characteristic name="Skill" typeId="7171-15a3-3392-26c7">12</characteristic>
-            <characteristic name="MA" typeId="8112-28ba-c9a3-5714">4</characteristic>
-            <characteristic name="Abilities" typeId="46a0-fd12-ff7d-1a6f">Turret</characteristic>
-            <characteristic name="Tread Damage Points" typeId="b554-5ae2-03ab-4105">3</characteristic>
-            <characteristic name="Hull Damage Points" typeId="0269-a706-2bea-6c85">3</characteristic>
-            <characteristic name="Engine Damage Points" typeId="df7d-5deb-8b55-3b06">2</characteristic>
-            <characteristic name="Tread Armor Value" typeId="d79c-c916-a478-ba1e">8</characteristic>
-            <characteristic name="Hull Armor Value" typeId="3341-ef0e-6ede-ca25">7</characteristic>
-            <characteristic name="Engine Armore Vlaue" typeId="81b5-bb41-0b10-9d9f">6</characteristic>
-          </characteristics>
-        </profile>
-        <profile name=" Krynger 78mm gun" typeId="b654-1c6a-7803-6882" typeName="Tractor Weapon" hidden="false" id="d7e3-3c4b-c1d2-2937">
-          <characteristics>
-            <characteristic name="Range" typeId="206b-98a7-3ceb-bc0e">NA</characteristic>
-            <characteristic name="Arc" typeId="7f52-7175-881e-a429">90</characteristic>
-            <characteristic name="Abilities" typeId="0095-18c0-009f-e488">Slow Reload, Blast (2, 2d6)</characteristic>
+            <characteristic name="Crew" typeId="7ff3-eaea-87c6-deaa">3</characteristic>
+            <characteristic name="Skill" typeId="645c-7e75-7b5f-36cd">12</characteristic>
+            <characteristic name="MA" typeId="6128-a30c-557d-656a">4/3</characteristic>
+            <characteristic name="Abilities" typeId="7a58-8944-3a3e-1e25">Turret</characteristic>
+            <characteristic name="Tread Damage Points" typeId="0e57-b754-a0ab-64ca">3</characteristic>
+            <characteristic name="Hull Damage Points" typeId="a109-8831-0b1f-a416">3</characteristic>
+            <characteristic name="Engine Damage Points" typeId="3d59-9a3d-5eeb-f18d">2</characteristic>
+            <characteristic name="Tread Armor Value" typeId="52ab-ad8e-f3fd-740c">7</characteristic>
+            <characteristic name="Hull Armor Value" typeId="38e8-4c6d-9751-9ec2">7/7/6</characteristic>
+            <characteristic name="Engine Armore Value" typeId="c053-6c95-fc2e-f984">4</characteristic>
           </characteristics>
         </profile>
         <profile name=" Rear" typeId="bf17-75fe-032b-a8eb" typeName="Tractor Damage Area" hidden="false" id="e127-968f-76bd-b7df">
@@ -859,12 +856,13 @@
       </profiles>
       <infoLinks>
         <infoLink name="Turret" id="24ac-9d8b-9ca3-e547" hidden="false" type="rule" targetId="15ec-d221-5e3c-04d7"/>
-        <infoLink name="Slow Reload" id="555f-f7d3-6632-d131" hidden="false" type="rule" targetId="d313-5d37-5ae4-7b1f"/>
-        <infoLink name="Blast (X,Y)" id="2164-fa64-2e25-4ee8" hidden="false" type="rule" targetId="b4b8-45d7-e9bb-1444"/>
-        <infoLink name="Playtest Profile" id="5527-20a1-ef6e-a816" hidden="false" type="rule" targetId="a1d3-d6aa-6b8f-d230"/>
       </infoLinks>
+      <entryLinks>
+        <entryLink import="true" name="Krynger 78mm Gun" hidden="false" id="ea60-ffbc-7435-d819" type="selectionEntry" targetId="7083-5897-d71b-ea7e"/>
+        <entryLink import="true" name="Krynger Mk.2 78mm Rhyfled Gun" hidden="false" id="8e66-f7ba-a833-4978" type="selectionEntry" targetId="dd25-5bd5-7af7-f143"/>
+      </entryLinks>
     </selectionEntry>
-    <selectionEntry type="model" import="true" name="Bicycle Cook" hidden="false" id="53b4-bd2f-6be6-faad" sortIndex="0">
+    <selectionEntry type="model" import="true" name="Bicycle Cook" hidden="false" id="53b4-bd2f-6be6-faad" sortIndex="3">
       <categoryLinks>
         <categoryLink targetId="de6b-6ec2-9294-541d" id="65c7-c545-c3da-d95f" primary="true" name="Unit"/>
       </categoryLinks>
@@ -887,7 +885,338 @@
       </profiles>
       <infoLinks>
         <infoLink name="Pistol" id="2364-10cf-7b62-bb89" hidden="false" type="profile" targetId="264f-b3e9-bc3c-3a44"/>
+        <infoLink name="Medic" id="af4b-e727-9496-35dd" hidden="false" type="rule" targetId="0de6-c532-1b9e-df58"/>
       </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Krynger 78mm Gun" hidden="false" id="7083-5897-d71b-ea7e" sortIndex="1">
+      <infoLinks>
+        <infoLink name="Blast (X,Y)" id="015a-7916-fc30-ef5f" hidden="false" type="rule" targetId="b4b8-45d7-e9bb-1444"/>
+        <infoLink name="Slow Reload" id="2127-34b7-c96f-f865" hidden="false" type="rule" targetId="d313-5d37-5ae4-7b1f"/>
+      </infoLinks>
+      <profiles>
+        <profile name="Krynger 78mm Gun" typeId="b654-1c6a-7803-6882" typeName="Tractor Weapon" hidden="false" id="d91c-6761-6ad0-be7f">
+          <characteristics>
+            <characteristic name="Range" typeId="206b-98a7-3ceb-bc0e">NA</characteristic>
+            <characteristic name="Arc" typeId="7f52-7175-881e-a429">90</characteristic>
+            <characteristic name="Abilities" typeId="0095-18c0-009f-e488">Slow Reload, Blast(M, 2d6)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Krynger Mk.2 78mm Rhyfled Gun" hidden="false" id="dd25-5bd5-7af7-f143" sortIndex="1">
+      <infoLinks>
+        <infoLink name="Blast (X,Y)" id="138f-8a67-b7dc-c7b3" hidden="false" type="rule" targetId="b4b8-45d7-e9bb-1444"/>
+        <infoLink name="Slow Reload" id="7cac-e6a1-5bcb-83da" hidden="false" type="rule" targetId="d313-5d37-5ae4-7b1f"/>
+        <infoLink name="Precision Fire" id="bce7-3a8d-4a78-b29a" hidden="false" type="rule" targetId="6aa0-4640-e3bb-1146"/>
+      </infoLinks>
+      <profiles>
+        <profile name="Krynger mk.2 78mm Rhyfled Gun" typeId="b654-1c6a-7803-6882" typeName="Tractor Weapon" hidden="false" id="dd08-4a63-e8bb-f5ed">
+          <characteristics>
+            <characteristic name="Range" typeId="206b-98a7-3ceb-bc0e">NA</characteristic>
+            <characteristic name="Arc" typeId="7f52-7175-881e-a429">90</characteristic>
+            <characteristic name="Abilities" typeId="0095-18c0-009f-e488">Slow Reload, Blast(S, 2d6), Precision Fire</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="108mm Smoothbore &quot;Line-sweeper&quot; Cannon" hidden="false" id="830d-fe13-fcef-0c52" sortIndex="1">
+      <infoLinks>
+        <infoLink name="Blast (X,Y)" id="88d9-a1c1-c75b-ea0f" hidden="false" type="rule" targetId="b4b8-45d7-e9bb-1444"/>
+      </infoLinks>
+      <profiles>
+        <profile name="108mm Smoothbore &quot;Line-sweeper&quot; Cannon" typeId="18ca-a698-c38f-f8de" typeName="Integral Weapon" hidden="false" id="ebcc-a7dc-7e3b-7a8e">
+          <characteristics>
+            <characteristic name="Range" typeId="c5be-3871-71dd-dfae">8</characteristic>
+            <characteristic name="Arc" typeId="07d6-44a1-b3f8-b02e">45</characteristic>
+            <characteristic name="Abilities" typeId="8ceb-604c-397c-d679">Blast(L, 1d6+1)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Pyngo Armored Lorry" hidden="false" id="8746-f310-e84f-98e8" sortIndex="5">
+      <costs>
+        <cost name="Points" typeId="0bc1-1233-3e53-72ca" value="40"/>
+      </costs>
+      <profiles>
+        <profile name="Pyngo Armored Lorry" typeId="093b-79b2-af5a-6091" typeName="Vehicle" hidden="false" id="ecc7-ed6f-63d8-b3d3">
+          <characteristics>
+            <characteristic name="Crew" typeId="dd29-0845-6869-58e6">1</characteristic>
+            <characteristic name="Activation Type" typeId="7171-15a3-3392-26c7">Individual Activation</characteristic>
+            <characteristic name="Skill" typeId="8112-28ba-c9a3-5714">12</characteristic>
+            <characteristic name="MA" typeId="46a0-fd12-ff7d-1a6f">5</characteristic>
+            <characteristic name="Toughness" typeId="b554-5ae2-03ab-4105">5</characteristic>
+            <characteristic name="Abilities" typeId="0269-a706-2bea-6c85">Open Topped, Transport (5)</characteristic>
+            <characteristic name="Damage" typeId="4b90-fab7-6493-9714">3</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="1-2" typeId="6e06-153b-5181-d39d" typeName="Damage Chart" hidden="false" id="b993-3a37-b494-301f">
+          <characteristics>
+            <characteristic name="Result" typeId="897e-4ecc-846b-1598">Passengers are Rattled</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="3-5" typeId="6e06-153b-5181-d39d" typeName="Damage Chart" hidden="false" id="d618-d60c-07e4-3752">
+          <characteristics>
+            <characteristic name="Result" typeId="897e-4ecc-846b-1598">Vehicle suffers 1 Damage Point. Passengers gain Rattled status.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="6" typeId="6e06-153b-5181-d39d" typeName="Damage Chart" hidden="false" id="45c7-82a2-6bad-b4ec">
+          <characteristics>
+            <characteristic name="Result" typeId="897e-4ecc-846b-1598">Vehicle suffers 2 Damage Points. Passengers gain Rattled status.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="7+" typeId="6e06-153b-5181-d39d" typeName="Damage Chart" hidden="false" id="b38d-3ac7-7f63-fde1">
+          <characteristics>
+            <characteristic name="Result" typeId="897e-4ecc-846b-1598">Vehicle is Disabled. Place a Smoke Template under the vehicle. Driver is OOA. Passengers roll on the Vehicle Escape Chart.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Transport (X)" id="d828-cdfd-751d-9d98" hidden="false" type="rule" targetId="a76a-e845-8447-2574"/>
+        <infoLink name="Open Topped" id="a231-e53a-0822-6466" hidden="false" type="rule" targetId="aa37-c2e0-e7b0-5fb5"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink targetId="881d-fa38-6f95-c8f3" id="06bd-f130-a3ab-6e0f" primary="true" name="Vehicle"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Nae-bon Armored Wagon" hidden="false" id="38ef-fc1f-ce2c-f276" sortIndex="5">
+      <costs>
+        <cost name="Points" typeId="0bc1-1233-3e53-72ca" value="63"/>
+      </costs>
+      <profiles>
+        <profile name="Nae-bon Armored Wagon" typeId="093b-79b2-af5a-6091" typeName="Vehicle" hidden="false" id="9cd7-22ba-7e47-860e">
+          <characteristics>
+            <characteristic name="Crew" typeId="dd29-0845-6869-58e6">2</characteristic>
+            <characteristic name="Activation Type" typeId="7171-15a3-3392-26c7">Individual Activation</characteristic>
+            <characteristic name="Skill" typeId="8112-28ba-c9a3-5714">12</characteristic>
+            <characteristic name="MA" typeId="46a0-fd12-ff7d-1a6f">5</characteristic>
+            <characteristic name="Toughness" typeId="b554-5ae2-03ab-4105">5</characteristic>
+            <characteristic name="Abilities" typeId="0269-a706-2bea-6c85">Agile</characteristic>
+            <characteristic name="Damage" typeId="4b90-fab7-6493-9714">4</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="1-2" typeId="6e06-153b-5181-d39d" typeName="Damage Chart" hidden="false" id="565b-3445-6620-659f">
+          <characteristics>
+            <characteristic name="Result" typeId="897e-4ecc-846b-1598">Vehicle is Rattled</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="3-5" typeId="6e06-153b-5181-d39d" typeName="Damage Chart" hidden="false" id="2116-b3e9-6ddd-9796">
+          <characteristics>
+            <characteristic name="Result" typeId="897e-4ecc-846b-1598">Vehicle suffers 1 Damage Point. rew gain Rattled status.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="6" typeId="6e06-153b-5181-d39d" typeName="Damage Chart" hidden="false" id="1631-fbdc-6abf-be1f">
+          <characteristics>
+            <characteristic name="Result" typeId="897e-4ecc-846b-1598">Vehicle suffers 2 Damage Points. Crew gain Rattled status.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="7+" typeId="6e06-153b-5181-d39d" typeName="Damage Chart" hidden="false" id="d71d-2f92-27bb-6a09">
+          <characteristics>
+            <characteristic name="Result" typeId="897e-4ecc-846b-1598">Vehicle is Disabled. Place a Smoke Template under the vehicle. Driver is OOA. Passengers roll on the Vehicle Escape Chart.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Agile" id="0c33-f595-96ef-c2a4" hidden="false" type="rule" targetId="1c15-f70c-9388-ba08"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink targetId="881d-fa38-6f95-c8f3" id="0803-accd-7b94-a76e" primary="true" name="Vehicle"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Unarmed" hidden="false" id="c485-a6f8-3cb9-9d79"/>
+        <selectionEntry type="upgrade" import="true" name="H-11a" hidden="false" id="30f8-22e7-77e7-b0cc">
+          <costs>
+            <cost name="Points" typeId="0bc1-1233-3e53-72ca" value="12"/>
+          </costs>
+          <infoLinks>
+            <infoLink name="H-11a Vehicle Mount" id="4f35-48b1-3bdd-5898" hidden="false" type="profile" targetId="ca8d-f53e-7b6b-43fb"/>
+            <infoLink name="Automatic" id="ee5c-c864-acef-9f15" hidden="false" type="rule" targetId="321d-91fa-c981-2ce1"/>
+          </infoLinks>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Krassyl Mod(4) Armored Contraption" hidden="false" id="f6f3-212a-e06f-f28b" sortIndex="5">
+      <costs>
+        <cost name="Points" typeId="0bc1-1233-3e53-72ca" value="125"/>
+      </costs>
+      <profiles>
+        <profile name="Krassyl Mod(4)" typeId="75e9-4c28-c81b-5327" typeName="Armored Vehicle" hidden="false" id="2665-b7d3-6bd0-3a43">
+          <characteristics>
+            <characteristic name="Crew" typeId="7ff3-eaea-87c6-deaa">3</characteristic>
+            <characteristic name="Skill" typeId="645c-7e75-7b5f-36cd">12</characteristic>
+            <characteristic name="MA" typeId="6128-a30c-557d-656a">6/4</characteristic>
+            <characteristic name="Abilities" typeId="7a58-8944-3a3e-1e25">Individual Activation, Scouting Vehicle</characteristic>
+            <characteristic name="Tread Damage Points" typeId="0e57-b754-a0ab-64ca">2</characteristic>
+            <characteristic name="Hull Damage Points" typeId="a109-8831-0b1f-a416">3</characteristic>
+            <characteristic name="Engine Damage Points" typeId="3d59-9a3d-5eeb-f18d">2</characteristic>
+            <characteristic name="Tread Armor Value" typeId="52ab-ad8e-f3fd-740c">4</characteristic>
+            <characteristic name="Hull Armor Value" typeId="38e8-4c6d-9751-9ec2">6</characteristic>
+            <characteristic name="Engine Armore Value" typeId="c053-6c95-fc2e-f984">5</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="RR55 Gun" typeId="18ca-a698-c38f-f8de" typeName="Integral Weapon" hidden="false" id="b8d7-42d7-805c-726e">
+          <characteristics>
+            <characteristic name="Range" typeId="c5be-3871-71dd-dfae">8</characteristic>
+            <characteristic name="Arc" typeId="07d6-44a1-b3f8-b02e">90</characteristic>
+            <characteristic name="Abilities" typeId="8ceb-604c-397c-d679">Blast (M, 1d6+1), Anti-Tractor</characteristic>
+          </characteristics>
+        </profile>
+        <profile name=" Front" typeId="bf17-75fe-032b-a8eb" typeName="Tractor Damage Area" hidden="false" id="38cf-d1f1-a067-7dab">
+          <characteristics>
+            <characteristic name="Tread" typeId="6193-4d0a-5399-c05d">1-2</characteristic>
+            <characteristic name="Hull" typeId="2882-bfcc-2f15-a801">3-6</characteristic>
+            <characteristic name="Engine" typeId="609f-652d-ea95-f699"/>
+          </characteristics>
+        </profile>
+        <profile name=" Rear" typeId="bf17-75fe-032b-a8eb" typeName="Tractor Damage Area" hidden="false" id="f6e4-93ef-19e4-83b0">
+          <characteristics>
+            <characteristic name="Tread" typeId="6193-4d0a-5399-c05d">1-2</characteristic>
+            <characteristic name="Hull" typeId="2882-bfcc-2f15-a801">3</characteristic>
+            <characteristic name="Engine" typeId="609f-652d-ea95-f699">4-6</characteristic>
+          </characteristics>
+        </profile>
+        <profile name=" Side" typeId="bf17-75fe-032b-a8eb" typeName="Tractor Damage Area" hidden="false" id="5476-3a39-5889-c7a6">
+          <characteristics>
+            <characteristic name="Tread" typeId="6193-4d0a-5399-c05d">1-2</characteristic>
+            <characteristic name="Hull" typeId="2882-bfcc-2f15-a801">3-5</characteristic>
+            <characteristic name="Engine" typeId="609f-652d-ea95-f699">6</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Anti-Tractor (X)" id="e945-157a-a2e3-ff20" hidden="false" type="rule" targetId="7cb8-57db-5ced-b54a"/>
+        <infoLink name="Scouting Vehicle" id="0e45-60eb-e2af-e16c" hidden="false" type="rule" targetId="cfd6-5318-f453-0aee"/>
+        <infoLink name="Blast (X,Y)" id="0318-1224-743b-7ce9" hidden="false" type="rule" targetId="b4b8-45d7-e9bb-1444"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink targetId="881d-fa38-6f95-c8f3" id="0182-9f0e-26c7-d645" primary="true" name="Vehicle"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Orythil Squad Tractor" hidden="false" id="4d49-a623-de2e-ac43" sortIndex="5">
+      <costs>
+        <cost name="Points" typeId="0bc1-1233-3e53-72ca" value="105"/>
+      </costs>
+      <profiles>
+        <profile name="Orythil" typeId="75e9-4c28-c81b-5327" typeName="Armored Vehicle" hidden="false" id="fb72-fad1-9c00-84eb">
+          <characteristics>
+            <characteristic name="Crew" typeId="7ff3-eaea-87c6-deaa">1</characteristic>
+            <characteristic name="Skill" typeId="645c-7e75-7b5f-36cd">12</characteristic>
+            <characteristic name="MA" typeId="6128-a30c-557d-656a">4/3</characteristic>
+            <characteristic name="Abilities" typeId="7a58-8944-3a3e-1e25">Individual Activation, Turret, Lumbering</characteristic>
+            <characteristic name="Tread Damage Points" typeId="0e57-b754-a0ab-64ca">3</characteristic>
+            <characteristic name="Hull Damage Points" typeId="a109-8831-0b1f-a416">3</characteristic>
+            <characteristic name="Engine Damage Points" typeId="3d59-9a3d-5eeb-f18d">2</characteristic>
+            <characteristic name="Tread Armor Value" typeId="52ab-ad8e-f3fd-740c">5</characteristic>
+            <characteristic name="Hull Armor Value" typeId="38e8-4c6d-9751-9ec2">7/5/4</characteristic>
+            <characteristic name="Engine Armore Value" typeId="c053-6c95-fc2e-f984">5</characteristic>
+          </characteristics>
+        </profile>
+        <profile name=" Front" typeId="bf17-75fe-032b-a8eb" typeName="Tractor Damage Area" hidden="false" id="b842-857d-1f38-7f56">
+          <characteristics>
+            <characteristic name="Tread" typeId="6193-4d0a-5399-c05d">1-2</characteristic>
+            <characteristic name="Hull" typeId="2882-bfcc-2f15-a801">3-6</characteristic>
+            <characteristic name="Engine" typeId="609f-652d-ea95-f699"/>
+          </characteristics>
+        </profile>
+        <profile name=" Rear" typeId="bf17-75fe-032b-a8eb" typeName="Tractor Damage Area" hidden="false" id="49fa-3840-fb2e-a8bd">
+          <characteristics>
+            <characteristic name="Tread" typeId="6193-4d0a-5399-c05d">1-2</characteristic>
+            <characteristic name="Hull" typeId="2882-bfcc-2f15-a801">3</characteristic>
+            <characteristic name="Engine" typeId="609f-652d-ea95-f699">4-6</characteristic>
+          </characteristics>
+        </profile>
+        <profile name=" Side" typeId="bf17-75fe-032b-a8eb" typeName="Tractor Damage Area" hidden="false" id="af47-72a0-05eb-4f31">
+          <characteristics>
+            <characteristic name="Tread" typeId="6193-4d0a-5399-c05d">1-2</characteristic>
+            <characteristic name="Hull" typeId="2882-bfcc-2f15-a801">3-5</characteristic>
+            <characteristic name="Engine" typeId="609f-652d-ea95-f699">6</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="108mm Smoothbore &quot;Line-sweeper&quot; Cannon" typeId="18ca-a698-c38f-f8de" typeName="Integral Weapon" hidden="false" id="d6f5-b428-43dd-06e0">
+          <characteristics>
+            <characteristic name="Range" typeId="c5be-3871-71dd-dfae">8</characteristic>
+            <characteristic name="Arc" typeId="07d6-44a1-b3f8-b02e">45</characteristic>
+            <characteristic name="Abilities" typeId="8ceb-604c-397c-d679">Blast(L, 1d6+1)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Scouting Vehicle" id="827b-8b28-0194-87d1" hidden="false" type="rule" targetId="cfd6-5318-f453-0aee"/>
+        <infoLink name="Blast (X,Y)" id="c04f-6f85-f655-63bd" hidden="false" type="rule" targetId="b4b8-45d7-e9bb-1444"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink targetId="e009-498c-bf4e-66d2" id="9426-ae09-ad7a-d793" primary="true" name="Armored Vehicle"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="AUM E4 Heavy Machinegun" hidden="false" id="1fe7-c376-d743-b532">
+      <costs>
+        <cost name="Points" typeId="0bc1-1233-3e53-72ca" value="125"/>
+      </costs>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="0183-e725-047a-d22d" includeChildSelections="true"/>
+      </constraints>
+      <profiles>
+        <profile name="AUM E4 Heavy Machinegun" typeId="3971-dc7c-fded-7a05" typeName="Heavy Weapon Crew" hidden="false" id="8074-1475-d906-b3c4">
+          <characteristics>
+            <characteristic name="Crew" typeId="d99f-34b4-b34d-2276">3</characteristic>
+            <characteristic name="Skill" typeId="520d-faaf-a88e-7985">12</characteristic>
+            <characteristic name="T" typeId="e994-3e9d-3b18-43b3">5</characteristic>
+            <characteristic name="D" typeId="97fc-5f15-cc48-6f00">3</characteristic>
+            <characteristic name="Break" typeId="a408-edfc-85be-a5ac">2</characteristic>
+            <characteristic name="MA" typeId="7cf6-12da-3cdd-6b9d">4</characteristic>
+            <characteristic name="Type" typeId="00d8-3f2d-ae43-9218">HMG</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="E4 HGM" typeId="d580-6e35-f083-cd53" typeName="Heavy Weapon" hidden="false" id="658c-4f61-a427-e79c">
+          <characteristics>
+            <characteristic name="Range" typeId="1775-3227-d2ed-93a5">NA</characteristic>
+            <characteristic name="Arc" typeId="f1e8-b48b-c0f2-c05f">45</characteristic>
+            <characteristic name="Abilities" typeId="bd42-ef04-afe1-f4d4">HMG, Gun Shield (-3)</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="7+" typeId="6e06-153b-5181-d39d" typeName="Damage Chart" hidden="false" id="b30a-40e6-87e3-6cc9">
+          <characteristics>
+            <characteristic name="Result" typeId="897e-4ecc-846b-1598">Weapon Crew are Disabled. Remove from Battlefield</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="1-2" typeId="6e06-153b-5181-d39d" typeName="Damage Chart" hidden="false" id="1e95-8fa8-a99e-43d1">
+          <characteristics>
+            <characteristic name="Result" typeId="897e-4ecc-846b-1598">Weapon Crew is Rattled</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="5-6" typeId="6e06-153b-5181-d39d" typeName="Damage Chart" hidden="false" id="0c5c-a818-9524-50ff">
+          <characteristics>
+            <characteristic name="Result" typeId="897e-4ecc-846b-1598">Weapon Crew suffers 1 point of Damage.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="3-4" typeId="6e06-153b-5181-d39d" typeName="Damage Chart" hidden="false" id="65a9-1459-bc7f-2f1c">
+          <characteristics>
+            <characteristic name="Result" typeId="897e-4ecc-846b-1598">Weapon Crew is Gobsmacked. Remove Rattled status if present.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="0" typeId="73fd-d87f-c3ca-d678" typeName="Damage Level" hidden="false" id="82bf-0c1f-553c-df3d">
+          <characteristics>
+            <characteristic name="" typeId="0a18-6bf0-38b6-f7a0">Fully Operational.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="1" typeId="73fd-d87f-c3ca-d678" typeName="Damage Level" hidden="false" id="8020-5a9a-993d-2ec7">
+          <characteristics>
+            <characteristic name="" typeId="0a18-6bf0-38b6-f7a0">Hampered: Only Assistant or Observer can Activate, not both, except to perform Remove/Replace Barrel.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="2" typeId="73fd-d87f-c3ca-d678" typeName="Damage Level" hidden="false" id="3219-8b3d-2730-9f9d">
+          <characteristics>
+            <characteristic name="" typeId="0a18-6bf0-38b6-f7a0">Shaken: The HMG may no longer perform the Covering Fire Task</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="3" typeId="73fd-d87f-c3ca-d678" typeName="Damage Level" hidden="false" id="e9b0-7124-e524-5faa">
+          <characteristics>
+            <characteristic name="" typeId="0a18-6bf0-38b6-f7a0">Disabled: Remove from Battlefield.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink targetId="34ad-bf4f-0473-dac6" id="88f3-edfe-b8a6-5165" primary="true" name="Heavy Weapon Crew"/>
+      </categoryLinks>
     </selectionEntry>
   </sharedSelectionEntries>
   <entryLinks>
@@ -897,7 +1226,7 @@
     <entryLink import="true" name="Squad Marksquar" hidden="false" id="3e13-c5fa-6211-fc49" type="selectionEntry" targetId="2997-5fb1-6ae7-94c8"/>
     <entryLink import="true" name="Yawdryl" hidden="false" id="35be-9d0b-d823-55ef" type="selectionEntry" targetId="f4c9-2ba9-f864-43f1"/>
     <entryLink import="true" name="Weapon Team Loader" hidden="false" id="d68d-2e35-97ec-32f9" type="selectionEntry" targetId="a91b-0f41-45dd-11b3"/>
-    <entryLink import="true" name="Trench Raider" hidden="false" id="62a0-2991-21ba-24b7" type="selectionEntry" targetId="58a0-6a93-88c7-3348"/>
+    <entryLink import="true" name="Nae-bon Armored Wagon" hidden="false" id="62a0-2991-21ba-24b7" type="selectionEntry" targetId="38ef-fc1f-ce2c-f276"/>
     <entryLink import="true" name="Trench Raider Yawdryl" hidden="false" id="9a0f-dcc6-23d4-0fd3" type="selectionEntry" targetId="e8bf-67f4-d423-8d0e"/>
     <entryLink import="true" name="Torpedo Rhyfler" hidden="false" id="dd70-cc5e-ea87-8100" type="selectionEntry" targetId="28f0-2c0b-8528-0650"/>
     <entryLink import="true" name="Standard Bearer" hidden="false" id="ef63-40b3-f6c4-94d2" type="selectionEntry" targetId="20e3-2b59-1fcb-e6a8"/>
@@ -913,7 +1242,12 @@
     <entryLink import="true" name="Master Yawdryl" hidden="false" id="1188-0396-6c78-3ad8" type="selectionEntry" targetId="904b-3278-1d82-aff3"/>
     <entryLink import="true" name="Cook" hidden="false" id="23ef-704b-42fe-9e90" type="selectionEntry" targetId="73f3-6405-d012-f199"/>
     <entryLink import="true" name=" Ailthean" hidden="false" id="c6f9-991b-5c4d-2826" type="selectionEntry" targetId="b74c-184d-c68f-9378"/>
-    <entryLink import="true" name="Bicycle Cook" hidden="false" id="bfa1-748b-b84c-44bc" type="selectionEntry" page="" targetId="53b4-bd2f-6be6-faad"/>
+    <entryLink import="true" name="Bicycle Cook" hidden="false" id="bfa1-748b-b84c-44bc" type="selectionEntry" targetId="53b4-bd2f-6be6-faad"/>
+    <entryLink import="true" name="Trench Raider" hidden="false" id="2e10-158e-a074-f707" type="selectionEntry" targetId="58a0-6a93-88c7-3348"/>
+    <entryLink import="true" name="Pyngo Armored Lorry" hidden="false" id="66ea-17f0-70b7-da1d" type="selectionEntry" targetId="8746-f310-e84f-98e8"/>
+    <entryLink import="true" name="Orythil Squad Tractor" hidden="false" id="195c-fe57-fdf6-de02" type="selectionEntry" targetId="4d49-a623-de2e-ac43"/>
+    <entryLink import="true" name="Krassyl Mod(4) Armored Contraption" hidden="false" id="081d-68b6-e4bc-1bb6" type="selectionEntry" targetId="f6f3-212a-e06f-f28b"/>
+    <entryLink import="true" name="AUM E4 Heavy Machinegun" hidden="false" id="2199-a1d1-455e-9539" type="selectionEntry" targetId="1fe7-c376-d743-b532"/>
   </entryLinks>
   <categoryEntries>
     <categoryEntry name="Pathfinder" id="8e16-bde7-3ecc-3a44" hidden="false"/>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="74e6-0dfa-c12e-1334" name="Tollyn Maeryn" gameSystemId="sys-dbd1-1d4a-43f9-1e9c" gameSystemRevision="6" revision="1" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="74e6-0dfa-c12e-1334" name="Tollyn Maeryn" gameSystemId="sys-dbd1-1d4a-43f9-1e9c" gameSystemRevision="6" revision="2" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedSelectionEntries>
-    <selectionEntry type="upgrade" import="true" name="Bostad rev53 Rhyfle" hidden="false" id="3538-2208-f905-40bf" sortIndex="0">
+    <selectionEntry type="upgrade" import="true" name="Bostad rev53 Rhyfle" hidden="false" id="3538-2208-f905-40bf" sortIndex="1">
       <profiles>
         <profile name="Bostad rev53 Rhyfle" typeId="0b63-6947-fb08-66eb" typeName="Weapon" hidden="false" id="fc43-2307-b671-2390">
           <characteristics>
@@ -16,7 +16,7 @@
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="aeb0-54a7-9980-786e" includeChildSelections="false"/>
       </constraints>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Rhyfle Grenades" hidden="false" id="9631-65ba-c1aa-08bf" sortIndex="0">
+    <selectionEntry type="upgrade" import="true" name="Rhyfle Grenades" hidden="false" id="9631-65ba-c1aa-08bf" sortIndex="1">
       <profiles>
         <profile name="Rhyfle Grenades" typeId="0b63-6947-fb08-66eb" typeName="Weapon" hidden="false" id="355b-060a-bc29-a8e0">
           <characteristics>
@@ -35,7 +35,7 @@
         <infoLink name="Indirect Fire" id="8305-f629-40bf-0fb4" hidden="false" type="rule" targetId="dcad-8f82-bf82-81ec"/>
       </infoLinks>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Aup rev27 SMG" hidden="false" id="54e2-a3ea-9763-2fff" sortIndex="0">
+    <selectionEntry type="upgrade" import="true" name="Aup rev27 SMG" hidden="false" id="54e2-a3ea-9763-2fff" sortIndex="1">
       <profiles>
         <profile name="Aup rev27 SMG" typeId="0b63-6947-fb08-66eb" typeName="Weapon" hidden="false" id="6023-36e8-08e1-91ad">
           <characteristics>
@@ -50,7 +50,7 @@
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5cb6-3cf4-dbe7-1615" includeChildSelections="false"/>
       </constraints>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Bolt-Action Rhyfle" hidden="false" id="6cad-69e4-95db-787c" sortIndex="0">
+    <selectionEntry type="upgrade" import="true" name="Bolt-Action Rhyfle" hidden="false" id="6cad-69e4-95db-787c" sortIndex="1">
       <constraints>
         <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c2bb-8599-b54c-fd9d" includeChildSelections="false"/>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2cd9-327f-7edb-0def" includeChildSelections="false"/>
@@ -65,10 +65,11 @@
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink name="Bolt Action" id="7d5c-15fc-f0ea-f01b" hidden="false" type="rule" targetId="7dca-e5c7-0f9d-62a1"/>
+        <infoLink name="Slow Reload" id="7d5c-15fc-f0ea-f01b" hidden="false" type="rule" targetId="d313-5d37-5ae4-7b1f"/>
+        <infoLink name="Bolt Action" id="d6ad-a561-5cc4-ec8f" hidden="false" type="rule" targetId="7dca-e5c7-0f9d-62a1"/>
       </infoLinks>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="AuS rev44 LMG" hidden="false" id="0092-5833-9a5a-8ce0" sortIndex="0">
+    <selectionEntry type="upgrade" import="true" name="AuS rev44 LMG" hidden="false" id="0092-5833-9a5a-8ce0" sortIndex="1">
       <constraints>
         <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d7f8-2b14-95bc-5c23" includeChildSelections="false"/>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6e36-a698-4c67-100d" includeChildSelections="false"/>
@@ -87,7 +88,7 @@
         <infoLink name="Braced" id="f536-af6e-95ed-a617" hidden="false" type="rule" targetId="0b83-b784-dae8-503c"/>
       </infoLinks>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Single-Action Revolver" hidden="false" id="9f90-0e8e-ade4-c871" sortIndex="0">
+    <selectionEntry type="upgrade" import="true" name="Single-Action Revolver" hidden="false" id="9f90-0e8e-ade4-c871" sortIndex="1">
       <constraints>
         <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d54c-0583-4439-4575" includeChildSelections="false"/>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6edb-99b6-1105-4cd1" includeChildSelections="false"/>
@@ -102,10 +103,11 @@
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink name="Bolt Action" id="a3e4-e135-a3f4-d01e" hidden="false" type="rule" targetId="7dca-e5c7-0f9d-62a1"/>
+        <infoLink name="Slow Reload" id="a3e4-e135-a3f4-d01e" hidden="false" type="rule" targetId="d313-5d37-5ae4-7b1f"/>
+        <infoLink name="Bolt Action" id="3d56-7aaf-95fb-3944" hidden="false" type="rule" targetId="7dca-e5c7-0f9d-62a1"/>
       </infoLinks>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Grifkis Shotgun" hidden="false" id="5536-85b4-b70b-8d64" sortIndex="0">
+    <selectionEntry type="upgrade" import="true" name="Grifkis Shotgun" hidden="false" id="5536-85b4-b70b-8d64" sortIndex="1">
       <constraints>
         <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2f63-e599-a809-9220" includeChildSelections="false"/>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f4f6-2ffd-8e3a-30b2" includeChildSelections="false"/>
@@ -123,7 +125,7 @@
         <infoLink name="Shotgun" id="a869-7d10-cc31-f41b" hidden="false" type="rule" targetId="d633-ee5f-c6cf-c931"/>
       </infoLinks>
     </selectionEntry>
-    <selectionEntry type="model" import="true" name="Militia Rhyfler" hidden="false" id="e5b2-706e-e148-2514" sortIndex="1">
+    <selectionEntry type="model" import="true" name="Militia Rhyfler" hidden="false" id="e5b2-706e-e148-2514" sortIndex="2">
       <costs>
         <cost name="Points" typeId="0bc1-1233-3e53-72ca" value="18"/>
       </costs>
@@ -144,8 +146,12 @@
           </characteristics>
         </profile>
       </profiles>
+      <infoLinks>
+        <infoLink name="Support" id="7535-ca47-deec-4604" hidden="false" type="rule" targetId="c0d3-909a-ca80-1be2"/>
+        <infoLink name="Green" id="556f-e1e6-d076-d81c" hidden="false" type="rule" targetId="62fc-01f2-3c05-82d0"/>
+      </infoLinks>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Militia Grenadiers" hidden="false" id="7e19-2954-f52b-15d4" sortIndex="1">
+    <selectionEntry type="unit" import="true" name="Militia Grenadiers" hidden="false" id="7e19-2954-f52b-15d4" sortIndex="2">
       <costs>
         <cost name="Points" typeId="0bc1-1233-3e53-72ca" value="22"/>
       </costs>
@@ -167,6 +173,9 @@
           </characteristics>
         </profile>
       </profiles>
+      <infoLinks>
+        <infoLink name="Green" id="6dcf-4506-e93a-f167" hidden="false" type="rule" targetId="62fc-01f2-3c05-82d0"/>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Milwer" hidden="false" id="1085-258a-f24f-90a5" sortIndex="2">
       <costs>
@@ -178,6 +187,20 @@
       <entryLinks>
         <entryLink import="true" name="AuS rev44 LMG" hidden="false" id="e50f-ee74-1faa-fd56" type="selectionEntry" targetId="0092-5833-9a5a-8ce0"/>
       </entryLinks>
+      <profiles>
+        <profile name="Milwer" typeId="7040-9c4e-1119-a3c5" typeName="Unit" hidden="false" id="b598-3585-0955-8369">
+          <characteristics>
+            <characteristic name="Sk" typeId="0014-9871-f278-b5f3">12</characteristic>
+            <characteristic name="Mt" typeId="d8ef-e518-8f49-8a7b">2d6-1</characteristic>
+            <characteristic name="MA" typeId="4cd7-b825-6660-1758">5</characteristic>
+            <characteristic name="Toughness" typeId="197d-1c5e-af24-ee6e">4</characteristic>
+            <characteristic name="Special Abilities" typeId="94ec-89a2-8f77-66c3">Leader (2/3)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink targetId="de6b-6ec2-9294-541d" id="2ddf-b0cd-a9c4-876f" primary="true" name="Unit"/>
+      </categoryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Auld Buck Yawdryl (Bostad)" hidden="false" id="bb4e-186e-c2f4-1d67" sortIndex="-1">
       <constraints>
@@ -216,14 +239,14 @@
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a09b-5fd3-68f2-9afd" includeChildSelections="false"/>
       </constraints>
       <entryLinks>
-        <entryLink import="true" name="Bostad rev53 Rhyfle" hidden="false" id="c70b-1178-82bc-7e06" type="selectionEntry" targetId="3538-2208-f905-40bf">
+        <entryLink import="true" name="Aup rev27 SMG" hidden="false" id="c70b-1178-82bc-7e06" type="selectionEntry" targetId="54e2-a3ea-9763-2fff">
           <infoLinks>
             <infoLink name="Leader (X/Y)" id="d59b-a066-0579-456c" hidden="false" type="rule" targetId="ba90-37ff-4384-2bc5"/>
           </infoLinks>
         </entryLink>
       </entryLinks>
       <profiles>
-        <profile name="Auld Buck Yawdryl (Bostad)" typeId="7040-9c4e-1119-a3c5" typeName="Unit" hidden="false" id="2738-50d7-7a34-e61b">
+        <profile name="Auld Buck Yawdryl (SMG)" typeId="7040-9c4e-1119-a3c5" typeName="Unit" hidden="false" id="2738-50d7-7a34-e61b">
           <characteristics>
             <characteristic name="Sk" typeId="0014-9871-f278-b5f3">12</characteristic>
             <characteristic name="Mt" typeId="d8ef-e518-8f49-8a7b">2d6-1</characteristic>
@@ -241,9 +264,9 @@
         </modifier>
       </modifiers>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Auld Buck Yawdryl" hidden="false" id="9b3f-c8b6-7977-c7d7" sortIndex="2">
+    <selectionEntry type="unit" import="true" name="Auld Buck Yawdryl" hidden="false" id="9b3f-c8b6-7977-c7d7" sortIndex="3">
       <entryLinks>
-        <entryLink import="true" name="Auld Buck Yawdryl (Aup rev27 SMG)" hidden="false" id="1716-1b33-a935-1779" type="selectionEntry" targetId="453d-47a1-e030-02f3"/>
+        <entryLink import="true" name="Auld Buck Yawdryl (Bostad)" hidden="false" id="1716-1b33-a935-1779" type="selectionEntry" targetId="bb4e-186e-c2f4-1d67"/>
         <entryLink import="true" name="Auld Buck Yawdryl (Aup rev27 SMG)" hidden="false" id="cad2-f0dc-c46f-43df" type="selectionEntry" targetId="453d-47a1-e030-02f3"/>
       </entryLinks>
       <constraints>
@@ -253,7 +276,7 @@
         <cost name="Points" typeId="0bc1-1233-3e53-72ca" value="33"/>
       </costs>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Auld Buck Veteran" hidden="false" id="749e-783a-22b3-0f8b" sortIndex="2">
+    <selectionEntry type="unit" import="true" name="Auld Buck Veteran" hidden="false" id="749e-783a-22b3-0f8b" sortIndex="3">
       <costs>
         <cost name="Points" typeId="0bc1-1233-3e53-72ca" value="45"/>
       </costs>
@@ -279,7 +302,7 @@
         <infoLink name="Leader (X/Y)" id="262d-3de3-21f0-b0d3" hidden="false" type="rule" targetId="ba90-37ff-4384-2bc5"/>
       </infoLinks>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Militia Pykpluckers" hidden="false" id="8cfa-6adb-c45b-097b" sortIndex="3">
+    <selectionEntry type="unit" import="true" name="Militia Pykpluckers" hidden="false" id="8cfa-6adb-c45b-097b" sortIndex="4">
       <costs>
         <cost name="Points" typeId="0bc1-1233-3e53-72ca" value="25"/>
       </costs>
@@ -304,7 +327,7 @@
         <infoLink name="Communications" id="e53a-0ea1-42d0-2302" hidden="false" type="rule" targetId="3922-1607-2a89-5acb"/>
       </infoLinks>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Home Dyna" hidden="false" id="204d-3bf2-bdeb-dde3" sortIndex="3">
+    <selectionEntry type="unit" import="true" name="Home Dyna" hidden="false" id="204d-3bf2-bdeb-dde3" sortIndex="4">
       <costs>
         <cost name="Points" typeId="0bc1-1233-3e53-72ca" value="30"/>
       </costs>
@@ -330,7 +353,7 @@
         <infoLink name="Medic" id="32d8-7f05-5d6e-884a" hidden="false" type="rule" targetId="0de6-c532-1b9e-df58"/>
       </infoLinks>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Irascible Lone Buck" hidden="false" id="c3a2-1b85-564e-1230" sortIndex="3">
+    <selectionEntry type="unit" import="true" name="Irascible Lone Buck" hidden="false" id="c3a2-1b85-564e-1230" sortIndex="4">
       <constraints>
         <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="5c74-a970-31a1-cfdf" includeChildSelections="true"/>
       </constraints>
@@ -355,7 +378,7 @@
         <categoryLink targetId="de6b-6ec2-9294-541d" id="eaaa-116f-048f-ad86" primary="true" name="Unit"/>
       </categoryLinks>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Crusader Advisor" hidden="false" id="73b3-b7d1-be77-f4e3" sortIndex="4">
+    <selectionEntry type="unit" import="true" name="Crusader &quot;Advisor&quot;" hidden="false" id="73b3-b7d1-be77-f4e3" sortIndex="4">
       <costs>
         <cost name="Points" typeId="0bc1-1233-3e53-72ca" value="36"/>
       </costs>
@@ -369,7 +392,7 @@
         <entryLink import="true" name="Grifkis Shotgun" hidden="false" id="24cc-1a57-2a22-ce63" type="selectionEntry" targetId="5536-85b4-b70b-8d64"/>
       </entryLinks>
       <profiles>
-        <profile name="Crusader Advisor" typeId="7040-9c4e-1119-a3c5" typeName="Unit" hidden="false" id="33d7-d6d7-8fed-73f4">
+        <profile name="Crusader &quot;Advisor&quot;" typeId="7040-9c4e-1119-a3c5" typeName="Unit" hidden="false" id="33d7-d6d7-8fed-73f4">
           <characteristics>
             <characteristic name="Sk" typeId="0014-9871-f278-b5f3">12</characteristic>
             <characteristic name="Mt" typeId="d8ef-e518-8f49-8a7b">2d6-1</characteristic>
@@ -386,5 +409,149 @@ The points total of the specialists and advisor may not exceed the points total 
         </rule>
       </rules>
     </selectionEntry>
+    <selectionEntry type="unit" import="true" name="RR Portable rev68" hidden="false" id="fb74-6530-09e9-9ced" sortIndex="5">
+      <constraints>
+        <constraint type="max" value="2" field="selections" scope="roster" shared="true" id="1b1c-2d88-2390-c592" includeChildSelections="true"/>
+      </constraints>
+      <profiles>
+        <profile name="RR Portable rev68" typeId="3971-dc7c-fded-7a05" typeName="Heavy Weapon Crew" hidden="false" id="ada7-94a0-0208-c251">
+          <characteristics>
+            <characteristic name="Crew" typeId="d99f-34b4-b34d-2276">2</characteristic>
+            <characteristic name="Skill" typeId="520d-faaf-a88e-7985">10</characteristic>
+            <characteristic name="T" typeId="e994-3e9d-3b18-43b3">4</characteristic>
+            <characteristic name="D" typeId="97fc-5f15-cc48-6f00">2</characteristic>
+            <characteristic name="Break" typeId="a408-edfc-85be-a5ac">1</characteristic>
+            <characteristic name="MA" typeId="7cf6-12da-3cdd-6b9d">5</characteristic>
+            <characteristic name="Type" typeId="00d8-3f2d-ae43-9218">Blast</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Recoilless Rhyfle" typeId="d580-6e35-f083-cd53" typeName="Heavy Weapon" hidden="false" id="f72c-8ba4-d557-4084">
+          <characteristics>
+            <characteristic name="Range" typeId="1775-3227-d2ed-93a5">12</characteristic>
+            <characteristic name="Arc" typeId="f1e8-b48b-c0f2-c05f">45</characteristic>
+            <characteristic name="Abilities" typeId="bd42-ef04-afe1-f4d4">Green, Gun Shield (-1), Anti-Tractor, Slow Reload, Blast (S, 2d6-1)</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="1-2" typeId="6e06-153b-5181-d39d" typeName="Damage Chart" hidden="false" id="f3d6-6f62-2858-c608">
+          <characteristics>
+            <characteristic name="Result" typeId="897e-4ecc-846b-1598">Weapon Crew is Rattled.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="7+" typeId="6e06-153b-5181-d39d" typeName="Damage Chart" hidden="false" id="80bd-cea2-5ca3-e413">
+          <characteristics>
+            <characteristic name="Result" typeId="897e-4ecc-846b-1598">Weapon Crew are Disabled. Remove from Battlefield.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="5-6" typeId="6e06-153b-5181-d39d" typeName="Damage Chart" hidden="false" id="fb21-2dba-8c21-b57b">
+          <characteristics>
+            <characteristic name="Result" typeId="897e-4ecc-846b-1598">Weapon Crew suffers 1 point of Damage.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="3-4" typeId="6e06-153b-5181-d39d" typeName="Damage Chart" hidden="false" id="9c13-bca3-4bc0-ec76">
+          <characteristics>
+            <characteristic name="Result" typeId="897e-4ecc-846b-1598">Weapon Crew is Gobsmacked. Remove Rattled status if present.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="2" typeId="73fd-d87f-c3ca-d678" typeName="Damage Level" hidden="false" id="36d2-3bf5-b89c-8c8b">
+          <characteristics>
+            <characteristic name="" typeId="0a18-6bf0-38b6-f7a0">Disabled: Remove from Battlefield.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="0" typeId="73fd-d87f-c3ca-d678" typeName="Damage Level" hidden="false" id="4d35-abdd-72b2-86e4">
+          <characteristics>
+            <characteristic name="" typeId="0a18-6bf0-38b6-f7a0">Fully Operational</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="1" typeId="73fd-d87f-c3ca-d678" typeName="Damage Level" hidden="false" id="7a9d-892d-87ce-6b72">
+          <characteristics>
+            <characteristic name="" typeId="0a18-6bf0-38b6-f7a0">Shaken: Attacks are at -4 unless 2 activatiosn are spent by the crew to perform the Combat Task</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="Points" typeId="0bc1-1233-3e53-72ca" value="45"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="34ad-bf4f-0473-dac6" id="7585-f1d6-06c0-281b" primary="true" name="Heavy Weapon Crew"/>
+      </categoryLinks>
+      <infoLinks>
+        <infoLink name="Anti-Tractor (X)" id="94e8-d7ba-ee59-4ec2" hidden="false" type="rule" targetId="7cb8-57db-5ced-b54a"/>
+        <infoLink name="Green" id="b4a1-155e-edcb-d49b" hidden="false" type="rule" targetId="62fc-01f2-3c05-82d0"/>
+        <infoLink name="Gun Shield" id="09a0-9fc3-7dcd-0b77" hidden="false" type="rule" targetId="debb-db2c-1545-a131"/>
+        <infoLink name="Blast (X,Y)" id="afe6-8435-f0f0-c565" hidden="false" type="rule" targetId="b4b8-45d7-e9bb-1444"/>
+        <infoLink name="Slow Reload" id="3b81-bf33-10bb-0394" hidden="false" type="rule" targetId="d313-5d37-5ae4-7b1f"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Faelvor Armored Wagon" hidden="false" id="4df3-eeef-bdf4-f374" sortIndex="6">
+      <costs>
+        <cost name="Points" typeId="0bc1-1233-3e53-72ca" value="90"/>
+      </costs>
+      <profiles>
+        <profile name="Faelvor Armored Wagon" typeId="75e9-4c28-c81b-5327" typeName="Armored Vehicle" hidden="false" id="aa25-e746-eb9b-b426">
+          <characteristics>
+            <characteristic name="Crew" typeId="7ff3-eaea-87c6-deaa">2</characteristic>
+            <characteristic name="Skill" typeId="645c-7e75-7b5f-36cd">12</characteristic>
+            <characteristic name="MA" typeId="6128-a30c-557d-656a">5/3</characteristic>
+            <characteristic name="Abilities" typeId="7a58-8944-3a3e-1e25">Turretless, Agile</characteristic>
+            <characteristic name="Tread Damage Points" typeId="0e57-b754-a0ab-64ca">2</characteristic>
+            <characteristic name="Hull Damage Points" typeId="a109-8831-0b1f-a416">2</characteristic>
+            <characteristic name="Engine Damage Points" typeId="3d59-9a3d-5eeb-f18d">2</characteristic>
+            <characteristic name="Tread Armor Value" typeId="52ab-ad8e-f3fd-740c">4/5/5</characteristic>
+            <characteristic name="Hull Armor Value" typeId="38e8-4c6d-9751-9ec2">6</characteristic>
+            <characteristic name="Engine Armore Value" typeId="c053-6c95-fc2e-f984">5</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Rear" typeId="bf17-75fe-032b-a8eb" typeName="Tractor Damage Area" hidden="false" id="294f-197c-6569-4547">
+          <characteristics>
+            <characteristic name="Tread" typeId="6193-4d0a-5399-c05d">1-2</characteristic>
+            <characteristic name="Hull" typeId="2882-bfcc-2f15-a801">3-4</characteristic>
+            <characteristic name="Engine" typeId="609f-652d-ea95-f699">5-6</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Front" typeId="bf17-75fe-032b-a8eb" typeName="Tractor Damage Area" hidden="false" id="6975-66ab-6787-f533">
+          <characteristics>
+            <characteristic name="Tread" typeId="6193-4d0a-5399-c05d">1-2</characteristic>
+            <characteristic name="Hull" typeId="2882-bfcc-2f15-a801">3-6</characteristic>
+            <characteristic name="Engine" typeId="609f-652d-ea95-f699"/>
+          </characteristics>
+        </profile>
+        <profile name="Side" typeId="bf17-75fe-032b-a8eb" typeName="Tractor Damage Area" hidden="false" id="2083-9f12-53d7-8a48">
+          <characteristics>
+            <characteristic name="Tread" typeId="6193-4d0a-5399-c05d">1-2</characteristic>
+            <characteristic name="Hull" typeId="2882-bfcc-2f15-a801">3-5</characteristic>
+            <characteristic name="Engine" typeId="609f-652d-ea95-f699">6</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="65mm Rifled rev22a" typeId="18ca-a698-c38f-f8de" typeName="Integral Weapon" hidden="false" id="383f-88d3-67db-d5e3">
+          <characteristics>
+            <characteristic name="Range" typeId="c5be-3871-71dd-dfae">10</characteristic>
+            <characteristic name="Arc" typeId="07d6-44a1-b3f8-b02e">45</characteristic>
+            <characteristic name="Abilities" typeId="8ceb-604c-397c-d679">Blast (S, 2d6-1), Precision Fire</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Precision Fire" id="4209-0641-d8c0-53f9" hidden="false" type="rule" targetId="6aa0-4640-e3bb-1146"/>
+        <infoLink name="Turretless" id="ca0d-ecdf-3f81-8e89" hidden="false" type="rule" targetId="a3fc-1bc1-8cfe-1886"/>
+        <infoLink name="Agile" id="9147-60cd-505e-6418" hidden="false" type="rule" targetId="1c15-f70c-9388-ba08"/>
+        <infoLink name="Blast (X,Y)" id="48cf-ce07-1a47-47d0" hidden="false" type="rule" targetId="b4b8-45d7-e9bb-1444"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink targetId="e009-498c-bf4e-66d2" id="cf07-6181-2cae-c410" primary="true" name="Armored Vehicle"/>
+      </categoryLinks>
+    </selectionEntry>
   </sharedSelectionEntries>
+  <entryLinks>
+    <entryLink import="true" name="Crusader &quot;Advisor&quot;" hidden="false" id="cc9b-5050-7e97-bd07" type="selectionEntry" targetId="73b3-b7d1-be77-f4e3"/>
+    <entryLink import="true" name="Faelvor Armored Wagon" hidden="false" id="dd89-ad62-c80d-81be" type="selectionEntry" targetId="4df3-eeef-bdf4-f374"/>
+    <entryLink import="true" name="Militia Grenadiers" hidden="false" id="e7d8-c867-2885-ff95" type="selectionEntry" targetId="7e19-2954-f52b-15d4"/>
+    <entryLink import="true" name="Auld Buck Veteran" hidden="false" id="547d-8549-4077-30ae" type="selectionEntry" targetId="749e-783a-22b3-0f8b"/>
+    <entryLink import="true" name="Auld Buck Yawdryl" hidden="false" id="6d05-c61e-0905-863d" type="selectionEntry" targetId="9b3f-c8b6-7977-c7d7"/>
+    <entryLink import="true" name="Milwer" hidden="false" id="b2b1-9f05-1d75-4b7f" type="selectionEntry" targetId="1085-258a-f24f-90a5"/>
+    <entryLink import="true" name="Militia Pykpluckers" hidden="false" id="df5d-9733-f599-268a" type="selectionEntry" targetId="8cfa-6adb-c45b-097b"/>
+    <entryLink import="true" name="Home Dyna" hidden="false" id="50d8-f58d-9cdc-6ac9" type="selectionEntry" targetId="204d-3bf2-bdeb-dde3"/>
+    <entryLink import="true" name="Irascible Lone Buck" hidden="false" id="5738-c727-11e9-53af" type="selectionEntry" targetId="c3a2-1b85-564e-1230"/>
+    <entryLink import="true" name="RR Portable rev68" hidden="false" id="cbd1-2a1c-657c-fbd2" type="selectionEntry" targetId="fb74-6530-09e9-9ced"/>
+    <entryLink import="true" name="Militia Rhyfler" hidden="false" id="ad80-6b3b-394f-c175" type="selectionEntry" targetId="e5b2-706e-e148-2514"/>
+  </entryLinks>
 </catalogue>
