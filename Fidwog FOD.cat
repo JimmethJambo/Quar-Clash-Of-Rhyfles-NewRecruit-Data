@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="09b3-3016-43ff-1e9e" name="Fidwog FOD" gameSystemId="sys-dbd1-1d4a-43f9-1e9c" gameSystemRevision="2" revision="4" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="09b3-3016-43ff-1e9e" name="Fidwog FOD" gameSystemId="sys-dbd1-1d4a-43f9-1e9c" gameSystemRevision="2" revision="5" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedSelectionEntries>
     <selectionEntry type="upgrade" import="true" name="Sprygyt Mk3 &quot;Sketych&quot;" hidden="false" id="9f22-dc54-42cb-6110" sortIndex="1" defaultAmount="1">
       <profiles>
@@ -82,7 +82,7 @@
         <cost name="Points" typeId="0bc1-1233-3e53-72ca" value="25"/>
       </costs>
       <entryLinks>
-        <entryLink import="true" name="Sprygyt Mk3 &quot;Sketcych&quot;" hidden="false" id="ec46-954f-eb52-9e39" type="selectionEntry" targetId="9f22-dc54-42cb-6110"/>
+        <entryLink import="true" name="Sprygyt Mk3 &quot;Sketych&quot;" hidden="false" id="ec46-954f-eb52-9e39" type="selectionEntry" targetId="9f22-dc54-42cb-6110"/>
       </entryLinks>
       <profiles>
         <profile name="Gaefyn" typeId="7040-9c4e-1119-a3c5" typeName="Unit" hidden="false" id="93a9-2d63-c22c-55f3">
@@ -160,7 +160,7 @@
         <categoryLink targetId="de6b-6ec2-9294-541d" id="a252-562f-f91e-92d6" primary="true" name="Unit"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink import="true" name="Sprygyt Mk3 &quot;Sketcych&quot;" hidden="false" id="807e-6a3a-9ac4-dfe3" type="selectionEntry" targetId="9f22-dc54-42cb-6110"/>
+        <entryLink import="true" name="Sprygyt Mk3 &quot;Sketych&quot;" hidden="false" id="807e-6a3a-9ac4-dfe3" type="selectionEntry" targetId="9f22-dc54-42cb-6110"/>
       </entryLinks>
       <profiles>
         <profile name="Crown Milwer" typeId="7040-9c4e-1119-a3c5" typeName="Unit" hidden="false" id="1e7b-1f77-1aef-7ce0">
@@ -309,7 +309,7 @@
         <constraint type="max" value="2" field="selections" scope="roster" shared="true" id="91b8-3a71-6b14-e91a" includeChildSelections="true"/>
       </constraints>
       <entryLinks>
-        <entryLink import="true" name="Grafaenk Mk4 Lance" hidden="false" id="e0a0-831d-a8f3-e218" type="selectionEntry" targetId="e2b4-ca2f-e7ca-5dbd"/>
+        <entryLink import="true" name="GMK4 Lance" hidden="false" id="e0a0-831d-a8f3-e218" type="selectionEntry" targetId="e2b4-ca2f-e7ca-5dbd"/>
       </entryLinks>
       <profiles>
         <profile name="Lancer" typeId="7040-9c4e-1119-a3c5" typeName="Unit" hidden="false" id="3798-3dd5-667c-baa8">
@@ -334,7 +334,7 @@
         <constraint type="max" value="2" field="selections" scope="roster" shared="true" id="09de-121b-b791-0cf5" includeChildSelections="true"/>
       </constraints>
       <infoLinks>
-        <infoLink name="Leap" id="626a-0c69-1e04-8581" hidden="false" type="rule" targetId="eb1b-31f9-ac3f-f568"/>
+        <infoLink name="Leap (X)" id="626a-0c69-1e04-8581" hidden="false" type="rule" targetId="eb1b-31f9-ac3f-f568"/>
         <infoLink name="Pack (X)" id="f209-8f46-89a7-f2d9" hidden="false" type="rule" targetId="97d2-4b72-b416-fc58"/>
       </infoLinks>
       <profiles>
@@ -452,7 +452,7 @@
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink name="Automatic" id="5918-9293-c622-4fe6" hidden="false" type="rule" targetId="321d-91fa-c981-2ce1"/>
+        <infoLink name="Automatic (X)" id="5918-9293-c622-4fe6" hidden="false" type="rule" targetId="321d-91fa-c981-2ce1"/>
       </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="M8-c MMG" hidden="false" id="235a-3b61-d6a7-6806" sortIndex="1" defaultAmount="1">
@@ -466,7 +466,7 @@
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink name="Automatic" id="244a-36e8-dc14-7bdb" hidden="false" type="rule" targetId="321d-91fa-c981-2ce1"/>
+        <infoLink name="Automatic (X)" id="244a-36e8-dc14-7bdb" hidden="false" type="rule" targetId="321d-91fa-c981-2ce1"/>
         <infoLink name="Braced" id="d64e-236b-4bc5-7fdb" hidden="false" type="rule" targetId="0b83-b784-dae8-503c"/>
       </infoLinks>
     </selectionEntry>
@@ -658,7 +658,7 @@
         <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="a142-099d-8049-09d1" includeChildSelections="true"/>
       </constraints>
       <infoLinks>
-        <infoLink name="Musician" id="3ca0-57e3-f4ba-45d3" hidden="false" type="rule" targetId="822d-00b5-a47a-4529"/>
+        <infoLink name="Musician (X)" id="3ca0-57e3-f4ba-45d3" hidden="false" type="rule" targetId="822d-00b5-a47a-4529"/>
       </infoLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Shaedyn" hidden="false" id="6e42-6f8f-e012-7ca0" sortIndex="6">
@@ -792,6 +792,9 @@
         <entryLink import="true" name="Sprygyt Mk3 &quot;Sketych&quot;" hidden="false" id="12cf-1522-ac65-f887" type="selectionEntry" targetId="9f22-dc54-42cb-6110"/>
         <entryLink import="true" name="M8-c MMG" hidden="false" id="f30f-760a-bb9a-b6c7" type="selectionEntry" targetId="235a-3b61-d6a7-6806"/>
       </entryLinks>
+      <categoryLinks>
+        <categoryLink targetId="f3df-2a35-71ff-3ff7" id="648c-355b-5882-1c47" primary="true" name="Mounted Unit"/>
+      </categoryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Mounted Caerten" hidden="false" id="8dca-3974-6b0c-2cc0">
       <costs>
@@ -837,6 +840,9 @@
         <infoLink name="Resilient" id="9d59-cd7b-d837-eacb" hidden="false" type="rule" targetId="e177-01dd-6ddd-72c1"/>
         <infoLink name="Cavalry" id="dc25-9035-5710-1561" hidden="false" type="rule" targetId="c1de-9d84-74ac-817a"/>
       </infoLinks>
+      <categoryLinks>
+        <categoryLink targetId="f3df-2a35-71ff-3ff7" id="91b2-03e0-b859-73e4" primary="true" name="Mounted Unit"/>
+      </categoryLinks>
     </selectionEntry>
   </sharedSelectionEntries>
   <entryLinks>
