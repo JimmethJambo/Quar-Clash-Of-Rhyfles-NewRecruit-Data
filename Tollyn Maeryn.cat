@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="74e6-0dfa-c12e-1334" name="Tollyn Maeryn" gameSystemId="sys-dbd1-1d4a-43f9-1e9c" gameSystemRevision="6" revision="2" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="74e6-0dfa-c12e-1334" name="Tollyn Maeryn" gameSystemId="sys-dbd1-1d4a-43f9-1e9c" gameSystemRevision="6" revision="3" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedSelectionEntries>
     <selectionEntry type="upgrade" import="true" name="Bostad rev53 Rhyfle" hidden="false" id="3538-2208-f905-40bf" sortIndex="1">
       <profiles>
@@ -84,7 +84,7 @@
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink name="Automatic" id="c59c-3f40-c909-52b3" hidden="false" type="rule" targetId="321d-91fa-c981-2ce1"/>
+        <infoLink name="Automatic (X)" id="c59c-3f40-c909-52b3" hidden="false" type="rule" targetId="321d-91fa-c981-2ce1"/>
         <infoLink name="Braced" id="f536-af6e-95ed-a617" hidden="false" type="rule" targetId="0b83-b784-dae8-503c"/>
       </infoLinks>
     </selectionEntry>
@@ -176,6 +176,9 @@
       <infoLinks>
         <infoLink name="Green" id="6dcf-4506-e93a-f167" hidden="false" type="rule" targetId="62fc-01f2-3c05-82d0"/>
       </infoLinks>
+      <categoryLinks>
+        <categoryLink targetId="de6b-6ec2-9294-541d" id="34c6-0a80-bdc1-eb7a" primary="true" name="Unit"/>
+      </categoryLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Milwer" hidden="false" id="1085-258a-f24f-90a5" sortIndex="2">
       <costs>
@@ -275,6 +278,9 @@
       <costs>
         <cost name="Points" typeId="0bc1-1233-3e53-72ca" value="33"/>
       </costs>
+      <categoryLinks>
+        <categoryLink targetId="de6b-6ec2-9294-541d" id="4c8d-34a2-9d44-f515" primary="true" name="Unit"/>
+      </categoryLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Auld Buck Veteran" hidden="false" id="749e-783a-22b3-0f8b" sortIndex="3">
       <costs>
@@ -301,6 +307,9 @@
         <infoLink name="&quot;Like This&quot;" id="2e60-490d-03e4-317b" hidden="false" type="rule" targetId="f2c2-98a7-623b-ac44"/>
         <infoLink name="Leader (X/Y)" id="262d-3de3-21f0-b0d3" hidden="false" type="rule" targetId="ba90-37ff-4384-2bc5"/>
       </infoLinks>
+      <categoryLinks>
+        <categoryLink targetId="de6b-6ec2-9294-541d" id="0bb3-7cec-153a-2ba5" primary="true" name="Unit"/>
+      </categoryLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Militia Pykpluckers" hidden="false" id="8cfa-6adb-c45b-097b" sortIndex="4">
       <costs>
@@ -326,6 +335,9 @@
       <infoLinks>
         <infoLink name="Communications" id="e53a-0ea1-42d0-2302" hidden="false" type="rule" targetId="3922-1607-2a89-5acb"/>
       </infoLinks>
+      <categoryLinks>
+        <categoryLink targetId="de6b-6ec2-9294-541d" id="b9c0-799b-573a-f762" primary="true" name="Unit"/>
+      </categoryLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Home Dyna" hidden="false" id="204d-3bf2-bdeb-dde3" sortIndex="4">
       <costs>
@@ -407,6 +419,9 @@
           <description>Selection of a Crusader Advisor allows the commander to select up to 2 Crusader Specialist rhyflers to add to the Patrol.
 The points total of the specialists and advisor may not exceed the points total of the Patrol&apos;s basic Militia Rhyfler.</description>
         </rule>
+        <rule name="Crusader &quot;Advisor&quot;" id="8224-a3e4-fa22-2d91" hidden="false">
+          <description>Total Points of Crusader Specialists and Crusader Advisor must be less than the total points of Militia Rhyflers</description>
+        </rule>
       </rules>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="RR Portable rev68" hidden="false" id="fb74-6530-09e9-9ced" sortIndex="5">
@@ -454,17 +469,17 @@ The points total of the specialists and advisor may not exceed the points total 
         </profile>
         <profile name="2" typeId="73fd-d87f-c3ca-d678" typeName="Damage Level" hidden="false" id="36d2-3bf5-b89c-8c8b">
           <characteristics>
-            <characteristic name="" typeId="0a18-6bf0-38b6-f7a0">Disabled: Remove from Battlefield.</characteristic>
+            <characteristic typeId="0a18-6bf0-38b6-f7a0">Disabled: Remove from Battlefield.</characteristic>
           </characteristics>
         </profile>
         <profile name="0" typeId="73fd-d87f-c3ca-d678" typeName="Damage Level" hidden="false" id="4d35-abdd-72b2-86e4">
           <characteristics>
-            <characteristic name="" typeId="0a18-6bf0-38b6-f7a0">Fully Operational</characteristic>
+            <characteristic typeId="0a18-6bf0-38b6-f7a0">Fully Operational</characteristic>
           </characteristics>
         </profile>
         <profile name="1" typeId="73fd-d87f-c3ca-d678" typeName="Damage Level" hidden="false" id="7a9d-892d-87ce-6b72">
           <characteristics>
-            <characteristic name="" typeId="0a18-6bf0-38b6-f7a0">Shaken: Attacks are at -4 unless 2 activatiosn are spent by the crew to perform the Combat Task</characteristic>
+            <characteristic typeId="0a18-6bf0-38b6-f7a0">Shaken: Attacks are at -4 unless 2 activatiosn are spent by the crew to perform the Combat Task</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -475,9 +490,9 @@ The points total of the specialists and advisor may not exceed the points total 
         <categoryLink targetId="34ad-bf4f-0473-dac6" id="7585-f1d6-06c0-281b" primary="true" name="Heavy Weapon Crew"/>
       </categoryLinks>
       <infoLinks>
-        <infoLink name="Anti-Tractor (X)" id="94e8-d7ba-ee59-4ec2" hidden="false" type="rule" targetId="7cb8-57db-5ced-b54a"/>
+        <infoLink name="Anti-Tractor" id="94e8-d7ba-ee59-4ec2" hidden="false" type="rule" targetId="7cb8-57db-5ced-b54a"/>
         <infoLink name="Green" id="b4a1-155e-edcb-d49b" hidden="false" type="rule" targetId="62fc-01f2-3c05-82d0"/>
-        <infoLink name="Gun Shield" id="09a0-9fc3-7dcd-0b77" hidden="false" type="rule" targetId="debb-db2c-1545-a131"/>
+        <infoLink name="Gun Shield (X)" id="09a0-9fc3-7dcd-0b77" hidden="false" type="rule" targetId="debb-db2c-1545-a131"/>
         <infoLink name="Blast (X,Y)" id="afe6-8435-f0f0-c565" hidden="false" type="rule" targetId="b4b8-45d7-e9bb-1444"/>
         <infoLink name="Slow Reload" id="3b81-bf33-10bb-0394" hidden="false" type="rule" targetId="d313-5d37-5ae4-7b1f"/>
       </infoLinks>
@@ -540,9 +555,113 @@ The points total of the specialists and advisor may not exceed the points total 
         <categoryLink targetId="e009-498c-bf4e-66d2" id="cf07-6181-2cae-c410" primary="true" name="Armored Vehicle"/>
       </categoryLinks>
     </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Crusader Specialist" hidden="false" id="540f-72b3-4c51-f269">
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="roster" childId="73b3-b7d1-be77-f4e3" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint type="max" value="2" field="selections" scope="roster" shared="true" id="0ded-f75e-27a7-0382" includeChildSelections="true" includeChildForces="true"/>
+      </constraints>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Trench Raider" hidden="false" id="08d2-d818-40ad-01d0">
+          <costs>
+            <cost name="Points" typeId="0bc1-1233-3e53-72ca" value="42"/>
+          </costs>
+          <profiles>
+            <profile name="Trench Raider" typeId="7040-9c4e-1119-a3c5" typeName="Unit" hidden="false" id="5d0d-d053-97d7-609e">
+              <characteristics>
+                <characteristic name="Sk" typeId="0014-9871-f278-b5f3">13</characteristic>
+                <characteristic name="Mt" typeId="d8ef-e518-8f49-8a7b">2d6+1</characteristic>
+                <characteristic name="MA" typeId="4cd7-b825-6660-1758">6</characteristic>
+                <characteristic name="Toughness" typeId="197d-1c5e-af24-ee6e">4</characteristic>
+                <characteristic name="Special Abilities" typeId="94ec-89a2-8f77-66c3">Wallop, Infiltrate</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Sio-Cly Derringer" typeId="0b63-6947-fb08-66eb" typeName="Weapon" hidden="false" id="daee-aa50-96b6-1936">
+              <characteristics>
+                <characteristic name="Range" typeId="5b6c-828e-fe65-26a5">4</characteristic>
+                <characteristic name="SN" typeId="b1d6-1660-ac56-c22a">-1</characteristic>
+                <characteristic name="Abilities" typeId="ed37-dbdc-d41b-3af6">Shotgun</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Shotgun" id="8552-51fe-e99d-99b6" hidden="false" type="rule" targetId="d633-ee5f-c6cf-c931"/>
+            <infoLink name="Infiltrate" id="e976-2fe1-f224-9b83" hidden="false" type="rule" targetId="84eb-5fff-bb46-d164"/>
+            <infoLink name="Wallop" id="22e1-e5f3-5abe-5897" hidden="false" type="rule" targetId="a096-7d4a-47fc-3387"/>
+          </infoLinks>
+        </selectionEntry>
+        <selectionEntry type="model" import="true" name="Pathfinder: Bogen w/ Bayonet" hidden="false" id="2e26-881b-c9a2-7cf5">
+          <profiles>
+            <profile name="Bogen w/ Bayonet" typeId="0b63-6947-fb08-66eb" typeName="Weapon" hidden="false" id="9521-1ac1-5fb9-01dc">
+              <characteristics>
+                <characteristic name="Range" typeId="5b6c-828e-fe65-26a5">6</characteristic>
+                <characteristic name="SN" typeId="b1d6-1660-ac56-c22a">-2</characteristic>
+                <characteristic name="Abilities" typeId="ed37-dbdc-d41b-3af6"/>
+              </characteristics>
+            </profile>
+            <profile name="Pathfinder" typeId="7040-9c4e-1119-a3c5" typeName="Unit" hidden="false" id="c225-c6c9-205c-5845">
+              <characteristics>
+                <characteristic name="Sk" typeId="0014-9871-f278-b5f3">12</characteristic>
+                <characteristic name="Mt" typeId="d8ef-e518-8f49-8a7b">2d6</characteristic>
+                <characteristic name="MA" typeId="4cd7-b825-6660-1758">5</characteristic>
+                <characteristic name="Toughness" typeId="197d-1c5e-af24-ee6e">4</characteristic>
+                <characteristic name="Special Abilities" typeId="94ec-89a2-8f77-66c3">Skirmisher</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Skirmisher" id="a014-a7c3-f961-10e8" hidden="false" type="rule" targetId="8095-39f1-1cd6-a7d5"/>
+          </infoLinks>
+          <costs>
+            <cost name="Points" typeId="0bc1-1233-3e53-72ca" value="38"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry type="model" import="true" name="Pathfinder: Gorga MOD(2)" hidden="false" id="6333-de20-4899-8eb9">
+          <profiles>
+            <profile name="Gorga MOD(2)" typeId="0b63-6947-fb08-66eb" typeName="Weapon" hidden="false" id="62b0-e4a2-5112-89b9">
+              <characteristics>
+                <characteristic name="Range" typeId="5b6c-828e-fe65-26a5">4</characteristic>
+                <characteristic name="SN" typeId="b1d6-1660-ac56-c22a">-1</characteristic>
+                <characteristic name="Abilities" typeId="ed37-dbdc-d41b-3af6">Shotgun</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Pathfinder" typeId="7040-9c4e-1119-a3c5" typeName="Unit" hidden="false" id="1cd9-8570-9175-72ed">
+              <characteristics>
+                <characteristic name="Sk" typeId="0014-9871-f278-b5f3">12</characteristic>
+                <characteristic name="Mt" typeId="d8ef-e518-8f49-8a7b">1d6+2</characteristic>
+                <characteristic name="MA" typeId="4cd7-b825-6660-1758">5</characteristic>
+                <characteristic name="Toughness" typeId="197d-1c5e-af24-ee6e">4</characteristic>
+                <characteristic name="Special Abilities" typeId="94ec-89a2-8f77-66c3">Skirmisher</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Shotgun" id="f890-c730-2c8b-18fc" hidden="false" type="rule" targetId="d633-ee5f-c6cf-c931"/>
+            <infoLink name="Skirmisher" id="7a34-7364-46a7-a2cb" hidden="false" type="rule" targetId="8095-39f1-1cd6-a7d5"/>
+          </infoLinks>
+          <costs>
+            <cost name="Points" typeId="0bc1-1233-3e53-72ca" value="38"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <rules>
+        <rule name="Crusader &quot;Advisor&quot;" id="3c7b-5bfd-4bd8-cb59" hidden="false">
+          <description>Total Points of Crusader Specialists and Crusader Advisor must be less than the total points of Militia Rhyflers</description>
+        </rule>
+      </rules>
+    </selectionEntry>
   </sharedSelectionEntries>
   <entryLinks>
-    <entryLink import="true" name="Crusader &quot;Advisor&quot;" hidden="false" id="cc9b-5050-7e97-bd07" type="selectionEntry" targetId="73b3-b7d1-be77-f4e3"/>
+    <entryLink import="true" name="Crusader Specialist" hidden="false" id="cc9b-5050-7e97-bd07" type="selectionEntry" targetId="540f-72b3-4c51-f269">
+      <categoryLinks>
+        <categoryLink targetId="de6b-6ec2-9294-541d" id="f8f8-9f28-27ca-88d3" primary="true" name="Unit"/>
+      </categoryLinks>
+    </entryLink>
     <entryLink import="true" name="Faelvor Armored Wagon" hidden="false" id="dd89-ad62-c80d-81be" type="selectionEntry" targetId="4df3-eeef-bdf4-f374"/>
     <entryLink import="true" name="Militia Grenadiers" hidden="false" id="e7d8-c867-2885-ff95" type="selectionEntry" targetId="7e19-2954-f52b-15d4"/>
     <entryLink import="true" name="Auld Buck Veteran" hidden="false" id="547d-8549-4077-30ae" type="selectionEntry" targetId="749e-783a-22b3-0f8b"/>
@@ -553,5 +672,17 @@ The points total of the specialists and advisor may not exceed the points total 
     <entryLink import="true" name="Irascible Lone Buck" hidden="false" id="5738-c727-11e9-53af" type="selectionEntry" targetId="c3a2-1b85-564e-1230"/>
     <entryLink import="true" name="RR Portable rev68" hidden="false" id="cbd1-2a1c-657c-fbd2" type="selectionEntry" targetId="fb74-6530-09e9-9ced"/>
     <entryLink import="true" name="Militia Rhyfler" hidden="false" id="ad80-6b3b-394f-c175" type="selectionEntry" targetId="e5b2-706e-e148-2514"/>
+    <entryLink import="true" name="Crusader &quot;Advisor&quot;" hidden="false" id="57cc-29b6-9314-1a01" type="selectionEntry" targetId="73b3-b7d1-be77-f4e3"/>
   </entryLinks>
+  <sharedProfiles>
+    <profile name="New Profile" typeId="7040-9c4e-1119-a3c5" typeName="Unit" hidden="false" id="c823-ddab-aac4-a267">
+      <characteristics>
+        <characteristic name="Sk" typeId="0014-9871-f278-b5f3"/>
+        <characteristic name="Mt" typeId="d8ef-e518-8f49-8a7b"/>
+        <characteristic name="MA" typeId="4cd7-b825-6660-1758"/>
+        <characteristic name="Toughness" typeId="197d-1c5e-af24-ee6e"/>
+        <characteristic name="Special Abilities" typeId="94ec-89a2-8f77-66c3"/>
+      </characteristics>
+    </profile>
+  </sharedProfiles>
 </catalogue>
