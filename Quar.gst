@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="sys-dbd1-1d4a-43f9-1e9c" name="Quar - Clash of Rhyfles" battleScribeVersion="2.03" revision="8" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" authorName="Jim Jambo" authorUrl="jimjambo.gay">
+<gameSystem id="sys-dbd1-1d4a-43f9-1e9c" name="Quar - Clash of Rhyfles" battleScribeVersion="2.03" revision="9" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" authorName="Jim Jambo" authorUrl="jimjambo.gay">
   <categoryEntries>
     <categoryEntry name="Unit" id="de6b-6ec2-9294-541d" hidden="false"/>
     <categoryEntry name="Armored Vehicle" id="e009-498c-bf4e-66d2" hidden="false"/>
@@ -9,12 +9,12 @@
     <categoryEntry name="Mounted Unit" id="f3df-2a35-71ff-3ff7" hidden="false"/>
   </categoryEntries>
   <forceEntries>
-    <forceEntry name="Army" hidden="false" id="default-force" sortIndex="">
+    <forceEntry name="Army" hidden="false" id="default-force">
       <categoryLinks>
         <categoryLink name="Unit" hidden="false" id="default-force-category-link" targetId="de6b-6ec2-9294-541d"/>
         <categoryLink name="Mounted Unit" hidden="false" id="f07f-b4e7-bcb7-8c86" targetId="f3df-2a35-71ff-3ff7"/>
         <categoryLink name="Vehicle" hidden="false" id="6b6f-4e2a-bed4-9434" targetId="881d-fa38-6f95-c8f3"/>
-        <categoryLink name="Tractor" hidden="false" id="7b1a-d3d0-5296-c316" targetId="e009-498c-bf4e-66d2"/>
+        <categoryLink name="Armored Vehicle" hidden="false" id="7b1a-d3d0-5296-c316" targetId="e009-498c-bf4e-66d2"/>
         <categoryLink name="Squad Tractor" hidden="false" id="2de1-7d46-6d4e-da48" targetId="5b87-53fe-4166-448b"/>
         <categoryLink name="Heavy Weapon Crew" hidden="false" id="2e89-8e13-2f41-8fd1" targetId="34ad-bf4f-0473-dac6"/>
       </categoryLinks>
@@ -132,7 +132,7 @@
     </profileType>
     <profileType name="Damage Level" id="73fd-d87f-c3ca-d678" hidden="false">
       <characteristicTypes>
-        <characteristicType name="" id="0a18-6bf0-38b6-f7a0"/>
+        <characteristicType id="0a18-6bf0-38b6-f7a0"/>
       </characteristicTypes>
     </profileType>
   </profileTypes>
@@ -283,9 +283,7 @@ A commander’s Patrol may only include one Hero for every 100 points gathered,
       <description>A rhyfler with this ability may start the Skirmish off the battlefield. When Activated the rhyfler may perform the Infiltrate Task. Rhyflers may not React to this Task with either Snapshot or Overwatch.
 
 
-Infiltrate – The active commander designates a point on the battlefield as the Infiltrator’s Entry Point and rolls on the Infiltrate Chart (p31). This entry Point must be at least 4” from an enemy rhyfler. 
-
-</description>
+Infiltrate – The active commander designates a point on the battlefield as the Infiltrator’s Entry Point and rolls on the Infiltrate Chart (p31). This entry Point must be at least 4” from an enemy rhyfler.</description>
     </rule>
     <rule name="Killing Strike" id="a41d-493b-7187-6930" hidden="false">
       <description>This rhyfler is extraordinarily skilled with their melee weapon and may aim for a weak spot on an opponent. A rhyfler with this ability may reduce the Target Number of their Skill Check for an attack by two, allowing them to increase their Might result by two.</description>
@@ -448,7 +446,7 @@ When an Open topped transport is hit with a Blast attack, any passengers under t
       <description>Heavy weapons that are mounted on drawn or self-propelled Carriages do not need to be broken down to move. These weapons may simply perform the Move Weapon Task. If a heavy weapon leaves its initial emplacement it will lose any Dug In! bonuses, which cannot be regained during the battle.</description>
     </rule>
     <rule name="HMG" id="2939-e5aa-4248-ec27" hidden="false">
-      <description>Heavy Machine guns normally attack any rhyflers within a template, subtracting 1 from any cover. However, these weapons accrue Heat when firing. They may perform Standard Fire, Covering Fire, or Targeted Fire. Additionally, when attacking armored vehicles they are treated as having Large Caliber, at the cost of the template dropping to a S template.</description>
+      <description>Heavy Machine guns normally attack any rhyflers within a Large template, subtracting 1 from any cover. However, these weapons accrue Heat when firing. They may perform Standard Fire, Covering Fire, or Targeted Fire. Additionally, when attacking armored vehicles they are treated as having Large Caliber, at the cost of the template dropping to a S template.</description>
     </rule>
     <rule name="Heavy Shotgun" id="9e57-145b-4c73-cf73" hidden="false">
       <description>Heavy shotguns may attack with a standard burst, using a small, medium, and large blast template, or may spend an activation to load solid slugs. Solid slugs have a range of 12&quot; and 2d6 might against armored vehicles.</description>

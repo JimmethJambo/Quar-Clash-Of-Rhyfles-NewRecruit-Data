@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="09b3-3016-43ff-1e9e" name="Fidwog FOD" gameSystemId="sys-dbd1-1d4a-43f9-1e9c" gameSystemRevision="2" revision="5" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="09b3-3016-43ff-1e9e" name="Fidwog FOD" gameSystemId="sys-dbd1-1d4a-43f9-1e9c" gameSystemRevision="2" revision="6" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedSelectionEntries>
     <selectionEntry type="upgrade" import="true" name="Sprygyt Mk3 &quot;Sketych&quot;" hidden="false" id="9f22-dc54-42cb-6110" sortIndex="1" defaultAmount="1">
       <profiles>
@@ -191,7 +191,7 @@
         <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="06fc-df01-6b77-14a7" includeChildSelections="true"/>
       </constraints>
       <entryLinks>
-        <entryLink import="true" name="Pistol" hidden="false" id="cfb5-d214-7c2f-ca93" type="selectionEntry" targetId="a1bb-bf3b-5bc1-c080">
+        <entryLink import="true" name="Pistol" hidden="false" id="cfb5-d214-7c2f-ca93" type="selectionEntry" targetId="a1bb-bf3b-5bc1-c080" defaultAmount="0">
           <profiles>
             <profile name="Standard Bearer" typeId="7040-9c4e-1119-a3c5" typeName="Unit" hidden="false" id="d59c-edab-2beb-7a58">
               <characteristics>
@@ -203,8 +203,11 @@
               </characteristics>
             </profile>
           </profiles>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="be42-7c52-ddd7-14d0" includeChildSelections="false"/>
+          </constraints>
         </entryLink>
-        <entryLink import="true" name="Sprygyt Mk3 &quot;Sketych&quot;" hidden="false" id="55c7-263f-26ed-84e7" type="selectionEntry" targetId="9f22-dc54-42cb-6110">
+        <entryLink import="true" name="Sprygyt Mk3 &quot;Sketych&quot;" hidden="false" id="55c7-263f-26ed-84e7" type="selectionEntry" targetId="9f22-dc54-42cb-6110" defaultAmount="0">
           <costs>
             <cost name="Points" typeId="0bc1-1233-3e53-72ca" value="3"/>
           </costs>
@@ -219,6 +222,9 @@
               </characteristics>
             </profile>
           </profiles>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fc29-0405-df29-2043" includeChildSelections="false"/>
+          </constraints>
         </entryLink>
       </entryLinks>
       <infoLinks>
@@ -251,6 +257,9 @@
               </characteristics>
             </profile>
           </profiles>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7a9f-fe76-779c-0591" includeChildSelections="false"/>
+          </constraints>
         </entryLink>
         <entryLink import="true" name="Pistol" hidden="false" id="4539-b3b9-535f-5a89" type="selectionEntry" targetId="a1bb-bf3b-5bc1-c080" defaultAmount="0">
           <profiles>
@@ -264,6 +273,9 @@
               </characteristics>
             </profile>
           </profiles>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="496b-2bc3-e513-b888" includeChildSelections="false"/>
+          </constraints>
         </entryLink>
       </entryLinks>
       <infoLinks>
@@ -587,6 +599,9 @@
       <entryLinks>
         <entryLink import="true" name="Sprygyt Mk3 &quot;Sketych&quot;" hidden="false" id="5e98-1c57-9f25-0c4b" type="selectionEntry" targetId="9f22-dc54-42cb-6110"/>
       </entryLinks>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="df92-6e1b-80c1-e989" includeChildSelections="true"/>
+      </constraints>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Cook" hidden="false" id="4987-24e8-e9a6-aaac" sortIndex="3">
       <costs>
@@ -608,6 +623,9 @@
               </characteristics>
             </profile>
           </profiles>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="11f4-979e-01aa-1999" includeChildSelections="false"/>
+          </constraints>
         </entryLink>
         <entryLink import="true" name="Sprygyt Mk3 &quot;Sketych&quot;" hidden="false" id="64e9-e6f7-72b4-5822" type="selectionEntry" targetId="9f22-dc54-42cb-6110">
           <costs>
@@ -624,6 +642,9 @@
               </characteristics>
             </profile>
           </profiles>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3caa-0525-6751-7426" includeChildSelections="false"/>
+          </constraints>
         </entryLink>
       </entryLinks>
       <infoLinks>

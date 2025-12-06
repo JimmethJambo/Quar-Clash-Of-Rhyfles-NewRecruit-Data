@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="80cd-b846-90e0-dd6f" name="Crusaders" gameSystemId="sys-dbd1-1d4a-43f9-1e9c" gameSystemRevision="2" revision="7" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="80cd-b846-90e0-dd6f" name="Crusaders" gameSystemId="sys-dbd1-1d4a-43f9-1e9c" gameSystemRevision="2" revision="8" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedProfiles>
     <profile name="Bogen" typeId="0b63-6947-fb08-66eb" typeName="Weapon" hidden="false" id="d73e-9bd0-b2e0-2432">
       <characteristics>
@@ -73,7 +73,7 @@
     <selectionEntry type="upgrade" import="true" name="h-11a" hidden="false" id="6f82-859f-0d32-8ebc" sortIndex="1" defaultAmount="1">
       <infoLinks>
         <infoLink name="h-11a" id="64eb-9d49-b7bb-5c12" hidden="false" type="profile" targetId="ca8d-f53e-7b6b-43fb"/>
-        <infoLink name="Automatic" id="3ca2-c706-7569-8109" hidden="false" type="rule" targetId="321d-91fa-c981-2ce1"/>
+        <infoLink name="Automatic (X)" id="3ca2-c706-7569-8109" hidden="false" type="rule" targetId="321d-91fa-c981-2ce1"/>
         <infoLink name="Loader" id="3962-d543-abe0-629e" hidden="false" type="rule" targetId="877f-75ce-5dc9-010e"/>
       </infoLinks>
     </selectionEntry>
@@ -815,7 +815,7 @@
         <cost name="Points" typeId="0bc1-1233-3e53-72ca" value="130"/>
       </costs>
       <categoryLinks>
-        <categoryLink targetId="e009-498c-bf4e-66d2" id="ea72-8526-d599-b543" primary="true" name="Tractor"/>
+        <categoryLink targetId="e009-498c-bf4e-66d2" id="ea72-8526-d599-b543" primary="true" name="Armored Vehicle"/>
       </categoryLinks>
       <profiles>
         <profile name=" Ailthean" typeId="75e9-4c28-c81b-5327" typeName="Armored Vehicle" hidden="false" id="2f8d-a85f-4a31-1f5c">
@@ -858,8 +858,16 @@
         <infoLink name="Turret" id="24ac-9d8b-9ca3-e547" hidden="false" type="rule" targetId="15ec-d221-5e3c-04d7"/>
       </infoLinks>
       <entryLinks>
-        <entryLink import="true" name="Krynger 78mm Gun" hidden="false" id="ea60-ffbc-7435-d819" type="selectionEntry" targetId="7083-5897-d71b-ea7e"/>
-        <entryLink import="true" name="Krynger Mk.2 78mm Rhyfled Gun" hidden="false" id="8e66-f7ba-a833-4978" type="selectionEntry" targetId="dd25-5bd5-7af7-f143"/>
+        <entryLink import="true" name="Krynger 78mm Gun" hidden="false" id="ea60-ffbc-7435-d819" type="selectionEntry" targetId="7083-5897-d71b-ea7e">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3233-1480-0f77-8892" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Krynger Mk.2 78mm Rhyfled Gun" hidden="false" id="8e66-f7ba-a833-4978" type="selectionEntry" targetId="dd25-5bd5-7af7-f143">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4394-05d9-2dce-4bc7" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
       </entryLinks>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Bicycle Cook" hidden="false" id="53b4-bd2f-6be6-faad" sortIndex="3">
@@ -1028,8 +1036,8 @@
             <cost name="Points" typeId="0bc1-1233-3e53-72ca" value="12"/>
           </costs>
           <infoLinks>
-            <infoLink name="H-11a Vehicle Mount" id="4f35-48b1-3bdd-5898" hidden="false" type="profile" targetId="ca8d-f53e-7b6b-43fb"/>
-            <infoLink name="Automatic" id="ee5c-c864-acef-9f15" hidden="false" type="rule" targetId="321d-91fa-c981-2ce1"/>
+            <infoLink name="h-11a" id="4f35-48b1-3bdd-5898" hidden="false" type="profile" targetId="ca8d-f53e-7b6b-43fb"/>
+            <infoLink name="Automatic (X)" id="ee5c-c864-acef-9f15" hidden="false" type="rule" targetId="321d-91fa-c981-2ce1"/>
           </infoLinks>
         </selectionEntry>
       </selectionEntries>
@@ -1083,7 +1091,7 @@
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink name="Anti-Tractor (X)" id="e945-157a-a2e3-ff20" hidden="false" type="rule" targetId="7cb8-57db-5ced-b54a"/>
+        <infoLink name="Anti-Tractor" id="e945-157a-a2e3-ff20" hidden="false" type="rule" targetId="7cb8-57db-5ced-b54a"/>
         <infoLink name="Scouting Vehicle" id="0e45-60eb-e2af-e16c" hidden="false" type="rule" targetId="cfd6-5318-f453-0aee"/>
         <infoLink name="Blast (X,Y)" id="0318-1224-743b-7ce9" hidden="false" type="rule" targetId="b4b8-45d7-e9bb-1444"/>
       </infoLinks>
@@ -1144,7 +1152,7 @@
         <infoLink name="Blast (X,Y)" id="c04f-6f85-f655-63bd" hidden="false" type="rule" targetId="b4b8-45d7-e9bb-1444"/>
       </infoLinks>
       <categoryLinks>
-        <categoryLink targetId="e009-498c-bf4e-66d2" id="9426-ae09-ad7a-d793" primary="true" name="Armored Vehicle"/>
+        <categoryLink targetId="5b87-53fe-4166-448b" id="9c62-c7d8-ee20-bfd2" primary="true" name="Squad Tractor"/>
       </categoryLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="AUM E4 Heavy Machinegun" hidden="false" id="1fe7-c376-d743-b532">
@@ -1195,22 +1203,22 @@
         </profile>
         <profile name="0" typeId="73fd-d87f-c3ca-d678" typeName="Damage Level" hidden="false" id="82bf-0c1f-553c-df3d">
           <characteristics>
-            <characteristic name="" typeId="0a18-6bf0-38b6-f7a0">Fully Operational.</characteristic>
+            <characteristic typeId="0a18-6bf0-38b6-f7a0">Fully Operational.</characteristic>
           </characteristics>
         </profile>
         <profile name="1" typeId="73fd-d87f-c3ca-d678" typeName="Damage Level" hidden="false" id="8020-5a9a-993d-2ec7">
           <characteristics>
-            <characteristic name="" typeId="0a18-6bf0-38b6-f7a0">Hampered: Only Assistant or Observer can Activate, not both, except to perform Remove/Replace Barrel.</characteristic>
+            <characteristic typeId="0a18-6bf0-38b6-f7a0">Hampered: Only Assistant or Observer can Activate, not both, except to perform Remove/Replace Barrel.</characteristic>
           </characteristics>
         </profile>
         <profile name="2" typeId="73fd-d87f-c3ca-d678" typeName="Damage Level" hidden="false" id="3219-8b3d-2730-9f9d">
           <characteristics>
-            <characteristic name="" typeId="0a18-6bf0-38b6-f7a0">Shaken: The HMG may no longer perform the Covering Fire Task</characteristic>
+            <characteristic typeId="0a18-6bf0-38b6-f7a0">Shaken: The HMG may no longer perform the Covering Fire Task</characteristic>
           </characteristics>
         </profile>
         <profile name="3" typeId="73fd-d87f-c3ca-d678" typeName="Damage Level" hidden="false" id="e9b0-7124-e524-5faa">
           <characteristics>
-            <characteristic name="" typeId="0a18-6bf0-38b6-f7a0">Disabled: Remove from Battlefield.</characteristic>
+            <characteristic typeId="0a18-6bf0-38b6-f7a0">Disabled: Remove from Battlefield.</characteristic>
           </characteristics>
         </profile>
       </profiles>

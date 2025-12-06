@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="8579-b42c-53b1-1cba" name="Coftyran" gameSystemId="sys-dbd1-1d4a-43f9-1e9c" gameSystemRevision="1" revision="7" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="8579-b42c-53b1-1cba" name="Coftyran" gameSystemId="sys-dbd1-1d4a-43f9-1e9c" gameSystemRevision="1" revision="8" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedSelectionEntries>
     <selectionEntry type="model" import="true" name="is-Caerten (Pistol, Sword)" hidden="false" id="528f-29fc-4aca-9939" defaultAmount="0" sortIndex="-1">
       <constraints>
@@ -50,7 +50,7 @@
             <characteristic name="Mt" typeId="d8ef-e518-8f49-8a7b">2d6-1</characteristic>
             <characteristic name="MA" typeId="4cd7-b825-6660-1758">5</characteristic>
             <characteristic name="Toughness" typeId="197d-1c5e-af24-ee6e">4</characteristic>
-            <characteristic name="Special Abilities" typeId="94ec-89a2-8f77-66c3">Supporaty</characteristic>
+            <characteristic name="Special Abilities" typeId="94ec-89a2-8f77-66c3">Support</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -60,6 +60,9 @@
       <entryLinks>
         <entryLink import="true" name="Harlech" hidden="false" id="1d6e-21f2-1e64-c7b6" type="selectionEntry" targetId="d263-845d-e7c7-0ba0"/>
       </entryLinks>
+      <infoLinks>
+        <infoLink name="Support" id="902c-509a-cc4c-57a5" hidden="false" type="rule" targetId="c0d3-909a-ca80-1be2"/>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Rhyfler (Cryfen)" hidden="false" id="f446-3d42-59a3-d09c" defaultAmount="1" sortIndex="2">
       <categoryLinks>
@@ -716,8 +719,16 @@
         <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="6e07-ba79-a5de-22e1" includeChildSelections="true"/>
       </constraints>
       <entryLinks>
-        <entryLink import="true" name="Standard Bearer (Doru)" hidden="false" id="0d14-ea83-f125-f964" type="selectionEntry" targetId="65c9-c497-00a1-8a9b"/>
-        <entryLink import="true" name="Standard Bearer (Harlech)" hidden="false" id="c2cd-f153-475a-1898" type="selectionEntry" targetId="35cb-cdb3-8c22-5c68"/>
+        <entryLink import="true" name="Standard Bearer (Doru)" hidden="false" id="0d14-ea83-f125-f964" type="selectionEntry" targetId="65c9-c497-00a1-8a9b">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c419-5a7b-12dd-3c3b" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Standard Bearer (Harlech)" hidden="false" id="c2cd-f153-475a-1898" type="selectionEntry" targetId="35cb-cdb3-8c22-5c68">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b67e-0c81-45b4-6f41" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
       </entryLinks>
       <categoryLinks>
         <categoryLink targetId="de6b-6ec2-9294-541d" id="07cb-cbaf-c4f2-48bf" primary="true" name="Unit"/>
@@ -771,8 +782,19 @@
         <infoLink name="Turretless" id="9d89-6ed3-232e-32b7" hidden="false" type="rule" targetId="a3fc-1bc1-8cfe-1886"/>
       </infoLinks>
       <entryLinks>
-        <entryLink import="true" name="Chyweethl (Cannon)" hidden="false" id="a9e7-27b4-4d26-fc3b" type="selectionEntry" targetId="95ab-376b-7f9c-51be"/>
-        <entryLink import="true" name="Chyweethl (HMG)" hidden="false" id="d359-39f6-0c97-a945" type="selectionEntry" targetId="225c-6c42-0625-3226"/>
+        <entryLink import="true" name="Chyweethl (Cannon)" hidden="false" id="a9e7-27b4-4d26-fc3b" type="selectionEntry" targetId="95ab-376b-7f9c-51be">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="75a3-c09b-cbb0-1e74" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Chyweethl (HMG)" hidden="false" id="d359-39f6-0c97-a945" type="selectionEntry" targetId="225c-6c42-0625-3226">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="48c6-7a6d-e4c5-6a5d" includeChildSelections="false"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="HMG" id="51c7-a853-b67f-ba05" hidden="false" type="rule" targetId="2939-e5aa-4248-ec27"/>
+          </infoLinks>
+        </entryLink>
       </entryLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Aerthyn Transport" hidden="false" id="db3a-3a51-61ce-b26d" sortIndex="5">

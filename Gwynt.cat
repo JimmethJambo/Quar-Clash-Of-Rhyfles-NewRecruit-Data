@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="da4e-ede1-f965-99f0" name="Gwynt" gameSystemId="sys-dbd1-1d4a-43f9-1e9c" gameSystemRevision="3" revision="3" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="da4e-ede1-f965-99f0" name="Gwynt" gameSystemId="sys-dbd1-1d4a-43f9-1e9c" gameSystemRevision="3" revision="4" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedSelectionEntries>
     <selectionEntry type="upgrade" import="true" name="Harlech" hidden="false" id="01b4-6a30-91e9-e547" sortIndex="1" defaultAmount="1">
       <profiles>
@@ -13,7 +13,6 @@
       </profiles>
       <constraints>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c5cd-a462-bca5-7dfc" includeChildSelections="false"/>
-        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="48ec-28d6-12e8-5978" includeChildSelections="false"/>
       </constraints>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Doru" hidden="false" id="32f6-19d7-2e5c-6307" sortIndex="1" defaultAmount="1">
@@ -31,7 +30,6 @@
       </profiles>
       <constraints>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7416-6627-0057-998d" includeChildSelections="false"/>
-        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="32b7-9a8f-f525-a326" includeChildSelections="false"/>
       </constraints>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="SG-3 Scattergun" hidden="false" id="6475-8b45-26c1-5d68" sortIndex="1" defaultAmount="1">
@@ -56,7 +54,6 @@
     <selectionEntry type="upgrade" import="true" name="Pistol" hidden="false" id="dfd3-59dc-c778-536e" sortIndex="1" defaultAmount="1">
       <constraints>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c35f-2df8-d687-a26e" includeChildSelections="false"/>
-        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8b06-1d53-e903-dc7f" includeChildSelections="false"/>
       </constraints>
       <profiles>
         <profile name="Pistol" typeId="0b63-6947-fb08-66eb" typeName="Weapon" hidden="false" id="f3d3-cc45-bc02-c93a">
@@ -86,7 +83,7 @@
         <infoLink name="Slow Reload" id="28ca-401f-c789-4a3c" hidden="false" type="rule" targetId="d313-5d37-5ae4-7b1f"/>
         <infoLink name="Blast (X,Y)" id="6715-530e-ef9e-815e" hidden="false" type="rule" targetId="b4b8-45d7-e9bb-1444"/>
         <infoLink name="Carriage" id="2bf3-1cce-69d9-9435" hidden="false" type="rule" targetId="a661-9268-7836-6cc0"/>
-        <infoLink name="Gun Shield" id="775c-4f1b-96a1-37f1" hidden="false" type="rule" targetId="debb-db2c-1545-a131"/>
+        <infoLink name="Gun Shield (X)" id="775c-4f1b-96a1-37f1" hidden="false" type="rule" targetId="debb-db2c-1545-a131"/>
         <infoLink name="Precision Fire" id="418d-2a99-5a9d-6ad0" hidden="false" type="rule" targetId="6aa0-4640-e3bb-1146"/>
       </infoLinks>
     </selectionEntry>
@@ -179,7 +176,7 @@
         <entryLink import="true" name="Harlech" hidden="false" id="38d5-a747-0122-799c" type="selectionEntry" targetId="01b4-6a30-91e9-e547"/>
       </entryLinks>
       <infoLinks>
-        <infoLink name="Grenadier" id="c5ba-18da-c278-4299" hidden="false" type="rule" targetId="7cd8-a0d8-921a-ac0c"/>
+        <infoLink name="Bombardier" id="c5ba-18da-c278-4299" hidden="false" type="rule" targetId="7cd8-a0d8-921a-ac0c"/>
       </infoLinks>
       <profiles>
         <profile name="Grenadier" typeId="7040-9c4e-1119-a3c5" typeName="Unit" hidden="false" id="6088-7fad-5aa8-e065">
@@ -296,7 +293,7 @@
         <cost name="Points" typeId="0bc1-1233-3e53-72ca" value="30"/>
       </costs>
       <entryLinks>
-        <entryLink import="true" name="Doru" hidden="false" id="6cfa-fa3e-1563-6f3a" type="selectionEntry" targetId="32f6-19d7-2e5c-6307">
+        <entryLink import="true" name="Doru" hidden="false" id="6cfa-fa3e-1563-6f3a" type="selectionEntry" targetId="32f6-19d7-2e5c-6307" defaultAmount="0">
           <costs>
             <cost name="Points" typeId="0bc1-1233-3e53-72ca" value="5"/>
           </costs>
@@ -315,7 +312,7 @@
             <infoLink name="Ranged (X)" id="26e3-2c92-3d3d-55ac" hidden="false" type="rule" targetId="54f4-6c58-08c6-8d46"/>
           </infoLinks>
         </entryLink>
-        <entryLink import="true" name="Harlech" hidden="false" id="4b3f-2bf7-0cf3-246e" type="selectionEntry" targetId="01b4-6a30-91e9-e547">
+        <entryLink import="true" name="Harlech" hidden="false" id="4b3f-2bf7-0cf3-246e" type="selectionEntry" targetId="01b4-6a30-91e9-e547" defaultAmount="0">
           <profiles>
             <profile name="Standard Bearer" typeId="7040-9c4e-1119-a3c5" typeName="Unit" hidden="false" id="df77-5f77-ff56-5253">
               <characteristics>
@@ -367,7 +364,7 @@
         <cost name="Points" typeId="0bc1-1233-3e53-72ca" value="115"/>
       </costs>
       <categoryLinks>
-        <categoryLink targetId="e009-498c-bf4e-66d2" id="4af1-b405-40af-ac52" primary="true" name="Tractor"/>
+        <categoryLink targetId="e009-498c-bf4e-66d2" id="4af1-b405-40af-ac52" primary="true" name="Armored Vehicle"/>
       </categoryLinks>
       <profiles>
         <profile name="Aerfen" typeId="75e9-4c28-c81b-5327" typeName="Armored Vehicle" hidden="false" id="35d6-ccf7-1068-a558">
@@ -415,7 +412,7 @@
       </profiles>
       <infoLinks>
         <infoLink name="Turretless" id="625c-49ca-17bd-d134" hidden="false" type="rule" targetId="a3fc-1bc1-8cfe-1886"/>
-        <infoLink name="Anti-Tractor (X)" id="8fb8-3f75-2dcd-05ef" hidden="false" type="rule" targetId="7cb8-57db-5ced-b54a"/>
+        <infoLink name="Anti-Tractor" id="8fb8-3f75-2dcd-05ef" hidden="false" type="rule" targetId="7cb8-57db-5ced-b54a"/>
         <infoLink name="Blast (X,Y)" id="93d5-35ad-9d46-34f7" hidden="false" type="rule" targetId="b4b8-45d7-e9bb-1444"/>
         <infoLink name="Slow Reload" id="e4d4-1cbe-741b-e37a" hidden="false" type="rule" targetId="d313-5d37-5ae4-7b1f"/>
       </infoLinks>
@@ -444,8 +441,7 @@
         </profile>
         <profile name="1-2" typeId="6e06-153b-5181-d39d" typeName="Damage Chart" hidden="false" id="def2-3c14-221a-ab52">
           <characteristics>
-            <characteristic name="Result" typeId="897e-4ecc-846b-1598">Weapon Crew Rattled.
-</characteristic>
+            <characteristic name="Result" typeId="897e-4ecc-846b-1598">Weapon Crew Rattled.</characteristic>
           </characteristics>
         </profile>
         <profile name="3-4" typeId="6e06-153b-5181-d39d" typeName="Damage Chart" hidden="false" id="ba0f-43ba-2066-395d">
@@ -455,8 +451,7 @@
         </profile>
         <profile name="5-6" typeId="6e06-153b-5181-d39d" typeName="Damage Chart" hidden="false" id="b7da-3fcf-82a2-7d8f">
           <characteristics>
-            <characteristic name="Result" typeId="897e-4ecc-846b-1598">Weapon Crew suffers 1 Damage Point.
-</characteristic>
+            <characteristic name="Result" typeId="897e-4ecc-846b-1598">Weapon Crew suffers 1 Damage Point.</characteristic>
           </characteristics>
         </profile>
         <profile name="7+" typeId="6e06-153b-5181-d39d" typeName="Damage Chart" hidden="false" id="769d-1a7e-6510-b57b">
@@ -466,22 +461,22 @@
         </profile>
         <profile name="0" typeId="73fd-d87f-c3ca-d678" typeName="Damage Level" hidden="false" id="1a2b-255f-978f-0137">
           <characteristics>
-            <characteristic name="" typeId="0a18-6bf0-38b6-f7a0">Fully Operational</characteristic>
+            <characteristic typeId="0a18-6bf0-38b6-f7a0">Fully Operational</characteristic>
           </characteristics>
         </profile>
         <profile name="1" typeId="73fd-d87f-c3ca-d678" typeName="Damage Level" hidden="false" id="3495-fd84-aaf3-a2e8">
           <characteristics>
-            <characteristic name="" typeId="0a18-6bf0-38b6-f7a0">Hampered: Only Assistant or Observer can Activate, not both.</characteristic>
+            <characteristic typeId="0a18-6bf0-38b6-f7a0">Hampered: Only Assistant or Observer can Activate, not both.</characteristic>
           </characteristics>
         </profile>
         <profile name="2" typeId="73fd-d87f-c3ca-d678" typeName="Damage Level" hidden="false" id="f4fd-6dc3-459f-7c31">
           <characteristics>
-            <characteristic name="" typeId="0a18-6bf0-38b6-f7a0">Shaken: Attacks are at -4 unless 2 activations are spent by the crew to perform the Combat Task.</characteristic>
+            <characteristic typeId="0a18-6bf0-38b6-f7a0">Shaken: Attacks are at -4 unless 2 activations are spent by the crew to perform the Combat Task.</characteristic>
           </characteristics>
         </profile>
         <profile name="3" typeId="73fd-d87f-c3ca-d678" typeName="Damage Level" hidden="false" id="72dd-51cd-37d2-e333">
           <characteristics>
-            <characteristic name="" typeId="0a18-6bf0-38b6-f7a0">Disabled: Remove from Battlefield.</characteristic>
+            <characteristic typeId="0a18-6bf0-38b6-f7a0">Disabled: Remove from Battlefield.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -532,20 +527,17 @@
         </profile>
         <profile name="1-3" typeId="6e06-153b-5181-d39d" typeName="Damage Chart" hidden="false" id="efef-ae99-580f-8b73">
           <characteristics>
-            <characteristic name="Result" typeId="897e-4ecc-846b-1598">Vehicle becomes Rattled.
-</characteristic>
+            <characteristic name="Result" typeId="897e-4ecc-846b-1598">Vehicle becomes Rattled.</characteristic>
           </characteristics>
         </profile>
         <profile name="4-5" typeId="6e06-153b-5181-d39d" typeName="Damage Chart" hidden="false" id="1e22-e7c2-c343-e697">
           <characteristics>
-            <characteristic name="Result" typeId="897e-4ecc-846b-1598">Vehicle suffers 1 Damage Point. 
-</characteristic>
+            <characteristic name="Result" typeId="897e-4ecc-846b-1598">Vehicle suffers 1 Damage Point.</characteristic>
           </characteristics>
         </profile>
         <profile name="6" typeId="6e06-153b-5181-d39d" typeName="Damage Chart" hidden="false" id="6e34-a0a6-d5ea-2525">
           <characteristics>
-            <characteristic name="Result" typeId="897e-4ecc-846b-1598">Vehicle suffers 2 Damage Points.
-</characteristic>
+            <characteristic name="Result" typeId="897e-4ecc-846b-1598">Vehicle suffers 2 Damage Points.</characteristic>
           </characteristics>
         </profile>
         <profile name="7+" typeId="6e06-153b-5181-d39d" typeName="Damage Chart" hidden="false" id="2363-9080-0dfe-4efd">
@@ -558,7 +550,7 @@
         <infoLink name="Blast (X,Y)" id="0480-0876-36fd-bb5d" hidden="false" type="rule" targetId="b4b8-45d7-e9bb-1444"/>
         <infoLink name="Scouting Vehicle" id="2e40-8eea-4bbe-dd8d" hidden="false" type="rule" targetId="cfd6-5318-f453-0aee"/>
         <infoLink name="Agile" id="942d-6098-3605-822f" hidden="false" type="rule" targetId="1c15-f70c-9388-ba08"/>
-        <infoLink name="Automatic" id="9c86-c4ff-e811-6c1a" hidden="false" type="rule" targetId="321d-91fa-c981-2ce1"/>
+        <infoLink name="Automatic (X)" id="9c86-c4ff-e811-6c1a" hidden="false" type="rule" targetId="321d-91fa-c981-2ce1"/>
       </infoLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Fygnaek" hidden="false" id="1816-1619-a660-beac" sortIndex="6">
@@ -590,7 +582,7 @@
         </profile>
         <profile name="1-3" typeId="6e06-153b-5181-d39d" typeName="Damage Chart" hidden="false" id="2e81-3228-f74a-c1c3">
           <characteristics>
-            <characteristic name="Result" typeId="897e-4ecc-846b-1598"> Passengers gain Rattled Status.</characteristic>
+            <characteristic name="Result" typeId="897e-4ecc-846b-1598">Passengers gain Rattled Status.</characteristic>
           </characteristics>
         </profile>
         <profile name="4-5" typeId="6e06-153b-5181-d39d" typeName="Damage Chart" hidden="false" id="1f33-43fe-4220-7d17">
@@ -652,21 +644,17 @@
         </profile>
         <profile name="1-2" typeId="6e06-153b-5181-d39d" typeName="Damage Chart" hidden="false" id="f578-ec20-ec46-e920">
           <characteristics>
-            <characteristic name="Result" typeId="897e-4ecc-846b-1598">Vehicle becomes Rattled.
-</characteristic>
+            <characteristic name="Result" typeId="897e-4ecc-846b-1598">Vehicle becomes Rattled.</characteristic>
           </characteristics>
         </profile>
         <profile name="3-5" typeId="6e06-153b-5181-d39d" typeName="Damage Chart" hidden="false" id="6a65-7ec7-d273-5161">
           <characteristics>
-            <characteristic name="Result" typeId="897e-4ecc-846b-1598">Vehicle suffers 1 Damage Point. Passengers cannot fire personal weaponry next Round.
-
-</characteristic>
+            <characteristic name="Result" typeId="897e-4ecc-846b-1598">Vehicle suffers 1 Damage Point. Passengers cannot fire personal weaponry next Round.</characteristic>
           </characteristics>
         </profile>
         <profile name="6" typeId="6e06-153b-5181-d39d" typeName="Damage Chart" hidden="false" id="86dc-f01b-e8a6-d204">
           <characteristics>
-            <characteristic name="Result" typeId="897e-4ecc-846b-1598">Vehicle suffers 2 Damage Points. Passengers must pass a Skill Check or roll on Vehicle Escape Chart.
-</characteristic>
+            <characteristic name="Result" typeId="897e-4ecc-846b-1598">Vehicle suffers 2 Damage Points. Passengers must pass a Skill Check or roll on Vehicle Escape Chart.</characteristic>
           </characteristics>
         </profile>
         <profile name="7+" typeId="6e06-153b-5181-d39d" typeName="Damage Chart" hidden="false" id="9b9f-b1d3-38d6-4c03">
@@ -794,7 +782,7 @@
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink name="Musician" id="307f-fdb7-1381-d80d" hidden="false" type="rule" targetId="822d-00b5-a47a-4529"/>
+        <infoLink name="Musician (X)" id="307f-fdb7-1381-d80d" hidden="false" type="rule" targetId="822d-00b5-a47a-4529"/>
       </infoLinks>
     </selectionEntry>
   </sharedSelectionEntries>
@@ -807,7 +795,7 @@
     <entryLink import="true" name="RCO m60 Cannon" hidden="false" id="a542-1052-a49c-4228" type="selectionEntry" targetId="dc98-d5a3-0e6a-b377"/>
     <entryLink import="true" name="is-Caerten" hidden="false" id="1b0c-d9de-0cd2-ce3b" type="selectionEntry" targetId="84e1-d592-6e52-15bb"/>
     <entryLink import="true" name="Squirrel Handler" hidden="false" id="db98-79c9-9245-e9b3" type="selectionEntry" targetId="945f-e7e2-191c-8ce1"/>
-    <entryLink import="true" name="Squirrel Handler" hidden="false" id="4282-78ba-51a2-b281" type="selectionEntry" targetId="bd16-3d60-6984-082b"/>
+    <entryLink import="true" name="Caerten" hidden="false" id="4282-78ba-51a2-b281" type="selectionEntry" targetId="bd16-3d60-6984-082b"/>
     <entryLink import="true" name="Kryndyl Contraption" hidden="false" id="484b-69a5-b3e8-0bb7" type="selectionEntry" targetId="524c-fdb9-0afe-2649"/>
     <entryLink import="true" name="Yawdryl" hidden="false" id="5862-9a47-0905-8ea1" type="selectionEntry" targetId="af5f-d991-3d40-bc7c"/>
     <entryLink import="true" name="Master Yawdryl" hidden="false" id="703f-d9fe-d520-206b" type="selectionEntry" targetId="50d8-5883-abd5-a336"/>

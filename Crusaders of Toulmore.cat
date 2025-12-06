@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="4210-c08d-7f26-7174" name="Crusaders of Toulmore" gameSystemId="sys-dbd1-1d4a-43f9-1e9c" gameSystemRevision="3" revision="5" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="4210-c08d-7f26-7174" name="Crusaders of Toulmore" gameSystemId="sys-dbd1-1d4a-43f9-1e9c" gameSystemRevision="3" revision="6" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedSelectionEntries>
     <selectionEntry type="upgrade" import="true" name="Bogen" hidden="false" id="2f9a-306b-0eb2-1eb1" sortIndex="1" defaultAmount="1">
       <profiles>
@@ -41,7 +41,7 @@
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink name="Automatic" id="7783-09db-68a7-8ecd" hidden="false" type="rule" targetId="321d-91fa-c981-2ce1"/>
+        <infoLink name="Automatic (X)" id="7783-09db-68a7-8ecd" hidden="false" type="rule" targetId="321d-91fa-c981-2ce1"/>
         <infoLink name="Loader" id="f68c-1389-1849-8b53" hidden="false" type="rule" targetId="877f-75ce-5dc9-010e"/>
       </infoLinks>
     </selectionEntry>
@@ -288,11 +288,18 @@
         <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="6b13-3911-e7bb-b98c" includeChildSelections="true"/>
       </constraints>
       <entryLinks>
-        <entryLink import="true" name="Grifkis Shotgun" hidden="false" id="2cba-85b8-67ec-b2c8" type="selectionEntry" targetId="9437-f819-d82c-ff10" defaultAmount="0"/>
+        <entryLink import="true" name="Grifkis Shotgun" hidden="false" id="2cba-85b8-67ec-b2c8" type="selectionEntry" targetId="9437-f819-d82c-ff10" defaultAmount="0">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5cc1-f700-ce77-92bb" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
         <entryLink import="true" name="Bogen" hidden="false" id="0f15-3ccc-05a6-6328" type="selectionEntry" targetId="2f9a-306b-0eb2-1eb1" defaultAmount="0">
           <infoLinks>
             <infoLink name="Ranged (X)" id="c9a9-a66f-e7df-8115" hidden="false" type="rule" targetId="54f4-6c58-08c6-8d46"/>
           </infoLinks>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e22d-988f-bcd4-4d11" includeChildSelections="false"/>
+          </constraints>
         </entryLink>
       </entryLinks>
       <profiles>
@@ -371,7 +378,7 @@
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Twaen-Hyr" hidden="false" id="87d4-1d62-0fd5-2ed3">
       <categoryLinks>
-        <categoryLink targetId="e009-498c-bf4e-66d2" id="c86c-5dd4-5547-5b69" primary="true" name="Tractor"/>
+        <categoryLink targetId="e009-498c-bf4e-66d2" id="c86c-5dd4-5547-5b69" primary="true" name="Armored Vehicle"/>
       </categoryLinks>
       <costs>
         <cost name="Points" typeId="0bc1-1233-3e53-72ca" value="140"/>
@@ -477,7 +484,7 @@
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink name="Anti-Tractor (X)" id="8bd9-66ac-796c-faf1" hidden="false" type="rule" targetId="7cb8-57db-5ced-b54a"/>
+        <infoLink name="Anti-Tractor" id="8bd9-66ac-796c-faf1" hidden="false" type="rule" targetId="7cb8-57db-5ced-b54a"/>
         <infoLink name="Scouting Vehicle" id="4a0e-66c2-675e-511a" hidden="false" type="rule" targetId="cfd6-5318-f453-0aee"/>
         <infoLink name="Blast (X,Y)" id="b966-545f-4361-4c2e" hidden="false" type="rule" targetId="b4b8-45d7-e9bb-1444"/>
       </infoLinks>
@@ -535,7 +542,7 @@
             <cost name="Points" typeId="0bc1-1233-3e53-72ca" value="12"/>
           </costs>
           <infoLinks>
-            <infoLink name="Automatic" id="ddbf-2882-01df-81a9" hidden="false" type="rule" targetId="321d-91fa-c981-2ce1"/>
+            <infoLink name="Automatic (X)" id="ddbf-2882-01df-81a9" hidden="false" type="rule" targetId="321d-91fa-c981-2ce1"/>
           </infoLinks>
           <profiles>
             <profile name="H-11a, Vehicular Mount" typeId="18ca-a698-c38f-f8de" typeName="Integral Weapon" hidden="false" id="2eaf-d28c-90c0-9e5c">
@@ -642,6 +649,9 @@
               </characteristics>
             </profile>
           </profiles>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="868b-1afc-1778-2da4" includeChildSelections="false"/>
+          </constraints>
         </entryLink>
         <entryLink import="true" name="Bogen" hidden="false" id="37b2-c0ce-52d8-b955" type="selectionEntry" targetId="2f9a-306b-0eb2-1eb1">
           <profiles>
@@ -655,6 +665,9 @@
               </characteristics>
             </profile>
           </profiles>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="608c-cd8f-6e52-cfa5" includeChildSelections="false"/>
+          </constraints>
         </entryLink>
       </entryLinks>
       <costs>
@@ -723,7 +736,7 @@
       </profiles>
       <infoLinks>
         <infoLink name="Pack (X)" id="b7b8-799c-225b-ef5e" hidden="false" type="rule" targetId="97d2-4b72-b416-fc58"/>
-        <infoLink name="Leap" id="743f-1502-7132-0068" hidden="false" type="rule" targetId="eb1b-31f9-ac3f-f568"/>
+        <infoLink name="Leap (X)" id="743f-1502-7132-0068" hidden="false" type="rule" targetId="eb1b-31f9-ac3f-f568"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink targetId="de6b-6ec2-9294-541d" id="2444-b12d-6a0f-7dc3" primary="true" name="Unit"/>
