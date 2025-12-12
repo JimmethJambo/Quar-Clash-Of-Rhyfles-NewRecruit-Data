@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="4210-c08d-7f26-7174" name="Crusaders of Toulmore" gameSystemId="sys-dbd1-1d4a-43f9-1e9c" gameSystemRevision="3" revision="6" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="4210-c08d-7f26-7174" name="Crusaders of Toulmore" gameSystemId="sys-dbd1-1d4a-43f9-1e9c" gameSystemRevision="3" revision="7" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedSelectionEntries>
     <selectionEntry type="upgrade" import="true" name="Bogen" hidden="false" id="2f9a-306b-0eb2-1eb1" sortIndex="1" defaultAmount="1">
       <profiles>
@@ -435,7 +435,7 @@
         <infoLink name="Turret" id="85f6-bcfc-33fa-b255" hidden="false" type="rule" targetId="15ec-d221-5e3c-04d7"/>
       </infoLinks>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Krassyl Mod(4) Armored Contraption" hidden="false" id="6d36-bca6-bf0f-533f">
+    <selectionEntry type="unit" import="true" name="Krassyl Mod(4) Armored Contraption" hidden="false" id="6d36-bca6-bf0f-533f" sortIndex="6">
       <costs>
         <cost name="Points" typeId="0bc1-1233-3e53-72ca" value="125"/>
       </costs>
@@ -492,7 +492,7 @@
         <categoryLink name="Vehicle" hidden="false" id="5d85-0a7a-a402-9cb8" targetId="881d-fa38-6f95-c8f3" primary="true"/>
       </categoryLinks>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Nae-bon Armored Wagon" hidden="false" id="18a4-4d5c-d720-8705">
+    <selectionEntry type="unit" import="true" name="Nae-bon Armored Wagon" hidden="false" id="18a4-4d5c-d720-8705" sortIndex="6">
       <costs>
         <cost name="Points" typeId="0bc1-1233-3e53-72ca" value="63"/>
       </costs>
@@ -556,7 +556,7 @@
         </selectionEntry>
       </selectionEntries>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Pyngo Armored Lorry" hidden="false" id="df70-8cc5-9259-c845">
+    <selectionEntry type="unit" import="true" name="Pyngo Armored Lorry" hidden="false" id="df70-8cc5-9259-c845" sortIndex="6">
       <costs>
         <cost name="Points" typeId="0bc1-1233-3e53-72ca" value="40"/>
       </costs>
@@ -814,6 +814,28 @@
         <infoLink name="Killing Strike" id="378c-b57f-44b3-d389" hidden="false" type="rule" targetId="a41d-493b-7187-6930"/>
         <infoLink name="Inspiring Presence (X)" id="74ed-9016-11e7-03e4" hidden="false" type="rule" targetId="7ebb-1cf5-bdb6-2c2e"/>
       </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="LMG Team Loader" hidden="false" id="d4e6-a563-1cb7-ae09" sortIndex="3">
+      <costs>
+        <cost name="Points" typeId="0bc1-1233-3e53-72ca" value="32"/>
+      </costs>
+      <profiles>
+        <profile name="LMG Team Loader" typeId="7040-9c4e-1119-a3c5" typeName="Unit" hidden="false" id="dbd3-06f6-020b-79f6">
+          <characteristics>
+            <characteristic name="Sk" typeId="0014-9871-f278-b5f3">13</characteristic>
+            <characteristic name="Mt" typeId="d8ef-e518-8f49-8a7b">1d6+1</characteristic>
+            <characteristic name="MA" typeId="4cd7-b825-6660-1758">5</characteristic>
+            <characteristic name="Toughness" typeId="197d-1c5e-af24-ee6e">4</characteristic>
+            <characteristic name="Special Abilities" typeId="94ec-89a2-8f77-66c3"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <entryLinks>
+        <entryLink import="true" name="Bogen" hidden="false" id="23e8-e8a0-9c7c-cb90" type="selectionEntry" targetId="2f9a-306b-0eb2-1eb1"/>
+      </entryLinks>
+      <categoryLinks>
+        <categoryLink targetId="de6b-6ec2-9294-541d" id="8230-5eb4-b48c-a74b" primary="true" name="Unit"/>
+      </categoryLinks>
     </selectionEntry>
   </sharedSelectionEntries>
   <entryLinks>
