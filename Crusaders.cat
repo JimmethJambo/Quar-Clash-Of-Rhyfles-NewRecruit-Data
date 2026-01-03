@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="80cd-b846-90e0-dd6f" name="Crusaders" gameSystemId="sys-dbd1-1d4a-43f9-1e9c" gameSystemRevision="2" revision="8" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="80cd-b846-90e0-dd6f" name="Crusaders" gameSystemId="sys-dbd1-1d4a-43f9-1e9c" gameSystemRevision="2" revision="9" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedProfiles>
     <profile name="Bogen" typeId="0b63-6947-fb08-66eb" typeName="Weapon" hidden="false" id="d73e-9bd0-b2e0-2432">
       <characteristics>
@@ -1009,7 +1009,7 @@
         </profile>
         <profile name="3-5" typeId="6e06-153b-5181-d39d" typeName="Damage Chart" hidden="false" id="2116-b3e9-6ddd-9796">
           <characteristics>
-            <characteristic name="Result" typeId="897e-4ecc-846b-1598">Vehicle suffers 1 Damage Point. rew gain Rattled status.</characteristic>
+            <characteristic name="Result" typeId="897e-4ecc-846b-1598">Vehicle suffers 1 Damage Point. Crew gain Rattled status.</characteristic>
           </characteristics>
         </profile>
         <profile name="6" typeId="6e06-153b-5181-d39d" typeName="Damage Chart" hidden="false" id="1631-fbdc-6abf-be1f">
