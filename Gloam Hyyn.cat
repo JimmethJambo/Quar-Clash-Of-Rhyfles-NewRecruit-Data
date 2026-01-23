@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="b713-2102-f63a-13bd" name="Gloam Hyyn" gameSystemId="sys-dbd1-1d4a-43f9-1e9c" gameSystemRevision="3" revision="4" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="b713-2102-f63a-13bd" name="Gloam Hyyn" gameSystemId="sys-dbd1-1d4a-43f9-1e9c" gameSystemRevision="3" revision="5" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedSelectionEntries>
     <selectionEntry type="upgrade" import="true" name="Harlech Carbine" hidden="false" id="a6ad-eeb2-2c68-04d1" sortIndex="1" defaultAmount="1">
       <profiles>
@@ -51,7 +51,7 @@
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a1d8-04de-f723-53ce" includeChildSelections="false"/>
       </constraints>
       <infoLinks>
-        <infoLink name="Automatic" id="60fc-e54f-5021-1a70" hidden="false" type="rule" targetId="321d-91fa-c981-2ce1"/>
+        <infoLink name="Automatic (X)" id="60fc-e54f-5021-1a70" hidden="false" type="rule" targetId="321d-91fa-c981-2ce1"/>
         <infoLink name="Loader" id="d217-2854-e2a2-b201" hidden="false" type="rule" targetId="877f-75ce-5dc9-010e"/>
       </infoLinks>
       <profiles>
@@ -500,12 +500,12 @@
         <categoryLink targetId="de6b-6ec2-9294-541d" id="7c40-8dc0-0d57-3aff" primary="true" name="Unit"/>
       </categoryLinks>
       <infoLinks>
-        <infoLink name="Multi-Attack(X)" id="7e3c-37e5-9497-a082" hidden="false" type="rule" targetId="3376-6936-c8a7-41ea"/>
+        <infoLink name="Multi-Attack (X)" id="7e3c-37e5-9497-a082" hidden="false" type="rule" targetId="3376-6936-c8a7-41ea"/>
       </infoLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Bootlegger" hidden="false" id="708a-d899-7f4d-cb8b" sortIndex="4">
       <constraints>
-        <constraint type="max" value="2" field="selections" scope="roster" shared="true" id="1c1f-fefd-7368-71cc" includeChildSelections="true"/>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="1c1f-fefd-7368-71cc" includeChildSelections="true"/>
       </constraints>
       <costs>
         <cost name="Points" typeId="0bc1-1233-3e53-72ca" value="40"/>
@@ -571,7 +571,7 @@
         <entryLink import="true" name="Harlech Carbine" hidden="false" id="6529-96d9-29b9-37ca" type="selectionEntry" targetId="a6ad-eeb2-2c68-04d1"/>
       </entryLinks>
       <infoLinks>
-        <infoLink name="Musician" id="6a40-a374-0e40-da1b" hidden="false" type="rule" targetId="822d-00b5-a47a-4529"/>
+        <infoLink name="Musician (X)" id="6a40-a374-0e40-da1b" hidden="false" type="rule" targetId="822d-00b5-a47a-4529"/>
       </infoLinks>
       <profiles>
         <profile name="Musician" typeId="7040-9c4e-1119-a3c5" typeName="Unit" hidden="false" id="fbf4-e014-3892-f1e2">
