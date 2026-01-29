@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="80cd-b846-90e0-dd6f" name="Crusaders" gameSystemId="sys-dbd1-1d4a-43f9-1e9c" gameSystemRevision="2" revision="9" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="80cd-b846-90e0-dd6f" name="Crusaders" gameSystemId="sys-dbd1-1d4a-43f9-1e9c" gameSystemRevision="2" revision="10" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedProfiles>
     <profile name="Bogen" typeId="0b63-6947-fb08-66eb" typeName="Weapon" hidden="false" id="d73e-9bd0-b2e0-2432">
       <characteristics>
@@ -74,7 +74,6 @@
       <infoLinks>
         <infoLink name="h-11a" id="64eb-9d49-b7bb-5c12" hidden="false" type="profile" targetId="ca8d-f53e-7b6b-43fb"/>
         <infoLink name="Automatic (X)" id="3ca2-c706-7569-8109" hidden="false" type="rule" targetId="321d-91fa-c981-2ce1"/>
-        <infoLink name="Loader" id="3962-d543-abe0-629e" hidden="false" type="rule" targetId="877f-75ce-5dc9-010e"/>
       </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Grifkis Shotgun" hidden="false" id="21d5-c239-f062-4b2a" sortIndex="1" defaultAmount="1">
@@ -557,7 +556,7 @@
         <categoryLink targetId="de6b-6ec2-9294-541d" id="aa3f-7614-8afb-a76f" primary="true" name="Unit"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink import="true" name="h-11a" hidden="false" id="0c10-0526-d6f6-7c30" type="selectionEntry" targetId="6f82-859f-0d32-8ebc"/>
+        <entryLink import="true" name="h-11a" hidden="false" id="0c10-0526-d6f6-7c30" type="selectionEntry" targetId="8191-b709-7afa-e2e1"/>
       </entryLinks>
       <profiles>
         <profile name="LMG Rhyfler" typeId="7040-9c4e-1119-a3c5" typeName="Unit" hidden="false" id="e918-9223-90ef-e1b2">
@@ -1225,6 +1224,21 @@
       <categoryLinks>
         <categoryLink targetId="34ad-bf4f-0473-dac6" id="88f3-edfe-b8a6-5165" primary="true" name="Heavy Weapon Crew"/>
       </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="h-11a" hidden="false" id="8191-b709-7afa-e2e1" sortIndex="1" defaultAmount="1">
+      <infoLinks>
+        <infoLink name="Automatic (X)" id="0c30-e4fe-3100-ca91" hidden="false" type="rule" targetId="321d-91fa-c981-2ce1"/>
+        <infoLink name="Loader" id="6881-1087-122d-5d31" hidden="false" type="rule" targetId="877f-75ce-5dc9-010e"/>
+      </infoLinks>
+      <profiles>
+        <profile name="h-11a" typeId="0b63-6947-fb08-66eb" typeName="Weapon" hidden="false" id="fc7d-1692-2d5b-6da6">
+          <characteristics>
+            <characteristic name="Range" typeId="5b6c-828e-fe65-26a5">10</characteristic>
+            <characteristic name="SN" typeId="b1d6-1660-ac56-c22a">-3</characteristic>
+            <characteristic name="Abilities" typeId="ed37-dbdc-d41b-3af6">Automatic (2), Loader</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
     </selectionEntry>
   </sharedSelectionEntries>
   <entryLinks>
