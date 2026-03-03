@@ -1,0 +1,434 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue library="false" id="5c83-b126-5013-350a" name="Ergydiwr" gameSystemId="sys-dbd1-1d4a-43f9-1e9c" gameSystemRevision="9" revision="1" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <sharedSelectionEntries>
+    <selectionEntry type="upgrade" import="true" name="Tefsyn Infantry Rhyfle" hidden="false" id="988f-3c41-f039-7609">
+      <profiles>
+        <profile name="Tefsyn Infantry Rhyfle" typeId="0b63-6947-fb08-66eb" typeName="Weapon" hidden="false" id="2067-5c00-816b-c944">
+          <characteristics>
+            <characteristic name="Range" typeId="5b6c-828e-fe65-26a5">8</characteristic>
+            <characteristic name="SN" typeId="b1d6-1660-ac56-c22a">-3</characteristic>
+            <characteristic name="Abilities" typeId="ed37-dbdc-d41b-3af6"/>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Cidderach LMG" hidden="false" id="53eb-1d73-48c1-a077">
+      <profiles>
+        <profile name="Cidderach LMG" typeId="0b63-6947-fb08-66eb" typeName="Weapon" hidden="false" id="ae60-c2ec-ee59-92b3">
+          <characteristics>
+            <characteristic name="Range" typeId="5b6c-828e-fe65-26a5">8</characteristic>
+            <characteristic name="SN" typeId="b1d6-1660-ac56-c22a">-3</characteristic>
+            <characteristic name="Abilities" typeId="ed37-dbdc-d41b-3af6">Automatic (1), Braced</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Automatic (X)" id="01ec-8679-98cf-d05c" hidden="false" type="rule" targetId="321d-91fa-c981-2ce1"/>
+        <infoLink name="Braced" id="5c79-81e9-2124-c141" hidden="false" type="rule" targetId="0b83-b784-dae8-503c"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Rhyfler" hidden="false" id="4e6e-c9b9-964f-08ba">
+      <costs>
+        <cost name="Points" typeId="0bc1-1233-3e53-72ca" value="25"/>
+      </costs>
+      <entryLinks>
+        <entryLink import="true" name="Tefsyn Infantry Rhyfle" hidden="false" id="2f6d-97e5-f889-cc8a" type="selectionEntry" targetId="988f-3c41-f039-7609"/>
+      </entryLinks>
+      <infoLinks>
+        <infoLink name="Support" id="d658-679b-6415-39f8" hidden="false" type="rule" targetId="c0d3-909a-ca80-1be2"/>
+      </infoLinks>
+      <profiles>
+        <profile name="Rhyfler" typeId="7040-9c4e-1119-a3c5" typeName="Unit" hidden="false" id="620b-29ff-634a-c7b3">
+          <characteristics>
+            <characteristic name="Sk" typeId="0014-9871-f278-b5f3">12</characteristic>
+            <characteristic name="Mt" typeId="d8ef-e518-8f49-8a7b">2d6-1</characteristic>
+            <characteristic name="MA" typeId="4cd7-b825-6660-1758">5</characteristic>
+            <characteristic name="Toughness" typeId="197d-1c5e-af24-ee6e">4</characteristic>
+            <characteristic name="Special Abilities" typeId="94ec-89a2-8f77-66c3">Support</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink targetId="de6b-6ec2-9294-541d" id="12b2-ac7a-81a7-d181" primary="true" name="Unit"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Rhyfler" hidden="false" id="3970-c0b8-4a54-5c05">
+      <costs>
+        <cost name="Points" typeId="0bc1-1233-3e53-72ca" value="32"/>
+      </costs>
+      <entryLinks>
+        <entryLink import="true" name="Cidderach LMG" hidden="false" id="6693-c0b9-1e33-5b15" type="selectionEntry" targetId="53eb-1d73-48c1-a077"/>
+      </entryLinks>
+      <profiles>
+        <profile name="Rhyfler" typeId="7040-9c4e-1119-a3c5" typeName="Unit" hidden="false" id="dcf9-4c51-0a99-b59c">
+          <characteristics>
+            <characteristic name="Sk" typeId="0014-9871-f278-b5f3">12</characteristic>
+            <characteristic name="Mt" typeId="d8ef-e518-8f49-8a7b">1d6+2</characteristic>
+            <characteristic name="MA" typeId="4cd7-b825-6660-1758">5</characteristic>
+            <characteristic name="Toughness" typeId="197d-1c5e-af24-ee6e">4</characteristic>
+            <characteristic name="Special Abilities" typeId="94ec-89a2-8f77-66c3"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="force" shared="true" id="7ed2-bcb1-3bec-5d87" includeChildSelections="false"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink targetId="de6b-6ec2-9294-541d" id="a7d3-a9cd-3f5c-90e2" primary="true" name="Unit"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Milwer" hidden="false" id="5c84-c4f3-5f14-07e8">
+      <costs>
+        <cost name="Points" typeId="0bc1-1233-3e53-72ca" value="35"/>
+      </costs>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="force" shared="true" id="c619-00c5-6dd3-bc5a" includeChildSelections="false"/>
+      </constraints>
+      <entryLinks>
+        <entryLink import="true" name="Cidderach LMG" hidden="false" id="bb8e-bef8-58a6-189f" type="selectionEntry" targetId="53eb-1d73-48c1-a077"/>
+      </entryLinks>
+      <infoLinks>
+        <infoLink name="Leader (X/Y)" id="25aa-b5dc-0790-ecc0" hidden="false" type="rule" targetId="ba90-37ff-4384-2bc5"/>
+      </infoLinks>
+      <profiles>
+        <profile name="Milwer" typeId="7040-9c4e-1119-a3c5" typeName="Unit" hidden="false" id="dfb5-9dc1-2098-4153">
+          <characteristics>
+            <characteristic name="Sk" typeId="0014-9871-f278-b5f3">12</characteristic>
+            <characteristic name="Mt" typeId="d8ef-e518-8f49-8a7b">1d6+2</characteristic>
+            <characteristic name="MA" typeId="4cd7-b825-6660-1758">5</characteristic>
+            <characteristic name="Toughness" typeId="197d-1c5e-af24-ee6e">4</characteristic>
+            <characteristic name="Special Abilities" typeId="94ec-89a2-8f77-66c3">Leader (2/3)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink targetId="de6b-6ec2-9294-541d" id="0d50-c9eb-da27-14f8" primary="true" name="Unit"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Yawdryl" hidden="false" id="e6e1-28fb-7d2c-2f5e">
+      <costs>
+        <cost name="Points" typeId="0bc1-1233-3e53-72ca" value="33"/>
+      </costs>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="force" shared="true" id="d876-cd8b-7215-c066" includeChildSelections="false"/>
+      </constraints>
+      <entryLinks>
+        <entryLink import="true" name="Tefsyn Infantry Rhyfle" hidden="false" id="0c67-8820-ff77-e2b3" type="selectionEntry" targetId="988f-3c41-f039-7609"/>
+      </entryLinks>
+      <infoLinks>
+        <infoLink name="Leader (X/Y)" id="eb94-f382-e74d-7f34" hidden="false" type="rule" targetId="ba90-37ff-4384-2bc5"/>
+      </infoLinks>
+      <profiles>
+        <profile name="Yawdryl" typeId="7040-9c4e-1119-a3c5" typeName="Unit" hidden="false" id="82be-5b1a-c1cc-0245">
+          <characteristics>
+            <characteristic name="Sk" typeId="0014-9871-f278-b5f3">13</characteristic>
+            <characteristic name="Mt" typeId="d8ef-e518-8f49-8a7b">2d6</characteristic>
+            <characteristic name="MA" typeId="4cd7-b825-6660-1758">5</characteristic>
+            <characteristic name="Toughness" typeId="197d-1c5e-af24-ee6e">4</characteristic>
+            <characteristic name="Special Abilities" typeId="94ec-89a2-8f77-66c3">Leader (3/4)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink targetId="de6b-6ec2-9294-541d" id="803c-34de-f0a0-c1be" primary="true" name="Unit"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Hulbough Field Gun" hidden="false" id="b9dc-43c5-83d0-fdd7">
+      <costs>
+        <cost name="Points" typeId="0bc1-1233-3e53-72ca" value="50"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="34ad-bf4f-0473-dac6" id="ae06-df9d-5707-f967" primary="true" name="Heavy Weapon Crew"/>
+      </categoryLinks>
+      <constraints>
+        <constraint type="max" value="2" field="selections" scope="force" shared="true" id="5b15-5d67-6cb9-889b" includeChildSelections="false"/>
+      </constraints>
+      <profiles>
+        <profile name="Hulbough Field Gun" typeId="3971-dc7c-fded-7a05" typeName="Heavy Weapon Crew" hidden="false" id="7fe9-e515-8f5d-4a99">
+          <characteristics>
+            <characteristic name="Crew" typeId="d99f-34b4-b34d-2276">2</characteristic>
+            <characteristic name="Skill" typeId="520d-faaf-a88e-7985">12</characteristic>
+            <characteristic name="T" typeId="e994-3e9d-3b18-43b3">4</characteristic>
+            <characteristic name="D" typeId="97fc-5f15-cc48-6f00">2</characteristic>
+            <characteristic name="Break" typeId="a408-edfc-85be-a5ac">--</characteristic>
+            <characteristic name="MA" typeId="7cf6-12da-3cdd-6b9d">4</characteristic>
+            <characteristic name="Type" typeId="00d8-3f2d-ae43-9218">Blast</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Hulbough Field Gun" typeId="d580-6e35-f083-cd53" typeName="Heavy Weapon" hidden="false" id="bdf3-2cac-2cc2-f4a5">
+          <characteristics>
+            <characteristic name="Range" typeId="1775-3227-d2ed-93a5">12</characteristic>
+            <characteristic name="Arc" typeId="f1e8-b48b-c0f2-c05f">45</characteristic>
+            <characteristic name="Abilities" typeId="bd42-ef04-afe1-f4d4">Carriage, Slow Reload, Blast (M 1d6+2)</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="5-6" typeId="6e06-153b-5181-d39d" typeName="Damage Chart" hidden="false" id="1ca5-615f-837e-a123">
+          <characteristics>
+            <characteristic name="Result" typeId="897e-4ecc-846b-1598">Weapon Crew suffers 1 point of Damage</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="1-2" typeId="6e06-153b-5181-d39d" typeName="Damage Chart" hidden="false" id="9477-e181-2745-641e">
+          <characteristics>
+            <characteristic name="Result" typeId="897e-4ecc-846b-1598">Weapon Crew Rattled</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="3-4" typeId="6e06-153b-5181-d39d" typeName="Damage Chart" hidden="false" id="4238-a90a-16a1-7097">
+          <characteristics>
+            <characteristic name="Result" typeId="897e-4ecc-846b-1598">Weapon Crew is Gobsmacked. Remove Rattled status if present.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="7+" typeId="6e06-153b-5181-d39d" typeName="Damage Chart" hidden="false" id="1cc1-49b0-1555-7fd4">
+          <characteristics>
+            <characteristic name="Result" typeId="897e-4ecc-846b-1598">Weapon Crew are Disabled. Remove from Battlefield</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="2" typeId="73fd-d87f-c3ca-d678" typeName="Damage Level" hidden="false" id="2b0f-6d97-e33d-3837">
+          <characteristics>
+            <characteristic typeId="0a18-6bf0-38b6-f7a0">Disabled: Remove from Battlefield</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="0" typeId="73fd-d87f-c3ca-d678" typeName="Damage Level" hidden="false" id="aabd-f5d4-7be5-d82a">
+          <characteristics>
+            <characteristic typeId="0a18-6bf0-38b6-f7a0">Fully Operational: All Crew can perform their Task</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="1" typeId="73fd-d87f-c3ca-d678" typeName="Damage Level" hidden="false" id="0d2c-de47-6d77-497c">
+          <characteristics>
+            <characteristic typeId="0a18-6bf0-38b6-f7a0">Shaken: Attacks are at -4 unless 2 Activations are spent by the crew to perform the Combat Task</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Blast (X,Y)" id="0c01-2376-a3ff-1139" hidden="false" type="rule" targetId="b4b8-45d7-e9bb-1444"/>
+        <infoLink name="Carriage" id="bf2c-938e-2fdc-6d9c" hidden="false" type="rule" targetId="a661-9268-7836-6cc0"/>
+        <infoLink name="Slow Reload" id="e421-75a9-c66b-935f" hidden="false" type="rule" targetId="d313-5d37-5ae4-7b1f"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="is-Caerten" hidden="false" id="e83c-c8be-e948-5014">
+      <costs>
+        <cost name="Points" typeId="0bc1-1233-3e53-72ca" value="35"/>
+      </costs>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="force" shared="true" id="d32c-07e5-c77f-0ef7" includeChildSelections="false"/>
+      </constraints>
+      <entryLinks>
+        <entryLink import="true" name="Pistol" hidden="false" id="267d-9996-13bd-1a17" type="selectionEntry" targetId="7028-cb77-f695-540d"/>
+      </entryLinks>
+      <profiles>
+        <profile name="is-Caerten" typeId="7040-9c4e-1119-a3c5" typeName="Unit" hidden="false" id="b5ba-6f3d-ea70-f4ce">
+          <characteristics>
+            <characteristic name="Sk" typeId="0014-9871-f278-b5f3">12</characteristic>
+            <characteristic name="Mt" typeId="d8ef-e518-8f49-8a7b">2d6+1</characteristic>
+            <characteristic name="MA" typeId="4cd7-b825-6660-1758">5</characteristic>
+            <characteristic name="Toughness" typeId="197d-1c5e-af24-ee6e">4</characteristic>
+            <characteristic name="Special Abilities" typeId="94ec-89a2-8f77-66c3">Leader (3/5), Melee +1</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Mace" typeId="0b63-6947-fb08-66eb" typeName="Weapon" hidden="false" id="55df-7fa2-4c57-93f5">
+          <characteristics>
+            <characteristic name="Range" typeId="5b6c-828e-fe65-26a5">N/A</characteristic>
+            <characteristic name="SN" typeId="b1d6-1660-ac56-c22a">N/A</characteristic>
+            <characteristic name="Abilities" typeId="ed37-dbdc-d41b-3af6"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Leader (X/Y)" id="2df9-d65f-3cf8-d5a2" hidden="false" type="rule" targetId="ba90-37ff-4384-2bc5"/>
+        <infoLink name="Melee (X)" id="8a11-e225-6b48-2656" hidden="false" type="rule" targetId="ba7b-d442-85f1-d45d"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink targetId="de6b-6ec2-9294-541d" id="37e6-e0cf-385f-6051" primary="true" name="Unit"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Caerten" hidden="false" id="2247-559f-6d15-5057">
+      <costs>
+        <cost name="Points" typeId="0bc1-1233-3e53-72ca" value="38"/>
+      </costs>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="force" shared="true" id="b5c5-08c1-0801-e272" includeChildSelections="false"/>
+      </constraints>
+      <entryLinks>
+        <entryLink import="true" name="Pistol" hidden="false" id="26c5-786d-c6c6-9f5d" type="selectionEntry" targetId="7028-cb77-f695-540d"/>
+      </entryLinks>
+      <profiles>
+        <profile name="Caerten" typeId="7040-9c4e-1119-a3c5" typeName="Unit" hidden="false" id="3dfe-c52f-ea98-a452">
+          <characteristics>
+            <characteristic name="Sk" typeId="0014-9871-f278-b5f3">12</characteristic>
+            <characteristic name="Mt" typeId="d8ef-e518-8f49-8a7b">2d6</characteristic>
+            <characteristic name="MA" typeId="4cd7-b825-6660-1758">5</characteristic>
+            <characteristic name="Toughness" typeId="197d-1c5e-af24-ee6e">4</characteristic>
+            <characteristic name="Special Abilities" typeId="94ec-89a2-8f77-66c3">Inspiring Presence (3), Melee +1</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Sword" typeId="0b63-6947-fb08-66eb" typeName="Weapon" hidden="false" id="c15f-08be-985b-fde5">
+          <characteristics>
+            <characteristic name="Range" typeId="5b6c-828e-fe65-26a5">N/A</characteristic>
+            <characteristic name="SN" typeId="b1d6-1660-ac56-c22a">N/A</characteristic>
+            <characteristic name="Abilities" typeId="ed37-dbdc-d41b-3af6"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Inspiring Presence (X)" id="7267-22f6-b262-dc81" hidden="false" type="rule" targetId="7ebb-1cf5-bdb6-2c2e"/>
+        <infoLink name="Melee (X)" id="af32-8766-2c2d-a7a9" hidden="false" type="rule" targetId="ba7b-d442-85f1-d45d"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink targetId="de6b-6ec2-9294-541d" id="8202-0893-380c-70b4" primary="true" name="Unit"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Master Yawdryl" hidden="false" id="690e-11fb-feb3-b21f">
+      <costs>
+        <cost name="Points" typeId="0bc1-1233-3e53-72ca" value="41"/>
+      </costs>
+      <infoLinks>
+        <infoLink name="Leader (X/Y)" id="0069-db34-0c30-b741" hidden="false" type="rule" targetId="ba90-37ff-4384-2bc5"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink targetId="de6b-6ec2-9294-541d" id="dd14-6649-0aba-43c0" primary="true" name="Unit"/>
+      </categoryLinks>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="force" shared="true" id="ea48-e8c5-6202-5cce" includeChildSelections="false"/>
+      </constraints>
+      <entryLinks>
+        <entryLink import="true" name="Cidderach LMG" hidden="false" id="6e82-f837-7b24-ddf5" type="selectionEntry" targetId="53eb-1d73-48c1-a077"/>
+      </entryLinks>
+      <profiles>
+        <profile name="Master Yawdryl" typeId="7040-9c4e-1119-a3c5" typeName="Unit" hidden="false" id="09b0-ec80-fe60-08f1">
+          <characteristics>
+            <characteristic name="Sk" typeId="0014-9871-f278-b5f3">12</characteristic>
+            <characteristic name="Mt" typeId="d8ef-e518-8f49-8a7b">1d6+2</characteristic>
+            <characteristic name="MA" typeId="4cd7-b825-6660-1758">5</characteristic>
+            <characteristic name="Toughness" typeId="197d-1c5e-af24-ee6e">4</characteristic>
+            <characteristic name="Special Abilities" typeId="94ec-89a2-8f77-66c3">Leader (5/4)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Cook" hidden="false" id="8be5-e886-3082-d121">
+      <categoryLinks>
+        <categoryLink targetId="de6b-6ec2-9294-541d" id="9856-5bdd-fdf7-042d" primary="true" name="Unit"/>
+      </categoryLinks>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="force" shared="true" id="ac9e-9603-f33e-bd81" includeChildSelections="false"/>
+      </constraints>
+      <costs>
+        <cost name="Points" typeId="0bc1-1233-3e53-72ca" value="30"/>
+      </costs>
+      <entryLinks>
+        <entryLink import="true" name="Tefsyn Infantry Rhyfle" hidden="false" id="d2e7-c652-86e5-f4e9" type="selectionEntry" targetId="988f-3c41-f039-7609"/>
+      </entryLinks>
+      <infoLinks>
+        <infoLink name="Medic" id="d536-c092-4d9a-b80c" hidden="false" type="rule" targetId="0de6-c532-1b9e-df58"/>
+      </infoLinks>
+      <profiles>
+        <profile name="Cook" typeId="7040-9c4e-1119-a3c5" typeName="Unit" hidden="false" id="7209-4423-bd66-28aa">
+          <characteristics>
+            <characteristic name="Sk" typeId="0014-9871-f278-b5f3">12</characteristic>
+            <characteristic name="Mt" typeId="d8ef-e518-8f49-8a7b">1d6+2</characteristic>
+            <characteristic name="MA" typeId="4cd7-b825-6660-1758">5</characteristic>
+            <characteristic name="Toughness" typeId="197d-1c5e-af24-ee6e">4</characteristic>
+            <characteristic name="Special Abilities" typeId="94ec-89a2-8f77-66c3">Medic</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Musician" hidden="false" id="6bdb-b8fb-450c-e31f">
+      <categoryLinks>
+        <categoryLink targetId="de6b-6ec2-9294-541d" id="8090-f1f4-586c-b2a4" primary="true" name="Unit"/>
+      </categoryLinks>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="force" shared="true" id="281a-ee4d-b824-db17" includeChildSelections="false"/>
+      </constraints>
+      <costs>
+        <cost name="Points" typeId="0bc1-1233-3e53-72ca" value="30"/>
+      </costs>
+      <entryLinks>
+        <entryLink import="true" name="Tefsyn Infantry Rhyfle" hidden="false" id="6e6e-f5d6-e9c3-4ea9" type="selectionEntry" targetId="988f-3c41-f039-7609"/>
+      </entryLinks>
+      <profiles>
+        <profile name="Musician" typeId="7040-9c4e-1119-a3c5" typeName="Unit" hidden="false" id="13a0-c72c-2c4c-9ccf">
+          <characteristics>
+            <characteristic name="Sk" typeId="0014-9871-f278-b5f3">12</characteristic>
+            <characteristic name="Mt" typeId="d8ef-e518-8f49-8a7b">1d6+2</characteristic>
+            <characteristic name="MA" typeId="4cd7-b825-6660-1758">5</characteristic>
+            <characteristic name="Toughness" typeId="197d-1c5e-af24-ee6e">4</characteristic>
+            <characteristic name="Special Abilities" typeId="94ec-89a2-8f77-66c3">Musician (4)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Musician (X)" id="d450-17d0-bf49-5eb8" hidden="false" type="rule" targetId="822d-00b5-a47a-4529"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Standard Bearer" hidden="false" id="a2b1-c0cd-6462-fd47">
+      <categoryLinks>
+        <categoryLink targetId="de6b-6ec2-9294-541d" id="922e-4b46-9830-3616" primary="true" name="Unit"/>
+      </categoryLinks>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="force" shared="true" id="a81d-0b79-9915-0fc7" includeChildSelections="false"/>
+      </constraints>
+      <costs>
+        <cost name="Points" typeId="0bc1-1233-3e53-72ca" value="30"/>
+      </costs>
+      <infoLinks>
+        <infoLink name="Standard" id="d8d2-36a8-9d53-b854" hidden="false" type="rule" targetId="2437-22be-ccb6-5ef4"/>
+      </infoLinks>
+      <entryLinks>
+        <entryLink import="true" name="Tefsyn Infantry Rhyfle" hidden="false" id="89a0-19fa-84e1-ac51" type="selectionEntry" targetId="988f-3c41-f039-7609"/>
+      </entryLinks>
+      <profiles>
+        <profile name="Standard Bearer" typeId="7040-9c4e-1119-a3c5" typeName="Unit" hidden="false" id="173c-8c57-604e-2af1">
+          <characteristics>
+            <characteristic name="Sk" typeId="0014-9871-f278-b5f3">12</characteristic>
+            <characteristic name="Mt" typeId="d8ef-e518-8f49-8a7b">1d6+2</characteristic>
+            <characteristic name="MA" typeId="4cd7-b825-6660-1758">5</characteristic>
+            <characteristic name="Toughness" typeId="197d-1c5e-af24-ee6e">4</characteristic>
+            <characteristic name="Special Abilities" typeId="94ec-89a2-8f77-66c3">Standard</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Squirrel Handler" hidden="false" id="b2aa-3a65-8cca-e246">
+      <categoryLinks>
+        <categoryLink targetId="de6b-6ec2-9294-541d" id="b686-7160-6ef4-7032" primary="true" name="Unit"/>
+      </categoryLinks>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="force" shared="true" id="5d48-d670-6db3-afd9" includeChildSelections="false"/>
+      </constraints>
+      <costs>
+        <cost name="Points" typeId="0bc1-1233-3e53-72ca" value="30"/>
+      </costs>
+      <entryLinks>
+        <entryLink import="true" name="Tefsyn Infantry Rhyfle" hidden="false" id="27c9-8b47-f9f5-57dd" type="selectionEntry" targetId="988f-3c41-f039-7609"/>
+      </entryLinks>
+      <infoLinks>
+        <infoLink name="PykPyk (X)" id="57d3-b332-8446-6056" hidden="false" type="rule" targetId="13c8-54a0-441f-a71c"/>
+      </infoLinks>
+      <profiles>
+        <profile name="Squirrel Handler" typeId="7040-9c4e-1119-a3c5" typeName="Unit" hidden="false" id="a7ab-c005-665e-7ff9">
+          <characteristics>
+            <characteristic name="Sk" typeId="0014-9871-f278-b5f3">12</characteristic>
+            <characteristic name="Mt" typeId="d8ef-e518-8f49-8a7b">1d6+2</characteristic>
+            <characteristic name="MA" typeId="4cd7-b825-6660-1758">5</characteristic>
+            <characteristic name="Toughness" typeId="197d-1c5e-af24-ee6e">4</characteristic>
+            <characteristic name="Special Abilities" typeId="94ec-89a2-8f77-66c3">Pykpyk (3)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+  </sharedSelectionEntries>
+  <entryLinks>
+    <entryLink import="true" name="Caerten" hidden="false" id="2d1b-6be3-f601-9cec" type="selectionEntry" targetId="2247-559f-6d15-5057"/>
+    <entryLink import="true" name="Cook" hidden="false" id="7e82-c069-f0eb-b147" type="selectionEntry" targetId="8be5-e886-3082-d121"/>
+    <entryLink import="true" name="Hulbough Field Gun" hidden="false" id="4bc3-43e5-f9f5-ff8d" type="selectionEntry" targetId="b9dc-43c5-83d0-fdd7"/>
+    <entryLink import="true" name="is-Caerten" hidden="false" id="c553-6d26-999d-ceb8" type="selectionEntry" targetId="e83c-c8be-e948-5014"/>
+    <entryLink import="true" name="Master Yawdryl" hidden="false" id="742f-dfd3-8d58-7dce" type="selectionEntry" targetId="690e-11fb-feb3-b21f"/>
+    <entryLink import="true" name="Milwer" hidden="false" id="3c5d-e717-93dd-028a" type="selectionEntry" targetId="5c84-c4f3-5f14-07e8"/>
+    <entryLink import="true" name="Musician" hidden="false" id="0689-fdd4-8fdc-315a" type="selectionEntry" targetId="6bdb-b8fb-450c-e31f"/>
+    <entryLink import="true" name="Rhyfler" hidden="false" id="d62f-161f-a950-d255" type="selectionEntry" targetId="4e6e-c9b9-964f-08ba"/>
+    <entryLink import="true" name="Rhyfler" hidden="false" id="481b-253e-a59f-d94d" type="selectionEntry" targetId="3970-c0b8-4a54-5c05"/>
+    <entryLink import="true" name="Squirrel Handler" hidden="false" id="6c7c-7b63-a096-88c0" type="selectionEntry" targetId="b2aa-3a65-8cca-e246"/>
+    <entryLink import="true" name="Standard Bearer" hidden="false" id="5f73-8e0e-c45b-3e6f" type="selectionEntry" targetId="a2b1-c0cd-6462-fd47"/>
+    <entryLink import="true" name="Yawdryl" hidden="false" id="f949-bbb7-809c-af46" type="selectionEntry" targetId="e6e1-28fb-7d2c-2f5e"/>
+  </entryLinks>
+</catalogue>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="sys-dbd1-1d4a-43f9-1e9c" name="Quar - Clash of Rhyfles" battleScribeVersion="2.03" revision="9" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" authorName="Jim Jambo" authorUrl="jimjambo.gay">
+<gameSystem id="sys-dbd1-1d4a-43f9-1e9c" name="Quar - Clash of Rhyfles" battleScribeVersion="2.03" revision="10" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" authorName="Jim Jambo" authorUrl="jimjambo.gay">
   <categoryEntries>
     <categoryEntry name="Unit" id="de6b-6ec2-9294-541d" hidden="false"/>
     <categoryEntry name="Armored Vehicle" id="e009-498c-bf4e-66d2" hidden="false"/>
@@ -466,4 +466,17 @@ Rattleped riders cannot perform melee attacks.</description>
   <publications>
     <publication name="GitHub" id="fe1b-d682-3c7e-a8e0" hidden="false" publisherUrl="https://github.com/JimmethJambo/Quar-Clash-Of-Rhyfles-NewRecruit-Data"/>
   </publications>
+  <sharedSelectionEntries>
+    <selectionEntry type="upgrade" import="true" name="Pistol" hidden="false" id="7028-cb77-f695-540d">
+      <profiles>
+        <profile name="Pistol" typeId="0b63-6947-fb08-66eb" typeName="Weapon" hidden="false" id="73d9-a05f-95b2-65e2">
+          <characteristics>
+            <characteristic name="Range" typeId="5b6c-828e-fe65-26a5">4</characteristic>
+            <characteristic name="SN" typeId="b1d6-1660-ac56-c22a">-1</characteristic>
+            <characteristic name="Abilities" typeId="ed37-dbdc-d41b-3af6"/>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+  </sharedSelectionEntries>
 </gameSystem>
