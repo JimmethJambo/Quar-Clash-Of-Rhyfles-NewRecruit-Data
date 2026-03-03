@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="4210-c08d-7f26-7174" name="Crusaders of Toulmore" gameSystemId="sys-dbd1-1d4a-43f9-1e9c" gameSystemRevision="3" revision="7" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="4210-c08d-7f26-7174" name="Crusaders of Toulmore" gameSystemId="sys-dbd1-1d4a-43f9-1e9c" gameSystemRevision="3" revision="8" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedSelectionEntries>
     <selectionEntry type="upgrade" import="true" name="Bogen" hidden="false" id="2f9a-306b-0eb2-1eb1" sortIndex="1" defaultAmount="1">
       <profiles>
@@ -837,6 +837,62 @@
         <categoryLink targetId="de6b-6ec2-9294-541d" id="8230-5eb4-b48c-a74b" primary="true" name="Unit"/>
       </categoryLinks>
     </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Cook" hidden="false" id="96f6-d3c5-a980-c3c0" sortIndex="3">
+      <costs>
+        <cost name="Points" typeId="0bc1-1233-3e53-72ca" value="30"/>
+      </costs>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="42fb-5494-0500-0c83" includeChildSelections="true"/>
+      </constraints>
+      <entryLinks>
+        <entryLink import="true" name="Bogen" hidden="false" id="cde9-50c4-4f7b-4f13" type="selectionEntry" targetId="2f9a-306b-0eb2-1eb1"/>
+      </entryLinks>
+      <infoLinks>
+        <infoLink name="Medic" id="2f41-849a-7e8a-58a2" hidden="false" type="rule" targetId="0de6-c532-1b9e-df58"/>
+      </infoLinks>
+      <profiles>
+        <profile name="Cook" typeId="7040-9c4e-1119-a3c5" typeName="Unit" hidden="false" id="a3bd-edf0-aecd-c1a0">
+          <characteristics>
+            <characteristic name="Sk" typeId="0014-9871-f278-b5f3">12</characteristic>
+            <characteristic name="Mt" typeId="d8ef-e518-8f49-8a7b">1d6+2</characteristic>
+            <characteristic name="MA" typeId="4cd7-b825-6660-1758">5</characteristic>
+            <characteristic name="Toughness" typeId="197d-1c5e-af24-ee6e">4</characteristic>
+            <characteristic name="Special Abilities" typeId="94ec-89a2-8f77-66c3">Medic</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink targetId="de6b-6ec2-9294-541d" id="c888-101a-ed6a-1cb0" primary="true" name="Unit"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Musician" hidden="false" id="2ff4-8a7c-25bf-db8e" sortIndex="3">
+      <costs>
+        <cost name="Points" typeId="0bc1-1233-3e53-72ca" value="30"/>
+      </costs>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="c1cd-ada8-2a9b-db7d" includeChildSelections="true"/>
+      </constraints>
+      <entryLinks>
+        <entryLink import="true" name="Bogen" hidden="false" id="6c03-5ce9-8f8c-efb9" type="selectionEntry" targetId="2f9a-306b-0eb2-1eb1"/>
+      </entryLinks>
+      <infoLinks>
+        <infoLink name="Musician (X)" id="0fba-ed69-178e-1592" hidden="false" type="rule" targetId="822d-00b5-a47a-4529"/>
+      </infoLinks>
+      <profiles>
+        <profile name="Musician" typeId="7040-9c4e-1119-a3c5" typeName="Unit" hidden="false" id="ca45-86a6-b3ed-17c5">
+          <characteristics>
+            <characteristic name="Sk" typeId="0014-9871-f278-b5f3">12</characteristic>
+            <characteristic name="Mt" typeId="d8ef-e518-8f49-8a7b">1d6+2</characteristic>
+            <characteristic name="MA" typeId="4cd7-b825-6660-1758">5</characteristic>
+            <characteristic name="Toughness" typeId="197d-1c5e-af24-ee6e">4</characteristic>
+            <characteristic name="Special Abilities" typeId="94ec-89a2-8f77-66c3">Musician (4)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink targetId="de6b-6ec2-9294-541d" id="711c-4247-d1f9-3457" primary="true" name="Unit"/>
+      </categoryLinks>
+    </selectionEntry>
   </sharedSelectionEntries>
   <entryLinks>
     <entryLink import="true" name="Rhyfler  ( Bogen)" hidden="false" id="050f-f886-7240-d569" type="selectionEntry" targetId="1522-d9d9-806e-2219"/>
@@ -859,5 +915,7 @@
     <entryLink import="true" name="Flalhund Fydos" hidden="false" id="1e2d-7ed2-ab89-a46e" type="selectionEntry" targetId="8107-3f10-0e8a-3cb2"/>
     <entryLink import="true" name="Pathfinder Yawdryl" hidden="false" id="3062-b555-b091-8630" type="selectionEntry" targetId="51b2-4193-9ada-0d2e"/>
     <entryLink import="true" name="Pathfinders" hidden="false" id="c993-d1f7-c42c-3ef7" type="selectionEntry" targetId="7ec1-0a18-c1ad-31e5"/>
+    <entryLink import="true" name="Cook" hidden="false" id="d429-53fb-df9c-8065" type="selectionEntry" targetId="96f6-d3c5-a980-c3c0"/>
+    <entryLink import="true" name="Musician" hidden="false" id="19fb-2b64-22e2-0291" type="selectionEntry" targetId="2ff4-8a7c-25bf-db8e"/>
   </entryLinks>
 </catalogue>
