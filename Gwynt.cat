@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="da4e-ede1-f965-99f0" name="Gwynt" gameSystemId="sys-dbd1-1d4a-43f9-1e9c" gameSystemRevision="3" revision="4" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="da4e-ede1-f965-99f0" name="Gwynt" gameSystemId="sys-dbd1-1d4a-43f9-1e9c" gameSystemRevision="3" revision="5" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedSelectionEntries>
     <selectionEntry type="upgrade" import="true" name="Harlech" hidden="false" id="01b4-6a30-91e9-e547" sortIndex="1" defaultAmount="1">
       <profiles>
@@ -36,7 +36,7 @@
       <profiles>
         <profile name="SG-3 Scattergun" typeId="0b63-6947-fb08-66eb" typeName="Weapon" hidden="false" id="c746-f804-0b10-0a1e">
           <characteristics>
-            <characteristic name="Range" typeId="5b6c-828e-fe65-26a5">16</characteristic>
+            <characteristic name="Range" typeId="5b6c-828e-fe65-26a5">12</characteristic>
             <characteristic name="SN" typeId="b1d6-1660-ac56-c22a">N/A</characteristic>
             <characteristic name="Abilities" typeId="ed37-dbdc-d41b-3af6">Scattergun, Large Caliber</characteristic>
           </characteristics>
@@ -89,7 +89,7 @@
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Rhyfler" hidden="false" id="03b0-a4ee-adcf-b912" sortIndex="2">
       <costs>
-        <cost name="Points" typeId="0bc1-1233-3e53-72ca" value="25"/>
+        <cost name="Points" typeId="0bc1-1233-3e53-72ca" value="28"/>
       </costs>
       <entryLinks>
         <entryLink import="true" name="Harlech" hidden="false" id="c7de-bf98-4691-cd8a" type="selectionEntry" targetId="01b4-6a30-91e9-e547"/>
@@ -117,7 +117,7 @@
         <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="0a54-59eb-225d-ba17" includeChildSelections="true"/>
       </constraints>
       <costs>
-        <cost name="Points" typeId="0bc1-1233-3e53-72ca" value="30"/>
+        <cost name="Points" typeId="0bc1-1233-3e53-72ca" value="32"/>
       </costs>
       <categoryLinks>
         <categoryLink targetId="de6b-6ec2-9294-541d" id="2b74-fa60-d204-832d" primary="true" name="Unit"/>
@@ -361,7 +361,7 @@
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Aerfen" hidden="false" id="ac43-8dae-1978-a487" sortIndex="6">
       <costs>
-        <cost name="Points" typeId="0bc1-1233-3e53-72ca" value="115"/>
+        <cost name="Points" typeId="0bc1-1233-3e53-72ca" value="125"/>
       </costs>
       <categoryLinks>
         <categoryLink targetId="e009-498c-bf4e-66d2" id="4af1-b405-40af-ac52" primary="true" name="Armored Vehicle"/>
@@ -785,6 +785,323 @@
         <infoLink name="Musician (X)" id="307f-fdb7-1381-d80d" hidden="false" type="rule" targetId="822d-00b5-a47a-4529"/>
       </infoLinks>
     </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Cavalry Yawdryl" hidden="false" id="ced4-ca62-867d-c6ef">
+      <costs>
+        <cost name="Points" typeId="0bc1-1233-3e53-72ca" value="49"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink name="Mounted Unit" hidden="false" id="c267-7d73-5aa1-206d" targetId="f3df-2a35-71ff-3ff7" primary="true"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="6" typeId="6e06-153b-5181-d39d" typeName="Damage Chart" hidden="false" id="8b19-dadf-7c63-4497">
+          <characteristics>
+            <characteristic name="Result" typeId="897e-4ecc-846b-1598">Rider is hit and Taken OOA. Remove Mount from the battlefield and replace with OOA Dismounted Rider.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="1-2" typeId="6e06-153b-5181-d39d" typeName="Damage Chart" hidden="false" id="7fed-491c-bfc0-d437">
+          <characteristics>
+            <characteristic name="Result" typeId="897e-4ecc-846b-1598">Mounted Rhyfler is Rattled.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="4-5" typeId="6e06-153b-5181-d39d" typeName="Damage Chart" hidden="false" id="8249-c8ec-001d-afe5">
+          <characteristics>
+            <characteristic name="Result" typeId="897e-4ecc-846b-1598">Mount is taken OOA. Replace mounted unit with dismounted Rider. Rider makes a Mounted Crash Skill Check.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="3" typeId="6e06-153b-5181-d39d" typeName="Damage Chart" hidden="false" id="a301-e23e-e1fe-0a41">
+          <characteristics>
+            <characteristic name="Result" typeId="897e-4ecc-846b-1598">Mount is Wounded. Unit&apos;s MA reduced to second value. Unit may no longer Charge</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Mounted Yawdryl" typeId="e0d8-274b-8232-ef1b" typeName="Mounted Unit" hidden="false" id="be1e-0f42-4049-8ac2">
+          <characteristics>
+            <characteristic name="Sk" typeId="5ad3-1ace-c190-566b">13</characteristic>
+            <characteristic name="Mt" typeId="38b8-ca39-7d11-6eb1">2d6+1</characteristic>
+            <characteristic name="MA" typeId="870d-5722-99b9-21da">8/6</characteristic>
+            <characteristic name="T" typeId="2fcc-4790-c933-ecf8">4</characteristic>
+            <characteristic name="D" typeId="20b1-a32d-e41c-9a37">2</characteristic>
+            <characteristic name="Equipment" typeId="4a61-14de-472f-b84d">Lance, Pistol</characteristic>
+            <characteristic name="Special" typeId="c973-830d-f693-f6b1">Cadier, Melee(+1)</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Dismounted Yawdryl" typeId="8e73-7370-7f76-a0f6" typeName="Dismounted Unit" hidden="false" id="6b40-014c-57a2-0fdb">
+          <characteristics>
+            <characteristic name="Sk" typeId="4359-2c47-8755-0652">13</characteristic>
+            <characteristic name="Mt" typeId="a4d3-c1fb-e3fd-1ec4">2d6</characteristic>
+            <characteristic name="MA" typeId="7454-6341-5be7-ec95">5</characteristic>
+            <characteristic name="T" typeId="d802-8465-1aba-b808">4</characteristic>
+            <characteristic name="Equipment" typeId="eb3d-2bb6-1a43-2302">Sword, Pistol</characteristic>
+            <characteristic name="Special" typeId="3587-866b-8fff-d4c0">Leader (2,4)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Thunderous Hooves" id="8884-dd4f-2ad0-ebfa" hidden="false" type="rule" targetId="7acf-9df6-9b45-8d55"/>
+        <infoLink name="Cadier" id="bae9-d35d-c852-157d" hidden="false" type="rule" targetId="fff3-d972-c7a6-f80c"/>
+        <infoLink name="Skittish" id="7b74-f223-4a8f-5d92" hidden="false" type="rule" targetId="61ec-2639-3a0c-b7a0"/>
+        <infoLink name="Melee (X)" id="d0b1-5781-a8e3-de97" hidden="false" type="rule" targetId="ba7b-d442-85f1-d45d"/>
+      </infoLinks>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="487b-ff95-0816-12d5" includeChildSelections="true"/>
+      </constraints>
+      <entryLinks>
+        <entryLink import="true" name="Pistol" hidden="false" id="c59b-caf0-3986-160e" type="selectionEntry" targetId="7028-cb77-f695-540d"/>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Cavalry Rhyfler, Lance and Pistol" hidden="false" id="6619-abce-f989-df25">
+      <costs>
+        <cost name="Points" typeId="0bc1-1233-3e53-72ca" value="42"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink name="Mounted Unit" hidden="false" id="c8a3-a22a-153c-6089" targetId="f3df-2a35-71ff-3ff7" primary="true"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="6" typeId="6e06-153b-5181-d39d" typeName="Damage Chart" hidden="false" id="1574-455b-75c0-0004">
+          <characteristics>
+            <characteristic name="Result" typeId="897e-4ecc-846b-1598">Rider is hit and Taken OOA. Remove Mount from the battlefield and replace with OOA Dismounted Rider.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="1-2" typeId="6e06-153b-5181-d39d" typeName="Damage Chart" hidden="false" id="bd67-f655-1f08-29ab">
+          <characteristics>
+            <characteristic name="Result" typeId="897e-4ecc-846b-1598">Mounted Rhyfler is Rattled.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="4-5" typeId="6e06-153b-5181-d39d" typeName="Damage Chart" hidden="false" id="59e3-f6c3-3421-9219">
+          <characteristics>
+            <characteristic name="Result" typeId="897e-4ecc-846b-1598">Mount is taken OOA. Replace mounted unit with dismounted Rider. Rider makes a Mounted Crash Skill Check.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="3" typeId="6e06-153b-5181-d39d" typeName="Damage Chart" hidden="false" id="f2f2-d5e8-e7db-3534">
+          <characteristics>
+            <characteristic name="Result" typeId="897e-4ecc-846b-1598">Mount is Wounded. Unit&apos;s MA reduced to second value. Unit may no longer Charge</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Mounted Rhyfler" typeId="e0d8-274b-8232-ef1b" typeName="Mounted Unit" hidden="false" id="301b-bfe5-c8bb-2b9b">
+          <characteristics>
+            <characteristic name="Sk" typeId="5ad3-1ace-c190-566b">12</characteristic>
+            <characteristic name="Mt" typeId="38b8-ca39-7d11-6eb1">2d6+1</characteristic>
+            <characteristic name="MA" typeId="870d-5722-99b9-21da">8/6</characteristic>
+            <characteristic name="T" typeId="2fcc-4790-c933-ecf8">5</characteristic>
+            <characteristic name="D" typeId="20b1-a32d-e41c-9a37">2</characteristic>
+            <characteristic name="Equipment" typeId="4a61-14de-472f-b84d">Lance, Pistol</characteristic>
+            <characteristic name="Special" typeId="c973-830d-f693-f6b1">Cadier, Melee(+1)</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Dismounted Rhyfler" typeId="8e73-7370-7f76-a0f6" typeName="Dismounted Unit" hidden="false" id="436c-666b-bd91-4662">
+          <characteristics>
+            <characteristic name="Sk" typeId="4359-2c47-8755-0652">12</characteristic>
+            <characteristic name="Mt" typeId="a4d3-c1fb-e3fd-1ec4">2d6-1</characteristic>
+            <characteristic name="MA" typeId="7454-6341-5be7-ec95">5</characteristic>
+            <characteristic name="T" typeId="d802-8465-1aba-b808">4</characteristic>
+            <characteristic name="Equipment" typeId="eb3d-2bb6-1a43-2302">Lance, Pistol</characteristic>
+            <characteristic name="Special" typeId="3587-866b-8fff-d4c0">Polearm</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Pole-arm" id="559b-9139-7dac-0fb0" hidden="false" type="rule" targetId="f30d-f327-d2d7-bc31"/>
+        <infoLink name="Cadier" id="b74c-c9a7-c0b5-1a2f" hidden="false" type="rule" targetId="fff3-d972-c7a6-f80c"/>
+        <infoLink name="Skittish" id="6ddf-fbcd-5851-7c3f" hidden="false" type="rule" targetId="61ec-2639-3a0c-b7a0"/>
+        <infoLink name="Melee (X)" id="609f-ec9f-2c82-9157" hidden="false" type="rule" targetId="ba7b-d442-85f1-d45d"/>
+        <infoLink name="Thunderous Hooves" id="d187-c7de-df2e-de95" hidden="false" type="rule" targetId="7acf-9df6-9b45-8d55"/>
+      </infoLinks>
+      <constraints>
+        <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="8b8b-0e17-f7de-81aa" includeChildSelections="true"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" value="99" field="8b8b-0e17-f7de-81aa">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="parent" childId="ced4-ca62-867d-c6ef" shared="true" includeChildSelections="false"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <entryLinks>
+        <entryLink import="true" name="Pistol" hidden="false" id="2820-6232-a296-6d17" type="selectionEntry" targetId="7028-cb77-f695-540d"/>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Harlech Carbine" hidden="false" id="d25f-eb33-17b6-efcb" sortIndex="1" defaultAmount="1">
+      <profiles>
+        <profile name="Harlech Carbine" typeId="0b63-6947-fb08-66eb" typeName="Weapon" hidden="false" id="4984-7a8a-b0d9-6c6a">
+          <characteristics>
+            <characteristic name="Range" typeId="5b6c-828e-fe65-26a5">6</characteristic>
+            <characteristic name="SN" typeId="b1d6-1660-ac56-c22a">-3</characteristic>
+            <characteristic name="Abilities" typeId="ed37-dbdc-d41b-3af6"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="72df-d075-38c9-d098" includeChildSelections="false"/>
+      </constraints>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Blunderbuss" hidden="false" id="bd5a-f2d6-d097-c118" sortIndex="1" defaultAmount="1">
+      <profiles>
+        <profile name="Blunderbuss" typeId="0b63-6947-fb08-66eb" typeName="Weapon" hidden="false" id="5a77-9f61-517d-e5a1">
+          <characteristics>
+            <characteristic name="Range" typeId="5b6c-828e-fe65-26a5">4</characteristic>
+            <characteristic name="SN" typeId="b1d6-1660-ac56-c22a">-1</characteristic>
+            <characteristic name="Abilities" typeId="ed37-dbdc-d41b-3af6">Shotgun, Slow Reload</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d905-e6ed-38c2-81db" includeChildSelections="false"/>
+      </constraints>
+      <infoLinks>
+        <infoLink name="Slow Reload" id="8081-dbef-db0d-705a" hidden="false" type="rule" targetId="d313-5d37-5ae4-7b1f"/>
+        <infoLink name="Shotgun" id="4878-aafc-867c-ec62" hidden="false" type="rule" targetId="d633-ee5f-c6cf-c931"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Courier" hidden="false" id="51ba-c3da-3fab-bac9" sortIndex="3">
+      <categoryLinks>
+        <categoryLink targetId="de6b-6ec2-9294-541d" id="b11e-c584-40b2-566c" primary="true" name="Unit"/>
+      </categoryLinks>
+      <constraints>
+        <constraint type="max" value="3" field="selections" scope="roster" shared="true" id="8fa1-59cb-e90a-6e47" includeChildSelections="true"/>
+      </constraints>
+      <entryLinks>
+        <entryLink import="true" name="Harlech Carbine w/ Bayonet" hidden="false" id="929a-008a-ba8c-9dc4" type="selectionEntry" targetId="d25f-eb33-17b6-efcb"/>
+      </entryLinks>
+      <profiles>
+        <profile name="Courier" typeId="7040-9c4e-1119-a3c5" typeName="Unit" hidden="false" id="e038-b91d-a59e-5494">
+          <characteristics>
+            <characteristic name="Sk" typeId="0014-9871-f278-b5f3">13</characteristic>
+            <characteristic name="Mt" typeId="d8ef-e518-8f49-8a7b">2d6</characteristic>
+            <characteristic name="MA" typeId="4cd7-b825-6660-1758">6</characteristic>
+            <characteristic name="Toughness" typeId="197d-1c5e-af24-ee6e">4</characteristic>
+            <characteristic name="Special Abilities" typeId="94ec-89a2-8f77-66c3">Skirmisher</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="Points" typeId="0bc1-1233-3e53-72ca" value="40"/>
+      </costs>
+      <infoLinks>
+        <infoLink name="Skirmisher" id="25f5-3018-f59f-ea8a" hidden="false" type="rule" targetId="8095-39f1-1cd6-a7d5"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Courier Gunner" hidden="false" id="b60a-3b5a-f556-c2fc" sortIndex="3">
+      <categoryLinks>
+        <categoryLink targetId="de6b-6ec2-9294-541d" id="f855-fcc2-f2de-234f" primary="true" name="Unit"/>
+      </categoryLinks>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="52d6-51e7-072c-919a" includeChildSelections="true"/>
+      </constraints>
+      <entryLinks>
+        <entryLink import="true" name="Blunderbuss" hidden="false" id="042b-bb76-5b1f-7b44" type="selectionEntry" targetId="bd5a-f2d6-d097-c118"/>
+      </entryLinks>
+      <profiles>
+        <profile name="Courier Gunner" typeId="7040-9c4e-1119-a3c5" typeName="Unit" hidden="false" id="6e1c-8667-7c4a-7667">
+          <characteristics>
+            <characteristic name="Sk" typeId="0014-9871-f278-b5f3">13</characteristic>
+            <characteristic name="Mt" typeId="d8ef-e518-8f49-8a7b">1d6+2</characteristic>
+            <characteristic name="MA" typeId="4cd7-b825-6660-1758">6</characteristic>
+            <characteristic name="Toughness" typeId="197d-1c5e-af24-ee6e">4</characteristic>
+            <characteristic name="Special Abilities" typeId="94ec-89a2-8f77-66c3">Skirmisher</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="Points" typeId="0bc1-1233-3e53-72ca" value="40"/>
+      </costs>
+      <infoLinks>
+        <infoLink name="Skirmisher" id="851b-cfec-045b-6a3f" hidden="false" type="rule" targetId="8095-39f1-1cd6-a7d5"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Courier Yawdryl" hidden="false" id="7d1a-9a6d-838b-f99d" sortIndex="3">
+      <categoryLinks>
+        <categoryLink targetId="de6b-6ec2-9294-541d" id="38a0-ddd5-ac15-85ea" primary="true" name="Unit"/>
+      </categoryLinks>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="38ae-ead0-0e41-4a74" includeChildSelections="true"/>
+      </constraints>
+      <entryLinks>
+        <entryLink import="true" name="Doru, Sword" hidden="false" id="4a76-9230-20b7-b971" type="selectionEntry" targetId="32f6-19d7-2e5c-6307"/>
+      </entryLinks>
+      <profiles>
+        <profile name="Courier Yawdryl" typeId="7040-9c4e-1119-a3c5" typeName="Unit" hidden="false" id="0881-d137-8da7-6199">
+          <characteristics>
+            <characteristic name="Sk" typeId="0014-9871-f278-b5f3">13</characteristic>
+            <characteristic name="Mt" typeId="d8ef-e518-8f49-8a7b">1d6+2</characteristic>
+            <characteristic name="MA" typeId="4cd7-b825-6660-1758">6</characteristic>
+            <characteristic name="Toughness" typeId="197d-1c5e-af24-ee6e">4</characteristic>
+            <characteristic name="Special Abilities" typeId="94ec-89a2-8f77-66c3">Scout (2/4), Skirmisher</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="Points" typeId="0bc1-1233-3e53-72ca" value="50"/>
+      </costs>
+      <infoLinks>
+        <infoLink name="Skirmisher" id="2984-1943-6355-9f97" hidden="false" type="rule" targetId="8095-39f1-1cd6-a7d5"/>
+        <infoLink name="Scout (X/Y)" id="d261-1026-d0bf-d644" hidden="false" type="rule" targetId="0d68-8b95-5793-02aa"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="CH11 Rotary Shotgun" hidden="false" id="50c6-b992-568f-bc99" sortIndex="5">
+      <costs>
+        <cost name="Points" typeId="0bc1-1233-3e53-72ca" value="45"/>
+      </costs>
+      <constraints>
+        <constraint type="max" value="2" field="selections" scope="roster" shared="true" id="1584-0995-58bf-46e5" includeChildSelections="true"/>
+      </constraints>
+      <profiles>
+        <profile name="CH11 Rotary Shotgun" typeId="3971-dc7c-fded-7a05" typeName="Heavy Weapon Crew" hidden="false" id="f20b-f4dd-d27a-26b5">
+          <characteristics>
+            <characteristic name="Crew" typeId="d99f-34b4-b34d-2276">2</characteristic>
+            <characteristic name="Skill" typeId="520d-faaf-a88e-7985">12</characteristic>
+            <characteristic name="T" typeId="e994-3e9d-3b18-43b3">4</characteristic>
+            <characteristic name="D" typeId="97fc-5f15-cc48-6f00">2</characteristic>
+            <characteristic name="Break" typeId="a408-edfc-85be-a5ac">1</characteristic>
+            <characteristic name="MA" typeId="7cf6-12da-3cdd-6b9d">5</characteristic>
+            <characteristic name="Type" typeId="00d8-3f2d-ae43-9218">HSG</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="1-2" typeId="6e06-153b-5181-d39d" typeName="Damage Chart" hidden="false" id="a8b3-980b-4139-edfb">
+          <characteristics>
+            <characteristic name="Result" typeId="897e-4ecc-846b-1598">Weapon Crew Rattled.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="3-4" typeId="6e06-153b-5181-d39d" typeName="Damage Chart" hidden="false" id="5047-0de1-f2c5-bb65">
+          <characteristics>
+            <characteristic name="Result" typeId="897e-4ecc-846b-1598">Weapon Crew is Gobsmacked. Remove Rattled if present.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="5-6" typeId="6e06-153b-5181-d39d" typeName="Damage Chart" hidden="false" id="4489-bdb5-c7f9-6b30">
+          <characteristics>
+            <characteristic name="Result" typeId="897e-4ecc-846b-1598">Weapon Crew suffers 1 Damage Point.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="7+" typeId="6e06-153b-5181-d39d" typeName="Damage Chart" hidden="false" id="3979-644a-5a6b-47d0">
+          <characteristics>
+            <characteristic name="Result" typeId="897e-4ecc-846b-1598">Weapon crew are disabled. Remove from battlefield.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="0" typeId="73fd-d87f-c3ca-d678" typeName="Damage Level" hidden="false" id="2893-3b13-bedd-fba2">
+          <characteristics>
+            <characteristic typeId="0a18-6bf0-38b6-f7a0">Fully Operational</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="1" typeId="73fd-d87f-c3ca-d678" typeName="Damage Level" hidden="false" id="b9d5-90d6-4c82-005d">
+          <characteristics>
+            <characteristic typeId="0a18-6bf0-38b6-f7a0">Shaken: Attacks are at -4 unless 2 activations are spent by the crew to perform the Combat Task.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="2" typeId="73fd-d87f-c3ca-d678" typeName="Damage Level" hidden="false" id="12e6-65f5-7c35-b028">
+          <characteristics>
+            <characteristic typeId="0a18-6bf0-38b6-f7a0">Disabled: Remove from Battlefield.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="CH11 Rotary Shotgun" typeId="d580-6e35-f083-cd53" typeName="Heavy Weapon" hidden="false" id="ef55-f3d2-73c0-f7f6">
+          <characteristics>
+            <characteristic name="Range" typeId="1775-3227-d2ed-93a5">Template Cone</characteristic>
+            <characteristic name="Arc" typeId="f1e8-b48b-c0f2-c05f">45</characteristic>
+            <characteristic name="Abilities" typeId="bd42-ef04-afe1-f4d4"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink name="Heavy Weapon Crew" hidden="false" id="1307-0370-ac47-7912" targetId="34ad-bf4f-0473-dac6" primary="true"/>
+      </categoryLinks>
+    </selectionEntry>
   </sharedSelectionEntries>
   <entryLinks>
     <entryLink import="true" name="Rhyfler" hidden="false" id="f51d-7856-a1b8-0af4" type="selectionEntry" targetId="03b0-a4ee-adcf-b912"/>
@@ -798,11 +1115,17 @@
     <entryLink import="true" name="Caerten" hidden="false" id="4282-78ba-51a2-b281" type="selectionEntry" targetId="bd16-3d60-6984-082b"/>
     <entryLink import="true" name="Kryndyl Contraption" hidden="false" id="484b-69a5-b3e8-0bb7" type="selectionEntry" targetId="524c-fdb9-0afe-2649"/>
     <entryLink import="true" name="Yawdryl" hidden="false" id="5862-9a47-0905-8ea1" type="selectionEntry" targetId="af5f-d991-3d40-bc7c"/>
-    <entryLink import="true" name="Master Yawdryl" hidden="false" id="703f-d9fe-d520-206b" type="selectionEntry" targetId="50d8-5883-abd5-a336"/>
+    <entryLink import="true" name="Courier Yawdryl" hidden="false" id="703f-d9fe-d520-206b" type="selectionEntry" targetId="7d1a-9a6d-838b-f99d"/>
     <entryLink import="true" name="Cook" hidden="false" id="5f15-badf-e68b-58ed" type="selectionEntry" targetId="0c4d-56c1-6ea9-54e0"/>
     <entryLink import="true" name="Standard Bearer" hidden="false" id="a98f-f235-f26a-62bc" type="selectionEntry" targetId="32ca-9e4a-c20a-dd61"/>
-    <entryLink import="true" name="Aerfen" hidden="false" id="3cca-0dad-2eec-186a" type="selectionEntry" targetId="ac43-8dae-1978-a487"/>
+    <entryLink import="true" name="Cavalry Yawdryl" hidden="false" id="3cca-0dad-2eec-186a" type="selectionEntry" targetId="ced4-ca62-867d-c6ef"/>
     <entryLink import="true" name="Aerthyn Transport" hidden="false" id="49f6-1895-24f1-a34d" type="selectionEntry" targetId="424c-1ee1-ef8b-a818"/>
     <entryLink import="true" name="Grenadier" hidden="false" id="e51e-6cef-3def-2799" type="selectionEntry" targetId="ef0e-0925-2207-527f"/>
+    <entryLink import="true" name="Aerfen" hidden="false" id="fa03-e7cd-c628-4b20" type="selectionEntry" targetId="ac43-8dae-1978-a487"/>
+    <entryLink import="true" name="Cavalry Rhyfler, Lance and Pistol" hidden="false" id="394a-0a01-df40-b3a6" type="selectionEntry" targetId="6619-abce-f989-df25"/>
+    <entryLink import="true" name="Master Yawdryl" hidden="false" id="cdef-32c2-dd2b-953b" type="selectionEntry" targetId="50d8-5883-abd5-a336"/>
+    <entryLink import="true" name="Courier" hidden="false" id="5583-9f15-53c9-0b0e" type="selectionEntry" targetId="51ba-c3da-3fab-bac9"/>
+    <entryLink import="true" name="Courier Gunner" hidden="false" id="3afb-8cac-b1ae-9288" type="selectionEntry" targetId="b60a-3b5a-f556-c2fc"/>
+    <entryLink import="true" name="CH11 Rotary Shotgun" hidden="false" id="37fd-8868-5e37-4a50" type="selectionEntry" targetId="50c6-b992-568f-bc99"/>
   </entryLinks>
 </catalogue>

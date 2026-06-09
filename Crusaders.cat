@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="80cd-b846-90e0-dd6f" name="Crusaders" gameSystemId="sys-dbd1-1d4a-43f9-1e9c" gameSystemRevision="2" revision="10" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="80cd-b846-90e0-dd6f" name="Crusaders" gameSystemId="sys-dbd1-1d4a-43f9-1e9c" gameSystemRevision="2" revision="11" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedProfiles>
     <profile name="Bogen" typeId="0b63-6947-fb08-66eb" typeName="Weapon" hidden="false" id="d73e-9bd0-b2e0-2432">
       <characteristics>
@@ -54,6 +54,13 @@
       <characteristics>
         <characteristic name="Range" typeId="5b6c-828e-fe65-26a5">4</characteristic>
         <characteristic name="SN" typeId="b1d6-1660-ac56-c22a">-1</characteristic>
+        <characteristic name="Abilities" typeId="ed37-dbdc-d41b-3af6"/>
+      </characteristics>
+    </profile>
+    <profile name="Dinas Carbine" typeId="0b63-6947-fb08-66eb" typeName="Weapon" hidden="false" id="9fd1-6e0f-3df7-b980">
+      <characteristics>
+        <characteristic name="Range" typeId="5b6c-828e-fe65-26a5">6</characteristic>
+        <characteristic name="SN" typeId="b1d6-1660-ac56-c22a">-2</characteristic>
         <characteristic name="Abilities" typeId="ed37-dbdc-d41b-3af6"/>
       </characteristics>
     </profile>
@@ -194,12 +201,13 @@
             <characteristic name="Mt" typeId="d8ef-e518-8f49-8a7b">1d6+2</characteristic>
             <characteristic name="MA" typeId="4cd7-b825-6660-1758">5</characteristic>
             <characteristic name="Toughness" typeId="197d-1c5e-af24-ee6e">4</characteristic>
-            <characteristic name="Special Abilities" typeId="94ec-89a2-8f77-66c3">Leader 2/3</characteristic>
+            <characteristic name="Special Abilities" typeId="94ec-89a2-8f77-66c3">Leader 2/3, Support</characteristic>
           </characteristics>
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink name="Leader (X/Y)" id="4291-56b3-2643-6e8e" hidden="false" type="rule" targetId="ba90-37ff-4384-2bc5"/>
+        <infoLink name="Support" id="4291-56b3-2643-6e8e" hidden="false" type="rule" targetId="c0d3-909a-ca80-1be2"/>
+        <infoLink name="Leader (X/Y)" id="daf1-71ef-1ebd-e602" hidden="false" type="rule" targetId="ba90-37ff-4384-2bc5"/>
       </infoLinks>
       <entryLinks>
         <entryLink import="true" name="Bogen" hidden="false" id="920a-dfa3-2cd6-c0d0" type="selectionEntry" targetId="caf9-e75a-bf81-1229"/>
@@ -218,16 +226,17 @@
       <profiles>
         <profile name="Yawdryl" typeId="7040-9c4e-1119-a3c5" typeName="Unit" hidden="false" id="e462-e27e-2633-abad">
           <characteristics>
-            <characteristic name="Sk" typeId="0014-9871-f278-b5f3">13</characteristic>
+            <characteristic name="Sk" typeId="0014-9871-f278-b5f3">12</characteristic>
             <characteristic name="Mt" typeId="d8ef-e518-8f49-8a7b">1d6+2</characteristic>
             <characteristic name="MA" typeId="4cd7-b825-6660-1758">5</characteristic>
             <characteristic name="Toughness" typeId="197d-1c5e-af24-ee6e">4</characteristic>
-            <characteristic name="Special Abilities" typeId="94ec-89a2-8f77-66c3">Leader (3/4)</characteristic>
+            <characteristic name="Special Abilities" typeId="94ec-89a2-8f77-66c3">Leader (3/4), Support</characteristic>
           </characteristics>
         </profile>
       </profiles>
       <infoLinks>
         <infoLink name="Leader (X/Y)" id="d660-7491-b2c4-7d2a" hidden="false" type="rule" targetId="ba90-37ff-4384-2bc5"/>
+        <infoLink name="Support" id="acab-ef37-aa62-47ec" hidden="false" type="rule" targetId="c0d3-909a-ca80-1be2"/>
       </infoLinks>
       <entryLinks>
         <entryLink import="true" name="Bogen" hidden="false" id="890b-18a5-dbfb-6de9" type="selectionEntry" targetId="caf9-e75a-bf81-1229"/>
@@ -987,7 +996,7 @@
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Nae-bon Armored Wagon" hidden="false" id="38ef-fc1f-ce2c-f276" sortIndex="5">
       <costs>
-        <cost name="Points" typeId="0bc1-1233-3e53-72ca" value="63"/>
+        <cost name="Points" typeId="0bc1-1233-3e53-72ca" value="55"/>
       </costs>
       <profiles>
         <profile name="Nae-bon Armored Wagon" typeId="093b-79b2-af5a-6091" typeName="Vehicle" hidden="false" id="9cd7-22ba-7e47-860e">
@@ -998,7 +1007,7 @@
             <characteristic name="MA" typeId="46a0-fd12-ff7d-1a6f">5</characteristic>
             <characteristic name="Toughness" typeId="b554-5ae2-03ab-4105">5</characteristic>
             <characteristic name="Abilities" typeId="0269-a706-2bea-6c85">Agile</characteristic>
-            <characteristic name="Damage" typeId="4b90-fab7-6493-9714">4</characteristic>
+            <characteristic name="Damage" typeId="4b90-fab7-6493-9714">3</characteristic>
           </characteristics>
         </profile>
         <profile name="1-2" typeId="6e06-153b-5181-d39d" typeName="Damage Chart" hidden="false" id="565b-3445-6620-659f">
@@ -1029,10 +1038,18 @@
         <categoryLink targetId="881d-fa38-6f95-c8f3" id="0803-accd-7b94-a76e" primary="true" name="Vehicle"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="Unarmed" hidden="false" id="c485-a6f8-3cb9-9d79"/>
+        <selectionEntry type="upgrade" import="true" name="Unarmed" hidden="false" id="c485-a6f8-3cb9-9d79">
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="6f82-859f-0d32-8ebc" shared="true" includeChildSelections="false"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="H-11a" hidden="false" id="30f8-22e7-77e7-b0cc">
           <costs>
-            <cost name="Points" typeId="0bc1-1233-3e53-72ca" value="12"/>
+            <cost name="Points" typeId="0bc1-1233-3e53-72ca" value="35"/>
           </costs>
           <infoLinks>
             <infoLink name="h-11a" id="4f35-48b1-3bdd-5898" hidden="false" type="profile" targetId="ca8d-f53e-7b6b-43fb"/>
@@ -1240,6 +1257,262 @@
         </profile>
       </profiles>
     </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Cavalry Rhyfler, Saber &amp; Sio-Cly Derringer" hidden="false" id="4d19-6cbc-321d-1be7">
+      <costs>
+        <cost name="Points" typeId="0bc1-1233-3e53-72ca" value="50"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="f3df-2a35-71ff-3ff7" id="fb19-8822-1177-842e" primary="true" name="Mounted Unit"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="6" typeId="6e06-153b-5181-d39d" typeName="Damage Chart" hidden="false" id="dc96-7600-6d5c-879f">
+          <characteristics>
+            <characteristic name="Result" typeId="897e-4ecc-846b-1598">Rider is hit and Taken OOA. Remove Mount from the battlefield and replace with OOA Dismounted Rider.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="1-2" typeId="6e06-153b-5181-d39d" typeName="Damage Chart" hidden="false" id="e9fa-19eb-b7ac-d000">
+          <characteristics>
+            <characteristic name="Result" typeId="897e-4ecc-846b-1598">Mounted Rhyfler is Rattled.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="4-5" typeId="6e06-153b-5181-d39d" typeName="Damage Chart" hidden="false" id="84b5-8912-0adc-1bfb">
+          <characteristics>
+            <characteristic name="Result" typeId="897e-4ecc-846b-1598">Mount is taken OOA. Replace mounted unit with dismounted Rider. Rider makes a Mounted Crash Skill Check.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="3" typeId="6e06-153b-5181-d39d" typeName="Damage Chart" hidden="false" id="38e6-d96f-6100-96b3">
+          <characteristics>
+            <characteristic name="Result" typeId="897e-4ecc-846b-1598">Mount is Wounded. Unit&apos;s MA reduced to second value. Unit may no longer Charge</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Mounted Rhyfler" typeId="e0d8-274b-8232-ef1b" typeName="Mounted Unit" hidden="false" id="e7f3-5b4a-a3a6-0444">
+          <characteristics>
+            <characteristic name="Sk" typeId="5ad3-1ace-c190-566b">12</characteristic>
+            <characteristic name="Mt" typeId="38b8-ca39-7d11-6eb1">2d6-1</characteristic>
+            <characteristic name="MA" typeId="870d-5722-99b9-21da">8/6</characteristic>
+            <characteristic name="T" typeId="2fcc-4790-c933-ecf8">4</characteristic>
+            <characteristic name="D" typeId="20b1-a32d-e41c-9a37">2</characteristic>
+            <characteristic name="Equipment" typeId="4a61-14de-472f-b84d">Sabre, Sio-Cly Derringer</characteristic>
+            <characteristic name="Special" typeId="c973-830d-f693-f6b1">Cadier</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Dismounted Rhyfler" typeId="8e73-7370-7f76-a0f6" typeName="Dismounted Unit" hidden="false" id="7db6-e7e1-5087-c9f4">
+          <characteristics>
+            <characteristic name="Sk" typeId="4359-2c47-8755-0652">12</characteristic>
+            <characteristic name="Mt" typeId="a4d3-c1fb-e3fd-1ec4">2d6-1</characteristic>
+            <characteristic name="MA" typeId="7454-6341-5be7-ec95">5</characteristic>
+            <characteristic name="T" typeId="d802-8465-1aba-b808">4</characteristic>
+            <characteristic name="Equipment" typeId="eb3d-2bb6-1a43-2302">Sabre, Sio-Cly Derringer</characteristic>
+            <characteristic name="Special" typeId="3587-866b-8fff-d4c0"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Thunderous Hooves" id="ad27-5ff6-c2fc-9e98" hidden="false" type="rule" targetId="7acf-9df6-9b45-8d55"/>
+        <infoLink name="Cadier" id="3342-b9b9-b364-3830" hidden="false" type="rule" targetId="fff3-d972-c7a6-f80c"/>
+        <infoLink name="Skittish" id="92ac-2112-9fd3-f571" hidden="false" type="rule" targetId="61ec-2639-3a0c-b7a0"/>
+        <infoLink name="Sio-Cly Derringer" id="9b48-d8e4-345a-1b52" hidden="false" type="profile" targetId="d1b9-63f1-d817-d5dc"/>
+      </infoLinks>
+      <constraints>
+        <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="dce2-c870-143f-0578" includeChildSelections="true"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" value="99" field="dce2-c870-143f-0578">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="parent" childId="bebf-b5f9-77f4-256b" shared="true" includeChildSelections="false"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Cavalry Yawdryl" hidden="false" id="bebf-b5f9-77f4-256b">
+      <costs>
+        <cost name="Points" typeId="0bc1-1233-3e53-72ca" value="46"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="f3df-2a35-71ff-3ff7" id="d566-c322-294d-b9a4" primary="true" name="Mounted Unit"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="6" typeId="6e06-153b-5181-d39d" typeName="Damage Chart" hidden="false" id="b444-316e-e465-7ce5">
+          <characteristics>
+            <characteristic name="Result" typeId="897e-4ecc-846b-1598">Rider is hit and Taken OOA. Remove Mount from the battlefield and replace with OOA Dismounted Rider.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="1-2" typeId="6e06-153b-5181-d39d" typeName="Damage Chart" hidden="false" id="c221-ba53-877a-97fa">
+          <characteristics>
+            <characteristic name="Result" typeId="897e-4ecc-846b-1598">Mounted Rhyfler is Rattled.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="4-5" typeId="6e06-153b-5181-d39d" typeName="Damage Chart" hidden="false" id="ca78-992a-39bf-2eb1">
+          <characteristics>
+            <characteristic name="Result" typeId="897e-4ecc-846b-1598">Mount is taken OOA. Replace mounted unit with dismounted Rider. Rider makes a Mounted Crash Skill Check.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="3" typeId="6e06-153b-5181-d39d" typeName="Damage Chart" hidden="false" id="4435-cb99-92d8-3578">
+          <characteristics>
+            <characteristic name="Result" typeId="897e-4ecc-846b-1598">Mount is Wounded. Unit&apos;s MA reduced to second value. Unit may no longer Charge</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Thunderous Hooves" id="4c45-9df7-987b-9eca" hidden="false" type="rule" targetId="7acf-9df6-9b45-8d55"/>
+        <infoLink name="Cadier" id="a235-fb87-b6f6-ee2f" hidden="false" type="rule" targetId="fff3-d972-c7a6-f80c"/>
+        <infoLink name="Skittish" id="46a7-9307-2584-0b80" hidden="false" type="rule" targetId="61ec-2639-3a0c-b7a0"/>
+      </infoLinks>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8720-a85d-c143-a9c1" includeChildSelections="true"/>
+        <constraint type="min" value="1" field="selections" scope="self" shared="true" id="ef6c-a371-4995-5d54"/>
+      </constraints>
+      <entryLinks>
+        <entryLink import="true" name="Sio-Cly Derringer" hidden="false" id="f9a5-2099-46f1-350d" type="selectionEntry" targetId="36ab-4e9b-23aa-bb0d">
+          <costs>
+            <cost name="Points" typeId="0bc1-1233-3e53-72ca" value="10"/>
+          </costs>
+          <profiles>
+            <profile name="Mounted Yawdryl" typeId="e0d8-274b-8232-ef1b" typeName="Mounted Unit" hidden="false" id="de11-d9b9-878b-11b2">
+              <characteristics>
+                <characteristic name="Sk" typeId="5ad3-1ace-c190-566b">13</characteristic>
+                <characteristic name="Mt" typeId="38b8-ca39-7d11-6eb1">2d6-1</characteristic>
+                <characteristic name="MA" typeId="870d-5722-99b9-21da">8/6</characteristic>
+                <characteristic name="T" typeId="2fcc-4790-c933-ecf8">4</characteristic>
+                <characteristic name="D" typeId="20b1-a32d-e41c-9a37">2</characteristic>
+                <characteristic name="Equipment" typeId="4a61-14de-472f-b84d">Sabre, Sio-Cly Derringer</characteristic>
+                <characteristic name="Special" typeId="c973-830d-f693-f6b1">Cadier</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Dismounted Yawdryl" typeId="8e73-7370-7f76-a0f6" typeName="Dismounted Unit" hidden="false" id="a865-d0f9-602f-d957">
+              <characteristics>
+                <characteristic name="Sk" typeId="4359-2c47-8755-0652">13</characteristic>
+                <characteristic name="Mt" typeId="a4d3-c1fb-e3fd-1ec4">2d6-1</characteristic>
+                <characteristic name="MA" typeId="7454-6341-5be7-ec95">5</characteristic>
+                <characteristic name="T" typeId="d802-8465-1aba-b808">4</characteristic>
+                <characteristic name="Equipment" typeId="eb3d-2bb6-1a43-2302">Sabre, Sio-Cly Derringer</characteristic>
+                <characteristic name="Special" typeId="3587-866b-8fff-d4c0">Leader (2,4)</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="8dde-ab2e-33de-20d0" includeChildSelections="true"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="ea2a-2bbe-68f5-f3aa" shared="true" includeChildSelections="false"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
+        <entryLink import="true" name="Dinas Carbine" hidden="false" id="ea2a-2bbe-68f5-f3aa" type="selectionEntry" targetId="3eb7-937b-036e-fd3b">
+          <costs>
+            <cost name="Points" typeId="0bc1-1233-3e53-72ca" value="0"/>
+          </costs>
+          <profiles>
+            <profile name="Mounted Yawdryl" typeId="e0d8-274b-8232-ef1b" typeName="Mounted Unit" hidden="false" id="5e09-11b5-a07a-7e90">
+              <characteristics>
+                <characteristic name="Sk" typeId="5ad3-1ace-c190-566b">13</characteristic>
+                <characteristic name="Mt" typeId="38b8-ca39-7d11-6eb1">1d6+1</characteristic>
+                <characteristic name="MA" typeId="870d-5722-99b9-21da">8/6</characteristic>
+                <characteristic name="T" typeId="2fcc-4790-c933-ecf8">4</characteristic>
+                <characteristic name="D" typeId="20b1-a32d-e41c-9a37">2</characteristic>
+                <characteristic name="Equipment" typeId="4a61-14de-472f-b84d">Sabre, Dinas Carbine</characteristic>
+                <characteristic name="Special" typeId="c973-830d-f693-f6b1">Cadier</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Dismounted Yawdryl" typeId="8e73-7370-7f76-a0f6" typeName="Dismounted Unit" hidden="false" id="cbc1-567a-fc0e-0cdf">
+              <characteristics>
+                <characteristic name="Sk" typeId="4359-2c47-8755-0652">13</characteristic>
+                <characteristic name="Mt" typeId="a4d3-c1fb-e3fd-1ec4">1d6+2</characteristic>
+                <characteristic name="MA" typeId="7454-6341-5be7-ec95">5</characteristic>
+                <characteristic name="T" typeId="d802-8465-1aba-b808">4</characteristic>
+                <characteristic name="Equipment" typeId="eb3d-2bb6-1a43-2302">Sabre, Dinas Carbine</characteristic>
+                <characteristic name="Special" typeId="3587-866b-8fff-d4c0">Leader (2,4)</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="ea5b-90c0-47c3-47cc" includeChildSelections="true"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="36ab-4e9b-23aa-bb0d" shared="true" includeChildSelections="false"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Dinas Carbine" hidden="false" id="3eb7-937b-036e-fd3b" sortIndex="1">
+      <infoLinks>
+        <infoLink name="Dinas Carbine" id="b258-8dcc-8742-a021" hidden="false" type="profile" targetId="9fd1-6e0f-3df7-b980"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Cavalry Rhyfler, Saber &amp; Dinas Carbine" hidden="false" id="6019-f43c-9c3b-b113">
+      <costs>
+        <cost name="Points" typeId="0bc1-1233-3e53-72ca" value="40"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="f3df-2a35-71ff-3ff7" id="44cc-6626-e15f-d7c9" primary="true" name="Mounted Unit"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="6" typeId="6e06-153b-5181-d39d" typeName="Damage Chart" hidden="false" id="dd2b-3b94-7686-0ce0">
+          <characteristics>
+            <characteristic name="Result" typeId="897e-4ecc-846b-1598">Rider is hit and Taken OOA. Remove Mount from the battlefield and replace with OOA Dismounted Rider.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="1-2" typeId="6e06-153b-5181-d39d" typeName="Damage Chart" hidden="false" id="d97c-143e-a68d-6ba7">
+          <characteristics>
+            <characteristic name="Result" typeId="897e-4ecc-846b-1598">Mounted Rhyfler is Rattled.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="4-5" typeId="6e06-153b-5181-d39d" typeName="Damage Chart" hidden="false" id="e3e3-1b1c-2cb4-2d9a">
+          <characteristics>
+            <characteristic name="Result" typeId="897e-4ecc-846b-1598">Mount is taken OOA. Replace mounted unit with dismounted Rider. Rider makes a Mounted Crash Skill Check.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="3" typeId="6e06-153b-5181-d39d" typeName="Damage Chart" hidden="false" id="ec49-2a61-be86-02b7">
+          <characteristics>
+            <characteristic name="Result" typeId="897e-4ecc-846b-1598">Mount is Wounded. Unit&apos;s MA reduced to second value. Unit may no longer Charge</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Mounted Rhyfler" typeId="e0d8-274b-8232-ef1b" typeName="Mounted Unit" hidden="false" id="a5ca-fabc-ceb4-ef27">
+          <characteristics>
+            <characteristic name="Sk" typeId="5ad3-1ace-c190-566b">12</characteristic>
+            <characteristic name="Mt" typeId="38b8-ca39-7d11-6eb1">1d6+1</characteristic>
+            <characteristic name="MA" typeId="870d-5722-99b9-21da">8/6</characteristic>
+            <characteristic name="T" typeId="2fcc-4790-c933-ecf8">4</characteristic>
+            <characteristic name="D" typeId="20b1-a32d-e41c-9a37">2</characteristic>
+            <characteristic name="Equipment" typeId="4a61-14de-472f-b84d">Sabre, Dinas Carbine</characteristic>
+            <characteristic name="Special" typeId="c973-830d-f693-f6b1">Cadier</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Dismounted Rhyfler" typeId="8e73-7370-7f76-a0f6" typeName="Dismounted Unit" hidden="false" id="960c-32ce-de60-8bd9">
+          <characteristics>
+            <characteristic name="Sk" typeId="4359-2c47-8755-0652">12</characteristic>
+            <characteristic name="Mt" typeId="a4d3-c1fb-e3fd-1ec4">1d6+2</characteristic>
+            <characteristic name="MA" typeId="7454-6341-5be7-ec95">5</characteristic>
+            <characteristic name="T" typeId="d802-8465-1aba-b808">4</characteristic>
+            <characteristic name="Equipment" typeId="eb3d-2bb6-1a43-2302">Dinas Carbine</characteristic>
+            <characteristic name="Special" typeId="3587-866b-8fff-d4c0"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Thunderous Hooves" id="eac1-8ceb-b777-10cb" hidden="false" type="rule" targetId="7acf-9df6-9b45-8d55"/>
+        <infoLink name="Cadier" id="3491-628e-b377-e9d7" hidden="false" type="rule" targetId="fff3-d972-c7a6-f80c"/>
+        <infoLink name="Skittish" id="6142-b7c2-31df-986e" hidden="false" type="rule" targetId="61ec-2639-3a0c-b7a0"/>
+        <infoLink name="Dinas Carbine" id="fc2f-3df4-3c29-698c" hidden="false" type="profile" targetId="9fd1-6e0f-3df7-b980"/>
+      </infoLinks>
+      <constraints>
+        <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="9f7b-caad-6bae-7fae" includeChildSelections="true"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" value="99" field="9f7b-caad-6bae-7fae">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="parent" childId="bebf-b5f9-77f4-256b" shared="true" includeChildSelections="false"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
   </sharedSelectionEntries>
   <entryLinks>
     <entryLink import="true" name="Rhyfler (Bogen)" hidden="false" id="3655-aaf6-a5b0-7814" type="selectionEntry" targetId="ba33-bdfb-fce5-f396"/>
@@ -1258,7 +1531,11 @@
     <entryLink import="true" name="Pathfinder Yawdryl" hidden="false" id="decd-fc78-7f20-aebc" type="selectionEntry" targetId="5ef9-a50f-9960-f49d"/>
     <entryLink import="true" name="Pathfinder is-Caerten" hidden="false" id="43f1-ce7d-696e-f22a" type="selectionEntry" targetId="68c0-8895-2f9b-8669"/>
     <entryLink import="true" name="Musician" hidden="false" id="94ea-3a83-1ed6-ad80" type="selectionEntry" targetId="4f9a-8ce1-451e-e8cf"/>
-    <entryLink import="true" name="Caerten" hidden="false" id="b142-ea9a-bb5f-2b17" type="selectionEntry" targetId="686c-e894-bd41-beec"/>
+    <entryLink import="true" name="Cavalry Yawdryl" hidden="false" id="b142-ea9a-bb5f-2b17" type="selectionEntry" targetId="bebf-b5f9-77f4-256b">
+      <categoryLinks>
+        <categoryLink targetId="f3df-2a35-71ff-3ff7" id="ba04-001f-2795-21e1" primary="true" name="Mounted Unit"/>
+      </categoryLinks>
+    </entryLink>
     <entryLink import="true" name="is-Caerten" hidden="false" id="35e0-008a-300a-53a6" type="selectionEntry" targetId="de89-5fe9-2fca-0d29"/>
     <entryLink import="true" name="LMG Rhyfler" hidden="false" id="98f2-ea05-edd7-6d81" type="selectionEntry" targetId="fe54-8a8c-87db-ffec"/>
     <entryLink import="true" name="Master Yawdryl" hidden="false" id="1188-0396-6c78-3ad8" type="selectionEntry" targetId="904b-3278-1d82-aff3"/>
@@ -1270,6 +1547,17 @@
     <entryLink import="true" name="Orythil Squad Tractor" hidden="false" id="195c-fe57-fdf6-de02" type="selectionEntry" targetId="4d49-a623-de2e-ac43"/>
     <entryLink import="true" name="Krassyl Mod(4) Armored Contraption" hidden="false" id="081d-68b6-e4bc-1bb6" type="selectionEntry" targetId="f6f3-212a-e06f-f28b"/>
     <entryLink import="true" name="AUM E4 Heavy Machinegun" hidden="false" id="2199-a1d1-455e-9539" type="selectionEntry" targetId="1fe7-c376-d743-b532"/>
+    <entryLink import="true" name="Caerten" hidden="false" id="41d8-69d0-56a7-728a" type="selectionEntry" targetId="686c-e894-bd41-beec"/>
+    <entryLink import="true" name="Cavalry Rhyfler, Saber &amp; Dinas Carbine" hidden="false" id="9b22-e451-c0c6-987c" type="selectionEntry" targetId="6019-f43c-9c3b-b113">
+      <categoryLinks>
+        <categoryLink targetId="f3df-2a35-71ff-3ff7" id="1f4b-8cee-4c58-114d" primary="true" name="Mounted Unit"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Cavalry Rhyfler, Saber &amp; Sio-Cly Derringer" hidden="false" id="64cc-bd1b-90ea-3f64" type="selectionEntry" targetId="4d19-6cbc-321d-1be7">
+      <categoryLinks>
+        <categoryLink targetId="f3df-2a35-71ff-3ff7" id="e9dd-f83c-2f4c-9140" primary="true" name="Mounted Unit"/>
+      </categoryLinks>
+    </entryLink>
   </entryLinks>
   <categoryEntries>
     <categoryEntry name="Pathfinder" id="8e16-bde7-3ecc-3a44" hidden="false"/>

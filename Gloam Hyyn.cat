@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="b713-2102-f63a-13bd" name="Gloam Hyyn" gameSystemId="sys-dbd1-1d4a-43f9-1e9c" gameSystemRevision="3" revision="5" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="b713-2102-f63a-13bd" name="Gloam Hyyn" gameSystemId="sys-dbd1-1d4a-43f9-1e9c" gameSystemRevision="3" revision="6" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedSelectionEntries>
     <selectionEntry type="upgrade" import="true" name="Harlech Carbine" hidden="false" id="a6ad-eeb2-2c68-04d1" sortIndex="1" defaultAmount="1">
       <profiles>
@@ -289,7 +289,7 @@
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Sarf-cyn Handler" hidden="false" id="3ef6-ed75-026a-ce4b" sortIndex="2">
       <costs>
-        <cost name="Points" typeId="0bc1-1233-3e53-72ca" value="32"/>
+        <cost name="Points" typeId="0bc1-1233-3e53-72ca" value="28"/>
       </costs>
       <constraints>
         <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="c99c-0f3e-97af-f2ad" includeChildSelections="true"/>
@@ -304,12 +304,12 @@
             <characteristic name="Mt" typeId="d8ef-e518-8f49-8a7b">2d6</characteristic>
             <characteristic name="MA" typeId="4cd7-b825-6660-1758">5</characteristic>
             <characteristic name="Toughness" typeId="197d-1c5e-af24-ee6e">4</characteristic>
-            <characteristic name="Special Abilities" typeId="94ec-89a2-8f77-66c3">Critter Wrangler</characteristic>
+            <characteristic name="Special Abilities" typeId="94ec-89a2-8f77-66c3">Scout (2*/6)</characteristic>
           </characteristics>
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink name="Critter Wrangler" id="c37b-90c8-3c88-8d61" hidden="false" type="rule" targetId="d81d-c6d6-8f3e-d841"/>
+        <infoLink name="Scout (X/Y)" id="c37b-90c8-3c88-8d61" hidden="false" type="rule" targetId="0d68-8b95-5793-02aa"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink targetId="de6b-6ec2-9294-541d" id="9e6a-6cf7-e6ee-8d73" primary="true" name="Unit"/>
@@ -317,7 +317,7 @@
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Sarf-cyn" hidden="false" id="0693-3f9e-591d-3ca7" sortIndex="2">
       <costs>
-        <cost name="Points" typeId="0bc1-1233-3e53-72ca" value="18"/>
+        <cost name="Points" typeId="0bc1-1233-3e53-72ca" value="22"/>
       </costs>
       <constraints>
         <constraint type="max" value="2" field="selections" scope="roster" shared="true" id="362d-f53b-ae82-7634" includeChildSelections="true"/>
@@ -329,7 +329,7 @@
             <characteristic name="Mt" typeId="d8ef-e518-8f49-8a7b">2d6</characteristic>
             <characteristic name="MA" typeId="4cd7-b825-6660-1758">6</characteristic>
             <characteristic name="Toughness" typeId="197d-1c5e-af24-ee6e">4</characteristic>
-            <characteristic name="Special Abilities" typeId="94ec-89a2-8f77-66c3">Wild, Creature, Taste for Squirrel</characteristic>
+            <characteristic name="Special Abilities" typeId="94ec-89a2-8f77-66c3">Skirmisher, Creature, Taste for Squirrel</characteristic>
           </characteristics>
         </profile>
         <profile name="Teeth and Claws" typeId="0b63-6947-fb08-66eb" typeName="Weapon" hidden="false" id="ccdf-50eb-8e38-b94c">
@@ -341,7 +341,7 @@
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink name="Wild" id="32bb-76d8-a0eb-df48" hidden="false" type="rule" targetId="8786-597b-8de7-d282"/>
+        <infoLink name="Skirmisher" id="32bb-76d8-a0eb-df48" hidden="false" type="rule" targetId="8095-39f1-1cd6-a7d5"/>
         <infoLink name="Creature" id="95c4-9060-f127-2a3c" hidden="false" type="rule" targetId="cc28-67f0-d116-2b5d"/>
         <infoLink name="Taste for Squirrel" id="f569-0dd7-7c55-308c" hidden="false" type="rule" targetId="11b0-859a-a7d1-a8ea"/>
       </infoLinks>

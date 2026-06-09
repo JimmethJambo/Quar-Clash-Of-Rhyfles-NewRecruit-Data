@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="74e6-0dfa-c12e-1334" name="Tollyn Maeryn" gameSystemId="sys-dbd1-1d4a-43f9-1e9c" gameSystemRevision="6" revision="3" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="74e6-0dfa-c12e-1334" name="Tollyn Maeryn" gameSystemId="sys-dbd1-1d4a-43f9-1e9c" gameSystemRevision="6" revision="4" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedSelectionEntries>
     <selectionEntry type="upgrade" import="true" name="Bostad rev53 Rhyfle" hidden="false" id="3538-2208-f905-40bf" sortIndex="1">
       <profiles>
@@ -41,12 +41,12 @@
           <characteristics>
             <characteristic name="Range" typeId="5b6c-828e-fe65-26a5">6</characteristic>
             <characteristic name="SN" typeId="b1d6-1660-ac56-c22a">-2</characteristic>
-            <characteristic name="Abilities" typeId="ed37-dbdc-d41b-3af6">Select Fire (2)</characteristic>
+            <characteristic name="Abilities" typeId="ed37-dbdc-d41b-3af6">
+</characteristic>
           </characteristics>
         </profile>
       </profiles>
       <constraints>
-        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b28c-fe64-bdb9-4ecd" includeChildSelections="false"/>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5cb6-3cf4-dbe7-1615" includeChildSelections="false"/>
       </constraints>
     </selectionEntry>
@@ -71,13 +71,13 @@
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="AuS rev44 LMG" hidden="false" id="0092-5833-9a5a-8ce0" sortIndex="1">
       <constraints>
-        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d7f8-2b14-95bc-5c23" includeChildSelections="false"/>
-        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6e36-a698-4c67-100d" includeChildSelections="false"/>
+        <constraint type="max" value="2" field="selections" scope="force" shared="true" id="6e36-a698-4c67-100d" includeChildSelections="true"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8656-d878-7540-b78c" includeChildSelections="false"/>
       </constraints>
       <profiles>
         <profile name="AuS rev44 LMG" typeId="0b63-6947-fb08-66eb" typeName="Weapon" hidden="false" id="5087-66bb-cf94-6702">
           <characteristics>
-            <characteristic name="Range" typeId="5b6c-828e-fe65-26a5">10</characteristic>
+            <characteristic name="Range" typeId="5b6c-828e-fe65-26a5">8</characteristic>
             <characteristic name="SN" typeId="b1d6-1660-ac56-c22a">-3</characteristic>
             <characteristic name="Abilities" typeId="ed37-dbdc-d41b-3af6">Automatic (1) Braced</characteristic>
           </characteristics>
@@ -182,25 +182,63 @@
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Milwer" hidden="false" id="1085-258a-f24f-90a5" sortIndex="2">
       <costs>
-        <cost name="Points" typeId="0bc1-1233-3e53-72ca" value="35"/>
+        <cost name="Points" typeId="0bc1-1233-3e53-72ca" value="28"/>
       </costs>
       <constraints>
         <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="c078-0a80-88fe-6405" includeChildSelections="true"/>
       </constraints>
       <entryLinks>
-        <entryLink import="true" name="AuS rev44 LMG" hidden="false" id="e50f-ee74-1faa-fd56" type="selectionEntry" targetId="0092-5833-9a5a-8ce0"/>
+        <entryLink import="true" name="AuS rev44 LMG" hidden="false" id="e50f-ee74-1faa-fd56" type="selectionEntry" targetId="0092-5833-9a5a-8ce0">
+          <profiles>
+            <profile name="Milwer" typeId="7040-9c4e-1119-a3c5" typeName="Unit" hidden="false" id="b598-3585-0955-8369">
+              <characteristics>
+                <characteristic name="Sk" typeId="0014-9871-f278-b5f3">11</characteristic>
+                <characteristic name="Mt" typeId="d8ef-e518-8f49-8a7b">2d6-1</characteristic>
+                <characteristic name="MA" typeId="4cd7-b825-6660-1758">5</characteristic>
+                <characteristic name="Toughness" typeId="197d-1c5e-af24-ee6e">4</characteristic>
+                <characteristic name="Special Abilities" typeId="94ec-89a2-8f77-66c3">Inspiring Presence (1), Burly</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Burly" id="dea7-0d11-1a4f-e811" hidden="false" type="rule" targetId="9817-9031-bff6-c548"/>
+            <infoLink name="Inspiring Presence (X)" id="8099-8a69-0d98-f935" hidden="false" type="rule" targetId="7ebb-1cf5-bdb6-2c2e"/>
+          </infoLinks>
+          <costs>
+            <cost name="Points" typeId="0bc1-1233-3e53-72ca" value="5"/>
+          </costs>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="8c8f-f04c-ca3e-872e" shared="true" includeChildSelections="false"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
+        <entryLink import="true" name="Aup rev27 SMG" hidden="false" id="8c8f-f04c-ca3e-872e" type="selectionEntry" targetId="54e2-a3ea-9763-2fff">
+          <profiles>
+            <profile name="Milwer" typeId="7040-9c4e-1119-a3c5" typeName="Unit" hidden="false" id="c11d-fafe-a022-7842">
+              <characteristics>
+                <characteristic name="Sk" typeId="0014-9871-f278-b5f3">11</characteristic>
+                <characteristic name="Mt" typeId="d8ef-e518-8f49-8a7b">2d6-1</characteristic>
+                <characteristic name="MA" typeId="4cd7-b825-6660-1758">5</characteristic>
+                <characteristic name="Toughness" typeId="197d-1c5e-af24-ee6e">4</characteristic>
+                <characteristic name="Special Abilities" typeId="94ec-89a2-8f77-66c3">Leader (2/3)</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Leader (X/Y)" id="7bc6-f2b7-05b2-a6e3" hidden="false" type="rule" targetId="ba90-37ff-4384-2bc5"/>
+          </infoLinks>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="e50f-ee74-1faa-fd56" shared="true" includeChildSelections="false"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
       </entryLinks>
-      <profiles>
-        <profile name="Milwer" typeId="7040-9c4e-1119-a3c5" typeName="Unit" hidden="false" id="b598-3585-0955-8369">
-          <characteristics>
-            <characteristic name="Sk" typeId="0014-9871-f278-b5f3">12</characteristic>
-            <characteristic name="Mt" typeId="d8ef-e518-8f49-8a7b">2d6-1</characteristic>
-            <characteristic name="MA" typeId="4cd7-b825-6660-1758">5</characteristic>
-            <characteristic name="Toughness" typeId="197d-1c5e-af24-ee6e">4</characteristic>
-            <characteristic name="Special Abilities" typeId="94ec-89a2-8f77-66c3">Leader (2/3)</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
       <categoryLinks>
         <categoryLink targetId="de6b-6ec2-9294-541d" id="2ddf-b0cd-a9c4-876f" primary="true" name="Unit"/>
       </categoryLinks>
@@ -499,7 +537,7 @@ The points total of the specialists and advisor may not exceed the points total 
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Faelvor Armored Wagon" hidden="false" id="4df3-eeef-bdf4-f374" sortIndex="6">
       <costs>
-        <cost name="Points" typeId="0bc1-1233-3e53-72ca" value="90"/>
+        <cost name="Points" typeId="0bc1-1233-3e53-72ca" value="75"/>
       </costs>
       <profiles>
         <profile name="Faelvor Armored Wagon" typeId="75e9-4c28-c81b-5327" typeName="Armored Vehicle" hidden="false" id="aa25-e746-eb9b-b426">
@@ -655,6 +693,38 @@ The points total of the specialists and advisor may not exceed the points total 
         </rule>
       </rules>
     </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Militia Gunner" hidden="false" id="6f3f-5d2b-3c1e-9a80" sortIndex="2">
+      <costs>
+        <cost name="Points" typeId="0bc1-1233-3e53-72ca" value="26"/>
+      </costs>
+      <constraints>
+        <constraint type="max" value="2" field="selections" scope="roster" shared="true" id="19d9-2266-a823-38e9" includeChildSelections="true" includeChildForces="true"/>
+      </constraints>
+      <entryLinks>
+        <entryLink import="true" name="AuS rev44 LMG" hidden="false" id="28ca-62ed-7ef6-20ed" type="selectionEntry" targetId="0092-5833-9a5a-8ce0">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8722-6e6a-b56a-82a2"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <profiles>
+        <profile name="Militia Gunner" typeId="7040-9c4e-1119-a3c5" typeName="Unit" hidden="false" id="b832-1fd8-ced6-d4f2">
+          <characteristics>
+            <characteristic name="Sk" typeId="0014-9871-f278-b5f3">10</characteristic>
+            <characteristic name="Mt" typeId="d8ef-e518-8f49-8a7b">1d6+2</characteristic>
+            <characteristic name="MA" typeId="4cd7-b825-6660-1758">5</characteristic>
+            <characteristic name="Toughness" typeId="197d-1c5e-af24-ee6e">4</characteristic>
+            <characteristic name="Special Abilities" typeId="94ec-89a2-8f77-66c3">Green</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Green" id="c2db-ce64-ff56-b192" hidden="false" type="rule" targetId="62fc-01f2-3c05-82d0"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink targetId="de6b-6ec2-9294-541d" id="a0b9-5311-bbfe-7fd7" primary="true" name="Unit"/>
+      </categoryLinks>
+    </selectionEntry>
   </sharedSelectionEntries>
   <entryLinks>
     <entryLink import="true" name="Crusader Specialist" hidden="false" id="cc9b-5050-7e97-bd07" type="selectionEntry" targetId="540f-72b3-4c51-f269">
@@ -673,6 +743,7 @@ The points total of the specialists and advisor may not exceed the points total 
     <entryLink import="true" name="RR Portable rev68" hidden="false" id="cbd1-2a1c-657c-fbd2" type="selectionEntry" targetId="fb74-6530-09e9-9ced"/>
     <entryLink import="true" name="Militia Rhyfler" hidden="false" id="ad80-6b3b-394f-c175" type="selectionEntry" targetId="e5b2-706e-e148-2514"/>
     <entryLink import="true" name="Crusader &quot;Advisor&quot;" hidden="false" id="57cc-29b6-9314-1a01" type="selectionEntry" targetId="73b3-b7d1-be77-f4e3"/>
+    <entryLink import="true" name="Militia Gunner" hidden="false" id="6372-f753-3160-b3a1" type="selectionEntry" targetId="6f3f-5d2b-3c1e-9a80"/>
   </entryLinks>
   <sharedProfiles>
     <profile name="New Profile" typeId="7040-9c4e-1119-a3c5" typeName="Unit" hidden="false" id="c823-ddab-aac4-a267">

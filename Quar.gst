@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="sys-dbd1-1d4a-43f9-1e9c" name="Quar - Clash of Rhyfles" battleScribeVersion="2.03" revision="10" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" authorName="Jim Jambo" authorUrl="jimjambo.gay">
+<gameSystem id="sys-dbd1-1d4a-43f9-1e9c" name="Quar - Clash of Rhyfles" battleScribeVersion="2.03" revision="11" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" authorName="Jim Jambo" authorUrl="jimjambo.gay">
   <categoryEntries>
     <categoryEntry name="Unit" id="de6b-6ec2-9294-541d" hidden="false"/>
     <categoryEntry name="Armored Vehicle" id="e009-498c-bf4e-66d2" hidden="false"/>
@@ -461,6 +461,31 @@ When an Open topped transport is hit with a Blast attack, any passengers under t
       <description>Unmounted rattlepeds can be used as cover, gathering a -2 Obstructing cover modifier.
 Rattlepeds do not incur movement penalties from difficult terrain
 Rattleped riders cannot perform melee attacks.</description>
+    </rule>
+    <rule name="Cadier" id="fff3-d972-c7a6-f80c" hidden="false">
+      <description>Cadier have the Thunderous Hooves and Skittish special abilities.</description>
+    </rule>
+    <rule name="Thunderous Hooves" id="7acf-9df6-9b45-8d55" hidden="false">
+      <description>A rhyfler that is Charged by a Mounted Unit with this ability may choose to Skedaddle as a reaction to the Melee attack. This is resolved using the Ranged Attack Reaction rules</description>
+    </rule>
+    <rule name="Skittish" id="61ec-2639-3a0c-b7a0" hidden="false">
+      <description>A Rattled cadier may not perform a Charge Task until the status is cleared, nor may a Wounded cadier perform the Task for the rest of the battle. Additionally a cadier that is affected by the 2-5/2-5 result on the Fragmentation Grenade chart is Rattled instead of going Prone.</description>
+    </rule>
+    <rule name="Pole-arm" id="f30d-f327-d2d7-bc31" hidden="false">
+      <description>When this rhyfler is within 2” of an enemy they may choose to become Engaged, giving that status to the opposing rhyfler as well.
+Opposed rhyflers without this ability may not perform Melee Attacks against rhyflers with Pole-arm unless they are, or move to within 1” of their target. Moving in to attack may be accomplished by spending one Pluck or performing a Standard Movement Task, which does not grant a free attack nor count as a Disengage Movement Task.</description>
+    </rule>
+    <rule name="Switch Ammo" id="bea6-8d8d-8afc-d192" hidden="false">
+      <description>A Specialist Loader with this ability usually accompanies another specialist carrying a weapon with two Blast Values listed on its profile. The first Blast Value is the weapon’s default armament. The Loader may switch the weapon to the second Blast Value by performing the Prepare Weapon Task. This must be performed every time the specialists wish to use the secondary Blast Value.</description>
+    </rule>
+    <rule name="Thrown Weapon" id="6030-13b7-0bf6-8b79" hidden="false">
+      <description>These weapons may be thrown once per battle at enemy rhyflers within three Range Bands.
+If the target of such an attack is Gobsmacked or taken OOA the throwing rhyfler may attempt to recover their weapon by moving up to the target and spending an Activation to retrieve it. If they do so they may throw the weapon again at a later point in the battle.</description>
+    </rule>
+    <rule name="Burly" id="9817-9031-bff6-c548" hidden="false">
+      <description> Burly rhyfler ignores the penalty gathered by the
+equipment trait Braced, and counts as two rhyflers when moving objects with the
+Heavy trait.</description>
     </rule>
   </sharedRules>
   <publications>

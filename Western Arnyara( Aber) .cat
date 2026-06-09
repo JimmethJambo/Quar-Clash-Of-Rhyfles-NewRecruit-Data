@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="a06a-3543-ab12-f426" name="Western Arnyara (Aber)" gameSystemId="sys-dbd1-1d4a-43f9-1e9c" gameSystemRevision="3" revision="4" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="a06a-3543-ab12-f426" name="Western Arnyara (Aber)" gameSystemId="sys-dbd1-1d4a-43f9-1e9c" gameSystemRevision="3" revision="5" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedSelectionEntries>
     <selectionEntry type="upgrade" import="true" name="MAR SMG" hidden="false" id="2288-b2d1-c319-324a" defaultAmount="1" sortIndex="1">
       <constraints>
@@ -278,7 +278,7 @@
         <entryLink import="true" name="Gree Pistol" hidden="false" id="c586-80fe-371d-fa83" type="selectionEntry" targetId="a76b-4de0-0c61-4154"/>
       </entryLinks>
       <profiles>
-        <profile name="Autocycle" typeId="e0d8-274b-8232-ef1b" typeName="Mounted Unit" hidden="false" id="43a6-97e7-3679-36cd">
+        <profile name="Mounted Autocycle" typeId="e0d8-274b-8232-ef1b" typeName="Mounted Unit" hidden="false" id="43a6-97e7-3679-36cd">
           <characteristics>
             <characteristic name="Sk" typeId="5ad3-1ace-c190-566b">12</characteristic>
             <characteristic name="Mt" typeId="38b8-ca39-7d11-6eb1">1d6+1</characteristic>
@@ -296,7 +296,7 @@
             <characteristic name="MA" typeId="7454-6341-5be7-ec95">5</characteristic>
             <characteristic name="T" typeId="d802-8465-1aba-b808">4</characteristic>
             <characteristic name="Equipment" typeId="eb3d-2bb6-1a43-2302">Pistol, Carbine</characteristic>
-            <characteristic name="Special" typeId="3587-866b-8fff-d4c0">Resilient</characteristic>
+            <characteristic name="Special" typeId="3587-866b-8fff-d4c0"/>
           </characteristics>
         </profile>
         <profile name="Carbine" typeId="0b63-6947-fb08-66eb" typeName="Weapon" hidden="false" id="fd6b-463e-eb66-7fd6">
@@ -313,15 +313,15 @@
         </profile>
         <profile name="6" typeId="6e06-153b-5181-d39d" typeName="Damage Chart" hidden="false" id="f5a7-8bd1-bb49-dff4">
           <characteristics>
-            <characteristic name="Result" typeId="897e-4ecc-846b-1598">Rider is hit and taken OOA. Remove unit from the battlefield.</characteristic>
+            <characteristic name="Result" typeId="897e-4ecc-846b-1598">Rider is hit and taken OOA. Remove rattleped from the battlefield.</characteristic>
           </characteristics>
         </profile>
-        <profile name="5" typeId="6e06-153b-5181-d39d" typeName="Damage Chart" hidden="false" id="02cd-b6fa-4738-eb23">
+        <profile name="4-5" typeId="6e06-153b-5181-d39d" typeName="Damage Chart" hidden="false" id="02cd-b6fa-4738-eb23">
           <characteristics>
             <characteristic name="Result" typeId="897e-4ecc-846b-1598">Rattleped is destroyed. Replace mounted rhyfler with dismounted rider and roll on Mounted Crash Skill Check. Place a smoke template where rattleped was hit.</characteristic>
           </characteristics>
         </profile>
-        <profile name="3-4" typeId="6e06-153b-5181-d39d" typeName="Damage Chart" hidden="false" id="d0ca-1100-d788-4ece">
+        <profile name="3" typeId="6e06-153b-5181-d39d" typeName="Damage Chart" hidden="false" id="d0ca-1100-d788-4ece">
           <characteristics>
             <characteristic name="Result" typeId="897e-4ecc-846b-1598">Rattleped is Damaged. Units MA is reduced to second value.</characteristic>
           </characteristics>
@@ -329,7 +329,6 @@
       </profiles>
       <infoLinks>
         <infoLink name="Rattleped" id="c7da-1da5-5c66-0656" hidden="false" type="rule" targetId="8a0a-bbb0-403f-48d3"/>
-        <infoLink name="Resilient" id="3782-423a-357a-eebe" hidden="false" type="rule" targetId="e177-01dd-6ddd-72c1"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink targetId="f3df-2a35-71ff-3ff7" id="0cab-8ec6-8c0a-1040" primary="true" name="Mounted Unit"/>

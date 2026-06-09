@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="09b3-3016-43ff-1e9e" name="Fidwog FOD" gameSystemId="sys-dbd1-1d4a-43f9-1e9c" gameSystemRevision="2" revision="6" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="09b3-3016-43ff-1e9e" name="Fidwog FOD" gameSystemId="sys-dbd1-1d4a-43f9-1e9c" gameSystemRevision="2" revision="7" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedSelectionEntries>
     <selectionEntry type="upgrade" import="true" name="Sprygyt Mk3 &quot;Sketych&quot;" hidden="false" id="9f22-dc54-42cb-6110" sortIndex="1" defaultAmount="1">
       <profiles>
@@ -464,7 +464,7 @@
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink name="Automatic (X)" id="5918-9293-c622-4fe6" hidden="false" type="rule" targetId="321d-91fa-c981-2ce1"/>
+        <infoLink name="Automatic (X)" id="29b3-edbe-b42a-9b72" hidden="false" type="rule" targetId="321d-91fa-c981-2ce1"/>
       </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="M8-c MMG" hidden="false" id="235a-3b61-d6a7-6806" sortIndex="1" defaultAmount="1">
@@ -473,13 +473,14 @@
           <characteristics>
             <characteristic name="Range" typeId="5b6c-828e-fe65-26a5">8</characteristic>
             <characteristic name="SN" typeId="b1d6-1660-ac56-c22a">-3</characteristic>
-            <characteristic name="Abilities" typeId="ed37-dbdc-d41b-3af6">Automatic (1), Braced</characteristic>
+            <characteristic name="Abilities" typeId="ed37-dbdc-d41b-3af6">Automatic (1), Braced, Heavy (2,3)</characteristic>
           </characteristics>
         </profile>
       </profiles>
       <infoLinks>
         <infoLink name="Automatic (X)" id="244a-36e8-dc14-7bdb" hidden="false" type="rule" targetId="321d-91fa-c981-2ce1"/>
         <infoLink name="Braced" id="d64e-236b-4bc5-7fdb" hidden="false" type="rule" targetId="0b83-b784-dae8-503c"/>
+        <infoLink name="Heavy (X,Y)" id="5918-9293-c622-4fe6" hidden="false" type="rule" targetId="4003-0b0e-9906-58c4"/>
       </infoLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Miner (AT)" hidden="false" id="a959-186d-776c-da43" sortIndex="4">
@@ -755,18 +756,18 @@
             <characteristic name="MA" typeId="870d-5722-99b9-21da">7/5</characteristic>
             <characteristic name="T" typeId="2fcc-4790-c933-ecf8">5</characteristic>
             <characteristic name="D" typeId="20b1-a32d-e41c-9a37">2</characteristic>
-            <characteristic name="Equipment" typeId="4a61-14de-472f-b84d">&quot;Sketych&quot;, M8-c MMG</characteristic>
-            <characteristic name="Special" typeId="c973-830d-f693-f6b1">Cavalry</characteristic>
+            <characteristic name="Equipment" typeId="4a61-14de-472f-b84d">Pistol, M8-c MMG</characteristic>
+            <characteristic name="Special" typeId="c973-830d-f693-f6b1">Cadier</characteristic>
           </characteristics>
         </profile>
-        <profile name="Dismounted Gunner" typeId="8e73-7370-7f76-a0f6" typeName="Dismounted Unit" hidden="false" id="4524-f333-f786-f460">
+        <profile name="Dismounted Gunner (Passenger)" typeId="8e73-7370-7f76-a0f6" typeName="Dismounted Unit" hidden="false" id="4524-f333-f786-f460">
           <characteristics>
             <characteristic name="Sk" typeId="4359-2c47-8755-0652">12</characteristic>
             <characteristic name="Mt" typeId="a4d3-c1fb-e3fd-1ec4">1d6+1</characteristic>
             <characteristic name="MA" typeId="7454-6341-5be7-ec95">5</characteristic>
             <characteristic name="T" typeId="d802-8465-1aba-b808">4</characteristic>
             <characteristic name="Equipment" typeId="eb3d-2bb6-1a43-2302">M8-c MMG</characteristic>
-            <characteristic name="Special" typeId="3587-866b-8fff-d4c0">Resilient</characteristic>
+            <characteristic name="Special" typeId="3587-866b-8fff-d4c0"/>
           </characteristics>
         </profile>
         <profile name="Dismounted Rider" typeId="8e73-7370-7f76-a0f6" typeName="Dismounted Unit" hidden="false" id="9e53-d034-3157-e2a4">
@@ -775,8 +776,8 @@
             <characteristic name="Mt" typeId="a4d3-c1fb-e3fd-1ec4">1d6+1</characteristic>
             <characteristic name="MA" typeId="7454-6341-5be7-ec95">5</characteristic>
             <characteristic name="T" typeId="d802-8465-1aba-b808">4</characteristic>
-            <characteristic name="Equipment" typeId="eb3d-2bb6-1a43-2302">Sketych</characteristic>
-            <characteristic name="Special" typeId="3587-866b-8fff-d4c0">Resilient</characteristic>
+            <characteristic name="Equipment" typeId="eb3d-2bb6-1a43-2302">Pistol</characteristic>
+            <characteristic name="Special" typeId="3587-866b-8fff-d4c0"/>
           </characteristics>
         </profile>
         <profile name="1-2" typeId="6e06-153b-5181-d39d" typeName="Damage Chart" hidden="false" id="8b4b-8d56-0a54-0695">
@@ -786,31 +787,32 @@
         </profile>
         <profile name="6" typeId="6e06-153b-5181-d39d" typeName="Damage Chart" hidden="false" id="a80c-c714-1e12-a038">
           <characteristics>
-            <characteristic name="Result" typeId="897e-4ecc-846b-1598">Rider is hit and Taken OOA. Remove unit from the battlefield.</characteristic>
+            <characteristic name="Result" typeId="897e-4ecc-846b-1598">Rider is hit and Taken OOA. Remove mount from the battlefield and replace with OOA Dismounted Rider. Passenger makes a Mounted Crash Skill Check.</characteristic>
           </characteristics>
         </profile>
-        <profile name="5" typeId="6e06-153b-5181-d39d" typeName="Damage Chart" hidden="false" id="f4df-d540-473b-fc7b">
+        <profile name="4-5" typeId="6e06-153b-5181-d39d" typeName="Damage Chart" hidden="false" id="f4df-d540-473b-fc7b">
           <characteristics>
-            <characteristic name="Result" typeId="897e-4ecc-846b-1598">Mount is taken OOA. Replace mounted rhyfler with dismounted rider and roll on Mounted Crash Skill Check</characteristic>
+            <characteristic name="Result" typeId="897e-4ecc-846b-1598">Mount is taken OOA. Replace mounted rhyfler with dismounted rider and passenger. Both make a Mounted Crash Skill Check</characteristic>
           </characteristics>
         </profile>
-        <profile name="3-4" typeId="6e06-153b-5181-d39d" typeName="Damage Chart" hidden="false" id="261f-588f-56b5-6c97">
+        <profile name="3" typeId="6e06-153b-5181-d39d" typeName="Damage Chart" hidden="false" id="261f-588f-56b5-6c97">
           <characteristics>
-            <characteristic name="Result" typeId="897e-4ecc-846b-1598">Mount is wounded. Unit&apos;s MA is reduced to second value.</characteristic>
+            <characteristic name="Result" typeId="897e-4ecc-846b-1598">Mount is wounded. Unit&apos;s MA is reduced to second value. Unit may no longer Charge</characteristic>
           </characteristics>
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink name="Resilient" id="0033-1ff8-9c46-250d" hidden="false" type="rule" targetId="e177-01dd-6ddd-72c1"/>
-        <infoLink name="Cavalry" id="2db1-dace-dffc-42ca" hidden="false" type="rule" targetId="c1de-9d84-74ac-817a"/>
+        <infoLink name="Skittish" id="2db1-dace-dffc-42ca" hidden="false" type="rule" targetId="61ec-2639-3a0c-b7a0"/>
+        <infoLink name="Cadier" id="1bad-b063-5faf-f1f2" hidden="false" type="rule" targetId="fff3-d972-c7a6-f80c"/>
+        <infoLink name="Thunderous Hooves" id="febf-0847-eb85-d640" hidden="false" type="rule" targetId="7acf-9df6-9b45-8d55"/>
       </infoLinks>
       <rules>
         <rule name="Mounted M8-c MMG" id="d3d0-7fb5-f57c-8993" hidden="false">
-          <description>When mounted, the M8-c MMG is considered Braced.</description>
+          <description>When mounted, the M8-c MMG is considered Braced and not Heavy</description>
         </rule>
       </rules>
       <entryLinks>
-        <entryLink import="true" name="Sprygyt Mk3 &quot;Sketych&quot;" hidden="false" id="12cf-1522-ac65-f887" type="selectionEntry" targetId="9f22-dc54-42cb-6110"/>
+        <entryLink import="true" name="Pistol" hidden="false" id="12cf-1522-ac65-f887" type="selectionEntry" targetId="7028-cb77-f695-540d"/>
         <entryLink import="true" name="M8-c MMG" hidden="false" id="f30f-760a-bb9a-b6c7" type="selectionEntry" targetId="235a-3b61-d6a7-6806"/>
       </entryLinks>
       <categoryLinks>
@@ -832,18 +834,18 @@
             <characteristic name="MA" typeId="870d-5722-99b9-21da">7/5</characteristic>
             <characteristic name="T" typeId="2fcc-4790-c933-ecf8">5</characteristic>
             <characteristic name="D" typeId="20b1-a32d-e41c-9a37">2</characteristic>
-            <characteristic name="Equipment" typeId="4a61-14de-472f-b84d">Mace</characteristic>
-            <characteristic name="Special" typeId="c973-830d-f693-f6b1">Cavalry, Inspiring Presence (3), Melee (+1)</characteristic>
+            <characteristic name="Equipment" typeId="4a61-14de-472f-b84d">Mace, Pistol</characteristic>
+            <characteristic name="Special" typeId="c973-830d-f693-f6b1">Cadier, Inspiring Presence (3), Melee (+1)</characteristic>
           </characteristics>
         </profile>
-        <profile name="Dismounted Officer" typeId="8e73-7370-7f76-a0f6" typeName="Dismounted Unit" hidden="false" id="b146-811f-72a1-5721">
+        <profile name="Dismounted Officer (Passenger)" typeId="8e73-7370-7f76-a0f6" typeName="Dismounted Unit" hidden="false" id="b146-811f-72a1-5721">
           <characteristics>
             <characteristic name="Sk" typeId="4359-2c47-8755-0652">12</characteristic>
             <characteristic name="Mt" typeId="a4d3-c1fb-e3fd-1ec4">2d6</characteristic>
             <characteristic name="MA" typeId="7454-6341-5be7-ec95">5</characteristic>
             <characteristic name="T" typeId="d802-8465-1aba-b808">4</characteristic>
-            <characteristic name="Equipment" typeId="eb3d-2bb6-1a43-2302">Mace</characteristic>
-            <characteristic name="Special" typeId="3587-866b-8fff-d4c0">Resilient, Inspiring Presence (2), Melee (+1)</characteristic>
+            <characteristic name="Equipment" typeId="eb3d-2bb6-1a43-2302">Mace, Pistol</characteristic>
+            <characteristic name="Special" typeId="3587-866b-8fff-d4c0">Inspiring Presence (2), Melee (+1)</characteristic>
           </characteristics>
         </profile>
         <profile name="Dismounted Rider" typeId="8e73-7370-7f76-a0f6" typeName="Dismounted Unit" hidden="false" id="e754-af73-22fa-8d72">
@@ -852,18 +854,44 @@
             <characteristic name="Mt" typeId="a4d3-c1fb-e3fd-1ec4">1d6+1</characteristic>
             <characteristic name="MA" typeId="7454-6341-5be7-ec95">5</characteristic>
             <characteristic name="T" typeId="d802-8465-1aba-b808">4</characteristic>
-            <characteristic name="Equipment" typeId="eb3d-2bb6-1a43-2302">Sketych</characteristic>
-            <characteristic name="Special" typeId="3587-866b-8fff-d4c0">Resilient</characteristic>
+            <characteristic name="Equipment" typeId="eb3d-2bb6-1a43-2302">Pistol</characteristic>
+            <characteristic name="Special" typeId="3587-866b-8fff-d4c0"/>
+          </characteristics>
+        </profile>
+        <profile name="6" typeId="6e06-153b-5181-d39d" typeName="Damage Chart" hidden="false" id="99c4-1b64-6524-6df0">
+          <characteristics>
+            <characteristic name="Result" typeId="897e-4ecc-846b-1598">Rider is hit and Taken OOA. Remove mount from the battlefield and replace with OOA Dismounted Rider. Passenger makes a Mounted Crash Skill Check.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="1-2" typeId="6e06-153b-5181-d39d" typeName="Damage Chart" hidden="false" id="be78-e922-86ad-1377">
+          <characteristics>
+            <characteristic name="Result" typeId="897e-4ecc-846b-1598">Mounted rhyfler is Rattled.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="3" typeId="6e06-153b-5181-d39d" typeName="Damage Chart" hidden="false" id="e231-3bf6-78e0-d74a">
+          <characteristics>
+            <characteristic name="Result" typeId="897e-4ecc-846b-1598">Mount is wounded. Unit&apos;s MA is reduced to second value. Unit may no longer Charge</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="4-5" typeId="6e06-153b-5181-d39d" typeName="Damage Chart" hidden="false" id="0eb5-594a-5c4b-a5b5">
+          <characteristics>
+            <characteristic name="Result" typeId="897e-4ecc-846b-1598">Mount is taken OOA. Replace mounted rhyfler with dismounted rider and passenger. Both make a Mounted Crash Skill Check</characteristic>
           </characteristics>
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink name="Resilient" id="9d59-cd7b-d837-eacb" hidden="false" type="rule" targetId="e177-01dd-6ddd-72c1"/>
-        <infoLink name="Cavalry" id="dc25-9035-5710-1561" hidden="false" type="rule" targetId="c1de-9d84-74ac-817a"/>
+        <infoLink name="Melee (X)" id="02a5-945e-ad2a-7b09" hidden="false" type="rule" targetId="ba7b-d442-85f1-d45d"/>
+        <infoLink name="Skittish" id="2787-79c8-897e-0173" hidden="false" type="rule" targetId="61ec-2639-3a0c-b7a0"/>
+        <infoLink name="Thunderous Hooves" id="eb72-02a1-28f0-e826" hidden="false" type="rule" targetId="7acf-9df6-9b45-8d55"/>
+        <infoLink name="Cadier" id="542e-6c93-0068-5961" hidden="false" type="rule" targetId="fff3-d972-c7a6-f80c"/>
+        <infoLink name="Inspiring Presence (X)" id="a909-6a3e-29b0-78d8" hidden="false" type="rule" targetId="7ebb-1cf5-bdb6-2c2e"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink targetId="f3df-2a35-71ff-3ff7" id="91b2-03e0-b859-73e4" primary="true" name="Mounted Unit"/>
       </categoryLinks>
+      <entryLinks>
+        <entryLink import="true" name="Pistol" hidden="false" id="633a-2282-ef92-a6ce" type="selectionEntry" targetId="7028-cb77-f695-540d"/>
+      </entryLinks>
     </selectionEntry>
   </sharedSelectionEntries>
   <entryLinks>
