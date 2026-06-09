@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="74e6-0dfa-c12e-1334" name="Tollyn Maeryn" gameSystemId="sys-dbd1-1d4a-43f9-1e9c" gameSystemRevision="6" revision="4" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="74e6-0dfa-c12e-1334" name="Tollyn Maeryn" gameSystemId="sys-dbd1-1d4a-43f9-1e9c" gameSystemRevision="6" revision="5" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedSelectionEntries>
     <selectionEntry type="upgrade" import="true" name="Bostad rev53 Rhyfle" hidden="false" id="3538-2208-f905-40bf" sortIndex="1">
       <profiles>
@@ -262,7 +262,7 @@
             <characteristic name="Mt" typeId="d8ef-e518-8f49-8a7b">2d6-1</characteristic>
             <characteristic name="MA" typeId="4cd7-b825-6660-1758">5</characteristic>
             <characteristic name="Toughness" typeId="197d-1c5e-af24-ee6e">4</characteristic>
-            <characteristic name="Special Abilities" typeId="94ec-89a2-8f77-66c3">Leader (3/5)</characteristic>
+            <characteristic name="Special Abilities" typeId="94ec-89a2-8f77-66c3">Leader (3/5), Support</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -273,6 +273,10 @@
           </conditions>
         </modifier>
       </modifiers>
+      <infoLinks>
+        <infoLink name="Support" id="7e9a-f6b9-3272-5680" hidden="false" type="rule" targetId="c0d3-909a-ca80-1be2"/>
+        <infoLink name="Leader (X/Y)" id="33e0-bf80-dc86-dbb3" hidden="false" type="rule" targetId="ba90-37ff-4384-2bc5"/>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Auld Buck Yawdryl (Aup rev27 SMG)" hidden="false" id="453d-47a1-e030-02f3" sortIndex="-1">
       <constraints>
@@ -304,6 +308,9 @@
           </conditions>
         </modifier>
       </modifiers>
+      <infoLinks>
+        <infoLink name="Leader (X/Y)" id="4681-f64d-2fdc-14f0" hidden="false" type="rule" targetId="ba90-37ff-4384-2bc5"/>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Auld Buck Yawdryl" hidden="false" id="9b3f-c8b6-7977-c7d7" sortIndex="3">
       <entryLinks>
