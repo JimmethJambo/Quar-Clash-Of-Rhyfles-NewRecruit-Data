@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="8579-b42c-53b1-1cba" name="Coftyran" gameSystemId="sys-dbd1-1d4a-43f9-1e9c" gameSystemRevision="1" revision="12" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="8579-b42c-53b1-1cba" name="Coftyran" gameSystemId="sys-dbd1-1d4a-43f9-1e9c" gameSystemRevision="1" revision="13" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedSelectionEntries>
     <selectionEntry type="model" import="true" name="is-Caerten (Pistol, Sword)" hidden="false" id="528f-29fc-4aca-9939" defaultAmount="0" sortIndex="-1">
       <constraints>
@@ -1147,26 +1147,6 @@
         <categoryLink name="Mounted Unit" hidden="false" id="6f6f-9aa9-aac2-8a0e" targetId="f3df-2a35-71ff-3ff7" primary="true"/>
       </categoryLinks>
       <profiles>
-        <profile name="6" typeId="6e06-153b-5181-d39d" typeName="Damage Chart" hidden="false" id="e476-dfdd-ec13-67c4">
-          <characteristics>
-            <characteristic name="Result" typeId="897e-4ecc-846b-1598">Rider is hit and Taken OOA. Remove Mount from the battlefield and replace with OOA Dismounted Rider.</characteristic>
-          </characteristics>
-        </profile>
-        <profile name="1-2" typeId="6e06-153b-5181-d39d" typeName="Damage Chart" hidden="false" id="cc40-606d-22f6-83fb">
-          <characteristics>
-            <characteristic name="Result" typeId="897e-4ecc-846b-1598">Mounted Rhyfler is Rattled.</characteristic>
-          </characteristics>
-        </profile>
-        <profile name="4-5" typeId="6e06-153b-5181-d39d" typeName="Damage Chart" hidden="false" id="24ca-71ab-d033-2e6f">
-          <characteristics>
-            <characteristic name="Result" typeId="897e-4ecc-846b-1598">Mount is taken OOA. Replace mounted unit with dismounted Rider. Rider makes a Mounted Crash Skill Check.</characteristic>
-          </characteristics>
-        </profile>
-        <profile name="3" typeId="6e06-153b-5181-d39d" typeName="Damage Chart" hidden="false" id="a359-e755-77a5-85af">
-          <characteristics>
-            <characteristic name="Result" typeId="897e-4ecc-846b-1598">Mount is Wounded. Unit&apos;s MA reduced to second value. Unit may no longer Charge</characteristic>
-          </characteristics>
-        </profile>
         <profile name="Mounted Rhyfler" typeId="e0d8-274b-8232-ef1b" typeName="Mounted Unit" hidden="false" id="4872-4114-70b0-f521">
           <characteristics>
             <characteristic name="Sk" typeId="5ad3-1ace-c190-566b">12</characteristic>
@@ -1186,6 +1166,26 @@
             <characteristic name="T" typeId="d802-8465-1aba-b808">4</characteristic>
             <characteristic name="Equipment" typeId="eb3d-2bb6-1a43-2302">Pistol, Lance</characteristic>
             <characteristic name="Special" typeId="3587-866b-8fff-d4c0">Polearm</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="1-2" typeId="6e06-153b-5181-d39d" typeName="Damage Chart" hidden="false" id="9e1f-6a20-d1fa-a5bc">
+          <characteristics>
+            <characteristic name="Result" typeId="897e-4ecc-846b-1598">Mounted Rhyfler is Rattled.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="3-4" typeId="6e06-153b-5181-d39d" typeName="Damage Chart" hidden="false" id="536e-3b1f-a18e-5585" noindex="false">
+          <characteristics>
+            <characteristic name="Result" typeId="897e-4ecc-846b-1598">Mount is Wounded. Unit&apos;s MA reduced to second value. If this result is rolled again treat it as a roll of 5</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="5" typeId="6e06-153b-5181-d39d" typeName="Damage Chart" hidden="false" id="d852-ccd3-90cf-f5dc">
+          <characteristics>
+            <characteristic name="Result" typeId="897e-4ecc-846b-1598">Mount is taken OOA. Replace mounted unit with dismounted Rider. Rider makes a Mounted Crash Skill Check.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="6" typeId="6e06-153b-5181-d39d" typeName="Damage Chart" hidden="false" id="e709-da10-9e82-b52f">
+          <characteristics>
+            <characteristic name="Result" typeId="897e-4ecc-846b-1598">Rider is hit and Taken OOA. Remove Mount from the battlefield and replace with OOA Dismounted Rider.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -1216,26 +1216,6 @@
         <categoryLink name="Mounted Unit" hidden="false" id="a8d9-5e7f-479b-15e1" targetId="f3df-2a35-71ff-3ff7" primary="true"/>
       </categoryLinks>
       <profiles>
-        <profile name="6" typeId="6e06-153b-5181-d39d" typeName="Damage Chart" hidden="false" id="68b9-dd7e-2569-6e5b">
-          <characteristics>
-            <characteristic name="Result" typeId="897e-4ecc-846b-1598">Rider is hit and Taken OOA. Remove Mount from the battlefield and replace with OOA Dismounted Rider.</characteristic>
-          </characteristics>
-        </profile>
-        <profile name="1-2" typeId="6e06-153b-5181-d39d" typeName="Damage Chart" hidden="false" id="550b-ff28-b2c6-4dfe">
-          <characteristics>
-            <characteristic name="Result" typeId="897e-4ecc-846b-1598">Mounted Rhyfler is Rattled.</characteristic>
-          </characteristics>
-        </profile>
-        <profile name="4-5" typeId="6e06-153b-5181-d39d" typeName="Damage Chart" hidden="false" id="ac73-3665-1ed8-090e">
-          <characteristics>
-            <characteristic name="Result" typeId="897e-4ecc-846b-1598">Mount is taken OOA. Replace mounted unit with dismounted Rider. Rider makes a Mounted Crash Skill Check.</characteristic>
-          </characteristics>
-        </profile>
-        <profile name="3" typeId="6e06-153b-5181-d39d" typeName="Damage Chart" hidden="false" id="48c8-37d6-71a8-fbad">
-          <characteristics>
-            <characteristic name="Result" typeId="897e-4ecc-846b-1598">Mount is Wounded. Unit&apos;s MA reduced to second value. Unit may no longer Charge</characteristic>
-          </characteristics>
-        </profile>
         <profile name="Mounted Yawdryl" typeId="e0d8-274b-8232-ef1b" typeName="Mounted Unit" hidden="false" id="92da-dc51-453a-8cad">
           <characteristics>
             <characteristic name="Sk" typeId="5ad3-1ace-c190-566b">13</characteristic>
@@ -1255,6 +1235,26 @@
             <characteristic name="T" typeId="d802-8465-1aba-b808">4</characteristic>
             <characteristic name="Equipment" typeId="eb3d-2bb6-1a43-2302">Pistol, Sword</characteristic>
             <characteristic name="Special" typeId="3587-866b-8fff-d4c0">Leader (2,4)</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="1-2" typeId="6e06-153b-5181-d39d" typeName="Damage Chart" hidden="false" id="ae97-248f-8b30-17e7">
+          <characteristics>
+            <characteristic name="Result" typeId="897e-4ecc-846b-1598">Mounted Rhyfler is Rattled.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="3-4" typeId="6e06-153b-5181-d39d" typeName="Damage Chart" hidden="false" id="0bde-2aad-d4c5-efdf" noindex="false">
+          <characteristics>
+            <characteristic name="Result" typeId="897e-4ecc-846b-1598">Mount is Wounded. Unit&apos;s MA reduced to second value. If this result is rolled again treat it as a roll of 5</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="5" typeId="6e06-153b-5181-d39d" typeName="Damage Chart" hidden="false" id="430a-10c3-11c3-644c">
+          <characteristics>
+            <characteristic name="Result" typeId="897e-4ecc-846b-1598">Mount is taken OOA. Replace mounted unit with dismounted Rider. Rider makes a Mounted Crash Skill Check.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="6" typeId="6e06-153b-5181-d39d" typeName="Damage Chart" hidden="false" id="1e5e-2676-87a0-0c1f">
+          <characteristics>
+            <characteristic name="Result" typeId="897e-4ecc-846b-1598">Rider is hit and Taken OOA. Remove Mount from the battlefield and replace with OOA Dismounted Rider.</characteristic>
           </characteristics>
         </profile>
       </profiles>
