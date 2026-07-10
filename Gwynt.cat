@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="da4e-ede1-f965-99f0" name="Gwynt" gameSystemId="sys-dbd1-1d4a-43f9-1e9c" gameSystemRevision="3" revision="6" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="da4e-ede1-f965-99f0" name="Gwynt" gameSystemId="sys-dbd1-1d4a-43f9-1e9c" gameSystemRevision="3" revision="7" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedSelectionEntries>
     <selectionEntry type="upgrade" import="true" name="Harlech" hidden="false" id="01b4-6a30-91e9-e547" sortIndex="1" defaultAmount="1">
       <profiles>
@@ -444,21 +444,6 @@
             <characteristic name="Result" typeId="897e-4ecc-846b-1598">Weapon Crew Rattled.</characteristic>
           </characteristics>
         </profile>
-        <profile name="3-4" typeId="6e06-153b-5181-d39d" typeName="Damage Chart" hidden="false" id="ba0f-43ba-2066-395d">
-          <characteristics>
-            <characteristic name="Result" typeId="897e-4ecc-846b-1598">Weapon Crew is Gobsmacked. Remove Rattled if present.</characteristic>
-          </characteristics>
-        </profile>
-        <profile name="5-6" typeId="6e06-153b-5181-d39d" typeName="Damage Chart" hidden="false" id="b7da-3fcf-82a2-7d8f">
-          <characteristics>
-            <characteristic name="Result" typeId="897e-4ecc-846b-1598">Weapon Crew suffers 1 Damage Point.</characteristic>
-          </characteristics>
-        </profile>
-        <profile name="7+" typeId="6e06-153b-5181-d39d" typeName="Damage Chart" hidden="false" id="769d-1a7e-6510-b57b">
-          <characteristics>
-            <characteristic name="Result" typeId="897e-4ecc-846b-1598">Weapon crew are disabled. Remove from battlefield.</characteristic>
-          </characteristics>
-        </profile>
         <profile name="0" typeId="73fd-d87f-c3ca-d678" typeName="Damage Level" hidden="false" id="1a2b-255f-978f-0137">
           <characteristics>
             <characteristic typeId="0a18-6bf0-38b6-f7a0">Fully Operational</characteristic>
@@ -477,6 +462,21 @@
         <profile name="3" typeId="73fd-d87f-c3ca-d678" typeName="Damage Level" hidden="false" id="72dd-51cd-37d2-e333">
           <characteristics>
             <characteristic typeId="0a18-6bf0-38b6-f7a0">Disabled: Remove from Battlefield.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="3-4" typeId="6e06-153b-5181-d39d" typeName="Damage Chart" hidden="false" id="d88c-067a-8f22-4b2a">
+          <characteristics>
+            <characteristic name="Result" typeId="897e-4ecc-846b-1598">Weapon Crew is Gobsmacked. Remove Rattled if present.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="5-6" typeId="6e06-153b-5181-d39d" typeName="Damage Chart" hidden="false" id="83cb-a0d4-e52a-bcf7">
+          <characteristics>
+            <characteristic name="Result" typeId="897e-4ecc-846b-1598">Weapon Crew suffers 1 Damage Point.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="7+" typeId="6e06-153b-5181-d39d" typeName="Damage Chart" hidden="false" id="ecd3-78d7-2776-7eeb">
+          <characteristics>
+            <characteristic name="Result" typeId="897e-4ecc-846b-1598">Weapon crew are disabled. Remove from battlefield.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -530,17 +530,17 @@
             <characteristic name="Result" typeId="897e-4ecc-846b-1598">Vehicle becomes Rattled.</characteristic>
           </characteristics>
         </profile>
-        <profile name="4-5" typeId="6e06-153b-5181-d39d" typeName="Damage Chart" hidden="false" id="1e22-e7c2-c343-e697">
+        <profile name="4-5" typeId="6e06-153b-5181-d39d" typeName="Damage Chart" hidden="false" id="683d-a062-7bf2-ee6e">
           <characteristics>
             <characteristic name="Result" typeId="897e-4ecc-846b-1598">Vehicle suffers 1 Damage Point.</characteristic>
           </characteristics>
         </profile>
-        <profile name="6" typeId="6e06-153b-5181-d39d" typeName="Damage Chart" hidden="false" id="6e34-a0a6-d5ea-2525">
+        <profile name="6" typeId="6e06-153b-5181-d39d" typeName="Damage Chart" hidden="false" id="94bf-822e-008d-0289">
           <characteristics>
             <characteristic name="Result" typeId="897e-4ecc-846b-1598">Vehicle suffers 2 Damage Points.</characteristic>
           </characteristics>
         </profile>
-        <profile name="7+" typeId="6e06-153b-5181-d39d" typeName="Damage Chart" hidden="false" id="2363-9080-0dfe-4efd">
+        <profile name="7+" typeId="6e06-153b-5181-d39d" typeName="Damage Chart" hidden="false" id="4d13-1321-d334-8e08">
           <characteristics>
             <characteristic name="Result" typeId="897e-4ecc-846b-1598">Vehicle is Disabled. Place a Smoke Template under the vehicle.</characteristic>
           </characteristics>
@@ -585,17 +585,17 @@
             <characteristic name="Result" typeId="897e-4ecc-846b-1598">Passengers gain Rattled Status.</characteristic>
           </characteristics>
         </profile>
-        <profile name="4-5" typeId="6e06-153b-5181-d39d" typeName="Damage Chart" hidden="false" id="1f33-43fe-4220-7d17">
+        <profile name="4-5" typeId="6e06-153b-5181-d39d" typeName="Damage Chart" hidden="false" id="a75d-4cc6-65bd-7189">
           <characteristics>
             <characteristic name="Result" typeId="897e-4ecc-846b-1598">Vehicle suffers 1 Damage Point. Passengers gain Rattled Status.</characteristic>
           </characteristics>
         </profile>
-        <profile name="6" typeId="6e06-153b-5181-d39d" typeName="Damage Chart" hidden="false" id="7a83-1052-c20e-24f5">
+        <profile name="6" typeId="6e06-153b-5181-d39d" typeName="Damage Chart" hidden="false" id="9477-9eb9-fad4-4842">
           <characteristics>
             <characteristic name="Result" typeId="897e-4ecc-846b-1598">Vehicle suffers 2 Damage Points. Passengers gain Rattled Status.</characteristic>
           </characteristics>
         </profile>
-        <profile name="7+" typeId="6e06-153b-5181-d39d" typeName="Damage Chart" hidden="false" id="29f3-0d15-4461-11dd">
+        <profile name="7+" typeId="6e06-153b-5181-d39d" typeName="Damage Chart" hidden="false" id="b81f-2bbe-7a9c-eabb">
           <characteristics>
             <characteristic name="Result" typeId="897e-4ecc-846b-1598">Vehicle is Disabled. Place a Smoke Template under the vehicle. Driver is OOA. Passengers roll on the Vehicle Escape Chart.</characteristic>
           </characteristics>
@@ -647,17 +647,17 @@
             <characteristic name="Result" typeId="897e-4ecc-846b-1598">Vehicle becomes Rattled.</characteristic>
           </characteristics>
         </profile>
-        <profile name="3-5" typeId="6e06-153b-5181-d39d" typeName="Damage Chart" hidden="false" id="6a65-7ec7-d273-5161">
+        <profile name="3-5" typeId="6e06-153b-5181-d39d" typeName="Damage Chart" hidden="false" id="5f2a-3039-6049-d58a">
           <characteristics>
             <characteristic name="Result" typeId="897e-4ecc-846b-1598">Vehicle suffers 1 Damage Point. Passengers cannot fire personal weaponry next Round.</characteristic>
           </characteristics>
         </profile>
-        <profile name="6" typeId="6e06-153b-5181-d39d" typeName="Damage Chart" hidden="false" id="86dc-f01b-e8a6-d204">
+        <profile name="6" typeId="6e06-153b-5181-d39d" typeName="Damage Chart" hidden="false" id="8ba2-fea3-faea-2d43">
           <characteristics>
             <characteristic name="Result" typeId="897e-4ecc-846b-1598">Vehicle suffers 2 Damage Points. Passengers must pass a Skill Check or roll on Vehicle Escape Chart.</characteristic>
           </characteristics>
         </profile>
-        <profile name="7+" typeId="6e06-153b-5181-d39d" typeName="Damage Chart" hidden="false" id="9b9f-b1d3-38d6-4c03">
+        <profile name="7+" typeId="6e06-153b-5181-d39d" typeName="Damage Chart" hidden="false" id="c4ef-2ae6-9560-1f98">
           <characteristics>
             <characteristic name="Result" typeId="897e-4ecc-846b-1598">Vehicle is Disabled. Place a Smoke Template under the vehicle. Transported passengers roll on the Vehicle Escape Chart.</characteristic>
           </characteristics>
@@ -803,6 +803,9 @@
             <characteristic name="Equipment" typeId="4a61-14de-472f-b84d">Lance, Pistol</characteristic>
             <characteristic name="Special" typeId="c973-830d-f693-f6b1">Cadier, Melee(+1)</characteristic>
           </characteristics>
+          <attributes>
+            <attribute typeId="031c-0d07-1b90-9ff5" name="New Attribute Type"/>
+          </attributes>
         </profile>
         <profile name="Dismounted Yawdryl" typeId="8e73-7370-7f76-a0f6" typeName="Dismounted Unit" hidden="false" id="6b40-014c-57a2-0fdb">
           <characteristics>
@@ -819,17 +822,17 @@
             <characteristic name="Result" typeId="897e-4ecc-846b-1598">Mounted Rhyfler is Rattled.</characteristic>
           </characteristics>
         </profile>
-        <profile name="3-4" typeId="6e06-153b-5181-d39d" typeName="Damage Chart" hidden="false" id="9527-971e-51f4-6ac7" noindex="false">
+        <profile name="3-4" typeId="6e06-153b-5181-d39d" typeName="Damage Chart" hidden="false" id="e851-26d9-bbf6-2a58" noindex="false">
           <characteristics>
             <characteristic name="Result" typeId="897e-4ecc-846b-1598">Mount is Wounded. Unit&apos;s MA reduced to second value. If this result is rolled again treat it as a roll of 5</characteristic>
           </characteristics>
         </profile>
-        <profile name="5" typeId="6e06-153b-5181-d39d" typeName="Damage Chart" hidden="false" id="c3ae-ecfb-c57d-8f31">
+        <profile name="5" typeId="6e06-153b-5181-d39d" typeName="Damage Chart" hidden="false" id="2846-d63b-5ed6-c852">
           <characteristics>
             <characteristic name="Result" typeId="897e-4ecc-846b-1598">Mount is taken OOA. Replace mounted unit with dismounted Rider. Rider makes a Mounted Crash Skill Check.</characteristic>
           </characteristics>
         </profile>
-        <profile name="6" typeId="6e06-153b-5181-d39d" typeName="Damage Chart" hidden="false" id="251b-c6c0-9c07-af27">
+        <profile name="6" typeId="6e06-153b-5181-d39d" typeName="Damage Chart" hidden="false" id="7303-8295-2263-5bfe">
           <characteristics>
             <characteristic name="Result" typeId="897e-4ecc-846b-1598">Rider is hit and Taken OOA. Remove Mount from the battlefield and replace with OOA Dismounted Rider.</characteristic>
           </characteristics>
@@ -866,6 +869,9 @@
             <characteristic name="Equipment" typeId="4a61-14de-472f-b84d">Lance, Pistol</characteristic>
             <characteristic name="Special" typeId="c973-830d-f693-f6b1">Cadier, Melee(+1)</characteristic>
           </characteristics>
+          <attributes>
+            <attribute typeId="031c-0d07-1b90-9ff5" name="New Attribute Type"/>
+          </attributes>
         </profile>
         <profile name="Dismounted Rhyfler" typeId="8e73-7370-7f76-a0f6" typeName="Dismounted Unit" hidden="false" id="436c-666b-bd91-4662">
           <characteristics>
@@ -882,17 +888,17 @@
             <characteristic name="Result" typeId="897e-4ecc-846b-1598">Mounted Rhyfler is Rattled.</characteristic>
           </characteristics>
         </profile>
-        <profile name="3-4" typeId="6e06-153b-5181-d39d" typeName="Damage Chart" hidden="false" id="05e0-88a9-bdfd-1cd7" noindex="false">
+        <profile name="3-4" typeId="6e06-153b-5181-d39d" typeName="Damage Chart" hidden="false" id="acde-5ca0-9466-0a86" noindex="false">
           <characteristics>
             <characteristic name="Result" typeId="897e-4ecc-846b-1598">Mount is Wounded. Unit&apos;s MA reduced to second value. If this result is rolled again treat it as a roll of 5</characteristic>
           </characteristics>
         </profile>
-        <profile name="5" typeId="6e06-153b-5181-d39d" typeName="Damage Chart" hidden="false" id="ab34-a6d2-4455-daff">
+        <profile name="5" typeId="6e06-153b-5181-d39d" typeName="Damage Chart" hidden="false" id="4ea6-32d4-bff1-94b1">
           <characteristics>
             <characteristic name="Result" typeId="897e-4ecc-846b-1598">Mount is taken OOA. Replace mounted unit with dismounted Rider. Rider makes a Mounted Crash Skill Check.</characteristic>
           </characteristics>
         </profile>
-        <profile name="6" typeId="6e06-153b-5181-d39d" typeName="Damage Chart" hidden="false" id="a45d-8b0e-9168-7de1">
+        <profile name="6" typeId="6e06-153b-5181-d39d" typeName="Damage Chart" hidden="false" id="6a95-f18d-c7d0-10d8">
           <characteristics>
             <characteristic name="Result" typeId="897e-4ecc-846b-1598">Rider is hit and Taken OOA. Remove Mount from the battlefield and replace with OOA Dismounted Rider.</characteristic>
           </characteristics>
@@ -1060,21 +1066,6 @@
             <characteristic name="Result" typeId="897e-4ecc-846b-1598">Weapon Crew Rattled.</characteristic>
           </characteristics>
         </profile>
-        <profile name="3-4" typeId="6e06-153b-5181-d39d" typeName="Damage Chart" hidden="false" id="5047-0de1-f2c5-bb65">
-          <characteristics>
-            <characteristic name="Result" typeId="897e-4ecc-846b-1598">Weapon Crew is Gobsmacked. Remove Rattled if present.</characteristic>
-          </characteristics>
-        </profile>
-        <profile name="5-6" typeId="6e06-153b-5181-d39d" typeName="Damage Chart" hidden="false" id="4489-bdb5-c7f9-6b30">
-          <characteristics>
-            <characteristic name="Result" typeId="897e-4ecc-846b-1598">Weapon Crew suffers 1 Damage Point.</characteristic>
-          </characteristics>
-        </profile>
-        <profile name="7+" typeId="6e06-153b-5181-d39d" typeName="Damage Chart" hidden="false" id="3979-644a-5a6b-47d0">
-          <characteristics>
-            <characteristic name="Result" typeId="897e-4ecc-846b-1598">Weapon crew are disabled. Remove from battlefield.</characteristic>
-          </characteristics>
-        </profile>
         <profile name="0" typeId="73fd-d87f-c3ca-d678" typeName="Damage Level" hidden="false" id="2893-3b13-bedd-fba2">
           <characteristics>
             <characteristic typeId="0a18-6bf0-38b6-f7a0">Fully Operational</characteristic>
@@ -1095,6 +1086,21 @@
             <characteristic name="Range" typeId="1775-3227-d2ed-93a5">Template Cone</characteristic>
             <characteristic name="Arc" typeId="f1e8-b48b-c0f2-c05f">45</characteristic>
             <characteristic name="Abilities" typeId="bd42-ef04-afe1-f4d4"/>
+          </characteristics>
+        </profile>
+        <profile name="3-4" typeId="6e06-153b-5181-d39d" typeName="Damage Chart" hidden="false" id="a7de-f53c-3933-6c88">
+          <characteristics>
+            <characteristic name="Result" typeId="897e-4ecc-846b-1598">Weapon Crew is Gobsmacked. Remove Rattled if present.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="5-6" typeId="6e06-153b-5181-d39d" typeName="Damage Chart" hidden="false" id="d792-5863-2691-8b56">
+          <characteristics>
+            <characteristic name="Result" typeId="897e-4ecc-846b-1598">Weapon Crew suffers 1 Damage Point.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="7+" typeId="6e06-153b-5181-d39d" typeName="Damage Chart" hidden="false" id="e5a8-20c3-c788-efd4">
+          <characteristics>
+            <characteristic name="Result" typeId="897e-4ecc-846b-1598">Weapon crew are disabled. Remove from battlefield.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -1120,6 +1126,9 @@
             <characteristic name="Equipment" typeId="4a61-14de-472f-b84d">Harlech Carbine</characteristic>
             <characteristic name="Special" typeId="c973-830d-f693-f6b1">Cadier, Ranged (+1)</characteristic>
           </characteristics>
+          <attributes>
+            <attribute typeId="031c-0d07-1b90-9ff5" name="New Attribute Type"/>
+          </attributes>
         </profile>
         <profile name="Dismounted Scout Rhyfler" typeId="8e73-7370-7f76-a0f6" typeName="Dismounted Unit" hidden="false" id="2c74-4626-6991-59c8">
           <characteristics>
@@ -1136,17 +1145,17 @@
             <characteristic name="Result" typeId="897e-4ecc-846b-1598">Mounted Rhyfler is Rattled.</characteristic>
           </characteristics>
         </profile>
-        <profile name="3-4" typeId="6e06-153b-5181-d39d" typeName="Damage Chart" hidden="false" id="c979-7b95-ad27-adae" noindex="false">
+        <profile name="3-4" typeId="6e06-153b-5181-d39d" typeName="Damage Chart" hidden="false" id="da67-5d1e-3aab-b7f8" noindex="false">
           <characteristics>
             <characteristic name="Result" typeId="897e-4ecc-846b-1598">Mount is Wounded. Unit&apos;s MA reduced to second value. If this result is rolled again treat it as a roll of 5</characteristic>
           </characteristics>
         </profile>
-        <profile name="5" typeId="6e06-153b-5181-d39d" typeName="Damage Chart" hidden="false" id="42b2-ec4e-8b5f-0d1e">
+        <profile name="5" typeId="6e06-153b-5181-d39d" typeName="Damage Chart" hidden="false" id="3e1e-d5a4-1238-c240">
           <characteristics>
             <characteristic name="Result" typeId="897e-4ecc-846b-1598">Mount is taken OOA. Replace mounted unit with dismounted Rider. Rider makes a Mounted Crash Skill Check.</characteristic>
           </characteristics>
         </profile>
-        <profile name="6" typeId="6e06-153b-5181-d39d" typeName="Damage Chart" hidden="false" id="7aa9-0778-be29-7708">
+        <profile name="6" typeId="6e06-153b-5181-d39d" typeName="Damage Chart" hidden="false" id="bc57-9ad1-2cbb-0d5b">
           <characteristics>
             <characteristic name="Result" typeId="897e-4ecc-846b-1598">Rider is hit and Taken OOA. Remove Mount from the battlefield and replace with OOA Dismounted Rider.</characteristic>
           </characteristics>
@@ -1190,6 +1199,9 @@
             <characteristic name="Equipment" typeId="4a61-14de-472f-b84d">Fyrshog&apos;s Axe</characteristic>
             <characteristic name="Special" typeId="c973-830d-f693-f6b1">Cadier, Veteran, Killing Strike</characteristic>
           </characteristics>
+          <attributes>
+            <attribute typeId="031c-0d07-1b90-9ff5" name="New Attribute Type"/>
+          </attributes>
         </profile>
         <profile name="Dismounted Fyrshog" typeId="8e73-7370-7f76-a0f6" typeName="Dismounted Unit" hidden="false" id="8a2b-5f93-cec5-f7cd">
           <characteristics>
@@ -1206,17 +1218,17 @@
             <characteristic name="Result" typeId="897e-4ecc-846b-1598">Mounted Rhyfler is Rattled.</characteristic>
           </characteristics>
         </profile>
-        <profile name="3-4" typeId="6e06-153b-5181-d39d" typeName="Damage Chart" hidden="false" id="0ab3-0068-c6bc-7fc8" noindex="false">
+        <profile name="3-4" typeId="6e06-153b-5181-d39d" typeName="Damage Chart" hidden="false" id="31d8-d23f-5b54-4a29" noindex="false">
           <characteristics>
             <characteristic name="Result" typeId="897e-4ecc-846b-1598">Mount is Wounded. Unit&apos;s MA reduced to second value. If this result is rolled again treat it as a roll of 5</characteristic>
           </characteristics>
         </profile>
-        <profile name="5" typeId="6e06-153b-5181-d39d" typeName="Damage Chart" hidden="false" id="e5a4-e002-d986-5e12">
+        <profile name="5" typeId="6e06-153b-5181-d39d" typeName="Damage Chart" hidden="false" id="a9fc-d5b5-3cb4-eac1">
           <characteristics>
             <characteristic name="Result" typeId="897e-4ecc-846b-1598">Mount is taken OOA. Replace mounted unit with dismounted Rider. Rider makes a Mounted Crash Skill Check.</characteristic>
           </characteristics>
         </profile>
-        <profile name="6" typeId="6e06-153b-5181-d39d" typeName="Damage Chart" hidden="false" id="5005-22ba-051e-cd3e">
+        <profile name="6" typeId="6e06-153b-5181-d39d" typeName="Damage Chart" hidden="false" id="77d7-7635-0053-74b3">
           <characteristics>
             <characteristic name="Result" typeId="897e-4ecc-846b-1598">Rider is hit and Taken OOA. Remove Mount from the battlefield and replace with OOA Dismounted Rider.</characteristic>
           </characteristics>

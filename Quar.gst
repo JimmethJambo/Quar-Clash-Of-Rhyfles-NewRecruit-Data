@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="sys-dbd1-1d4a-43f9-1e9c" name="Quar - Clash of Rhyfles" battleScribeVersion="2.03" revision="11" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" authorName="Jim Jambo" authorUrl="jimjambo.gay">
+<gameSystem id="sys-dbd1-1d4a-43f9-1e9c" name="Quar - Clash of Rhyfles" battleScribeVersion="2.03" revision="12" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" authorName="Jim Jambo" authorUrl="jimjambo.gay">
   <categoryEntries>
     <categoryEntry name="Unit" id="de6b-6ec2-9294-541d" hidden="false"/>
     <categoryEntry name="Armored Vehicle" id="e009-498c-bf4e-66d2" hidden="false"/>
@@ -51,7 +51,7 @@
         <characteristicType name="Damage" id="4b90-fab7-6493-9714"/>
       </characteristicTypes>
     </profileType>
-    <profileType name="Tractor Damage Area" id="bf17-75fe-032b-a8eb" hidden="false">
+    <profileType name="Tractor Damage Area" id="bf17-75fe-032b-a8eb" hidden="false" sortIndex="11">
       <characteristicTypes>
         <characteristicType name="Tread" id="6193-4d0a-5399-c05d"/>
         <characteristicType name="Hull" id="2882-bfcc-2f15-a801"/>
@@ -90,7 +90,7 @@
         <characteristicType name="Type" id="00d8-3f2d-ae43-9218"/>
       </characteristicTypes>
     </profileType>
-    <profileType name="Damage Chart" id="6e06-153b-5181-d39d" hidden="false">
+    <profileType name="Damage Chart" id="6e06-153b-5181-d39d" hidden="false" sortIndex="12">
       <characteristicTypes>
         <characteristicType name="Result" id="897e-4ecc-846b-1598"/>
       </characteristicTypes>
@@ -119,6 +119,9 @@
         <characteristicType name="Equipment" id="4a61-14de-472f-b84d"/>
         <characteristicType name="Special" id="c973-830d-f693-f6b1"/>
       </characteristicTypes>
+      <attributeTypes>
+        <attributeType name="cavalry kind" id="031c-0d07-1b90-9ff5"/>
+      </attributeTypes>
     </profileType>
     <profileType name="Dismounted Unit" id="8e73-7370-7f76-a0f6" hidden="false" sortIndex="10">
       <characteristicTypes>
@@ -130,7 +133,7 @@
         <characteristicType name="Special" id="3587-866b-8fff-d4c0"/>
       </characteristicTypes>
     </profileType>
-    <profileType name="Damage Level" id="73fd-d87f-c3ca-d678" hidden="false">
+    <profileType name="Damage Level" id="73fd-d87f-c3ca-d678" hidden="false" sortIndex="13">
       <characteristicTypes>
         <characteristicType id="0a18-6bf0-38b6-f7a0"/>
       </characteristicTypes>
@@ -483,7 +486,7 @@ Opposed rhyflers without this ability may not perform Melee Attacks against rhy
 If the target of such an attack is Gobsmacked or taken OOA the throwing rhyfler may attempt to recover their weapon by moving up to the target and spending an Activation to retrieve it. If they do so they may throw the weapon again at a later point in the battle.</description>
     </rule>
     <rule name="Burly" id="9817-9031-bff6-c548" hidden="false">
-      <description> Burly rhyfler ignores the penalty gathered by the
+      <description>Burly rhyfler ignores the penalty gathered by the
 equipment trait Braced, and counts as two rhyflers when moving objects with the
 Heavy trait.</description>
     </rule>
@@ -503,5 +506,53 @@ Heavy trait.</description>
         </profile>
       </profiles>
     </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Harlech" hidden="false" id="d263-845d-e7c7-0ba0" sortIndex="1" defaultAmount="1">
+      <infoLinks>
+        <infoLink name="Harlech" id="3118-fcea-6121-4f2c" hidden="false" type="profile" targetId="797a-eb54-4f71-b05c"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Doru" hidden="false" id="e70a-c91e-3a55-e15d" sortIndex="1" defaultAmount="1">
+      <infoLinks>
+        <infoLink name="Doru" id="4c3d-3f8f-0ca8-2794" hidden="false" type="profile" targetId="0ffb-7275-6b02-c0c9"/>
+        <infoLink name="Select Fire(X)" id="64d8-c76e-141c-5ddb" hidden="false" type="rule" targetId="8c44-111c-27c4-4a9b"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Cryfen" hidden="false" id="408e-c4ab-4992-6685" sortIndex="1" defaultAmount="1">
+      <infoLinks>
+        <infoLink name="Cryfen" id="acef-91a1-80a1-a255" hidden="false" type="profile" targetId="f278-e682-48d4-dfb5"/>
+        <infoLink name="Automatic (X)" id="6c62-b746-db07-5817" hidden="false" type="rule" targetId="321d-91fa-c981-2ce1"/>
+        <infoLink name="Loader" id="53e6-5161-a0b2-1d22" hidden="false" type="rule" targetId="877f-75ce-5dc9-010e"/>
+      </infoLinks>
+    </selectionEntry>
   </sharedSelectionEntries>
+  <sharedProfiles>
+    <profile name="Harlech" typeId="0b63-6947-fb08-66eb" typeName="Weapon" hidden="false" id="797a-eb54-4f71-b05c">
+      <characteristics>
+        <characteristic name="Range" typeId="5b6c-828e-fe65-26a5">8</characteristic>
+        <characteristic name="SN" typeId="b1d6-1660-ac56-c22a">-3</characteristic>
+        <characteristic typeId="ed37-dbdc-d41b-3af6" name="Abilities"/>
+      </characteristics>
+    </profile>
+    <profile name="Doru" typeId="0b63-6947-fb08-66eb" typeName="Weapon" hidden="false" id="0ffb-7275-6b02-c0c9">
+      <characteristics>
+        <characteristic name="Range" typeId="5b6c-828e-fe65-26a5">4</characteristic>
+        <characteristic name="SN" typeId="b1d6-1660-ac56-c22a">-1</characteristic>
+        <characteristic name="Abilities" typeId="ed37-dbdc-d41b-3af6">Select Fire 2</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Pistol" typeId="0b63-6947-fb08-66eb" typeName="Weapon" hidden="false" id="99bd-7fcc-169d-3745">
+      <characteristics>
+        <characteristic name="Range" typeId="5b6c-828e-fe65-26a5">4</characteristic>
+        <characteristic name="SN" typeId="b1d6-1660-ac56-c22a">-1</characteristic>
+        <characteristic typeId="ed37-dbdc-d41b-3af6" name="Abilities"/>
+      </characteristics>
+    </profile>
+    <profile name="Cryfen" typeId="0b63-6947-fb08-66eb" typeName="Weapon" hidden="false" id="f278-e682-48d4-dfb5">
+      <characteristics>
+        <characteristic name="Range" typeId="5b6c-828e-fe65-26a5">8</characteristic>
+        <characteristic name="SN" typeId="b1d6-1660-ac56-c22a">-3</characteristic>
+        <characteristic name="Abilities" typeId="ed37-dbdc-d41b-3af6">Automatic (2), Loader</characteristic>
+      </characteristics>
+    </profile>
+  </sharedProfiles>
 </gameSystem>

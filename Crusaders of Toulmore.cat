@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="4210-c08d-7f26-7174" name="Crusaders of Toulmore" gameSystemId="sys-dbd1-1d4a-43f9-1e9c" gameSystemRevision="3" revision="10" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="4210-c08d-7f26-7174" name="Crusaders of Toulmore" gameSystemId="sys-dbd1-1d4a-43f9-1e9c" gameSystemRevision="3" revision="11" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedSelectionEntries>
     <selectionEntry type="upgrade" import="true" name="Bogen" hidden="false" id="2f9a-306b-0eb2-1eb1" sortIndex="1" defaultAmount="1">
       <profiles>
@@ -7,7 +7,7 @@
           <characteristics>
             <characteristic name="Range" typeId="5b6c-828e-fe65-26a5">6</characteristic>
             <characteristic name="SN" typeId="b1d6-1660-ac56-c22a">-2</characteristic>
-            <characteristic name="Abilities" typeId="ed37-dbdc-d41b-3af6">Ranged +1</characteristic>
+            <characteristic name="Abilities" typeId="ed37-dbdc-d41b-3af6"/>
           </characteristics>
         </profile>
       </profiles>
@@ -59,21 +59,6 @@
         <infoLink name="Shotgun" id="7853-6cd1-e6e1-f75b" hidden="false" type="rule" targetId="d633-ee5f-c6cf-c931"/>
       </infoLinks>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Harlech" hidden="false" id="ef81-42d0-b046-8acf" sortIndex="1" defaultAmount="1">
-      <profiles>
-        <profile name="Harlech" typeId="0b63-6947-fb08-66eb" typeName="Weapon" hidden="false" id="66c2-2c54-e6c5-abc4">
-          <characteristics>
-            <characteristic name="Range" typeId="5b6c-828e-fe65-26a5">8</characteristic>
-            <characteristic name="SN" typeId="b1d6-1660-ac56-c22a">-3</characteristic>
-            <characteristic name="Abilities" typeId="ed37-dbdc-d41b-3af6"/>
-          </characteristics>
-        </profile>
-      </profiles>
-      <constraints>
-        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d989-ceaf-5f5b-9363" includeChildSelections="false"/>
-        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a9c3-e3ae-2903-514b" includeChildSelections="false"/>
-      </constraints>
-    </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="MTR(22)" hidden="false" id="be4f-063f-746f-1d75" sortIndex="1" defaultAmount="1">
       <constraints>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="503e-368f-755e-a1bf" includeChildSelections="false"/>
@@ -93,7 +78,7 @@
         <infoLink name="Braced" id="3922-6a2a-a91f-875d" hidden="false" type="rule" targetId="0b83-b784-dae8-503c"/>
       </infoLinks>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Rhyfler  ( Bogen)" hidden="false" id="1522-d9d9-806e-2219" sortIndex="2">
+    <selectionEntry type="unit" import="true" name="Rhyfler  (Bogen)" hidden="false" id="1522-d9d9-806e-2219" sortIndex="2">
       <costs>
         <cost name="Points" typeId="0bc1-1233-3e53-72ca" value="35"/>
       </costs>
@@ -198,7 +183,7 @@
         <infoLink name="Dead-Eye" id="10f8-25c4-3bf0-2bbc" hidden="false" type="rule" targetId="d190-c1b5-6dbb-6129"/>
       </infoLinks>
       <entryLinks>
-        <entryLink import="true" name="Harlech" hidden="false" id="c727-4112-5358-96bd" type="selectionEntry" targetId="ef81-42d0-b046-8acf"/>
+        <entryLink import="true" name="Harlech" hidden="false" id="c727-4112-5358-96bd" type="selectionEntry" targetId="d263-845d-e7c7-0ba0"/>
       </entryLinks>
       <categoryLinks>
         <categoryLink targetId="de6b-6ec2-9294-541d" id="eee2-c3db-6185-e18b" primary="true" name="Unit"/>
@@ -301,33 +286,67 @@
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5cc1-f700-ce77-92bb" includeChildSelections="false"/>
           </constraints>
-        </entryLink>
-        <entryLink import="true" name="Bogen" hidden="false" id="0f15-3ccc-05a6-6328" type="selectionEntry" targetId="2f9a-306b-0eb2-1eb1" defaultAmount="0">
-          <infoLinks>
-            <infoLink name="Ranged (X)" id="c9a9-a66f-e7df-8115" hidden="false" type="rule" targetId="54f4-6c58-08c6-8d46"/>
-          </infoLinks>
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e22d-988f-bcd4-4d11" includeChildSelections="false"/>
-          </constraints>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="2f9a-306b-0eb2-1eb1" shared="true" includeChildSelections="false"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <profiles>
+            <profile name="is-Caerten" typeId="7040-9c4e-1119-a3c5" typeName="Unit" hidden="false" id="eef7-0f7c-7a0b-6b3b">
+              <characteristics>
+                <characteristic name="Sk" typeId="0014-9871-f278-b5f3">12</characteristic>
+                <characteristic name="Mt" typeId="d8ef-e518-8f49-8a7b">2d6-1</characteristic>
+                <characteristic name="MA" typeId="4cd7-b825-6660-1758">5</characteristic>
+                <characteristic name="Toughness" typeId="197d-1c5e-af24-ee6e">4</characteristic>
+                <characteristic name="Special Abilities" typeId="94ec-89a2-8f77-66c3">Leader (3/6)</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
         </entryLink>
       </entryLinks>
-      <profiles>
-        <profile name="is-Caerten" typeId="7040-9c4e-1119-a3c5" typeName="Unit" hidden="false" id="2169-f4c5-9e9b-2719">
-          <characteristics>
-            <characteristic name="Sk" typeId="0014-9871-f278-b5f3">12</characteristic>
-            <characteristic name="Mt" typeId="d8ef-e518-8f49-8a7b">1d6+2</characteristic>
-            <characteristic name="MA" typeId="4cd7-b825-6660-1758">5</characteristic>
-            <characteristic name="Toughness" typeId="197d-1c5e-af24-ee6e">4</characteristic>
-            <characteristic name="Special Abilities" typeId="94ec-89a2-8f77-66c3">Leader (2/5)</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
       <infoLinks>
         <infoLink name="Leader (X/Y)" id="62b1-cc96-d164-63c7" hidden="false" type="rule" targetId="ba90-37ff-4384-2bc5"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink targetId="de6b-6ec2-9294-541d" id="83a8-3b8f-9d22-9faf" primary="true" name="Unit"/>
       </categoryLinks>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Bogen" hidden="false" id="7dd2-0f03-17f8-bf37">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="258b-0591-0bb4-d1a4" includeChildSelections="false"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Ranged (X)" id="000e-240b-2448-9819" hidden="false" type="rule" targetId="54f4-6c58-08c6-8d46"/>
+          </infoLinks>
+          <profiles>
+            <profile name="Bogen" typeId="0b63-6947-fb08-66eb" typeName="Weapon" hidden="false" id="2a35-b59d-db8b-4c6e">
+              <characteristics>
+                <characteristic name="Range" typeId="5b6c-828e-fe65-26a5">6</characteristic>
+                <characteristic name="SN" typeId="b1d6-1660-ac56-c22a">-2</characteristic>
+                <characteristic name="Abilities" typeId="ed37-dbdc-d41b-3af6"/>
+              </characteristics>
+            </profile>
+            <profile name="is-Caerten" typeId="7040-9c4e-1119-a3c5" typeName="Unit" hidden="false" id="2169-f4c5-9e9b-2719">
+              <characteristics>
+                <characteristic name="Sk" typeId="0014-9871-f278-b5f3">12</characteristic>
+                <characteristic name="Mt" typeId="d8ef-e518-8f49-8a7b">1d6+2</characteristic>
+                <characteristic name="MA" typeId="4cd7-b825-6660-1758">5</characteristic>
+                <characteristic name="Toughness" typeId="197d-1c5e-af24-ee6e">4</characteristic>
+                <characteristic name="Special Abilities" typeId="94ec-89a2-8f77-66c3">Leader (3/6), Ranged (+1)</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="9437-f819-d82c-ff10" shared="true" includeChildSelections="false"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </selectionEntry>
+      </selectionEntries>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Standard Bearer" hidden="false" id="2f11-9c54-d9f8-f911" sortIndex="3">
       <costs>
@@ -517,22 +536,22 @@
             <characteristic name="Damage" typeId="4b90-fab7-6493-9714">3</characteristic>
           </characteristics>
         </profile>
-        <profile name="1-2" typeId="6e06-153b-5181-d39d" typeName="Damage Chart" hidden="false" id="0b20-4f3e-626f-d636">
+        <profile name="1-2" typeId="6e06-153b-5181-d39d" typeName="Damage Chart" hidden="false" id="2978-ebfd-89e7-c93e">
           <characteristics>
             <characteristic name="Result" typeId="897e-4ecc-846b-1598">Vehicle is Rattled</characteristic>
           </characteristics>
         </profile>
-        <profile name="3-5" typeId="6e06-153b-5181-d39d" typeName="Damage Chart" hidden="false" id="28b9-6f41-bcbb-372a">
+        <profile name="3-5" typeId="6e06-153b-5181-d39d" typeName="Damage Chart" hidden="false" id="1a24-008f-702d-eb6d">
           <characteristics>
             <characteristic name="Result" typeId="897e-4ecc-846b-1598">Vehicle suffers 1 Damage Point. rew gain Rattled status.</characteristic>
           </characteristics>
         </profile>
-        <profile name="6" typeId="6e06-153b-5181-d39d" typeName="Damage Chart" hidden="false" id="8684-80bd-9c56-6467">
+        <profile name="6" typeId="6e06-153b-5181-d39d" typeName="Damage Chart" hidden="false" id="6d71-2519-daae-aca3">
           <characteristics>
             <characteristic name="Result" typeId="897e-4ecc-846b-1598">Vehicle suffers 2 Damage Points. Crew gain Rattled status.</characteristic>
           </characteristics>
         </profile>
-        <profile name="7+" typeId="6e06-153b-5181-d39d" typeName="Damage Chart" hidden="false" id="0513-87e2-2b8f-f5d1">
+        <profile name="7+" typeId="6e06-153b-5181-d39d" typeName="Damage Chart" hidden="false" id="4d19-a7fa-7689-61dc">
           <characteristics>
             <characteristic name="Result" typeId="897e-4ecc-846b-1598">Vehicle is Disabled. Place a Smoke Template under the vehicle. Driver is OOA. Passengers roll on the Vehicle Escape Chart.</characteristic>
           </characteristics>
@@ -589,22 +608,22 @@
             <characteristic name="Damage" typeId="4b90-fab7-6493-9714">3</characteristic>
           </characteristics>
         </profile>
-        <profile name="1-2" typeId="6e06-153b-5181-d39d" typeName="Damage Chart" hidden="false" id="56fd-50b5-cd55-1d38">
+        <profile name="1-2" typeId="6e06-153b-5181-d39d" typeName="Damage Chart" hidden="false" id="9336-2575-a848-e4a3">
           <characteristics>
             <characteristic name="Result" typeId="897e-4ecc-846b-1598">Passengers are Rattled</characteristic>
           </characteristics>
         </profile>
-        <profile name="3-5" typeId="6e06-153b-5181-d39d" typeName="Damage Chart" hidden="false" id="9860-3320-526b-cefa">
+        <profile name="3-5" typeId="6e06-153b-5181-d39d" typeName="Damage Chart" hidden="false" id="83e4-132d-5fe3-415e">
           <characteristics>
             <characteristic name="Result" typeId="897e-4ecc-846b-1598">Vehicle suffers 1 Damage Point. Passengers gain Rattled status.</characteristic>
           </characteristics>
         </profile>
-        <profile name="6" typeId="6e06-153b-5181-d39d" typeName="Damage Chart" hidden="false" id="a9dd-0486-7cba-3b03">
+        <profile name="6" typeId="6e06-153b-5181-d39d" typeName="Damage Chart" hidden="false" id="c881-7c71-55e2-9744">
           <characteristics>
             <characteristic name="Result" typeId="897e-4ecc-846b-1598">Vehicle suffers 2 Damage Points. Passengers gain Rattled status.</characteristic>
           </characteristics>
         </profile>
-        <profile name="7+" typeId="6e06-153b-5181-d39d" typeName="Damage Chart" hidden="false" id="492b-8786-83fb-5b22">
+        <profile name="7+" typeId="6e06-153b-5181-d39d" typeName="Damage Chart" hidden="false" id="90d2-1479-f9f5-d944">
           <characteristics>
             <characteristic name="Result" typeId="897e-4ecc-846b-1598">Vehicle is Disabled. Place a Smoke Template under the vehicle. Driver is OOA. Passengers roll on the Vehicle Escape Chart.</characteristic>
           </characteristics>
@@ -669,6 +688,13 @@
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="868b-1afc-1778-2da4" includeChildSelections="false"/>
           </constraints>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="2f9a-306b-0eb2-1eb1" shared="true" includeChildSelections="false"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </entryLink>
         <entryLink import="true" name="Bogen" hidden="false" id="37b2-c0ce-52d8-b955" type="selectionEntry" targetId="2f9a-306b-0eb2-1eb1">
           <profiles>
@@ -685,6 +711,13 @@
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="608c-cd8f-6e52-cfa5" includeChildSelections="false"/>
           </constraints>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="9437-f819-d82c-ff10" shared="true" includeChildSelections="false"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </entryLink>
       </entryLinks>
       <costs>
@@ -705,7 +738,7 @@
         <constraint type="max" value="1" field="selections" scope="force" shared="true" id="93b4-d785-25d9-d12b" includeChildSelections="false"/>
       </constraints>
       <entryLinks>
-        <entryLink import="true" name="Harlech" hidden="false" id="9ec3-a8ae-0e0f-7577" type="selectionEntry" targetId="ef81-42d0-b046-8acf"/>
+        <entryLink import="true" name="Harlech" hidden="false" id="9ec3-a8ae-0e0f-7577" type="selectionEntry" targetId="d263-845d-e7c7-0ba0"/>
       </entryLinks>
       <profiles>
         <profile name="Wysp tracker" typeId="7040-9c4e-1119-a3c5" typeName="Unit" hidden="false" id="8fb8-63f5-10cb-4df2">
@@ -921,24 +954,9 @@
         <categoryLink name="Mounted Unit" hidden="false" id="df68-4d2c-03c3-a2a0" targetId="f3df-2a35-71ff-3ff7" primary="true"/>
       </categoryLinks>
       <profiles>
-        <profile name="6" typeId="6e06-153b-5181-d39d" typeName="Damage Chart" hidden="false" id="28cb-6422-3c7a-da45">
-          <characteristics>
-            <characteristic name="Result" typeId="897e-4ecc-846b-1598">Rider is hit and Taken OOA. Remove Mount from the battlefield and replace with OOA Dismounted Rider.</characteristic>
-          </characteristics>
-        </profile>
         <profile name="1-2" typeId="6e06-153b-5181-d39d" typeName="Damage Chart" hidden="false" id="4d3e-dc7c-bb78-7a8e">
           <characteristics>
             <characteristic name="Result" typeId="897e-4ecc-846b-1598">Mounted Rhyfler is Rattled.</characteristic>
-          </characteristics>
-        </profile>
-        <profile name="5" typeId="6e06-153b-5181-d39d" typeName="Damage Chart" hidden="false" id="f0e4-3b49-ab3b-2a8c">
-          <characteristics>
-            <characteristic name="Result" typeId="897e-4ecc-846b-1598">Mount is taken OOA. Replace mounted unit with dismounted Rider. Rider makes a Mounted Crash Skill Check.</characteristic>
-          </characteristics>
-        </profile>
-        <profile name="3-4" typeId="6e06-153b-5181-d39d" typeName="Damage Chart" hidden="false" id="37f1-9be3-df56-34fc">
-          <characteristics>
-            <characteristic name="Result" typeId="897e-4ecc-846b-1598">Mount is Wounded. Unit&apos;s MA reduced to second value. If this result is rolled again treat it as a roll of 5</characteristic>
           </characteristics>
         </profile>
         <profile name="Mounted Rhyfler" typeId="e0d8-274b-8232-ef1b" typeName="Mounted Unit" hidden="false" id="59ec-997e-c896-6ea9">
@@ -951,6 +969,9 @@
             <characteristic name="Equipment" typeId="4a61-14de-472f-b84d">Dinas Carbine</characteristic>
             <characteristic name="Special" typeId="c973-830d-f693-f6b1">Cadier</characteristic>
           </characteristics>
+          <attributes>
+            <attribute typeId="031c-0d07-1b90-9ff5" name="New Attribute Type"/>
+          </attributes>
         </profile>
         <profile name="Dismounted Rhyfler" typeId="8e73-7370-7f76-a0f6" typeName="Dismounted Unit" hidden="false" id="e612-16f1-af85-ddc9">
           <characteristics>
@@ -960,6 +981,21 @@
             <characteristic name="T" typeId="d802-8465-1aba-b808">4</characteristic>
             <characteristic name="Equipment" typeId="eb3d-2bb6-1a43-2302">Dinas Carbine</characteristic>
             <characteristic name="Special" typeId="3587-866b-8fff-d4c0">Veteran, Support</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="3-4" typeId="6e06-153b-5181-d39d" typeName="Damage Chart" hidden="false" id="bedc-7576-131a-911c">
+          <characteristics>
+            <characteristic name="Result" typeId="897e-4ecc-846b-1598">Mount is Wounded. Unit&apos;s MA reduced to second value. If this result is rolled again treat it as a roll of 5</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="5" typeId="6e06-153b-5181-d39d" typeName="Damage Chart" hidden="false" id="069b-3940-2822-145d">
+          <characteristics>
+            <characteristic name="Result" typeId="897e-4ecc-846b-1598">Mount is taken OOA. Replace mounted unit with dismounted Rider. Rider makes a Mounted Crash Skill Check.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="6" typeId="6e06-153b-5181-d39d" typeName="Damage Chart" hidden="false" id="984f-ffb0-3151-6bf9">
+          <characteristics>
+            <characteristic name="Result" typeId="897e-4ecc-846b-1598">Rider is hit and Taken OOA. Remove Mount from the battlefield and replace with OOA Dismounted Rider.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -1061,6 +1097,9 @@
             <characteristic name="Equipment" typeId="4a61-14de-472f-b84d">Harlech</characteristic>
             <characteristic name="Special" typeId="c973-830d-f693-f6b1">Cadier, Ranged (-2)</characteristic>
           </characteristics>
+          <attributes>
+            <attribute typeId="031c-0d07-1b90-9ff5" name="New Attribute Type"/>
+          </attributes>
         </profile>
         <profile name="Dismounted Rhyfler" typeId="8e73-7370-7f76-a0f6" typeName="Dismounted Unit" hidden="false" id="9a66-bdfc-625c-e612">
           <characteristics>
@@ -1072,24 +1111,24 @@
             <characteristic name="Special" typeId="3587-866b-8fff-d4c0">Veteran, Dead-eye</characteristic>
           </characteristics>
         </profile>
-        <profile name="6" typeId="6e06-153b-5181-d39d" typeName="Damage Chart" hidden="false" id="f76e-97cb-606e-9b68">
-          <characteristics>
-            <characteristic name="Result" typeId="897e-4ecc-846b-1598">Rider is hit and Taken OOA. Remove Mount from the battlefield and replace with OOA Dismounted Rider.</characteristic>
-          </characteristics>
-        </profile>
         <profile name="1-2" typeId="6e06-153b-5181-d39d" typeName="Damage Chart" hidden="false" id="2ccd-9711-7202-ad8f">
           <characteristics>
             <characteristic name="Result" typeId="897e-4ecc-846b-1598">Mounted Rhyfler is Rattled.</characteristic>
           </characteristics>
         </profile>
-        <profile name="3-4" typeId="6e06-153b-5181-d39d" typeName="Damage Chart" hidden="false" id="e530-0231-5c9f-dc65">
+        <profile name="3-4" typeId="6e06-153b-5181-d39d" typeName="Damage Chart" hidden="false" id="dcc5-ce5f-9699-5e72">
           <characteristics>
             <characteristic name="Result" typeId="897e-4ecc-846b-1598">Mount is Wounded. Unit&apos;s MA reduced to second value. If this result is rolled again treat it as a roll of 5</characteristic>
           </characteristics>
         </profile>
-        <profile name="5" typeId="6e06-153b-5181-d39d" typeName="Damage Chart" hidden="false" id="bd9f-036c-4902-cd2f">
+        <profile name="5" typeId="6e06-153b-5181-d39d" typeName="Damage Chart" hidden="false" id="e229-9868-cd76-3db0">
           <characteristics>
             <characteristic name="Result" typeId="897e-4ecc-846b-1598">Mount is taken OOA. Replace mounted unit with dismounted Rider. Rider makes a Mounted Crash Skill Check.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="6" typeId="6e06-153b-5181-d39d" typeName="Damage Chart" hidden="false" id="3e34-de54-b6f1-7ab0">
+          <characteristics>
+            <characteristic name="Result" typeId="897e-4ecc-846b-1598">Rider is hit and Taken OOA. Remove Mount from the battlefield and replace with OOA Dismounted Rider.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -1168,7 +1207,7 @@
         </modifier>
       </modifiers>
       <entryLinks>
-        <entryLink import="true" name="Harlech" hidden="false" id="839b-4098-45ff-c66d" type="selectionEntry" targetId="ef81-42d0-b046-8acf"/>
+        <entryLink import="true" name="Harlech" hidden="false" id="839b-4098-45ff-c66d" type="selectionEntry" targetId="d263-845d-e7c7-0ba0"/>
       </entryLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Cavalry Yawdryl" hidden="false" id="0e2e-cd4a-a3fe-f3d5">
@@ -1184,17 +1223,17 @@
             <characteristic name="Result" typeId="897e-4ecc-846b-1598">Mounted Rhyfler is Rattled.</characteristic>
           </characteristics>
         </profile>
-        <profile name="3-4" typeId="6e06-153b-5181-d39d" typeName="Damage Chart" hidden="false" id="e7f2-ca8d-5a26-efc1">
+        <profile name="3-4" typeId="6e06-153b-5181-d39d" typeName="Damage Chart" hidden="false" id="abb4-da36-55f2-7cf2">
           <characteristics>
             <characteristic name="Result" typeId="897e-4ecc-846b-1598">Mount is Wounded. Unit&apos;s MA reduced to second value. If this result is rolled again treat it as a roll of 5</characteristic>
           </characteristics>
         </profile>
-        <profile name="5" typeId="6e06-153b-5181-d39d" typeName="Damage Chart" hidden="false" id="7d21-d9cd-7422-7134">
+        <profile name="5" typeId="6e06-153b-5181-d39d" typeName="Damage Chart" hidden="false" id="ef27-25f6-cc84-5ff3">
           <characteristics>
             <characteristic name="Result" typeId="897e-4ecc-846b-1598">Mount is taken OOA. Replace mounted unit with dismounted Rider. Rider makes a Mounted Crash Skill Check.</characteristic>
           </characteristics>
         </profile>
-        <profile name="6" typeId="6e06-153b-5181-d39d" typeName="Damage Chart" hidden="false" id="ad5e-581d-8686-a0bb">
+        <profile name="6" typeId="6e06-153b-5181-d39d" typeName="Damage Chart" hidden="false" id="a2f6-b59e-1996-6e0f">
           <characteristics>
             <characteristic name="Result" typeId="897e-4ecc-846b-1598">Rider is hit and Taken OOA. Remove Mount from the battlefield and replace with OOA Dismounted Rider.</characteristic>
           </characteristics>
@@ -1228,6 +1267,9 @@
                 <characteristic name="Equipment" typeId="4a61-14de-472f-b84d">Sabre, Dinas Carbine</characteristic>
                 <characteristic name="Special" typeId="c973-830d-f693-f6b1">Cadier</characteristic>
               </characteristics>
+              <attributes>
+                <attribute typeId="031c-0d07-1b90-9ff5" name="New Attribute Type"/>
+              </attributes>
             </profile>
             <profile name="Dismounted Yawdryl" typeId="8e73-7370-7f76-a0f6" typeName="Dismounted Unit" hidden="false" id="85f9-0018-02a5-ff65">
               <characteristics>
@@ -1289,6 +1331,9 @@
             <characteristic name="Equipment" typeId="4a61-14de-472f-b84d">Dinas Carbine</characteristic>
             <characteristic name="Special" typeId="c973-830d-f693-f6b1">Cadier</characteristic>
           </characteristics>
+          <attributes>
+            <attribute typeId="031c-0d07-1b90-9ff5" name="New Attribute Type"/>
+          </attributes>
         </profile>
         <profile name="Dismounted Rhyfler" typeId="8e73-7370-7f76-a0f6" typeName="Dismounted Unit" hidden="false" id="f1d4-6087-e2ad-1b1b">
           <characteristics>
@@ -1300,24 +1345,24 @@
             <characteristic name="Special" typeId="3587-866b-8fff-d4c0">Veteran</characteristic>
           </characteristics>
         </profile>
-        <profile name="6" typeId="6e06-153b-5181-d39d" typeName="Damage Chart" hidden="false" id="bcf9-5bff-8eaa-1af7">
-          <characteristics>
-            <characteristic name="Result" typeId="897e-4ecc-846b-1598">Rider is hit and Taken OOA. Remove Mount from the battlefield and replace with OOA Dismounted Rider.</characteristic>
-          </characteristics>
-        </profile>
-        <profile name="1-2" typeId="6e06-153b-5181-d39d" typeName="Damage Chart" hidden="false" id="8e1b-5440-4634-9dbc">
+        <profile name="1-2" typeId="6e06-153b-5181-d39d" typeName="Damage Chart" hidden="false" id="669c-5c97-8802-f23e">
           <characteristics>
             <characteristic name="Result" typeId="897e-4ecc-846b-1598">Mounted Rhyfler is Rattled.</characteristic>
           </characteristics>
         </profile>
-        <profile name="3-4" typeId="6e06-153b-5181-d39d" typeName="Damage Chart" hidden="false" id="90b5-1201-f8c4-5f75">
+        <profile name="3-4" typeId="6e06-153b-5181-d39d" typeName="Damage Chart" hidden="false" id="663e-a110-f2ed-ac41">
           <characteristics>
             <characteristic name="Result" typeId="897e-4ecc-846b-1598">Mount is Wounded. Unit&apos;s MA reduced to second value. If this result is rolled again treat it as a roll of 5</characteristic>
           </characteristics>
         </profile>
-        <profile name="5" typeId="6e06-153b-5181-d39d" typeName="Damage Chart" hidden="false" id="bfe3-3844-5358-27eb">
+        <profile name="5" typeId="6e06-153b-5181-d39d" typeName="Damage Chart" hidden="false" id="b47a-ebe9-2dc4-20dc">
           <characteristics>
             <characteristic name="Result" typeId="897e-4ecc-846b-1598">Mount is taken OOA. Replace mounted unit with dismounted Rider. Rider makes a Mounted Crash Skill Check.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="6" typeId="6e06-153b-5181-d39d" typeName="Damage Chart" hidden="false" id="9fe1-33ef-0e29-3b19">
+          <characteristics>
+            <characteristic name="Result" typeId="897e-4ecc-846b-1598">Rider is hit and Taken OOA. Remove Mount from the battlefield and replace with OOA Dismounted Rider.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -1415,6 +1460,9 @@
             <characteristic name="Equipment" typeId="4a61-14de-472f-b84d">LMG</characteristic>
             <characteristic name="Special" typeId="c973-830d-f693-f6b1">Cadier, Ranged (-2)</characteristic>
           </characteristics>
+          <attributes>
+            <attribute typeId="031c-0d07-1b90-9ff5" name="New Attribute Type"/>
+          </attributes>
         </profile>
         <profile name="Dismounted Rhyfler" typeId="8e73-7370-7f76-a0f6" typeName="Dismounted Unit" hidden="false" id="3e73-bc7d-aa7d-cd43">
           <characteristics>
@@ -1426,24 +1474,24 @@
             <characteristic name="Special" typeId="3587-866b-8fff-d4c0">Veteran</characteristic>
           </characteristics>
         </profile>
-        <profile name="6" typeId="6e06-153b-5181-d39d" typeName="Damage Chart" hidden="false" id="f1b4-5477-c715-6284">
-          <characteristics>
-            <characteristic name="Result" typeId="897e-4ecc-846b-1598">Rider is hit and Taken OOA. Remove Mount from the battlefield and replace with OOA Dismounted Rider.</characteristic>
-          </characteristics>
-        </profile>
         <profile name="1-2" typeId="6e06-153b-5181-d39d" typeName="Damage Chart" hidden="false" id="d8ed-0c69-9ac7-1fef">
           <characteristics>
             <characteristic name="Result" typeId="897e-4ecc-846b-1598">Mounted Rhyfler is Rattled.</characteristic>
           </characteristics>
         </profile>
-        <profile name="3-4" typeId="6e06-153b-5181-d39d" typeName="Damage Chart" hidden="false" id="aec9-43ed-f89e-ca19">
+        <profile name="3-4" typeId="6e06-153b-5181-d39d" typeName="Damage Chart" hidden="false" id="b784-c141-2ad0-589c">
           <characteristics>
             <characteristic name="Result" typeId="897e-4ecc-846b-1598">Mount is Wounded. Unit&apos;s MA reduced to second value. If this result is rolled again treat it as a roll of 5</characteristic>
           </characteristics>
         </profile>
-        <profile name="5" typeId="6e06-153b-5181-d39d" typeName="Damage Chart" hidden="false" id="eb87-4b7f-ab3d-9e32">
+        <profile name="5" typeId="6e06-153b-5181-d39d" typeName="Damage Chart" hidden="false" id="119c-7b48-ff27-4dc2">
           <characteristics>
             <characteristic name="Result" typeId="897e-4ecc-846b-1598">Mount is taken OOA. Replace mounted unit with dismounted Rider. Rider makes a Mounted Crash Skill Check.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="6" typeId="6e06-153b-5181-d39d" typeName="Damage Chart" hidden="false" id="dab3-cdc3-9b15-09f3">
+          <characteristics>
+            <characteristic name="Result" typeId="897e-4ecc-846b-1598">Rider is hit and Taken OOA. Remove Mount from the battlefield and replace with OOA Dismounted Rider.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -1569,8 +1617,8 @@
     <entryLink import="true" name="Cook" hidden="false" id="d429-53fb-df9c-8065" type="selectionEntry" targetId="96f6-d3c5-a980-c3c0"/>
     <entryLink import="true" name="Musician" hidden="false" id="19fb-2b64-22e2-0291" type="selectionEntry" targetId="2ff4-8a7c-25bf-db8e"/>
     <entryLink import="true" name="Cavalry Yawdryl" hidden="false" id="8842-e7e7-0ba1-1bb2" type="selectionEntry" targetId="0e2e-cd4a-a3fe-f3d5"/>
-    <entryLink import="true" name="Cavalry Rhyfler, Saber &amp; Dinas Carbine" hidden="false" id="2f4a-0faf-3b07-a0f0" type="selectionEntry" targetId="0273-88f7-ca27-8531"/>
-    <entryLink import="true" name="Cavalry Rhyfler, Saber &amp; Sio-Cly Derringer" hidden="false" id="28f5-5b75-f3ec-8e04" type="selectionEntry" targetId="f370-dfd4-1744-4c56"/>
+    <entryLink import="true" name="Cavalry Dragoon" hidden="false" id="2f4a-0faf-3b07-a0f0" type="selectionEntry" targetId="0273-88f7-ca27-8531"/>
+    <entryLink import="true" name="Cavalry Dragoon Marksquar" hidden="false" id="28f5-5b75-f3ec-8e04" type="selectionEntry" targetId="f370-dfd4-1744-4c56"/>
     <entryLink import="true" name="Cavalry Dragoon Loader" hidden="false" id="a8e2-a16e-715a-5fd0" type="selectionEntry" targetId="a37b-5e91-f8cc-4930"/>
     <entryLink import="true" name="Cavalry Dragoon Gunner" hidden="false" id="ba11-ab04-f6a2-898d" type="selectionEntry" targetId="9e94-06fb-9107-099f"/>
   </entryLinks>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="5c83-b126-5013-350a" name="Ergydiwr" gameSystemId="sys-dbd1-1d4a-43f9-1e9c" gameSystemRevision="9" revision="1" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="5c83-b126-5013-350a" name="Ergydiwr" gameSystemId="sys-dbd1-1d4a-43f9-1e9c" gameSystemRevision="9" revision="2" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedSelectionEntries>
     <selectionEntry type="upgrade" import="true" name="Tefsyn Infantry Rhyfle" hidden="false" id="988f-3c41-f039-7609">
       <profiles>
@@ -32,7 +32,12 @@
         <cost name="Points" typeId="0bc1-1233-3e53-72ca" value="25"/>
       </costs>
       <entryLinks>
-        <entryLink import="true" name="Tefsyn Infantry Rhyfle" hidden="false" id="2f6d-97e5-f889-cc8a" type="selectionEntry" targetId="988f-3c41-f039-7609"/>
+        <entryLink import="true" name="Tefsyn Infantry Rhyfle" hidden="false" id="2f6d-97e5-f889-cc8a" type="selectionEntry" targetId="988f-3c41-f039-7609">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c794-a2f4-a8d2-a3ec" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e303-0bfc-5e7f-5f78" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
       </entryLinks>
       <infoLinks>
         <infoLink name="Support" id="d658-679b-6415-39f8" hidden="false" type="rule" targetId="c0d3-909a-ca80-1be2"/>
@@ -57,7 +62,12 @@
         <cost name="Points" typeId="0bc1-1233-3e53-72ca" value="32"/>
       </costs>
       <entryLinks>
-        <entryLink import="true" name="Cidderach LMG" hidden="false" id="6693-c0b9-1e33-5b15" type="selectionEntry" targetId="53eb-1d73-48c1-a077"/>
+        <entryLink import="true" name="Cidderach LMG" hidden="false" id="6693-c0b9-1e33-5b15" type="selectionEntry" targetId="53eb-1d73-48c1-a077">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="432a-c2ee-f39f-dfc3" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="66bd-6c13-f789-2501" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
       </entryLinks>
       <profiles>
         <profile name="Rhyfler" typeId="7040-9c4e-1119-a3c5" typeName="Unit" hidden="false" id="dcf9-4c51-0a99-b59c">
@@ -85,7 +95,12 @@
         <constraint type="max" value="1" field="selections" scope="force" shared="true" id="c619-00c5-6dd3-bc5a" includeChildSelections="false"/>
       </constraints>
       <entryLinks>
-        <entryLink import="true" name="Cidderach LMG" hidden="false" id="bb8e-bef8-58a6-189f" type="selectionEntry" targetId="53eb-1d73-48c1-a077"/>
+        <entryLink import="true" name="Cidderach LMG" hidden="false" id="bb8e-bef8-58a6-189f" type="selectionEntry" targetId="53eb-1d73-48c1-a077">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7eba-0fa3-6e5e-3bea" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="366c-2a4f-266d-cc72" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
       </entryLinks>
       <infoLinks>
         <infoLink name="Leader (X/Y)" id="25aa-b5dc-0790-ecc0" hidden="false" type="rule" targetId="ba90-37ff-4384-2bc5"/>
@@ -113,7 +128,12 @@
         <constraint type="max" value="1" field="selections" scope="force" shared="true" id="d876-cd8b-7215-c066" includeChildSelections="false"/>
       </constraints>
       <entryLinks>
-        <entryLink import="true" name="Tefsyn Infantry Rhyfle" hidden="false" id="0c67-8820-ff77-e2b3" type="selectionEntry" targetId="988f-3c41-f039-7609"/>
+        <entryLink import="true" name="Tefsyn Infantry Rhyfle" hidden="false" id="0c67-8820-ff77-e2b3" type="selectionEntry" targetId="988f-3c41-f039-7609">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6b81-2890-dff6-7dff" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="420e-d36b-66fd-0401" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
       </entryLinks>
       <infoLinks>
         <infoLink name="Leader (X/Y)" id="eb94-f382-e74d-7f34" hidden="false" type="rule" targetId="ba90-37ff-4384-2bc5"/>
@@ -162,24 +182,9 @@
             <characteristic name="Abilities" typeId="bd42-ef04-afe1-f4d4">Carriage, Slow Reload, Blast (M 1d6+2)</characteristic>
           </characteristics>
         </profile>
-        <profile name="5-6" typeId="6e06-153b-5181-d39d" typeName="Damage Chart" hidden="false" id="1ca5-615f-837e-a123">
-          <characteristics>
-            <characteristic name="Result" typeId="897e-4ecc-846b-1598">Weapon Crew suffers 1 point of Damage</characteristic>
-          </characteristics>
-        </profile>
         <profile name="1-2" typeId="6e06-153b-5181-d39d" typeName="Damage Chart" hidden="false" id="9477-e181-2745-641e">
           <characteristics>
             <characteristic name="Result" typeId="897e-4ecc-846b-1598">Weapon Crew Rattled</characteristic>
-          </characteristics>
-        </profile>
-        <profile name="3-4" typeId="6e06-153b-5181-d39d" typeName="Damage Chart" hidden="false" id="4238-a90a-16a1-7097">
-          <characteristics>
-            <characteristic name="Result" typeId="897e-4ecc-846b-1598">Weapon Crew is Gobsmacked. Remove Rattled status if present.</characteristic>
-          </characteristics>
-        </profile>
-        <profile name="7+" typeId="6e06-153b-5181-d39d" typeName="Damage Chart" hidden="false" id="1cc1-49b0-1555-7fd4">
-          <characteristics>
-            <characteristic name="Result" typeId="897e-4ecc-846b-1598">Weapon Crew are Disabled. Remove from Battlefield</characteristic>
           </characteristics>
         </profile>
         <profile name="2" typeId="73fd-d87f-c3ca-d678" typeName="Damage Level" hidden="false" id="2b0f-6d97-e33d-3837">
@@ -197,6 +202,21 @@
             <characteristic typeId="0a18-6bf0-38b6-f7a0">Shaken: Attacks are at -4 unless 2 Activations are spent by the crew to perform the Combat Task</characteristic>
           </characteristics>
         </profile>
+        <profile name="3-4" typeId="6e06-153b-5181-d39d" typeName="Damage Chart" hidden="false" id="7cb3-0452-4f34-25db">
+          <characteristics>
+            <characteristic name="Result" typeId="897e-4ecc-846b-1598">Weapon Crew is Gobsmacked. Remove Rattled status if present.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="5-6" typeId="6e06-153b-5181-d39d" typeName="Damage Chart" hidden="false" id="10f9-b1cd-db5f-18d8">
+          <characteristics>
+            <characteristic name="Result" typeId="897e-4ecc-846b-1598">Weapon Crew suffers 1 point of Damage</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="7+" typeId="6e06-153b-5181-d39d" typeName="Damage Chart" hidden="false" id="cfde-a00d-3471-6b87">
+          <characteristics>
+            <characteristic name="Result" typeId="897e-4ecc-846b-1598">Weapon Crew are Disabled. Remove from Battlefield</characteristic>
+          </characteristics>
+        </profile>
       </profiles>
       <infoLinks>
         <infoLink name="Blast (X,Y)" id="0c01-2376-a3ff-1139" hidden="false" type="rule" targetId="b4b8-45d7-e9bb-1444"/>
@@ -212,7 +232,12 @@
         <constraint type="max" value="1" field="selections" scope="force" shared="true" id="d32c-07e5-c77f-0ef7" includeChildSelections="false"/>
       </constraints>
       <entryLinks>
-        <entryLink import="true" name="Pistol" hidden="false" id="267d-9996-13bd-1a17" type="selectionEntry" targetId="7028-cb77-f695-540d"/>
+        <entryLink import="true" name="Pistol" hidden="false" id="267d-9996-13bd-1a17" type="selectionEntry" targetId="7028-cb77-f695-540d">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="fc4d-358e-0d43-1c25" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6491-a16f-79b5-8db7" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
       </entryLinks>
       <profiles>
         <profile name="is-Caerten" typeId="7040-9c4e-1119-a3c5" typeName="Unit" hidden="false" id="b5ba-6f3d-ea70-f4ce">
@@ -248,7 +273,12 @@
         <constraint type="max" value="1" field="selections" scope="force" shared="true" id="b5c5-08c1-0801-e272" includeChildSelections="false"/>
       </constraints>
       <entryLinks>
-        <entryLink import="true" name="Pistol" hidden="false" id="26c5-786d-c6c6-9f5d" type="selectionEntry" targetId="7028-cb77-f695-540d"/>
+        <entryLink import="true" name="Pistol" hidden="false" id="26c5-786d-c6c6-9f5d" type="selectionEntry" targetId="7028-cb77-f695-540d">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0e36-9e28-681c-a9f8" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0dfb-a624-a598-75a0" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
       </entryLinks>
       <profiles>
         <profile name="Caerten" typeId="7040-9c4e-1119-a3c5" typeName="Unit" hidden="false" id="3dfe-c52f-ea98-a452">
@@ -290,7 +320,12 @@
         <constraint type="max" value="1" field="selections" scope="force" shared="true" id="ea48-e8c5-6202-5cce" includeChildSelections="false"/>
       </constraints>
       <entryLinks>
-        <entryLink import="true" name="Cidderach LMG" hidden="false" id="6e82-f837-7b24-ddf5" type="selectionEntry" targetId="53eb-1d73-48c1-a077"/>
+        <entryLink import="true" name="Cidderach LMG" hidden="false" id="6e82-f837-7b24-ddf5" type="selectionEntry" targetId="53eb-1d73-48c1-a077">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5242-6a62-97f6-9ca7" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="258d-b5b3-a328-eb05" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
       </entryLinks>
       <profiles>
         <profile name="Master Yawdryl" typeId="7040-9c4e-1119-a3c5" typeName="Unit" hidden="false" id="09b0-ec80-fe60-08f1">
@@ -315,7 +350,12 @@
         <cost name="Points" typeId="0bc1-1233-3e53-72ca" value="30"/>
       </costs>
       <entryLinks>
-        <entryLink import="true" name="Tefsyn Infantry Rhyfle" hidden="false" id="d2e7-c652-86e5-f4e9" type="selectionEntry" targetId="988f-3c41-f039-7609"/>
+        <entryLink import="true" name="Tefsyn Infantry Rhyfle" hidden="false" id="d2e7-c652-86e5-f4e9" type="selectionEntry" targetId="988f-3c41-f039-7609">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="fbfc-e223-b9bd-43a6" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e430-23d0-9757-d8bc" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
       </entryLinks>
       <infoLinks>
         <infoLink name="Medic" id="d536-c092-4d9a-b80c" hidden="false" type="rule" targetId="0de6-c532-1b9e-df58"/>
@@ -343,7 +383,12 @@
         <cost name="Points" typeId="0bc1-1233-3e53-72ca" value="30"/>
       </costs>
       <entryLinks>
-        <entryLink import="true" name="Tefsyn Infantry Rhyfle" hidden="false" id="6e6e-f5d6-e9c3-4ea9" type="selectionEntry" targetId="988f-3c41-f039-7609"/>
+        <entryLink import="true" name="Tefsyn Infantry Rhyfle" hidden="false" id="6e6e-f5d6-e9c3-4ea9" type="selectionEntry" targetId="988f-3c41-f039-7609">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d504-7cb2-eda8-147f" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="85c5-8529-8c84-ea81" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
       </entryLinks>
       <profiles>
         <profile name="Musician" typeId="7040-9c4e-1119-a3c5" typeName="Unit" hidden="false" id="13a0-c72c-2c4c-9ccf">
@@ -374,7 +419,12 @@
         <infoLink name="Standard" id="d8d2-36a8-9d53-b854" hidden="false" type="rule" targetId="2437-22be-ccb6-5ef4"/>
       </infoLinks>
       <entryLinks>
-        <entryLink import="true" name="Tefsyn Infantry Rhyfle" hidden="false" id="89a0-19fa-84e1-ac51" type="selectionEntry" targetId="988f-3c41-f039-7609"/>
+        <entryLink import="true" name="Tefsyn Infantry Rhyfle" hidden="false" id="89a0-19fa-84e1-ac51" type="selectionEntry" targetId="988f-3c41-f039-7609">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="02ab-63df-3113-d6ae" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="438b-9258-fd89-f647" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
       </entryLinks>
       <profiles>
         <profile name="Standard Bearer" typeId="7040-9c4e-1119-a3c5" typeName="Unit" hidden="false" id="173c-8c57-604e-2af1">
@@ -399,7 +449,12 @@
         <cost name="Points" typeId="0bc1-1233-3e53-72ca" value="30"/>
       </costs>
       <entryLinks>
-        <entryLink import="true" name="Tefsyn Infantry Rhyfle" hidden="false" id="27c9-8b47-f9f5-57dd" type="selectionEntry" targetId="988f-3c41-f039-7609"/>
+        <entryLink import="true" name="Tefsyn Infantry Rhyfle" hidden="false" id="27c9-8b47-f9f5-57dd" type="selectionEntry" targetId="988f-3c41-f039-7609">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="043c-7107-876b-d4b9" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="672d-1b98-6703-51e7" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
       </entryLinks>
       <infoLinks>
         <infoLink name="PykPyk (X)" id="57d3-b332-8446-6056" hidden="false" type="rule" targetId="13c8-54a0-441f-a71c"/>

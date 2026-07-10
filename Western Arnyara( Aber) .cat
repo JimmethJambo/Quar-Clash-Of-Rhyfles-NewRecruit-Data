@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="a06a-3543-ab12-f426" name="Western Arnyara (Aber)" gameSystemId="sys-dbd1-1d4a-43f9-1e9c" gameSystemRevision="3" revision="5" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="a06a-3543-ab12-f426" name="Western Arnyara (Aber)" gameSystemId="sys-dbd1-1d4a-43f9-1e9c" gameSystemRevision="3" revision="6" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedSelectionEntries>
     <selectionEntry type="upgrade" import="true" name="MAR SMG" hidden="false" id="2288-b2d1-c319-324a" defaultAmount="1" sortIndex="1">
       <constraints>
@@ -288,6 +288,9 @@
             <characteristic name="Equipment" typeId="4a61-14de-472f-b84d">Pistol, Carbine</characteristic>
             <characteristic name="Special" typeId="c973-830d-f693-f6b1">Rattleped</characteristic>
           </characteristics>
+          <attributes>
+            <attribute typeId="031c-0d07-1b90-9ff5" name="New Attribute Type"/>
+          </attributes>
         </profile>
         <profile name="Dismounted Autocycle Rider" typeId="8e73-7370-7f76-a0f6" typeName="Dismounted Unit" hidden="false" id="8492-f4f6-f046-a965">
           <characteristics>
@@ -306,24 +309,24 @@
             <characteristic name="Abilities" typeId="ed37-dbdc-d41b-3af6"/>
           </characteristics>
         </profile>
-        <profile name="1-2" typeId="6e06-153b-5181-d39d" typeName="Damage Chart" hidden="false" id="1604-9cc1-ed16-c7bb">
+        <profile name="1-2" typeId="6e06-153b-5181-d39d" typeName="Damage Chart" hidden="false" id="1073-74a2-3e30-90e5">
           <characteristics>
             <characteristic name="Result" typeId="897e-4ecc-846b-1598">Mounted Rhyfler is rattled.</characteristic>
           </characteristics>
         </profile>
-        <profile name="6" typeId="6e06-153b-5181-d39d" typeName="Damage Chart" hidden="false" id="f5a7-8bd1-bb49-dff4">
+        <profile name="3" typeId="6e06-153b-5181-d39d" typeName="Damage Chart" hidden="false" id="26c9-c045-360f-0d90">
           <characteristics>
-            <characteristic name="Result" typeId="897e-4ecc-846b-1598">Rider is hit and taken OOA. Remove rattleped from the battlefield.</characteristic>
+            <characteristic name="Result" typeId="897e-4ecc-846b-1598">Rattleped is Damaged. Units MA is reduced to second value.</characteristic>
           </characteristics>
         </profile>
-        <profile name="4-5" typeId="6e06-153b-5181-d39d" typeName="Damage Chart" hidden="false" id="02cd-b6fa-4738-eb23">
+        <profile name="4-5" typeId="6e06-153b-5181-d39d" typeName="Damage Chart" hidden="false" id="c4f3-422d-3547-c186">
           <characteristics>
             <characteristic name="Result" typeId="897e-4ecc-846b-1598">Rattleped is destroyed. Replace mounted rhyfler with dismounted rider and roll on Mounted Crash Skill Check. Place a smoke template where rattleped was hit.</characteristic>
           </characteristics>
         </profile>
-        <profile name="3" typeId="6e06-153b-5181-d39d" typeName="Damage Chart" hidden="false" id="d0ca-1100-d788-4ece">
+        <profile name="6" typeId="6e06-153b-5181-d39d" typeName="Damage Chart" hidden="false" id="7908-13dd-d5d0-7492">
           <characteristics>
-            <characteristic name="Result" typeId="897e-4ecc-846b-1598">Rattleped is Damaged. Units MA is reduced to second value.</characteristic>
+            <characteristic name="Result" typeId="897e-4ecc-846b-1598">Rider is hit and taken OOA. Remove rattleped from the battlefield.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -363,25 +366,25 @@
             <characteristic name="Abilities" typeId="0095-18c0-009f-e488">Slow Reload, Blast (M,2d6-1), Anti-Tractor</characteristic>
           </characteristics>
         </profile>
-        <profile name="Front" typeId="bf17-75fe-032b-a8eb" typeName="Tractor Damage Area" hidden="false" id="7799-2319-6795-ee32">
+        <profile name="Front" typeId="bf17-75fe-032b-a8eb" typeName="Tractor Damage Area" hidden="false" id="0cdb-ea10-dea3-42c1">
           <characteristics>
             <characteristic name="Tread" typeId="6193-4d0a-5399-c05d">1</characteristic>
             <characteristic name="Hull" typeId="2882-bfcc-2f15-a801">2-6</characteristic>
             <characteristic name="Engine" typeId="609f-652d-ea95-f699"/>
           </characteristics>
         </profile>
-        <profile name="Rear" typeId="bf17-75fe-032b-a8eb" typeName="Tractor Damage Area" hidden="false" id="4a79-ce36-3657-f77d">
-          <characteristics>
-            <characteristic name="Tread" typeId="6193-4d0a-5399-c05d">1</characteristic>
-            <characteristic name="Hull" typeId="2882-bfcc-2f15-a801">2-3</characteristic>
-            <characteristic name="Engine" typeId="609f-652d-ea95-f699">4-6</characteristic>
-          </characteristics>
-        </profile>
-        <profile name="Side" typeId="bf17-75fe-032b-a8eb" typeName="Tractor Damage Area" hidden="false" id="799a-4be2-9f25-711f">
+        <profile name="Side" typeId="bf17-75fe-032b-a8eb" typeName="Tractor Damage Area" hidden="false" id="9a8c-0ba6-f079-ba42">
           <characteristics>
             <characteristic name="Tread" typeId="6193-4d0a-5399-c05d">1-2</characteristic>
             <characteristic name="Hull" typeId="2882-bfcc-2f15-a801">3-4</characteristic>
             <characteristic name="Engine" typeId="609f-652d-ea95-f699">5-6</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Rear" typeId="bf17-75fe-032b-a8eb" typeName="Tractor Damage Area" hidden="false" id="988b-805f-3483-a42e">
+          <characteristics>
+            <characteristic name="Tread" typeId="6193-4d0a-5399-c05d">1</characteristic>
+            <characteristic name="Hull" typeId="2882-bfcc-2f15-a801">2-3</characteristic>
+            <characteristic name="Engine" typeId="609f-652d-ea95-f699">4-6</characteristic>
           </characteristics>
         </profile>
       </profiles>

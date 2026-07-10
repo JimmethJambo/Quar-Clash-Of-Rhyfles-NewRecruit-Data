@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="8579-b42c-53b1-1cba" name="Coftyran" gameSystemId="sys-dbd1-1d4a-43f9-1e9c" gameSystemRevision="1" revision="13" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="8579-b42c-53b1-1cba" name="Coftyran" gameSystemId="sys-dbd1-1d4a-43f9-1e9c" gameSystemRevision="1" revision="14" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedSelectionEntries>
     <selectionEntry type="model" import="true" name="is-Caerten (Pistol, Sword)" hidden="false" id="528f-29fc-4aca-9939" defaultAmount="0" sortIndex="-1">
       <constraints>
@@ -365,17 +365,6 @@
         <categoryLink targetId="de6b-6ec2-9294-541d" id="be8c-497e-139f-a997" primary="true" name="Unit"/>
       </categoryLinks>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Harlech" hidden="false" id="d263-845d-e7c7-0ba0" sortIndex="1" defaultAmount="1">
-      <infoLinks>
-        <infoLink name="Harlech" id="3118-fcea-6121-4f2c" hidden="false" type="profile" targetId="797a-eb54-4f71-b05c"/>
-      </infoLinks>
-    </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Doru" hidden="false" id="e70a-c91e-3a55-e15d" sortIndex="1" defaultAmount="1">
-      <infoLinks>
-        <infoLink name="Doru" id="4c3d-3f8f-0ca8-2794" hidden="false" type="profile" targetId="0ffb-7275-6b02-c0c9"/>
-        <infoLink name="Select Fire(X)" id="64d8-c76e-141c-5ddb" hidden="false" type="rule" targetId="8c44-111c-27c4-4a9b"/>
-      </infoLinks>
-    </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Pistol" hidden="false" id="20a4-1c45-0b14-9d88" sortIndex="1" defaultAmount="1">
       <infoLinks>
         <infoLink name="Pistol" id="5b6a-aedf-6a2f-016f" hidden="false" type="profile" targetId="99bd-7fcc-169d-3745"/>
@@ -583,26 +572,6 @@
             <characteristic name="Type" typeId="00d8-3f2d-ae43-9218">Blast</characteristic>
           </characteristics>
         </profile>
-        <profile name="1-2" typeId="6e06-153b-5181-d39d" typeName="Damage Chart" hidden="false" id="3330-8594-1c76-ee5e">
-          <characteristics>
-            <characteristic name="Result" typeId="897e-4ecc-846b-1598">Weapon Crew Rattled.</characteristic>
-          </characteristics>
-        </profile>
-        <profile name="3-4" typeId="6e06-153b-5181-d39d" typeName="Damage Chart" hidden="false" id="f822-a960-fe24-2b1d">
-          <characteristics>
-            <characteristic name="Result" typeId="897e-4ecc-846b-1598">Weapon Crew is Gobsmacked. Remove Rattled if present.</characteristic>
-          </characteristics>
-        </profile>
-        <profile name="5-6" typeId="6e06-153b-5181-d39d" typeName="Damage Chart" hidden="false" id="2d95-4fa2-51e0-2309">
-          <characteristics>
-            <characteristic name="Result" typeId="897e-4ecc-846b-1598">Weapon Crew suffers 1 Damage Point.</characteristic>
-          </characteristics>
-        </profile>
-        <profile name="7+" typeId="6e06-153b-5181-d39d" typeName="Damage Chart" hidden="false" id="2bd8-0719-28c4-ce06">
-          <characteristics>
-            <characteristic name="Result" typeId="897e-4ecc-846b-1598">Weapon crew are disabled. Remove from battlefield.</characteristic>
-          </characteristics>
-        </profile>
         <profile name="0" typeId="73fd-d87f-c3ca-d678" typeName="Damage Level" hidden="false" id="3d84-9b2a-500d-3f8b">
           <characteristics>
             <characteristic typeId="0a18-6bf0-38b6-f7a0">Fully Operational</characteristic>
@@ -621,6 +590,26 @@
         <profile name="3" typeId="73fd-d87f-c3ca-d678" typeName="Damage Level" hidden="false" id="b7e8-0ac3-edec-440a">
           <characteristics>
             <characteristic typeId="0a18-6bf0-38b6-f7a0">Disabled: Remove from Battlefield.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="1-2" typeId="6e06-153b-5181-d39d" typeName="Damage Chart" hidden="false" id="55ed-16df-9178-ba40">
+          <characteristics>
+            <characteristic name="Result" typeId="897e-4ecc-846b-1598">Weapon Crew Rattled.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="3-4" typeId="6e06-153b-5181-d39d" typeName="Damage Chart" hidden="false" id="238b-c1a3-9baa-c880">
+          <characteristics>
+            <characteristic name="Result" typeId="897e-4ecc-846b-1598">Weapon Crew is Gobsmacked. Remove Rattled if present.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="5-6" typeId="6e06-153b-5181-d39d" typeName="Damage Chart" hidden="false" id="44bc-7b18-529b-b37e">
+          <characteristics>
+            <characteristic name="Result" typeId="897e-4ecc-846b-1598">Weapon Crew suffers 1 Damage Point.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="7+" typeId="6e06-153b-5181-d39d" typeName="Damage Chart" hidden="false" id="0949-8217-e718-366a">
+          <characteristics>
+            <characteristic name="Result" typeId="897e-4ecc-846b-1598">Weapon crew are disabled. Remove from battlefield.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -825,11 +814,6 @@
             <characteristic name="Damage" typeId="4b90-fab7-6493-9714">4</characteristic>
           </characteristics>
         </profile>
-        <profile name="7+" typeId="6e06-153b-5181-d39d" typeName="Damage Chart" hidden="false" id="aaca-bdd0-895d-04aa">
-          <characteristics>
-            <characteristic name="Result" typeId="897e-4ecc-846b-1598">Vehicle is Disabled. Place a Smoke Template under the vehicle. Transported passengers roll on the Vehicle Escape Chart.</characteristic>
-          </characteristics>
-        </profile>
         <profile name="Y7-c Light Cannon" typeId="18ca-a698-c38f-f8de" typeName="Integral Weapon" hidden="false" id="dfb3-e2aa-a082-573b">
           <characteristics>
             <characteristic name="Range" typeId="c5be-3871-71dd-dfae">8</characteristic>
@@ -837,19 +821,24 @@
             <characteristic name="Abilities" typeId="8ceb-604c-397c-d679">Blast (M, 1d6+2)</characteristic>
           </characteristics>
         </profile>
-        <profile name="1-2" typeId="6e06-153b-5181-d39d" typeName="Damage Chart" hidden="false" id="e6fa-0937-a5ee-1ed3">
+        <profile name="1-2" typeId="6e06-153b-5181-d39d" typeName="Damage Chart" hidden="false" id="cc49-dd47-8ce1-9a33">
           <characteristics>
             <characteristic name="Result" typeId="897e-4ecc-846b-1598">Vehicle becomes Rattled.</characteristic>
           </characteristics>
         </profile>
-        <profile name="6" typeId="6e06-153b-5181-d39d" typeName="Damage Chart" hidden="false" id="e109-9ba5-8230-74ea">
+        <profile name="3-5" typeId="6e06-153b-5181-d39d" typeName="Damage Chart" hidden="false" id="5637-9046-cb0a-2e34">
+          <characteristics>
+            <characteristic name="Result" typeId="897e-4ecc-846b-1598">Vehicle suffers 1 Damage Point. Passengers cannot fire personal weaponry next Round.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="6" typeId="6e06-153b-5181-d39d" typeName="Damage Chart" hidden="false" id="c6be-e55c-f9fc-0fb8">
           <characteristics>
             <characteristic name="Result" typeId="897e-4ecc-846b-1598">Vehicle suffers 2 Damage Points. Passengers must pass a Skill Check or roll on Vehicle Escape Chart.</characteristic>
           </characteristics>
         </profile>
-        <profile name="3-5" typeId="6e06-153b-5181-d39d" typeName="Damage Chart" hidden="false" id="485d-0e3e-5754-b31a">
+        <profile name="7+" typeId="6e06-153b-5181-d39d" typeName="Damage Chart" hidden="false" id="a183-5a6a-46a5-6bd3">
           <characteristics>
-            <characteristic name="Result" typeId="897e-4ecc-846b-1598">Vehicle suffers 1 Damage Point. Passengers cannot fire personal weaponry next Round.</characteristic>
+            <characteristic name="Result" typeId="897e-4ecc-846b-1598">Vehicle is Disabled. Place a Smoke Template under the vehicle. Transported passengers roll on the Vehicle Escape Chart.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -878,24 +867,24 @@
             <characteristic name="Damage" typeId="4b90-fab7-6493-9714">3</characteristic>
           </characteristics>
         </profile>
-        <profile name="7+" typeId="6e06-153b-5181-d39d" typeName="Damage Chart" hidden="false" id="2e81-3228-f74a-c1c34">
-          <characteristics>
-            <characteristic name="Result" typeId="897e-4ecc-846b-1598">Vehicle is Disabled. Place a Smoke Template under the vehicle. Driver is OOA. Passengers roll on the Vehicle Escape Chart.</characteristic>
-          </characteristics>
-        </profile>
-        <profile name="1-3" typeId="6e06-153b-5181-d39d" typeName="Damage Chart" hidden="false" id="2e81-3228-f74a-c1c3">
+        <profile name="1-3" typeId="6e06-153b-5181-d39d" typeName="Damage Chart" hidden="false" id="9ef4-a94d-ebc3-9af1">
           <characteristics>
             <characteristic name="Result" typeId="897e-4ecc-846b-1598">Passengers gain Rattled Status.</characteristic>
           </characteristics>
         </profile>
-        <profile name="6" typeId="6e06-153b-5181-d39d" typeName="Damage Chart" hidden="false" id="2e81-3228-f74a-c1c33">
+        <profile name="4-5" typeId="6e06-153b-5181-d39d" typeName="Damage Chart" hidden="false" id="ea9b-001a-0d56-2a6a">
+          <characteristics>
+            <characteristic name="Result" typeId="897e-4ecc-846b-1598">Vehicle suffers 1 Damage Point. Passengers gain Rattled Status.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="6" typeId="6e06-153b-5181-d39d" typeName="Damage Chart" hidden="false" id="01d4-7835-9985-f04e">
           <characteristics>
             <characteristic name="Result" typeId="897e-4ecc-846b-1598">Vehicle suffers 2 Damage Points. Passengers gain Rattled Status.</characteristic>
           </characteristics>
         </profile>
-        <profile name="4-5" typeId="6e06-153b-5181-d39d" typeName="Damage Chart" hidden="false" id="2e81-3228-f74a-c1c32">
+        <profile name="7+" typeId="6e06-153b-5181-d39d" typeName="Damage Chart" hidden="false" id="5421-f0b8-e921-aec9">
           <characteristics>
-            <characteristic name="Result" typeId="897e-4ecc-846b-1598">Vehicle suffers 1 Damage Point. Passengers gain Rattled Status.</characteristic>
+            <characteristic name="Result" typeId="897e-4ecc-846b-1598">Vehicle is Disabled. Place a Smoke Template under the vehicle. Driver is OOA. Passengers roll on the Vehicle Escape Chart.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -967,26 +956,6 @@
             <characteristic name="Type" typeId="00d8-3f2d-ae43-9218">HMG</characteristic>
           </characteristics>
         </profile>
-        <profile name="1-2" typeId="6e06-153b-5181-d39d" typeName="Damage Chart" hidden="false" id="069a-258e-0b92-bab2">
-          <characteristics>
-            <characteristic name="Result" typeId="897e-4ecc-846b-1598">Weapon Crew Rattled.</characteristic>
-          </characteristics>
-        </profile>
-        <profile name="3-4" typeId="6e06-153b-5181-d39d" typeName="Damage Chart" hidden="false" id="83fb-bf7f-b975-e5cf">
-          <characteristics>
-            <characteristic name="Result" typeId="897e-4ecc-846b-1598">Weapon Crew is Gobsmacked. Remove Rattled if present.</characteristic>
-          </characteristics>
-        </profile>
-        <profile name="5-6" typeId="6e06-153b-5181-d39d" typeName="Damage Chart" hidden="false" id="a64f-2dd5-0fe1-a151">
-          <characteristics>
-            <characteristic name="Result" typeId="897e-4ecc-846b-1598">Weapon Crew suffers 1 Damage Point.</characteristic>
-          </characteristics>
-        </profile>
-        <profile name="7+" typeId="6e06-153b-5181-d39d" typeName="Damage Chart" hidden="false" id="0482-b78c-10eb-359e">
-          <characteristics>
-            <characteristic name="Result" typeId="897e-4ecc-846b-1598">Weapon crew are disabled. Remove from battlefield.</characteristic>
-          </characteristics>
-        </profile>
         <profile name="0" typeId="73fd-d87f-c3ca-d678" typeName="Damage Level" hidden="false" id="b2e7-a03b-8283-0d80">
           <characteristics>
             <characteristic typeId="0a18-6bf0-38b6-f7a0">Fully Operational</characteristic>
@@ -1005,6 +974,26 @@
         <profile name="3" typeId="73fd-d87f-c3ca-d678" typeName="Damage Level" hidden="false" id="132d-50ea-c70d-7df4">
           <characteristics>
             <characteristic typeId="0a18-6bf0-38b6-f7a0">Disabled: Remove from Battlefield.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="1-2" typeId="6e06-153b-5181-d39d" typeName="Damage Chart" hidden="false" id="0e83-efd2-9dd3-6648">
+          <characteristics>
+            <characteristic name="Result" typeId="897e-4ecc-846b-1598">Weapon Crew Rattled.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="3-4" typeId="6e06-153b-5181-d39d" typeName="Damage Chart" hidden="false" id="b3fc-2b52-e3be-608f">
+          <characteristics>
+            <characteristic name="Result" typeId="897e-4ecc-846b-1598">Weapon Crew is Gobsmacked. Remove Rattled if present.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="5-6" typeId="6e06-153b-5181-d39d" typeName="Damage Chart" hidden="false" id="434c-0a92-8704-610d">
+          <characteristics>
+            <characteristic name="Result" typeId="897e-4ecc-846b-1598">Weapon Crew suffers 1 Damage Point.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="7+" typeId="6e06-153b-5181-d39d" typeName="Damage Chart" hidden="false" id="8531-d994-84ec-c4fd">
+          <characteristics>
+            <characteristic name="Result" typeId="897e-4ecc-846b-1598">Weapon crew are disabled. Remove from battlefield.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -1039,31 +1028,31 @@
             <characteristic typeId="190b-0e37-11dd-622a" name="-"/>
           </characteristics>
         </profile>
-        <profile name="1-3" typeId="6e06-153b-5181-d39d" typeName="Damage Chart" hidden="false" id="afee-ff7f-6aed-b877">
-          <characteristics>
-            <characteristic name="Result" typeId="897e-4ecc-846b-1598">Vehicle becomes Rattled.</characteristic>
-          </characteristics>
-        </profile>
-        <profile name="4-5" typeId="6e06-153b-5181-d39d" typeName="Damage Chart" hidden="false" id="5c05-a537-8022-23b5">
-          <characteristics>
-            <characteristic name="Result" typeId="897e-4ecc-846b-1598">Vehicle suffers 1 Damage Point.</characteristic>
-          </characteristics>
-        </profile>
-        <profile name="6" typeId="6e06-153b-5181-d39d" typeName="Damage Chart" hidden="false" id="dd91-88fc-b9d1-a1d3">
-          <characteristics>
-            <characteristic name="Result" typeId="897e-4ecc-846b-1598">Vehicle suffers 2 Damage Points.</characteristic>
-          </characteristics>
-        </profile>
-        <profile name="7+" typeId="6e06-153b-5181-d39d" typeName="Damage Chart" hidden="false" id="a252-9c69-0471-4e04">
-          <characteristics>
-            <characteristic name="Result" typeId="897e-4ecc-846b-1598">Vehicle is Disabled. Place a Smoke Template under the vehicle.</characteristic>
-          </characteristics>
-        </profile>
         <profile name="Cryfen" typeId="18ca-a698-c38f-f8de" typeName="Integral Weapon" hidden="false" id="b29b-0aa4-c182-1d6e">
           <characteristics>
             <characteristic name="Range" typeId="c5be-3871-71dd-dfae">8</characteristic>
             <characteristic name="Arc" typeId="07d6-44a1-b3f8-b02e">180</characteristic>
             <characteristic name="Abilities" typeId="8ceb-604c-397c-d679">Automatic (1), Rear Facing</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="1-3" typeId="6e06-153b-5181-d39d" typeName="Damage Chart" hidden="false" id="2024-85d4-b41a-163b">
+          <characteristics>
+            <characteristic name="Result" typeId="897e-4ecc-846b-1598">Vehicle becomes Rattled.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="4-5" typeId="6e06-153b-5181-d39d" typeName="Damage Chart" hidden="false" id="583d-921a-01c6-994d">
+          <characteristics>
+            <characteristic name="Result" typeId="897e-4ecc-846b-1598">Vehicle suffers 1 Damage Point.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="6" typeId="6e06-153b-5181-d39d" typeName="Damage Chart" hidden="false" id="91b5-f7fe-10cd-bc5f">
+          <characteristics>
+            <characteristic name="Result" typeId="897e-4ecc-846b-1598">Vehicle suffers 2 Damage Points.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="7+" typeId="6e06-153b-5181-d39d" typeName="Damage Chart" hidden="false" id="15a3-6dca-a4a7-9e09">
+          <characteristics>
+            <characteristic name="Result" typeId="897e-4ecc-846b-1598">Vehicle is Disabled. Place a Smoke Template under the vehicle.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -1132,13 +1121,6 @@
         <infoLink name="Turretless" id="d35f-5bf3-371b-6045" hidden="false" type="rule" targetId="a3fc-1bc1-8cfe-1886"/>
       </infoLinks>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Cryfen" hidden="false" id="408e-c4ab-4992-6685" sortIndex="1" defaultAmount="1">
-      <infoLinks>
-        <infoLink name="Cryfen" id="acef-91a1-80a1-a255" hidden="false" type="profile" targetId="f278-e682-48d4-dfb5"/>
-        <infoLink name="Automatic (X)" id="6c62-b746-db07-5817" hidden="false" type="rule" targetId="321d-91fa-c981-2ce1"/>
-        <infoLink name="Loader" id="53e6-5161-a0b2-1d22" hidden="false" type="rule" targetId="877f-75ce-5dc9-010e"/>
-      </infoLinks>
-    </selectionEntry>
     <selectionEntry type="unit" import="true" name="Cavalry Rhyfler, Lance and Pistol" hidden="false" id="70fd-5299-9f37-5c6e">
       <costs>
         <cost name="Points" typeId="0bc1-1233-3e53-72ca" value="42"/>
@@ -1157,6 +1139,9 @@
             <characteristic name="Equipment" typeId="4a61-14de-472f-b84d">Lance, Pistol</characteristic>
             <characteristic name="Special" typeId="c973-830d-f693-f6b1">Cadier, Melee(+1)</characteristic>
           </characteristics>
+          <attributes>
+            <attribute typeId="031c-0d07-1b90-9ff5" name="New Attribute Type"/>
+          </attributes>
         </profile>
         <profile name="Dismounted Rhyfler" typeId="8e73-7370-7f76-a0f6" typeName="Dismounted Unit" hidden="false" id="0b42-c438-c186-b4b4">
           <characteristics>
@@ -1168,22 +1153,22 @@
             <characteristic name="Special" typeId="3587-866b-8fff-d4c0">Polearm</characteristic>
           </characteristics>
         </profile>
-        <profile name="1-2" typeId="6e06-153b-5181-d39d" typeName="Damage Chart" hidden="false" id="9e1f-6a20-d1fa-a5bc">
+        <profile name="1-2" typeId="6e06-153b-5181-d39d" typeName="Damage Chart" hidden="false" id="1cb6-e828-23a3-c5a7">
           <characteristics>
             <characteristic name="Result" typeId="897e-4ecc-846b-1598">Mounted Rhyfler is Rattled.</characteristic>
           </characteristics>
         </profile>
-        <profile name="3-4" typeId="6e06-153b-5181-d39d" typeName="Damage Chart" hidden="false" id="536e-3b1f-a18e-5585" noindex="false">
+        <profile name="3-4" typeId="6e06-153b-5181-d39d" typeName="Damage Chart" hidden="false" id="8443-8912-e542-d8d2" noindex="false">
           <characteristics>
             <characteristic name="Result" typeId="897e-4ecc-846b-1598">Mount is Wounded. Unit&apos;s MA reduced to second value. If this result is rolled again treat it as a roll of 5</characteristic>
           </characteristics>
         </profile>
-        <profile name="5" typeId="6e06-153b-5181-d39d" typeName="Damage Chart" hidden="false" id="d852-ccd3-90cf-f5dc">
+        <profile name="5" typeId="6e06-153b-5181-d39d" typeName="Damage Chart" hidden="false" id="6af2-4392-b034-4d9d">
           <characteristics>
             <characteristic name="Result" typeId="897e-4ecc-846b-1598">Mount is taken OOA. Replace mounted unit with dismounted Rider. Rider makes a Mounted Crash Skill Check.</characteristic>
           </characteristics>
         </profile>
-        <profile name="6" typeId="6e06-153b-5181-d39d" typeName="Damage Chart" hidden="false" id="e709-da10-9e82-b52f">
+        <profile name="6" typeId="6e06-153b-5181-d39d" typeName="Damage Chart" hidden="false" id="abe6-5d9b-5c47-fe26">
           <characteristics>
             <characteristic name="Result" typeId="897e-4ecc-846b-1598">Rider is hit and Taken OOA. Remove Mount from the battlefield and replace with OOA Dismounted Rider.</characteristic>
           </characteristics>
@@ -1226,6 +1211,9 @@
             <characteristic name="Equipment" typeId="4a61-14de-472f-b84d">Lance, Pistol</characteristic>
             <characteristic name="Special" typeId="c973-830d-f693-f6b1">Cadier, Melee(+1)</characteristic>
           </characteristics>
+          <attributes>
+            <attribute typeId="031c-0d07-1b90-9ff5" name="New Attribute Type"/>
+          </attributes>
         </profile>
         <profile name="Dismounted Yawdryl" typeId="8e73-7370-7f76-a0f6" typeName="Dismounted Unit" hidden="false" id="0235-3273-c620-c282">
           <characteristics>
@@ -1237,22 +1225,22 @@
             <characteristic name="Special" typeId="3587-866b-8fff-d4c0">Leader (2,4)</characteristic>
           </characteristics>
         </profile>
-        <profile name="1-2" typeId="6e06-153b-5181-d39d" typeName="Damage Chart" hidden="false" id="ae97-248f-8b30-17e7">
+        <profile name="1-2" typeId="6e06-153b-5181-d39d" typeName="Damage Chart" hidden="false" id="1b40-b9a4-e4a3-9872">
           <characteristics>
             <characteristic name="Result" typeId="897e-4ecc-846b-1598">Mounted Rhyfler is Rattled.</characteristic>
           </characteristics>
         </profile>
-        <profile name="3-4" typeId="6e06-153b-5181-d39d" typeName="Damage Chart" hidden="false" id="0bde-2aad-d4c5-efdf" noindex="false">
+        <profile name="3-4" typeId="6e06-153b-5181-d39d" typeName="Damage Chart" hidden="false" id="d877-88bd-9079-f236" noindex="false">
           <characteristics>
             <characteristic name="Result" typeId="897e-4ecc-846b-1598">Mount is Wounded. Unit&apos;s MA reduced to second value. If this result is rolled again treat it as a roll of 5</characteristic>
           </characteristics>
         </profile>
-        <profile name="5" typeId="6e06-153b-5181-d39d" typeName="Damage Chart" hidden="false" id="430a-10c3-11c3-644c">
+        <profile name="5" typeId="6e06-153b-5181-d39d" typeName="Damage Chart" hidden="false" id="66fc-d605-459c-3879">
           <characteristics>
             <characteristic name="Result" typeId="897e-4ecc-846b-1598">Mount is taken OOA. Replace mounted unit with dismounted Rider. Rider makes a Mounted Crash Skill Check.</characteristic>
           </characteristics>
         </profile>
-        <profile name="6" typeId="6e06-153b-5181-d39d" typeName="Damage Chart" hidden="false" id="1e5e-2676-87a0-0c1f">
+        <profile name="6" typeId="6e06-153b-5181-d39d" typeName="Damage Chart" hidden="false" id="7df5-27fd-d325-d1d8">
           <characteristics>
             <characteristic name="Result" typeId="897e-4ecc-846b-1598">Rider is hit and Taken OOA. Remove Mount from the battlefield and replace with OOA Dismounted Rider.</characteristic>
           </characteristics>
@@ -1271,34 +1259,6 @@
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedProfiles>
-    <profile name="Pistol" typeId="0b63-6947-fb08-66eb" typeName="Weapon" hidden="false" id="99bd-7fcc-169d-3745">
-      <characteristics>
-        <characteristic name="Range" typeId="5b6c-828e-fe65-26a5">4</characteristic>
-        <characteristic name="SN" typeId="b1d6-1660-ac56-c22a">-1</characteristic>
-        <characteristic typeId="ed37-dbdc-d41b-3af6" name="Abilities"/>
-      </characteristics>
-    </profile>
-    <profile name="Harlech" typeId="0b63-6947-fb08-66eb" typeName="Weapon" hidden="false" id="797a-eb54-4f71-b05c">
-      <characteristics>
-        <characteristic name="Range" typeId="5b6c-828e-fe65-26a5">8</characteristic>
-        <characteristic name="SN" typeId="b1d6-1660-ac56-c22a">-3</characteristic>
-        <characteristic typeId="ed37-dbdc-d41b-3af6" name="Abilities"/>
-      </characteristics>
-    </profile>
-    <profile name="Cryfen" typeId="0b63-6947-fb08-66eb" typeName="Weapon" hidden="false" id="f278-e682-48d4-dfb5">
-      <characteristics>
-        <characteristic name="Range" typeId="5b6c-828e-fe65-26a5">8</characteristic>
-        <characteristic name="SN" typeId="b1d6-1660-ac56-c22a">-3</characteristic>
-        <characteristic name="Abilities" typeId="ed37-dbdc-d41b-3af6">Automatic (2), Loader</characteristic>
-      </characteristics>
-    </profile>
-    <profile name="Doru" typeId="0b63-6947-fb08-66eb" typeName="Weapon" hidden="false" id="0ffb-7275-6b02-c0c9">
-      <characteristics>
-        <characteristic name="Range" typeId="5b6c-828e-fe65-26a5">4</characteristic>
-        <characteristic name="SN" typeId="b1d6-1660-ac56-c22a">-1</characteristic>
-        <characteristic name="Abilities" typeId="ed37-dbdc-d41b-3af6">Select Fire 2</characteristic>
-      </characteristics>
-    </profile>
     <profile name="RCO m60" typeId="18ca-a698-c38f-f8de" typeName="Integral Weapon" hidden="false" id="0682-e7e1-c334-bbe8">
       <characteristics>
         <characteristic name="Range" typeId="c5be-3871-71dd-dfae">12</characteristic>

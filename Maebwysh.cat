@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="1d11-b5d2-22a7-26bf" name="Maebwysh" gameSystemId="sys-dbd1-1d4a-43f9-1e9c" gameSystemRevision="9" revision="1" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="1d11-b5d2-22a7-26bf" name="Maebwysh" gameSystemId="sys-dbd1-1d4a-43f9-1e9c" gameSystemRevision="9" revision="2" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedSelectionEntries>
     <selectionEntry type="upgrade" import="true" name="Janglar Battle Rhyfle" hidden="false" id="156b-dfa5-2b8c-cbe4">
       <profiles>
@@ -64,7 +64,12 @@
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Rhyfler" hidden="false" id="4110-6fb3-a15b-c906">
       <entryLinks>
-        <entryLink import="true" name="Jokyn SMG" hidden="false" id="8325-3932-7d32-7fd5" type="selectionEntry" targetId="07c8-4213-e831-d1e5"/>
+        <entryLink import="true" name="Jokyn SMG" hidden="false" id="8325-3932-7d32-7fd5" type="selectionEntry" targetId="07c8-4213-e831-d1e5">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2bc0-abd3-c0cb-c65f" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="60e2-a150-0fdd-23f3" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
       </entryLinks>
       <profiles>
         <profile name="Rhyfler" typeId="7040-9c4e-1119-a3c5" typeName="Unit" hidden="false" id="3e04-91d6-3d56-ee1d">
@@ -89,7 +94,12 @@
         <cost name="Points" typeId="0bc1-1233-3e53-72ca" value="28"/>
       </costs>
       <entryLinks>
-        <entryLink import="true" name="Janglar Battle Rhyfle" hidden="false" id="2dc5-2cae-3f2c-5ee6" type="selectionEntry" targetId="156b-dfa5-2b8c-cbe4"/>
+        <entryLink import="true" name="Janglar Battle Rhyfle" hidden="false" id="2dc5-2cae-3f2c-5ee6" type="selectionEntry" targetId="156b-dfa5-2b8c-cbe4">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b6a4-5f51-d40f-4696" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ceaf-bfa9-a912-b5af" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
       </entryLinks>
       <profiles>
         <profile name="Rhyfler" typeId="7040-9c4e-1119-a3c5" typeName="Unit" hidden="false" id="e4b6-c8bd-9eda-f179">
@@ -125,8 +135,18 @@
         </profile>
       </profiles>
       <entryLinks>
-        <entryLink import="true" name="Jokyn SMG" hidden="false" id="8ab8-9348-648d-9367" type="selectionEntry" targetId="07c8-4213-e831-d1e5"/>
-        <entryLink import="true" name="Ceremonial Spear" hidden="false" id="e27f-e91b-0c7e-9ef8" type="selectionEntry" targetId="04f7-e3bf-f3cc-46cb"/>
+        <entryLink import="true" name="Jokyn SMG" hidden="false" id="8ab8-9348-648d-9367" type="selectionEntry" targetId="07c8-4213-e831-d1e5">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4339-e18c-27a3-e00a" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4108-f1b8-fe86-2e65" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Ceremonial Spear" hidden="false" id="e27f-e91b-0c7e-9ef8" type="selectionEntry" targetId="04f7-e3bf-f3cc-46cb">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2296-165a-73c4-cf70" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3a17-afa0-5e9c-f7b4" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
       </entryLinks>
       <infoLinks>
         <infoLink name="Leader (X/Y)" id="61c1-b745-14cb-3b75" hidden="false" type="rule" targetId="ba90-37ff-4384-2bc5"/>
@@ -144,7 +164,12 @@
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Yawdryl" hidden="false" id="78a3-deb7-c601-d272">
       <entryLinks>
-        <entryLink import="true" name="Pistol" hidden="false" id="5283-b1a2-2df8-1f2a" type="selectionEntry" targetId="73d9-2804-2b53-c58c"/>
+        <entryLink import="true" name="Pistol" hidden="false" id="5283-b1a2-2df8-1f2a" type="selectionEntry" targetId="73d9-2804-2b53-c58c">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f722-5a2f-373c-2600" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="678b-a035-f41c-605a" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
       </entryLinks>
       <profiles>
         <profile name="Yawdryl" typeId="7040-9c4e-1119-a3c5" typeName="Unit" hidden="false" id="bb57-bb25-e2f1-ce77">
@@ -175,7 +200,12 @@
         <constraint type="max" value="1" field="selections" scope="force" shared="true" id="58ae-8df6-f9bc-e327" includeChildSelections="true"/>
       </constraints>
       <entryLinks>
-        <entryLink import="true" name="Pistol" hidden="false" id="e6f1-ea41-06e6-afce" type="selectionEntry" targetId="73d9-2804-2b53-c58c"/>
+        <entryLink import="true" name="Pistol" hidden="false" id="e6f1-ea41-06e6-afce" type="selectionEntry" targetId="73d9-2804-2b53-c58c">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="cec8-df17-a15a-c815" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3470-7f60-9b45-be72" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
       </entryLinks>
       <profiles>
         <profile name="is-Caerten" typeId="7040-9c4e-1119-a3c5" typeName="Unit" hidden="false" id="b571-01c2-285d-c1b7">
@@ -203,7 +233,12 @@
         <constraint type="max" value="1" field="selections" scope="force" shared="true" id="66a4-e2c8-03d2-1aa5" includeChildSelections="true"/>
       </constraints>
       <entryLinks>
-        <entryLink import="true" name="Pistol" hidden="false" id="a8b5-c560-621a-7ccc" type="selectionEntry" targetId="73d9-2804-2b53-c58c"/>
+        <entryLink import="true" name="Pistol" hidden="false" id="a8b5-c560-621a-7ccc" type="selectionEntry" targetId="73d9-2804-2b53-c58c">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="34d4-a4f7-4857-4f05" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fbdd-7956-2487-5c31" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
       </entryLinks>
       <profiles>
         <profile name="Caerten" typeId="7040-9c4e-1119-a3c5" typeName="Unit" hidden="false" id="22bd-481f-1f25-ab33">
@@ -229,7 +264,12 @@
         <cost name="Points" typeId="0bc1-1233-3e53-72ca" value="36"/>
       </costs>
       <entryLinks>
-        <entryLink import="true" name="Jokyn SMG" hidden="false" id="41ae-d8d5-7e15-6645" type="selectionEntry" targetId="07c8-4213-e831-d1e5"/>
+        <entryLink import="true" name="Jokyn SMG" hidden="false" id="41ae-d8d5-7e15-6645" type="selectionEntry" targetId="07c8-4213-e831-d1e5">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4c6f-fd49-1b37-6c35" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6740-b272-a31d-8d43" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
       </entryLinks>
       <profiles>
         <profile name="Master Yawdryl" typeId="7040-9c4e-1119-a3c5" typeName="Unit" hidden="false" id="29a9-e419-2687-a181">
@@ -263,7 +303,12 @@
         <infoLink name="Medic" id="b542-6c9b-44e4-cff3" hidden="false" type="rule" targetId="0de6-c532-1b9e-df58"/>
       </infoLinks>
       <entryLinks>
-        <entryLink import="true" name="Jokyn SMG" hidden="false" id="fc82-0fb0-d1d1-0973" type="selectionEntry" targetId="07c8-4213-e831-d1e5"/>
+        <entryLink import="true" name="Jokyn SMG" hidden="false" id="fc82-0fb0-d1d1-0973" type="selectionEntry" targetId="07c8-4213-e831-d1e5">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9c0d-4b7f-5678-9d34" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2687-bce2-7a1d-b95b" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
       </entryLinks>
       <profiles>
         <profile name="Cook" typeId="7040-9c4e-1119-a3c5" typeName="Unit" hidden="false" id="7c8e-7f9b-b549-1db3">
@@ -285,7 +330,12 @@
         <cost name="Points" typeId="0bc1-1233-3e53-72ca" value="30"/>
       </costs>
       <entryLinks>
-        <entryLink import="true" name="Jokyn SMG" hidden="false" id="9528-19a1-4d79-0366" type="selectionEntry" targetId="07c8-4213-e831-d1e5"/>
+        <entryLink import="true" name="Jokyn SMG" hidden="false" id="9528-19a1-4d79-0366" type="selectionEntry" targetId="07c8-4213-e831-d1e5">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f5e8-67c7-aa5a-7cd2" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7700-01c9-3e71-e3ec" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
       </entryLinks>
       <infoLinks>
         <infoLink name="Musician (X)" id="c2dd-aae0-9490-087b" hidden="false" type="rule" targetId="822d-00b5-a47a-4529"/>
@@ -316,7 +366,12 @@
         <constraint type="max" value="1" field="selections" scope="force" shared="true" id="9e18-57e2-c8d1-a502" includeChildSelections="false"/>
       </constraints>
       <entryLinks>
-        <entryLink import="true" name="Jokyn SMG" hidden="false" id="90b3-0d2d-201b-04b9" type="selectionEntry" targetId="07c8-4213-e831-d1e5"/>
+        <entryLink import="true" name="Jokyn SMG" hidden="false" id="90b3-0d2d-201b-04b9" type="selectionEntry" targetId="07c8-4213-e831-d1e5">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="afb4-2a96-b6ff-de08" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a614-9525-9598-53b2" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
       </entryLinks>
       <infoLinks>
         <infoLink name="Standard" id="7658-38cd-750d-7617" hidden="false" type="rule" targetId="2437-22be-ccb6-5ef4"/>
@@ -344,7 +399,12 @@
         <constraint type="max" value="1" field="selections" scope="force" shared="true" id="50d0-40f5-7cc7-7f2e" includeChildSelections="false"/>
       </constraints>
       <entryLinks>
-        <entryLink import="true" name="Jokyn SMG" hidden="false" id="2828-5ae1-eb23-29dc" type="selectionEntry" targetId="07c8-4213-e831-d1e5"/>
+        <entryLink import="true" name="Jokyn SMG" hidden="false" id="2828-5ae1-eb23-29dc" type="selectionEntry" targetId="07c8-4213-e831-d1e5">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f8b9-49d5-cb68-e6fa" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3416-fc3c-547e-7cc2" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
       </entryLinks>
       <infoLinks>
         <infoLink name="PykPyk (X)" id="5b32-6650-f858-6c78" hidden="false" type="rule" targetId="13c8-54a0-441f-a71c"/>
@@ -372,7 +432,12 @@
         <constraint type="max" value="2" field="selections" scope="force" shared="true" id="0ea2-6bc4-728b-0aeb" includeChildSelections="false"/>
       </constraints>
       <entryLinks>
-        <entryLink import="true" name="Splagen B.e" hidden="false" id="5c03-7cbc-6b73-9b2d" type="selectionEntry" targetId="aee9-ba38-1fe3-aba2"/>
+        <entryLink import="true" name="Splagen B.e" hidden="false" id="5c03-7cbc-6b73-9b2d" type="selectionEntry" targetId="aee9-ba38-1fe3-aba2">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2f30-5b0a-80d1-731c" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b233-3e9a-c9cc-0395" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
       </entryLinks>
       <profiles>
         <profile name="Torpedo Rhyfler" typeId="7040-9c4e-1119-a3c5" typeName="Unit" hidden="false" id="f95d-153c-cffa-ff5d">
@@ -394,7 +459,12 @@
         <cost name="Points" typeId="0bc1-1233-3e53-72ca" value="28"/>
       </costs>
       <entryLinks>
-        <entryLink import="true" name="Pistol" hidden="false" id="a14b-8f05-259f-a3fc" type="selectionEntry" targetId="73d9-2804-2b53-c58c"/>
+        <entryLink import="true" name="Pistol" hidden="false" id="a14b-8f05-259f-a3fc" type="selectionEntry" targetId="73d9-2804-2b53-c58c">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d57e-0c1c-3324-d579" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="24fc-6db0-44c6-db28" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
       </entryLinks>
       <infoLinks>
         <infoLink name="Switch Ammo" id="d4cc-a821-b3b8-3b15" hidden="false" type="rule" targetId="1f9b-dc57-6dbd-bddb"/>
