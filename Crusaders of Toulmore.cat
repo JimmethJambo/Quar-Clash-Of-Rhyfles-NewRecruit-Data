@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="4210-c08d-7f26-7174" name="Crusaders of Toulmore" gameSystemId="sys-dbd1-1d4a-43f9-1e9c" gameSystemRevision="3" revision="11" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="4210-c08d-7f26-7174" name="Crusaders of Toulmore" gameSystemId="sys-dbd1-1d4a-43f9-1e9c" gameSystemRevision="3" revision="12" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedSelectionEntries>
     <selectionEntry type="upgrade" import="true" name="Bogen" hidden="false" id="2f9a-306b-0eb2-1eb1" sortIndex="1" defaultAmount="1">
       <profiles>
@@ -1282,9 +1282,6 @@
               </characteristics>
             </profile>
           </profiles>
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="3bc1-5468-3ef3-84b2" includeChildSelections="true"/>
-          </constraints>
         </entryLink>
       </entryLinks>
     </selectionEntry>
