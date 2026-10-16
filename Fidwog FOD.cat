@@ -1,88 +1,17 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="09b3-3016-43ff-1e9e" name="Fidwog FOD" gameSystemId="sys-dbd1-1d4a-43f9-1e9c" gameSystemRevision="2" revision="9" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="09b3-3016-43ff-1e9e" name="Fidwog FOD" gameSystemId="sys-dbd1-1d4a-43f9-1e9c" gameSystemRevision="2" revision="10" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedSelectionEntries>
-    <selectionEntry type="upgrade" import="true" name="Sprygyt Mk3 &quot;Sketych&quot;" hidden="false" id="9f22-dc54-42cb-6110" sortIndex="1" defaultAmount="1">
-      <profiles>
-        <profile name="Sprygyt Mk3 &quot;Sketych&quot;" typeId="0b63-6947-fb08-66eb" typeName="Weapon" hidden="false" id="d9c6-6fdb-4518-e596">
-          <characteristics>
-            <characteristic name="Range" typeId="5b6c-828e-fe65-26a5">6</characteristic>
-            <characteristic name="SN" typeId="b1d6-1660-ac56-c22a">-2</characteristic>
-            <characteristic name="Abilities" typeId="ed37-dbdc-d41b-3af6"/>
-          </characteristics>
-        </profile>
-      </profiles>
-    </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Bensa F6" hidden="false" id="d6cd-542d-bfb6-f032" sortIndex="1" defaultAmount="1">
-      <profiles>
-        <profile name="Bensa F6" typeId="0b63-6947-fb08-66eb" typeName="Weapon" hidden="false" id="a6da-bd1c-ecdc-e074">
-          <characteristics>
-            <characteristic name="Range" typeId="5b6c-828e-fe65-26a5">6</characteristic>
-            <characteristic name="SN" typeId="b1d6-1660-ac56-c22a">-2</characteristic>
-            <characteristic name="Abilities" typeId="ed37-dbdc-d41b-3af6">Select Fire (2),  Large Caliber</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <infoLinks>
-        <infoLink name="Select Fire(X)" id="e263-83c9-4127-4705" hidden="false" type="rule" targetId="8c44-111c-27c4-4a9b"/>
-        <infoLink name="Large Caliber" id="f62c-e6a3-0dbd-3262" hidden="false" type="rule" targetId="8eb8-8a48-5420-a303"/>
-      </infoLinks>
-    </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="FF10" hidden="false" id="edb2-a0b8-83cb-0c6d" sortIndex="1" defaultAmount="1">
-      <profiles>
-        <profile name="FF10" typeId="0b63-6947-fb08-66eb" typeName="Weapon" hidden="false" id="a190-737e-543c-beef">
-          <characteristics>
-            <characteristic name="Range" typeId="5b6c-828e-fe65-26a5">4</characteristic>
-            <characteristic name="SN" typeId="b1d6-1660-ac56-c22a">-2</characteristic>
-            <characteristic name="Abilities" typeId="ed37-dbdc-d41b-3af6">Shotgun</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <infoLinks>
-        <infoLink name="Shotgun" id="caa5-a6d3-3dfe-ccb6" hidden="false" type="rule" targetId="d633-ee5f-c6cf-c931"/>
-      </infoLinks>
-    </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="is-Haem Long" hidden="false" id="f838-da2a-6018-da18" sortIndex="1" defaultAmount="1">
-      <profiles>
-        <profile name="is-Haem Long" typeId="0b63-6947-fb08-66eb" typeName="Weapon" hidden="false" id="bb12-fcf2-2be6-c36a">
-          <characteristics>
-            <characteristic name="Range" typeId="5b6c-828e-fe65-26a5">10</characteristic>
-            <characteristic name="SN" typeId="b1d6-1660-ac56-c22a">-3</characteristic>
-            <characteristic name="Abilities" typeId="ed37-dbdc-d41b-3af6"/>
-          </characteristics>
-        </profile>
-      </profiles>
-    </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Pistol" hidden="false" id="a1bb-bf3b-5bc1-c080" sortIndex="1" defaultAmount="1">
-      <profiles>
-        <profile name="Pistol" typeId="0b63-6947-fb08-66eb" typeName="Weapon" hidden="false" id="cde3-dddd-9e96-04a8">
-          <characteristics>
-            <characteristic name="Range" typeId="5b6c-828e-fe65-26a5">4</characteristic>
-            <characteristic name="SN" typeId="b1d6-1660-ac56-c22a">-1</characteristic>
-            <characteristic name="Abilities" typeId="ed37-dbdc-d41b-3af6"/>
-          </characteristics>
-        </profile>
-      </profiles>
-    </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="GMK4 Lance" hidden="false" id="e2b4-ca2f-e7ca-5dbd" sortIndex="1" defaultAmount="1">
-      <profiles>
-        <profile name="GMK4 Lance" typeId="0b63-6947-fb08-66eb" typeName="Weapon" hidden="false" id="7c2c-d520-be50-a995">
-          <characteristics>
-            <characteristic name="Range" typeId="5b6c-828e-fe65-26a5">6&quot; Only</characteristic>
-            <characteristic name="SN" typeId="b1d6-1660-ac56-c22a">NA</characteristic>
-            <characteristic name="Abilities" typeId="ed37-dbdc-d41b-3af6">Grafaenk Lance</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <infoLinks>
-        <infoLink name="Grafaenk Mk4 Lance" id="8715-e6be-195b-4b73" hidden="false" type="rule" targetId="9bca-a0a1-75d8-4d95"/>
-      </infoLinks>
-    </selectionEntry>
     <selectionEntry type="unit" import="true" name="Gaefyn" hidden="false" id="149b-7228-131f-3b25" sortIndex="2">
       <costs>
         <cost name="Points" typeId="0bc1-1233-3e53-72ca" value="25"/>
       </costs>
       <entryLinks>
-        <entryLink import="true" name="Sprygyt Mk3 &quot;Sketych&quot;" hidden="false" id="ec46-954f-eb52-9e39" type="selectionEntry" targetId="9f22-dc54-42cb-6110"/>
+        <entryLink import="true" name="Sprygt Mk3 &quot;Sketych&quot;" hidden="false" id="ec46-954f-eb52-9e39" type="selectionEntry" targetId="547e-4532-6467-254d">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b73c-d76a-4ea8-d192-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b73c-d76a-4ea8-d192-max" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
       </entryLinks>
       <profiles>
         <profile name="Gaefyn" typeId="7040-9c4e-1119-a3c5" typeName="Unit" hidden="false" id="93a9-2d63-c22c-55f3">
@@ -110,7 +39,7 @@
         <categoryLink targetId="de6b-6ec2-9294-541d" id="f8da-fbb1-8388-29e8" primary="true" name="Unit"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink import="true" name="Bensa F6" hidden="false" id="6cea-ea20-11fb-11ff" type="selectionEntry" targetId="d6cd-542d-bfb6-f032"/>
+        <entryLink import="true" name="Bensa F6" hidden="false" id="6cea-ea20-11fb-11ff" type="selectionEntry" targetId="a997-e84a-28c3-9b83"/>
       </entryLinks>
       <profiles>
         <profile name="han-Gaefyn" typeId="7040-9c4e-1119-a3c5" typeName="Unit" hidden="false" id="6e6f-70c4-4ba1-00c2">
@@ -135,7 +64,7 @@
         <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="2c79-b1e2-babe-3801" includeChildSelections="true"/>
       </constraints>
       <entryLinks>
-        <entryLink import="true" name="is-Haem Long" hidden="false" id="f3e8-6272-34ba-515d" type="selectionEntry" targetId="f838-da2a-6018-da18"/>
+        <entryLink import="true" name="is-Haem Long Rhyfle" hidden="false" id="f3e8-6272-34ba-515d" type="selectionEntry" targetId="4335-70fb-198d-c82c"/>
       </entryLinks>
       <infoLinks>
         <infoLink name="Dead-Eye" id="5658-f668-9ae9-4345" hidden="false" type="rule" targetId="d190-c1b5-6dbb-6129"/>
@@ -160,7 +89,12 @@
         <categoryLink targetId="de6b-6ec2-9294-541d" id="a252-562f-f91e-92d6" primary="true" name="Unit"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink import="true" name="Sprygyt Mk3 &quot;Sketych&quot;" hidden="false" id="807e-6a3a-9ac4-dfe3" type="selectionEntry" targetId="9f22-dc54-42cb-6110"/>
+        <entryLink import="true" name="Sprygt Mk3 &quot;Sketych&quot;" hidden="false" id="807e-6a3a-9ac4-dfe3" type="selectionEntry" targetId="547e-4532-6467-254d">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="55e3-3aff-b854-13c8-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="55e3-3aff-b854-13c8-max" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
       </entryLinks>
       <profiles>
         <profile name="Crown Milwer" typeId="7040-9c4e-1119-a3c5" typeName="Unit" hidden="false" id="1e7b-1f77-1aef-7ce0">
@@ -191,7 +125,7 @@
         <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="06fc-df01-6b77-14a7" includeChildSelections="true"/>
       </constraints>
       <entryLinks>
-        <entryLink import="true" name="Pistol" hidden="false" id="cfb5-d214-7c2f-ca93" type="selectionEntry" targetId="a1bb-bf3b-5bc1-c080" defaultAmount="0">
+        <entryLink import="true" name="Pistol" hidden="false" id="cfb5-d214-7c2f-ca93" type="selectionEntry" targetId="7028-cb77-f695-540d" defaultAmount="0">
           <profiles>
             <profile name="Standard Bearer" typeId="7040-9c4e-1119-a3c5" typeName="Unit" hidden="false" id="d59c-edab-2beb-7a58">
               <characteristics>
@@ -207,7 +141,7 @@
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="be42-7c52-ddd7-14d0" includeChildSelections="false"/>
           </constraints>
         </entryLink>
-        <entryLink import="true" name="Sprygyt Mk3 &quot;Sketych&quot;" hidden="false" id="55c7-263f-26ed-84e7" type="selectionEntry" targetId="9f22-dc54-42cb-6110" defaultAmount="0">
+        <entryLink import="true" name="Sprygt Mk3 &quot;Sketych&quot;" hidden="false" id="55c7-263f-26ed-84e7" type="selectionEntry" targetId="547e-4532-6467-254d" defaultAmount="0">
           <costs>
             <cost name="Points" typeId="0bc1-1233-3e53-72ca" value="3"/>
           </costs>
@@ -242,7 +176,7 @@
         <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="d335-99a2-3063-8090" includeChildSelections="true"/>
       </constraints>
       <entryLinks>
-        <entryLink import="true" name="Sprygyt Mk3 &quot;Sketych&quot;" hidden="false" id="9584-fec7-e881-10aa" type="selectionEntry" targetId="9f22-dc54-42cb-6110" defaultAmount="0">
+        <entryLink import="true" name="Sprygt Mk3 &quot;Sketych&quot;" hidden="false" id="9584-fec7-e881-10aa" type="selectionEntry" targetId="547e-4532-6467-254d" defaultAmount="0">
           <costs>
             <cost name="Points" typeId="0bc1-1233-3e53-72ca" value="3"/>
           </costs>
@@ -261,7 +195,7 @@
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7a9f-fe76-779c-0591" includeChildSelections="false"/>
           </constraints>
         </entryLink>
-        <entryLink import="true" name="Pistol" hidden="false" id="4539-b3b9-535f-5a89" type="selectionEntry" targetId="a1bb-bf3b-5bc1-c080" defaultAmount="0">
+        <entryLink import="true" name="Pistol" hidden="false" id="4539-b3b9-535f-5a89" type="selectionEntry" targetId="7028-cb77-f695-540d" defaultAmount="0">
           <profiles>
             <profile name="Squirrel Messenger" typeId="7040-9c4e-1119-a3c5" typeName="Unit" hidden="false" id="5f1b-8e59-a358-0768">
               <characteristics>
@@ -304,7 +238,7 @@
         </profile>
       </profiles>
       <entryLinks>
-        <entryLink import="true" name="FF10" hidden="false" id="0162-046b-fa64-aa0e" type="selectionEntry" targetId="edb2-a0b8-83cb-0c6d"/>
+        <entryLink import="true" name="FF10 Shotgun" hidden="false" id="0162-046b-fa64-aa0e" type="selectionEntry" targetId="917b-207c-77a6-6820"/>
       </entryLinks>
       <infoLinks>
         <infoLink name="Hardened" id="bd5d-2d1f-fedf-8b7b" hidden="false" type="rule" targetId="e0a0-779f-2ccc-df59"/>
@@ -321,7 +255,7 @@
         <constraint type="max" value="2" field="selections" scope="roster" shared="true" id="91b8-3a71-6b14-e91a" includeChildSelections="true"/>
       </constraints>
       <entryLinks>
-        <entryLink import="true" name="GMK4 Lance" hidden="false" id="e0a0-831d-a8f3-e218" type="selectionEntry" targetId="e2b4-ca2f-e7ca-5dbd"/>
+        <entryLink import="true" name="GMK4 Lance" hidden="false" id="e0a0-831d-a8f3-e218" type="selectionEntry" targetId="da4f-4178-40ce-34f4"/>
       </entryLinks>
       <profiles>
         <profile name="Lancer" typeId="7040-9c4e-1119-a3c5" typeName="Unit" hidden="false" id="3798-3dd5-667c-baa8">
@@ -393,7 +327,12 @@
         </profile>
       </profiles>
       <entryLinks>
-        <entryLink import="true" name="Pistol" hidden="false" id="d6ac-0704-f910-9579" type="selectionEntry" targetId="a1bb-bf3b-5bc1-c080"/>
+        <entryLink import="true" name="Pistol" hidden="false" id="d6ac-0704-f910-9579" type="selectionEntry" targetId="7028-cb77-f695-540d">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="df36-fd97-9ef6-df52-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="df36-fd97-9ef6-df52-max" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
       </entryLinks>
       <infoLinks>
         <infoLink name="Inspiring Presence (X)" id="c84b-6ce4-7cb0-d519" hidden="false" type="rule" targetId="7ebb-1cf5-bdb6-2c2e"/>
@@ -403,7 +342,7 @@
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Fynrydhad" hidden="false" id="0afd-cc7d-cee1-676c" sortIndex="2">
       <costs>
-        <cost name="Points" typeId="0bc1-1233-3e53-72ca" value="70"/>
+        <cost name="Points" typeId="0bc1-1233-3e53-72ca" value="60"/>
       </costs>
       <categoryLinks>
         <categoryLink targetId="5b87-53fe-4166-448b" id="6aab-276e-0ecc-cac0" primary="true" name="Squad Tractor"/>
@@ -452,6 +391,9 @@
       <entryLinks>
         <entryLink import="true" name="M8-c MMG" hidden="false" id="11c9-73f8-50c5-522d" type="selectionEntry" targetId="e657-c0f6-7f44-b9ee"/>
       </entryLinks>
+      <constraints>
+        <constraint type="max" value="2" field="selections" scope="roster" shared="true" id="29af-ad80-cd32-0077" includeChildSelections="true" includeChildForces="true"/>
+      </constraints>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="M8-c MMG" hidden="false" id="e657-c0f6-7f44-b9ee" sortIndex="1" defaultAmount="1">
       <profiles>
@@ -502,10 +444,14 @@
         </profile>
       </profiles>
       <entryLinks>
-        <entryLink import="true" name="Pistol" hidden="false" id="e2ef-1dc3-9354-88df" type="selectionEntry" targetId="a1bb-bf3b-5bc1-c080">
+        <entryLink import="true" name="Pistol" hidden="false" id="e2ef-1dc3-9354-88df" type="selectionEntry" targetId="7028-cb77-f695-540d">
           <categoryLinks>
             <categoryLink targetId="de6b-6ec2-9294-541d" id="0c1f-8857-2a15-3ebc" primary="true" name="Unit"/>
           </categoryLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e60d-b5c3-b4b1-05c5-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e60d-b5c3-b4b1-05c5-max" includeChildSelections="false"/>
+          </constraints>
         </entryLink>
       </entryLinks>
       <infoLinks>
@@ -521,7 +467,12 @@
         <categoryLink targetId="de6b-6ec2-9294-541d" id="445c-878b-68b5-29af" primary="true" name="Unit"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink import="true" name="Sprygyt Mk3 &quot;Sketych&quot;" hidden="false" id="dda0-200d-af21-9ff4" type="selectionEntry" targetId="9f22-dc54-42cb-6110"/>
+        <entryLink import="true" name="Sprygt Mk3 &quot;Sketych&quot;" hidden="false" id="dda0-200d-af21-9ff4" type="selectionEntry" targetId="547e-4532-6467-254d">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c4c9-56b9-7dae-1f36-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c4c9-56b9-7dae-1f36-max" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
       </entryLinks>
       <profiles>
         <profile name="Yawdryl" typeId="7040-9c4e-1119-a3c5" typeName="Unit" hidden="false" id="c4ef-4b91-d230-aa48">
@@ -563,7 +514,12 @@
         </profile>
       </profiles>
       <entryLinks>
-        <entryLink import="true" name="Pistol" hidden="false" id="d852-198e-865c-e4ee" type="selectionEntry" targetId="a1bb-bf3b-5bc1-c080"/>
+        <entryLink import="true" name="Pistol" hidden="false" id="d852-198e-865c-e4ee" type="selectionEntry" targetId="7028-cb77-f695-540d">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="909e-566f-9e57-5d16-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="909e-566f-9e57-5d16-max" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
       </entryLinks>
       <infoLinks>
         <infoLink name="Leader (X/Y)" id="fee3-78f5-c2f6-83f6" hidden="false" type="rule" targetId="ba90-37ff-4384-2bc5"/>
@@ -598,7 +554,12 @@
         </profile>
       </profiles>
       <entryLinks>
-        <entryLink import="true" name="Sprygyt Mk3 &quot;Sketych&quot;" hidden="false" id="5e98-1c57-9f25-0c4b" type="selectionEntry" targetId="9f22-dc54-42cb-6110"/>
+        <entryLink import="true" name="Sprygt Mk3 &quot;Sketych&quot;" hidden="false" id="5e98-1c57-9f25-0c4b" type="selectionEntry" targetId="547e-4532-6467-254d">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8128-884c-587c-e5ed-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8128-884c-587c-e5ed-max" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
       </entryLinks>
       <constraints>
         <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="df92-6e1b-80c1-e989" includeChildSelections="true"/>
@@ -612,7 +573,7 @@
         <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="629d-c063-e65a-f76e" includeChildSelections="true"/>
       </constraints>
       <entryLinks>
-        <entryLink import="true" name="Pistol" hidden="false" id="c7a1-1026-5efe-8f5e" type="selectionEntry" targetId="a1bb-bf3b-5bc1-c080">
+        <entryLink import="true" name="Pistol" hidden="false" id="c7a1-1026-5efe-8f5e" type="selectionEntry" targetId="7028-cb77-f695-540d" defaultAmount="0">
           <profiles>
             <profile name="Cook" typeId="7040-9c4e-1119-a3c5" typeName="Unit" hidden="false" id="ad6f-156e-6afe-02d0">
               <characteristics>
@@ -628,7 +589,7 @@
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="11f4-979e-01aa-1999" includeChildSelections="false"/>
           </constraints>
         </entryLink>
-        <entryLink import="true" name="Sprygyt Mk3 &quot;Sketych&quot;" hidden="false" id="64e9-e6f7-72b4-5822" type="selectionEntry" targetId="9f22-dc54-42cb-6110">
+        <entryLink import="true" name="Sprygt Mk3 &quot;Sketych&quot;" hidden="false" id="64e9-e6f7-72b4-5822" type="selectionEntry" targetId="547e-4532-6467-254d" defaultAmount="0">
           <costs>
             <cost name="Points" typeId="0bc1-1233-3e53-72ca" value="2"/>
           </costs>
@@ -660,7 +621,12 @@
         <categoryLink targetId="de6b-6ec2-9294-541d" id="1a66-1a90-e124-2516" primary="true" name="Unit"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink import="true" name="Pistol" hidden="false" id="1d4f-d8c7-e288-1aa8" type="selectionEntry" targetId="a1bb-bf3b-5bc1-c080"/>
+        <entryLink import="true" name="Pistol" hidden="false" id="1d4f-d8c7-e288-1aa8" type="selectionEntry" targetId="7028-cb77-f695-540d">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1cd1-52cc-5e6a-903b-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1cd1-52cc-5e6a-903b-max" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
       </entryLinks>
       <profiles>
         <profile name="Musician" typeId="7040-9c4e-1119-a3c5" typeName="Unit" hidden="false" id="29c7-c0cf-6dbe-bbf2">
@@ -730,7 +696,7 @@
           <characteristics>
             <characteristic name="Range" typeId="206b-98a7-3ceb-bc0e">NA</characteristic>
             <characteristic name="Arc" typeId="7f52-7175-881e-a429">45</characteristic>
-            <characteristic name="Abilities" typeId="0095-18c0-009f-e488">Slow Reload, Blast (S,2d6), Precision Fire</characteristic>
+            <characteristic name="Abilities" typeId="0095-18c0-009f-e488">Slow Reload, Blast (Small ,2d6), Precision Fire</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -785,7 +751,7 @@
         </profile>
         <profile name="1-2" typeId="6e06-153b-5181-d39d" typeName="Damage Chart" hidden="false" id="c376-c509-81bd-ff89">
           <characteristics>
-            <characteristic name="Result" typeId="897e-4ecc-846b-1598">Mounted Rhyfler is Rattled.</characteristic>
+            <characteristic name="Result" typeId="897e-4ecc-846b-1598">Mounted Rhyfler is Rattled. Unit may not Charge until Rattled is cleared.</characteristic>
           </characteristics>
         </profile>
         <profile name="3-4" typeId="6e06-153b-5181-d39d" typeName="Damage Chart" hidden="false" id="a8eb-f617-ae8c-e74c">
@@ -795,12 +761,12 @@
         </profile>
         <profile name="5" typeId="6e06-153b-5181-d39d" typeName="Damage Chart" hidden="false" id="2280-aa2c-726d-0580">
           <characteristics>
-            <characteristic name="Result" typeId="897e-4ecc-846b-1598">Mount is taken OOA. Replace mounted unit with dismounted Rider. Rider makes a Mounted Crash Skill Check.</characteristic>
+            <characteristic name="Result" typeId="897e-4ecc-846b-1598">Mount is taken OOA. Replace mounted unit with dismounted Rider and Passenger. Both make a Mounted Crash Skill Check.</characteristic>
           </characteristics>
         </profile>
         <profile name="6" typeId="6e06-153b-5181-d39d" typeName="Damage Chart" hidden="false" id="4f19-86e8-92e9-bdd2">
           <characteristics>
-            <characteristic name="Result" typeId="897e-4ecc-846b-1598">Rider is hit and Taken OOA. Remove Mount from the battlefield and replace with OOA Dismounted Rider.</characteristic>
+            <characteristic name="Result" typeId="897e-4ecc-846b-1598">Rider is hit and Taken OOA. Remove Mount from the battlefield and replace with OOA Dismounted Rider. Passenger makes a Mounted Crash Skill Check before being placed on the battlefield.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -866,7 +832,7 @@
         </profile>
         <profile name="1-2" typeId="6e06-153b-5181-d39d" typeName="Damage Chart" hidden="false" id="f2ec-259b-8dfd-2c9e">
           <characteristics>
-            <characteristic name="Result" typeId="897e-4ecc-846b-1598">Mounted Rhyfler is Rattled.</characteristic>
+            <characteristic name="Result" typeId="897e-4ecc-846b-1598">Mounted Rhyfler is Rattled. Unit may not Charge until Rattled is cleared.</characteristic>
           </characteristics>
         </profile>
         <profile name="3-4" typeId="6e06-153b-5181-d39d" typeName="Damage Chart" hidden="false" id="dfc9-3c61-5266-58b5">
@@ -876,12 +842,12 @@
         </profile>
         <profile name="5" typeId="6e06-153b-5181-d39d" typeName="Damage Chart" hidden="false" id="61c6-35c5-95ae-889c">
           <characteristics>
-            <characteristic name="Result" typeId="897e-4ecc-846b-1598">Mount is taken OOA. Replace mounted unit with dismounted Rider. Rider makes a Mounted Crash Skill Check.</characteristic>
+            <characteristic name="Result" typeId="897e-4ecc-846b-1598">Mount is taken OOA. Replace mounted unit with dismounted Rider and Passenger. Both make a Mounted Crash Skill Check.</characteristic>
           </characteristics>
         </profile>
         <profile name="6" typeId="6e06-153b-5181-d39d" typeName="Damage Chart" hidden="false" id="f894-f5b6-7ed9-99e2">
           <characteristics>
-            <characteristic name="Result" typeId="897e-4ecc-846b-1598">Rider is hit and Taken OOA. Remove Mount from the battlefield and replace with OOA Dismounted Rider.</characteristic>
+            <characteristic name="Result" typeId="897e-4ecc-846b-1598">Rider is hit and Taken OOA. Remove Mount from the battlefield and replace with OOA Dismounted Rider. Passenger makes a Mounted Crash Skill Check before being placed on the battlefield.</characteristic>
           </characteristics>
         </profile>
       </profiles>

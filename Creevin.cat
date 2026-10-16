@@ -1,0 +1,482 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue library="false" id="9eb5-99eb-27a6-a1f5" name="Creevin" gameSystemId="sys-dbd1-1d4a-43f9-1e9c" gameSystemRevision="12" revision="1" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <sharedSelectionEntries>
+    <selectionEntry type="unit" import="true" name="Rhyfler (LMG)" hidden="false" id="b15f-38d9-fefd-5aaf" sortIndex="1">
+      <categoryLinks>
+        <categoryLink targetId="de6b-6ec2-9294-541d" id="57c0-19ad-2f92-e876" primary="true" name="Unit"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Points" typeId="0bc1-1233-3e53-72ca" value="33"/>
+      </costs>
+      <profiles>
+        <profile name="Rhyfler" typeId="7040-9c4e-1119-a3c5" typeName="Unit" hidden="false" id="35a2-4c7d-f363-d297">
+          <characteristics>
+            <characteristic name="Sk" typeId="0014-9871-f278-b5f3">12</characteristic>
+            <characteristic name="Mt" typeId="d8ef-e518-8f49-8a7b">1d6+2</characteristic>
+            <characteristic name="MA" typeId="4cd7-b825-6660-1758">5</characteristic>
+            <characteristic name="Toughness" typeId="197d-1c5e-af24-ee6e">4</characteristic>
+            <characteristic name="Special Abilities" typeId="94ec-89a2-8f77-66c3"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <entryLinks>
+        <entryLink import="true" name="Naenyd mk4a LMG" hidden="false" id="9264-e9c3-ce1e-f76c" type="selectionEntry" targetId="ea6d-ce50-fac6-c747"/>
+      </entryLinks>
+      <constraints>
+        <constraint type="max" value="2" field="selections" scope="force" shared="true" id="cfda-9481-2e0b-023e" includeChildSelections="false"/>
+      </constraints>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Rhyfler" hidden="false" id="4320-7951-1aeb-eada" sortIndex="1">
+      <categoryLinks>
+        <categoryLink targetId="de6b-6ec2-9294-541d" id="e76c-a016-d78b-4f8b" primary="true" name="Unit"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Points" typeId="0bc1-1233-3e53-72ca" value="25"/>
+      </costs>
+      <profiles>
+        <profile name="Rhyfler" typeId="7040-9c4e-1119-a3c5" typeName="Unit" hidden="false" id="cfa9-c7bb-8671-754d">
+          <characteristics>
+            <characteristic name="Sk" typeId="0014-9871-f278-b5f3">12</characteristic>
+            <characteristic name="Mt" typeId="d8ef-e518-8f49-8a7b">1d6+2</characteristic>
+            <characteristic name="MA" typeId="4cd7-b825-6660-1758">5</characteristic>
+            <characteristic name="Toughness" typeId="197d-1c5e-af24-ee6e">4</characteristic>
+            <characteristic name="Special Abilities" typeId="94ec-89a2-8f77-66c3">Support</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <entryLinks>
+        <entryLink import="true" name="Gybyl-Hawler Rhyfle" hidden="false" id="3bab-a5a0-7a12-0fc0" type="selectionEntry" targetId="e1d7-e64a-e874-b554"/>
+      </entryLinks>
+      <infoLinks>
+        <infoLink name="Support" id="bab1-63d5-b58d-7e25" hidden="false" type="rule" targetId="c0d3-909a-ca80-1be2"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Scout" hidden="false" id="cb65-7cf8-3c75-035c" sortIndex="1">
+      <costs>
+        <cost name="Points" typeId="0bc1-1233-3e53-72ca" value="30"/>
+      </costs>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="force" shared="true" id="3417-5b52-6af8-03c2" includeChildSelections="false"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink targetId="de6b-6ec2-9294-541d" id="be6e-e403-91c8-ddfa" primary="true" name="Unit"/>
+      </categoryLinks>
+      <infoLinks>
+        <infoLink name="Scout (X/Y)" id="364b-5b6f-ff07-0978" hidden="false" type="rule" targetId="0d68-8b95-5793-02aa"/>
+      </infoLinks>
+      <profiles>
+        <profile name="Scout" typeId="7040-9c4e-1119-a3c5" typeName="Unit" hidden="false" id="b6ce-ad25-689c-6955">
+          <characteristics>
+            <characteristic name="Sk" typeId="0014-9871-f278-b5f3">12</characteristic>
+            <characteristic name="Mt" typeId="d8ef-e518-8f49-8a7b">1d6+2</characteristic>
+            <characteristic name="MA" typeId="4cd7-b825-6660-1758">6</characteristic>
+            <characteristic name="Toughness" typeId="197d-1c5e-af24-ee6e">4</characteristic>
+            <characteristic name="Special Abilities" typeId="94ec-89a2-8f77-66c3">Scout (2/3)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <entryLinks>
+        <entryLink import="true" name="Gybyl-Hawler Rhyfle" hidden="false" id="69fa-e578-6169-0c75" type="selectionEntry" targetId="e1d7-e64a-e874-b554"/>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Yawdryl" hidden="false" id="c8be-f7c1-45f3-c3cd" sortIndex="1">
+      <categoryLinks>
+        <categoryLink targetId="de6b-6ec2-9294-541d" id="31ef-9c57-c899-d7f9" primary="true" name="Unit"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Points" typeId="0bc1-1233-3e53-72ca" value="30"/>
+      </costs>
+      <profiles>
+        <profile name="Yawdryl" typeId="7040-9c4e-1119-a3c5" typeName="Unit" hidden="false" id="8b7a-4fb3-4b42-23b8">
+          <characteristics>
+            <characteristic name="Sk" typeId="0014-9871-f278-b5f3">12</characteristic>
+            <characteristic name="Mt" typeId="d8ef-e518-8f49-8a7b">2d6-1</characteristic>
+            <characteristic name="MA" typeId="4cd7-b825-6660-1758">5</characteristic>
+            <characteristic name="Toughness" typeId="197d-1c5e-af24-ee6e">4</characteristic>
+            <characteristic name="Special Abilities" typeId="94ec-89a2-8f77-66c3">Leader (3/4)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <entryLinks>
+        <entryLink import="true" name="Gybyl-Hawler Rhyfle" hidden="false" id="30f1-39cc-94d2-4bc7" type="selectionEntry" targetId="e1d7-e64a-e874-b554"/>
+      </entryLinks>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="force" shared="true" id="0682-ae2e-33d7-51a6" includeChildSelections="false"/>
+      </constraints>
+      <infoLinks>
+        <infoLink name="Leader (X/Y)" id="8006-102e-d1cd-aa9b" hidden="false" type="rule" targetId="ba90-37ff-4384-2bc5"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Milwer" hidden="false" id="ac20-a551-c5f8-0891" sortIndex="1">
+      <categoryLinks>
+        <categoryLink targetId="de6b-6ec2-9294-541d" id="0672-82cc-1af6-4d69" primary="true" name="Unit"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Points" typeId="0bc1-1233-3e53-72ca" value="28"/>
+      </costs>
+      <profiles>
+        <profile name="Milwer" typeId="7040-9c4e-1119-a3c5" typeName="Unit" hidden="false" id="d93e-a9e9-1b52-456c">
+          <characteristics>
+            <characteristic name="Sk" typeId="0014-9871-f278-b5f3">12</characteristic>
+            <characteristic name="Mt" typeId="d8ef-e518-8f49-8a7b">1d6+2</characteristic>
+            <characteristic name="MA" typeId="4cd7-b825-6660-1758">5</characteristic>
+            <characteristic name="Toughness" typeId="197d-1c5e-af24-ee6e">4</characteristic>
+            <characteristic name="Special Abilities" typeId="94ec-89a2-8f77-66c3">Leader (2/3)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <entryLinks>
+        <entryLink import="true" name="Gybyl-Hawlyr Rhyfle" hidden="false" id="e758-d5da-31bd-3e62" type="selectionEntry" targetId="e1d7-e64a-e874-b554"/>
+      </entryLinks>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="force" shared="true" id="7295-bc93-7b2b-610b" includeChildSelections="false"/>
+      </constraints>
+      <infoLinks>
+        <infoLink name="Leader (X/Y)" id="5aec-8c50-278c-e1fa" hidden="false" type="rule" targetId="ba90-37ff-4384-2bc5"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Shotgunner" hidden="false" id="5f45-34e9-8a7c-6b82" sortIndex="2">
+      <categoryLinks>
+        <categoryLink targetId="de6b-6ec2-9294-541d" id="c6e3-6003-25f5-82a1" primary="true" name="Unit"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Points" typeId="0bc1-1233-3e53-72ca" value="35"/>
+      </costs>
+      <profiles>
+        <profile name="Shotgunner" typeId="7040-9c4e-1119-a3c5" typeName="Unit" hidden="false" id="e40e-5b8e-d0f9-1457">
+          <characteristics>
+            <characteristic name="Sk" typeId="0014-9871-f278-b5f3">12</characteristic>
+            <characteristic name="Mt" typeId="d8ef-e518-8f49-8a7b">1d6+2</characteristic>
+            <characteristic name="MA" typeId="4cd7-b825-6660-1758">5</characteristic>
+            <characteristic name="Toughness" typeId="197d-1c5e-af24-ee6e">4</characteristic>
+            <characteristic name="Special Abilities" typeId="94ec-89a2-8f77-66c3"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <entryLinks>
+        <entryLink import="true" name="Rg7/7 Shotgun" hidden="false" id="5073-8df5-71a9-6cee" type="selectionEntry" targetId="7a44-f452-a3e5-36f1"/>
+      </entryLinks>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="force" shared="true" id="f642-7f3a-c37e-049f" includeChildSelections="false"/>
+      </constraints>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Trench Ferryt (Shotgun)" hidden="false" id="067e-a3de-fcc4-973e" sortIndex="3">
+      <categoryLinks>
+        <categoryLink targetId="de6b-6ec2-9294-541d" id="9797-3454-69fc-f4ee" primary="true" name="Unit"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Points" typeId="0bc1-1233-3e53-72ca" value="39"/>
+      </costs>
+      <profiles>
+        <profile name="Trench Ferryt (Shotgun)" typeId="7040-9c4e-1119-a3c5" typeName="Unit" hidden="false" id="ec8d-f7bb-d152-9ebb">
+          <characteristics>
+            <characteristic name="Sk" typeId="0014-9871-f278-b5f3">13</characteristic>
+            <characteristic name="Mt" typeId="d8ef-e518-8f49-8a7b">1d6+2</characteristic>
+            <characteristic name="MA" typeId="4cd7-b825-6660-1758">5</characteristic>
+            <characteristic name="Toughness" typeId="197d-1c5e-af24-ee6e">4</characteristic>
+            <characteristic name="Special Abilities" typeId="94ec-89a2-8f77-66c3">Trench Armor</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <entryLinks>
+        <entryLink import="true" name="Rg7/7 Shotgun" hidden="false" id="f20c-6ff2-f641-5026" type="selectionEntry" targetId="7a44-f452-a3e5-36f1"/>
+      </entryLinks>
+      <constraints>
+        <constraint type="max" value="2" field="selections" scope="force" shared="true" id="2a70-439e-cc83-b0bc" includeChildSelections="false"/>
+      </constraints>
+      <infoLinks>
+        <infoLink name="Trench Armor" id="e4f2-1b22-677a-ff90" hidden="false" type="rule" targetId="d292-fce8-55c1-94ee"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Trench Ferryt" hidden="false" id="6202-abcb-a613-c0ad" sortIndex="3">
+      <categoryLinks>
+        <categoryLink targetId="de6b-6ec2-9294-541d" id="4f6d-5d93-a525-c8cd" primary="true" name="Unit"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Points" typeId="0bc1-1233-3e53-72ca" value="44"/>
+      </costs>
+      <profiles>
+        <profile name="Trench Ferryt" typeId="7040-9c4e-1119-a3c5" typeName="Unit" hidden="false" id="d6dd-b46f-90c3-ee6f">
+          <characteristics>
+            <characteristic name="Sk" typeId="0014-9871-f278-b5f3">13</characteristic>
+            <characteristic name="Mt" typeId="d8ef-e518-8f49-8a7b">2d6</characteristic>
+            <characteristic name="MA" typeId="4cd7-b825-6660-1758">5</characteristic>
+            <characteristic name="Toughness" typeId="197d-1c5e-af24-ee6e">4</characteristic>
+            <characteristic name="Special Abilities" typeId="94ec-89a2-8f77-66c3">Trench Armor, Bombardier, AT Grenades</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <entryLinks>
+        <entryLink import="true" name="Trench Pistol" hidden="false" id="1023-464b-72f4-bfe0" type="selectionEntry" targetId="db9d-50eb-3653-3030"/>
+      </entryLinks>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="force" shared="true" id="3df4-6a9d-96d6-63f2" includeChildSelections="false"/>
+      </constraints>
+      <infoLinks>
+        <infoLink name="AT Grenades" id="5356-d223-7dee-e9a2" hidden="false" type="rule" targetId="bf13-7d8d-e01d-98dc"/>
+        <infoLink name="Trench Armor" id="a19e-42e8-6e39-31ee" hidden="false" type="rule" targetId="d292-fce8-55c1-94ee"/>
+        <infoLink name="Bombardier" id="ab5e-84b8-37ee-9e5d" hidden="false" type="rule" targetId="7cd8-a0d8-921a-ac0c"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Trench Ferryt Yawdryl" hidden="false" id="f13e-80e0-4809-300e" sortIndex="3">
+      <categoryLinks>
+        <categoryLink targetId="de6b-6ec2-9294-541d" id="5db0-e300-4c4e-398d" primary="true" name="Unit"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Points" typeId="0bc1-1233-3e53-72ca" value="48"/>
+      </costs>
+      <profiles>
+        <profile name="Grenadier Yawdryl" typeId="7040-9c4e-1119-a3c5" typeName="Unit" hidden="false" id="9ed5-b309-af8d-1fd1">
+          <characteristics>
+            <characteristic name="Sk" typeId="0014-9871-f278-b5f3">13</characteristic>
+            <characteristic name="Mt" typeId="d8ef-e518-8f49-8a7b">2d6-1</characteristic>
+            <characteristic name="MA" typeId="4cd7-b825-6660-1758">5</characteristic>
+            <characteristic name="Toughness" typeId="197d-1c5e-af24-ee6e">4</characteristic>
+            <characteristic name="Special Abilities" typeId="94ec-89a2-8f77-66c3">Trench Armor, Scout (3/3)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <entryLinks>
+        <entryLink import="true" name="Moog-C SMG" hidden="false" id="620e-deb1-b1d5-03eb" type="selectionEntry" targetId="e85d-c1ed-ca20-fe6e"/>
+      </entryLinks>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="force" shared="true" id="4934-9594-3d93-97aa" includeChildSelections="false"/>
+      </constraints>
+      <infoLinks>
+        <infoLink name="Scout (X/Y)" id="32a8-28e5-eecf-5fda" hidden="false" type="rule" targetId="0d68-8b95-5793-02aa"/>
+        <infoLink name="Trench Armor" id="a963-5f56-978f-5740" hidden="false" type="rule" targetId="d292-fce8-55c1-94ee"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Cavalry Scout Rhyfler, Gybyl-Hawlyr &amp; Pistol" hidden="false" id="f7c2-69ff-bc3c-5617" sortIndex="6">
+      <costs>
+        <cost name="Points" typeId="0bc1-1233-3e53-72ca" value="42"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink name="Mounted Unit" hidden="false" id="b0f4-5f29-c39d-6c7a" targetId="f3df-2a35-71ff-3ff7" primary="true"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Cavalry Rhyfler" typeId="e0d8-274b-8232-ef1b" typeName="Mounted Unit" hidden="false" id="811c-afe8-7779-de9f">
+          <characteristics>
+            <characteristic name="Sk" typeId="5ad3-1ace-c190-566b">12</characteristic>
+            <characteristic name="Mt" typeId="38b8-ca39-7d11-6eb1">1d6+1</characteristic>
+            <characteristic name="MA" typeId="870d-5722-99b9-21da">8/6</characteristic>
+            <characteristic name="T" typeId="2fcc-4790-c933-ecf8">4</characteristic>
+            <characteristic name="D" typeId="20b1-a32d-e41c-9a37">2</characteristic>
+            <characteristic name="Equipment" typeId="4a61-14de-472f-b84d">Gybyl-Hawlyr, Pistol</characteristic>
+            <characteristic name="Special" typeId="c973-830d-f693-f6b1">Cadier, Saddle-born</characteristic>
+          </characteristics>
+          <attributes>
+            <attribute typeId="031c-0d07-1b90-9ff5" name="New Attribute Type"/>
+          </attributes>
+        </profile>
+        <profile name="Cavalry Rhyfler (dismounted)" typeId="8e73-7370-7f76-a0f6" typeName="Dismounted Unit" hidden="false" id="501d-ce0a-c75d-70ed">
+          <characteristics>
+            <characteristic name="Sk" typeId="4359-2c47-8755-0652">12</characteristic>
+            <characteristic name="Mt" typeId="a4d3-c1fb-e3fd-1ec4">1d6+2</characteristic>
+            <characteristic name="MA" typeId="7454-6341-5be7-ec95">5</characteristic>
+            <characteristic name="T" typeId="d802-8465-1aba-b808">4</characteristic>
+            <characteristic name="Equipment" typeId="eb3d-2bb6-1a43-2302">Gybyl-Hawlyr, Pistol</characteristic>
+            <characteristic name="Special" typeId="3587-866b-8fff-d4c0"/>
+          </characteristics>
+        </profile>
+        <profile name="1-2" typeId="6e06-153b-5181-d39d" typeName="Damage Chart" hidden="false" id="bc82-ba42-f09d-3cb7">
+          <characteristics>
+            <characteristic name="Result" typeId="897e-4ecc-846b-1598">Mounted Rhyfler is Rattled. Unit may not Charge until Rattled is cleared.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="3-4" typeId="6e06-153b-5181-d39d" typeName="Damage Chart" hidden="false" id="8a73-4498-0f53-62b2" noindex="false">
+          <characteristics>
+            <characteristic name="Result" typeId="897e-4ecc-846b-1598">Mount is Wounded. Unit&apos;s MA reduced to second value. If this result is rolled again treat it as a roll of 5</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="5" typeId="6e06-153b-5181-d39d" typeName="Damage Chart" hidden="false" id="cba7-c14f-cfa0-2a8a">
+          <characteristics>
+            <characteristic name="Result" typeId="897e-4ecc-846b-1598">Mount is taken OOA. Replace mounted unit with dismounted Rider. Rider makes a Mounted Crash Skill Check.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="6" typeId="6e06-153b-5181-d39d" typeName="Damage Chart" hidden="false" id="4963-287d-38be-4e7e">
+          <characteristics>
+            <characteristic name="Result" typeId="897e-4ecc-846b-1598">Rider is hit and Taken OOA. Remove Mount from the battlefield and replace with OOA Dismounted Rider.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Cadier" id="146e-18bd-12a5-304d" hidden="false" type="rule" targetId="fff3-d972-c7a6-f80c"/>
+        <infoLink name="Skittish" id="8e47-a439-81b7-b3e7" hidden="false" type="rule" targetId="61ec-2639-3a0c-b7a0"/>
+        <infoLink name="Saddle-born" id="ef0c-8a9e-f2e4-8722" hidden="false" type="rule" targetId="419b-c051-43b1-e47f"/>
+        <infoLink name="Thunderous Hooves" id="998b-5f73-538e-19b1" hidden="false" type="rule" targetId="7acf-9df6-9b45-8d55"/>
+      </infoLinks>
+      <constraints>
+        <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="ace1-6f90-3398-4e88" includeChildSelections="true"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" value="99" field="ace1-6f90-3398-4e88">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="parent" childId="bc5c-70a1-1047-b479" shared="true" includeChildSelections="false"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <entryLinks>
+        <entryLink import="true" name="Pistol" hidden="false" id="9648-b64d-d8b2-1441" type="selectionEntry" targetId="7028-cb77-f695-540d">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7771-5957-4289-8162-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7771-5957-4289-8162-max" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Gybyl-Hawlyr Rhyfle" hidden="false" id="7cf1-eb78-ffe9-ef26" type="selectionEntry" targetId="e1d7-e64a-e874-b554"/>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Cavalry Scout Yawdryl, Gybyl-Hawlyr &amp; Pistol" hidden="false" id="bc5c-70a1-1047-b479" sortIndex="6">
+      <costs>
+        <cost name="Points" typeId="0bc1-1233-3e53-72ca" value="52"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink name="Mounted Unit" hidden="false" id="647f-9397-6f0c-d8ef" targetId="f3df-2a35-71ff-3ff7" primary="true"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Cavalry Rhyfler Yawdryl" typeId="e0d8-274b-8232-ef1b" typeName="Mounted Unit" hidden="false" id="4348-0015-9cb6-07af">
+          <characteristics>
+            <characteristic name="Sk" typeId="5ad3-1ace-c190-566b">13</characteristic>
+            <characteristic name="Mt" typeId="38b8-ca39-7d11-6eb1">1d6+1</characteristic>
+            <characteristic name="MA" typeId="870d-5722-99b9-21da">8/6</characteristic>
+            <characteristic name="T" typeId="2fcc-4790-c933-ecf8">4</characteristic>
+            <characteristic name="D" typeId="20b1-a32d-e41c-9a37">2</characteristic>
+            <characteristic name="Equipment" typeId="4a61-14de-472f-b84d">Gybyl-Hawlyr, Pistol</characteristic>
+            <characteristic name="Special" typeId="c973-830d-f693-f6b1">Cadier, Saddle-born, Inspiring Presence (1)</characteristic>
+          </characteristics>
+          <attributes>
+            <attribute typeId="031c-0d07-1b90-9ff5" name="New Attribute Type"/>
+          </attributes>
+        </profile>
+        <profile name="Cavalry Rhyfler Yawdryl (dismounted)" typeId="8e73-7370-7f76-a0f6" typeName="Dismounted Unit" hidden="false" id="051b-43fb-b570-2d5d">
+          <characteristics>
+            <characteristic name="Sk" typeId="4359-2c47-8755-0652">13</characteristic>
+            <characteristic name="Mt" typeId="a4d3-c1fb-e3fd-1ec4">1d6+2</characteristic>
+            <characteristic name="MA" typeId="7454-6341-5be7-ec95">5</characteristic>
+            <characteristic name="T" typeId="d802-8465-1aba-b808">4</characteristic>
+            <characteristic name="Equipment" typeId="eb3d-2bb6-1a43-2302">Gybyl-Hawlyr, Pistol</characteristic>
+            <characteristic name="Special" typeId="3587-866b-8fff-d4c0">Leader (2/4)</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="1-2" typeId="6e06-153b-5181-d39d" typeName="Damage Chart" hidden="false" id="b166-cd6f-13ec-8fa9">
+          <characteristics>
+            <characteristic name="Result" typeId="897e-4ecc-846b-1598">Mounted Rhyfler is Rattled. Unit may not Charge until Rattled is cleared.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="3-4" typeId="6e06-153b-5181-d39d" typeName="Damage Chart" hidden="false" id="6d75-20cb-7012-3372" noindex="false">
+          <characteristics>
+            <characteristic name="Result" typeId="897e-4ecc-846b-1598">Mount is Wounded. Unit&apos;s MA reduced to second value. If this result is rolled again treat it as a roll of 5</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="5" typeId="6e06-153b-5181-d39d" typeName="Damage Chart" hidden="false" id="03f3-52e7-9b33-279b">
+          <characteristics>
+            <characteristic name="Result" typeId="897e-4ecc-846b-1598">Mount is taken OOA. Replace mounted unit with dismounted Rider. Rider makes a Mounted Crash Skill Check.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="6" typeId="6e06-153b-5181-d39d" typeName="Damage Chart" hidden="false" id="e76c-ff53-10d7-04d4">
+          <characteristics>
+            <characteristic name="Result" typeId="897e-4ecc-846b-1598">Rider is hit and Taken OOA. Remove Mount from the battlefield and replace with OOA Dismounted Rider.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Leader (X/Y)" id="32d4-f917-4e4b-1485" hidden="false" type="rule" targetId="ba90-37ff-4384-2bc5"/>
+        <infoLink name="Cadier" id="0234-8f34-fdb5-9f23" hidden="false" type="rule" targetId="fff3-d972-c7a6-f80c"/>
+        <infoLink name="Skittish" id="e1cb-18bf-72c9-322b" hidden="false" type="rule" targetId="61ec-2639-3a0c-b7a0"/>
+        <infoLink name="Saddle-born" id="f6c7-540e-156d-beef" hidden="false" type="rule" targetId="419b-c051-43b1-e47f"/>
+        <infoLink name="Thunderous Hooves" id="50e4-75ba-d9a6-cd01" hidden="false" type="rule" targetId="7acf-9df6-9b45-8d55"/>
+        <infoLink name="Inspiring Presence (X)" id="206c-b9e0-dad1-3a1b" hidden="false" type="rule" targetId="7ebb-1cf5-bdb6-2c2e"/>
+      </infoLinks>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0f59-15a2-aae6-fad3" includeChildSelections="true"/>
+      </constraints>
+      <entryLinks>
+        <entryLink import="true" name="Pistol" hidden="false" id="20e5-12e7-5fd0-97e2" type="selectionEntry" targetId="7028-cb77-f695-540d">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ed4d-d3ca-6b54-f2e4-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ed4d-d3ca-6b54-f2e4-max" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Gybyl-Hawlyr Rhyfle" hidden="false" id="cfa5-48f5-648e-69f2" type="selectionEntry" targetId="e1d7-e64a-e874-b554"/>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Snyprod HMG" hidden="false" id="5ee2-327e-2983-d550" sortIndex="7">
+      <categoryLinks>
+        <categoryLink targetId="34ad-bf4f-0473-dac6" id="68b1-ec42-59d8-789e" primary="true" name="Heavy Weapon Crew"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Snyprod HMG-7U" typeId="3971-dc7c-fded-7a05" typeName="Heavy Weapon Crew" hidden="false" id="d2dc-01cd-1623-232e">
+          <characteristics>
+            <characteristic name="Crew" typeId="d99f-34b4-b34d-2276">3</characteristic>
+            <characteristic name="Skill" typeId="520d-faaf-a88e-7985">12</characteristic>
+            <characteristic name="T" typeId="e994-3e9d-3b18-43b3">4</characteristic>
+            <characteristic name="D" typeId="97fc-5f15-cc48-6f00">2</characteristic>
+            <characteristic name="Break" typeId="a408-edfc-85be-a5ac">1</characteristic>
+            <characteristic name="MA" typeId="7cf6-12da-3cdd-6b9d">4</characteristic>
+            <characteristic name="Type" typeId="00d8-3f2d-ae43-9218">HMG</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="7+" typeId="6e06-153b-5181-d39d" typeName="Damage Chart" hidden="false" id="0ea5-9aa3-3b23-5e2c">
+          <characteristics>
+            <characteristic name="Result" typeId="897e-4ecc-846b-1598">Weapon Crew are Disabled. Remove from Battlefield.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="1-2" typeId="6e06-153b-5181-d39d" typeName="Damage Chart" hidden="false" id="31ab-5a77-9dac-32b1">
+          <characteristics>
+            <characteristic name="Result" typeId="897e-4ecc-846b-1598">Weapon Crew Rattled.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="5-6" typeId="6e06-153b-5181-d39d" typeName="Damage Chart" hidden="false" id="9065-f7c0-6af4-5070">
+          <characteristics>
+            <characteristic name="Result" typeId="897e-4ecc-846b-1598">Weapon Crew suffers 1 point of Damage.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="3-4" typeId="6e06-153b-5181-d39d" typeName="Damage Chart" hidden="false" id="e0a4-9bfb-4141-acf0">
+          <characteristics>
+            <characteristic name="Result" typeId="897e-4ecc-846b-1598">Weapon Crew is Gobsmacked. Remove Rattled Status if present.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="0" typeId="73fd-d87f-c3ca-d678" typeName="Damage Level" hidden="false" id="a2f7-38fc-a25b-f583">
+          <characteristics>
+            <characteristic typeId="0a18-6bf0-38b6-f7a0">Fully Operational: All Crew can perform their Tasks.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="1" typeId="73fd-d87f-c3ca-d678" typeName="Damage Level" hidden="false" id="7115-a936-21b6-9638">
+          <characteristics>
+            <characteristic typeId="0a18-6bf0-38b6-f7a0">Shaken: The HMG may no longer perform the Covering Fire Task.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="2" typeId="73fd-d87f-c3ca-d678" typeName="Damage Level" hidden="false" id="20e9-8330-ff1e-4acc">
+          <characteristics>
+            <characteristic typeId="0a18-6bf0-38b6-f7a0">Disabled: Remove from Battlefield</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Snyprod HMG" typeId="d580-6e35-f083-cd53" typeName="Heavy Weapon" hidden="false" id="5540-575a-3f4e-599e">
+          <characteristics>
+            <characteristic name="Range" typeId="1775-3227-d2ed-93a5">8</characteristic>
+            <characteristic name="Arc" typeId="f1e8-b48b-c0f2-c05f">45</characteristic>
+            <characteristic name="Abilities" typeId="bd42-ef04-afe1-f4d4">Carriage, Gun Shield (-2)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Gun Shield (X)" id="1d58-34fb-7517-253d" hidden="false" type="rule" targetId="debb-db2c-1545-a131"/>
+        <infoLink name="Carriage" id="1d36-24a3-2303-6c90" hidden="false" type="rule" targetId="a661-9268-7836-6cc0"/>
+      </infoLinks>
+    </selectionEntry>
+  </sharedSelectionEntries>
+  <entryLinks>
+    <entryLink import="true" name="Rhyfler (LMG)" hidden="false" id="5910-32ac-5b70-dd3f" type="selectionEntry" targetId="b15f-38d9-fefd-5aaf"/>
+    <entryLink import="true" name="Rhyfler" hidden="false" id="715a-ffc9-55d5-500c" type="selectionEntry" targetId="4320-7951-1aeb-eada"/>
+    <entryLink import="true" name="Grenadier Yawdryl" hidden="false" id="13db-25c0-c662-8be0" type="selectionEntry" targetId="f13e-80e0-4809-300e"/>
+    <entryLink import="true" name="Scout" hidden="false" id="51e8-fe7c-8746-fade" type="selectionEntry" targetId="cb65-7cf8-3c75-035c"/>
+    <entryLink import="true" name="Milwer" hidden="false" id="c0a7-b121-f575-ac7b" type="selectionEntry" targetId="ac20-a551-c5f8-0891"/>
+    <entryLink import="true" name="Cavalry Scout Yawdryl, Gybyl-Hawlyr &amp; Pistol" hidden="false" id="b1db-2b84-6080-77b6" type="selectionEntry" targetId="bc5c-70a1-1047-b479"/>
+    <entryLink import="true" name="Shotgunner" hidden="false" id="d045-d9e5-e85f-7fba" type="selectionEntry" targetId="5f45-34e9-8a7c-6b82"/>
+    <entryLink import="true" name="Grenadier" hidden="false" id="c704-0e0e-ff28-2387" type="selectionEntry" targetId="6202-abcb-a613-c0ad"/>
+    <entryLink import="true" name="Grenadier (Shotgun)" hidden="false" id="b6c0-b711-6f32-03b4" type="selectionEntry" targetId="067e-a3de-fcc4-973e"/>
+    <entryLink import="true" name="Yawdryl" hidden="false" id="604b-8f71-ce64-ef5f" type="selectionEntry" targetId="c8be-f7c1-45f3-c3cd"/>
+    <entryLink import="true" name="Cavalry Scout Rhyfler, Gybyl-Hawlyr &amp; Pistol" hidden="false" id="5725-dcca-e743-b60d" type="selectionEntry" targetId="f7c2-69ff-bc3c-5617"/>
+    <entryLink import="true" name="Snyprod HMG" hidden="false" id="ac0d-eb40-1a89-3558" type="selectionEntry" targetId="5ee2-327e-2983-d550"/>
+  </entryLinks>
+</catalogue>

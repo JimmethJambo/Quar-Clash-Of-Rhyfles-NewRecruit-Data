@@ -1,72 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="b713-2102-f63a-13bd" name="Gloam Hyyn" gameSystemId="sys-dbd1-1d4a-43f9-1e9c" gameSystemRevision="3" revision="6" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="b713-2102-f63a-13bd" name="Gloam Hyyn" gameSystemId="sys-dbd1-1d4a-43f9-1e9c" gameSystemRevision="3" revision="7" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedSelectionEntries>
-    <selectionEntry type="upgrade" import="true" name="Harlech Carbine" hidden="false" id="a6ad-eeb2-2c68-04d1" sortIndex="1" defaultAmount="1">
-      <profiles>
-        <profile name="Harlech Carbine" typeId="0b63-6947-fb08-66eb" typeName="Weapon" hidden="false" id="f195-7a6d-d6b6-29e1">
-          <characteristics>
-            <characteristic name="Range" typeId="5b6c-828e-fe65-26a5">6</characteristic>
-            <characteristic name="SN" typeId="b1d6-1660-ac56-c22a">-3</characteristic>
-            <characteristic name="Abilities" typeId="ed37-dbdc-d41b-3af6"/>
-          </characteristics>
-        </profile>
-      </profiles>
-    </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Doru" hidden="false" id="58f9-6ed4-29ca-8920" sortIndex="1" defaultAmount="1">
-      <constraints>
-        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4eec-2a5e-13e3-4937" includeChildSelections="false"/>
-        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6e41-b3ca-5716-cb02" includeChildSelections="false"/>
-      </constraints>
-      <infoLinks>
-        <infoLink name="Select Fire(X)" id="156d-a601-5e95-277d" hidden="false" type="rule" targetId="8c44-111c-27c4-4a9b"/>
-      </infoLinks>
-      <profiles>
-        <profile name="Doru" typeId="0b63-6947-fb08-66eb" typeName="Weapon" hidden="false" id="f123-a7f9-79e7-dca9">
-          <characteristics>
-            <characteristic name="Range" typeId="5b6c-828e-fe65-26a5">4</characteristic>
-            <characteristic name="SN" typeId="b1d6-1660-ac56-c22a">-1</characteristic>
-            <characteristic name="Abilities" typeId="ed37-dbdc-d41b-3af6">Select Fire (2)</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-    </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Pistol" hidden="false" id="5c2f-9744-4fc9-747a" sortIndex="1" defaultAmount="1">
-      <constraints>
-        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bfa4-2c01-de19-88ec" includeChildSelections="false"/>
-        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="193b-ba3d-02a6-f4cf" includeChildSelections="false"/>
-      </constraints>
-      <profiles>
-        <profile name="Pistol" typeId="0b63-6947-fb08-66eb" typeName="Weapon" hidden="false" id="bece-a67d-f52a-cd54">
-          <characteristics>
-            <characteristic name="Range" typeId="5b6c-828e-fe65-26a5">4</characteristic>
-            <characteristic name="SN" typeId="b1d6-1660-ac56-c22a">-1</characteristic>
-            <characteristic name="Abilities" typeId="ed37-dbdc-d41b-3af6"/>
-          </characteristics>
-        </profile>
-      </profiles>
-    </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Cryfen" hidden="false" id="b75d-ed00-83ef-206b" sortIndex="1" defaultAmount="1">
-      <constraints>
-        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e5b3-e05a-d518-4200" includeChildSelections="false"/>
-        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a1d8-04de-f723-53ce" includeChildSelections="false"/>
-      </constraints>
-      <infoLinks>
-        <infoLink name="Automatic (X)" id="60fc-e54f-5021-1a70" hidden="false" type="rule" targetId="321d-91fa-c981-2ce1"/>
-        <infoLink name="Loader" id="d217-2854-e2a2-b201" hidden="false" type="rule" targetId="877f-75ce-5dc9-010e"/>
-      </infoLinks>
-      <profiles>
-        <profile name="Cryfen" typeId="0b63-6947-fb08-66eb" typeName="Weapon" hidden="false" id="2f3f-5934-c1f6-990b">
-          <characteristics>
-            <characteristic name="Range" typeId="5b6c-828e-fe65-26a5">8</characteristic>
-            <characteristic name="SN" typeId="b1d6-1660-ac56-c22a">-3</characteristic>
-            <characteristic name="Abilities" typeId="ed37-dbdc-d41b-3af6">Automatic (2), Loader</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-    </selectionEntry>
     <selectionEntry type="unit" import="true" name="Rhyfler" hidden="false" id="77f6-95b8-d25e-6530" sortIndex="2">
       <costs>
-        <cost name="Points" typeId="0bc1-1233-3e53-72ca" value="23"/>
+        <cost name="Points" typeId="0bc1-1233-3e53-72ca" value="25"/>
       </costs>
       <categoryLinks>
         <categoryLink targetId="de6b-6ec2-9294-541d" id="c444-07d2-a3e5-e985" primary="true" name="Unit"/>
@@ -83,7 +20,7 @@
         </profile>
       </profiles>
       <entryLinks>
-        <entryLink import="true" name="Harlech Carbine" hidden="false" id="0065-62e3-839e-a875" type="selectionEntry" targetId="a6ad-eeb2-2c68-04d1"/>
+        <entryLink import="true" name="Harlech Carbine" hidden="false" id="0065-62e3-839e-a875" type="selectionEntry" targetId="baf3-abc4-b8f7-0ae8"/>
       </entryLinks>
       <infoLinks>
         <infoLink name="Support" id="88b3-53e4-8799-6105" hidden="false" type="rule" targetId="c0d3-909a-ca80-1be2"/>
@@ -91,13 +28,13 @@
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Trapper" hidden="false" id="5492-bce3-ab4b-17a6" sortIndex="2">
       <costs>
-        <cost name="Points" typeId="0bc1-1233-3e53-72ca" value="35"/>
+        <cost name="Points" typeId="0bc1-1233-3e53-72ca" value="36"/>
       </costs>
       <constraints>
         <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="14e6-721b-e605-47d2" includeChildSelections="true"/>
       </constraints>
       <entryLinks>
-        <entryLink import="true" name="Harlech Carbine" hidden="false" id="b97b-fa58-978b-200f" type="selectionEntry" targetId="a6ad-eeb2-2c68-04d1"/>
+        <entryLink import="true" name="Harlech Carbine" hidden="false" id="b97b-fa58-978b-200f" type="selectionEntry" targetId="baf3-abc4-b8f7-0ae8"/>
       </entryLinks>
       <profiles>
         <profile name="Trapper" typeId="7040-9c4e-1119-a3c5" typeName="Unit" hidden="false" id="f780-8c8d-1020-a4a3">
@@ -140,7 +77,7 @@
         <infoLink name="Dead-Eye" id="a7b7-35a6-18da-5c04" hidden="false" type="rule" targetId="d190-c1b5-6dbb-6129"/>
       </infoLinks>
       <entryLinks>
-        <entryLink import="true" name="Harlech Carbine" hidden="false" id="be5c-761c-2d99-140a" type="selectionEntry" targetId="a6ad-eeb2-2c68-04d1"/>
+        <entryLink import="true" name="Harlech Carbine" hidden="false" id="be5c-761c-2d99-140a" type="selectionEntry" targetId="baf3-abc4-b8f7-0ae8"/>
       </entryLinks>
       <categoryLinks>
         <categoryLink targetId="de6b-6ec2-9294-541d" id="bac8-50bf-cfea-f5f9" primary="true" name="Unit"/>
@@ -154,7 +91,12 @@
         <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="c816-0d92-15a0-f8f2" includeChildSelections="true"/>
       </constraints>
       <entryLinks>
-        <entryLink import="true" name="Cryfen" hidden="false" id="d921-d20f-f47f-fb61" type="selectionEntry" targetId="b75d-ed00-83ef-206b"/>
+        <entryLink import="true" name="Cryfen" hidden="false" id="d921-d20f-f47f-fb61" type="selectionEntry" targetId="408e-c4ab-4992-6685">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4c9c-178c-71fb-1646-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4c9c-178c-71fb-1646-max"/>
+          </constraints>
+        </entryLink>
       </entryLinks>
       <profiles>
         <profile name="Milwer" typeId="7040-9c4e-1119-a3c5" typeName="Unit" hidden="false" id="6f04-e4a8-1f4b-9b80">
@@ -182,7 +124,12 @@
         <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="518c-87d4-ea50-549c" includeChildSelections="true"/>
       </constraints>
       <entryLinks>
-        <entryLink import="true" name="Doru" hidden="false" id="b297-9dff-e34b-cd60" type="selectionEntry" targetId="58f9-6ed4-29ca-8920"/>
+        <entryLink import="true" name="Doru" hidden="false" id="b297-9dff-e34b-cd60" type="selectionEntry" targetId="e70a-c91e-3a55-e15d">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0671-ae84-db7b-d109-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0671-ae84-db7b-d109-max"/>
+          </constraints>
+        </entryLink>
       </entryLinks>
       <profiles>
         <profile name="Yawdryl" typeId="7040-9c4e-1119-a3c5" typeName="Unit" hidden="false" id="bf19-2505-a26b-c6dd">
@@ -214,7 +161,12 @@
         <categoryLink targetId="de6b-6ec2-9294-541d" id="ded0-6456-d423-3c4d" primary="true" name="Unit"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink import="true" name="Pistol" hidden="false" id="4b3e-404b-ac2d-94b7" type="selectionEntry" targetId="5c2f-9744-4fc9-747a"/>
+        <entryLink import="true" name="Pistol" hidden="false" id="4b3e-404b-ac2d-94b7" type="selectionEntry" targetId="7028-cb77-f695-540d">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="631d-1110-2840-0b15-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="631d-1110-2840-0b15-max"/>
+          </constraints>
+        </entryLink>
       </entryLinks>
       <profiles>
         <profile name="is-Caerten" typeId="7040-9c4e-1119-a3c5" typeName="Unit" hidden="false" id="5ba1-9f4b-983e-fc9b">
@@ -239,7 +191,7 @@
         <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="2ca9-8687-f62b-10d0" includeChildSelections="true"/>
       </constraints>
       <entryLinks>
-        <entryLink import="true" name="Doru" hidden="false" id="98b2-be96-0505-2993" type="selectionEntry" targetId="58f9-6ed4-29ca-8920"/>
+        <entryLink import="true" name="Doru" hidden="false" id="98b2-be96-0505-2993" type="selectionEntry" targetId="e70a-c91e-3a55-e15d"/>
       </entryLinks>
       <infoLinks>
         <infoLink name="Standard" id="fd75-2854-a8f2-2b84" hidden="false" type="rule" targetId="2437-22be-ccb6-5ef4"/>
@@ -267,7 +219,7 @@
         <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="98ce-ef1e-e8c6-8a9d" includeChildSelections="true"/>
       </constraints>
       <entryLinks>
-        <entryLink import="true" name="Harlech Carbine" hidden="false" id="4f5b-7623-4ee8-a812" type="selectionEntry" targetId="a6ad-eeb2-2c68-04d1"/>
+        <entryLink import="true" name="Harlech Carbine" hidden="false" id="4f5b-7623-4ee8-a812" type="selectionEntry" targetId="baf3-abc4-b8f7-0ae8"/>
       </entryLinks>
       <infoLinks>
         <infoLink name="PykPyk (X)" id="02e7-ffd7-0fd2-6404" hidden="false" type="rule" targetId="13c8-54a0-441f-a71c"/>
@@ -289,13 +241,13 @@
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Sarf-cyn Handler" hidden="false" id="3ef6-ed75-026a-ce4b" sortIndex="2">
       <costs>
-        <cost name="Points" typeId="0bc1-1233-3e53-72ca" value="28"/>
+        <cost name="Points" typeId="0bc1-1233-3e53-72ca" value="29"/>
       </costs>
       <constraints>
         <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="c99c-0f3e-97af-f2ad" includeChildSelections="true"/>
       </constraints>
       <entryLinks>
-        <entryLink import="true" name="Harlech Carbine" hidden="false" id="43da-1e85-a071-729e" type="selectionEntry" targetId="a6ad-eeb2-2c68-04d1"/>
+        <entryLink import="true" name="Harlech Carbine" hidden="false" id="43da-1e85-a071-729e" type="selectionEntry" targetId="baf3-abc4-b8f7-0ae8"/>
       </entryLinks>
       <profiles>
         <profile name="Sarf-cyn Handler" typeId="7040-9c4e-1119-a3c5" typeName="Unit" hidden="false" id="3568-359a-11da-381f">
@@ -359,7 +311,7 @@
             <characteristic name="Crew" typeId="7ff3-eaea-87c6-deaa">2</characteristic>
             <characteristic name="Skill" typeId="645c-7e75-7b5f-36cd">12</characteristic>
             <characteristic name="MA" typeId="6128-a30c-557d-656a">6/4</characteristic>
-            <characteristic name="Abilities" typeId="7a58-8944-3a3e-1e25">Individual Activation, Turretless, Agile</characteristic>
+            <characteristic name="Abilities" typeId="7a58-8944-3a3e-1e25">Individual Activation, Turretless, Agile, Scouting Vehicle</characteristic>
             <characteristic name="Tread Damage Points" typeId="0e57-b754-a0ab-64ca">3</characteristic>
             <characteristic name="Hull Damage Points" typeId="a109-8831-0b1f-a416">2</characteristic>
             <characteristic name="Engine Damage Points" typeId="3d59-9a3d-5eeb-f18d">2</characteristic>
@@ -394,12 +346,16 @@
         <entryLink import="true" name="44mm Rifled Gun" hidden="false" id="29ac-6269-690f-fb0f" type="selectionEntry" targetId="4606-e0e5-b13d-af18"/>
       </entryLinks>
       <infoLinks>
-        <infoLink name="Agile" id="df38-ce5c-7808-c1ae" hidden="false" type="rule" targetId="1c15-f70c-9388-ba08"/>
+        <infoLink name="Scouting Vehicle" id="df38-ce5c-7808-c1ae" hidden="false" type="rule" targetId="cfd6-5318-f453-0aee"/>
         <infoLink name="Turretless" id="e7ab-232f-bd88-04d0" hidden="false" type="rule" targetId="a3fc-1bc1-8cfe-1886"/>
+        <infoLink name="Agile" id="7e30-6461-1f83-8514" hidden="false" type="rule" targetId="1c15-f70c-9388-ba08"/>
       </infoLinks>
       <costs>
-        <cost name="Points" typeId="0bc1-1233-3e53-72ca" value="80"/>
+        <cost name="Points" typeId="0bc1-1233-3e53-72ca" value="65"/>
       </costs>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="989f-de59-d959-526b" includeChildSelections="true" includeChildForces="true"/>
+      </constraints>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="44mm Rifled Gun" hidden="false" id="4606-e0e5-b13d-af18" sortIndex="1" defaultAmount="1">
       <profiles>
@@ -407,12 +363,12 @@
           <characteristics>
             <characteristic name="Range" typeId="206b-98a7-3ceb-bc0e">8</characteristic>
             <characteristic name="Arc" typeId="7f52-7175-881e-a429">45</characteristic>
-            <characteristic name="Abilities" typeId="0095-18c0-009f-e488">Slow Reload, Blast (S, 2d6-1), Precision Fire</characteristic>
+            <characteristic name="Abilities" typeId="0095-18c0-009f-e488">Blast (Small, 2d6-1), Precision Fire
+</characteristic>
           </characteristics>
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink name="Slow Reload" id="724d-8d60-26c6-700f" hidden="false" type="rule" targetId="d313-5d37-5ae4-7b1f"/>
         <infoLink name="Precision Fire" id="7581-5232-1bf5-683e" hidden="false" type="rule" targetId="6aa0-4640-e3bb-1146"/>
         <infoLink name="Blast (X,Y)" id="359f-576f-648c-ea0a" hidden="false" type="rule" targetId="b4b8-45d7-e9bb-1444"/>
       </infoLinks>
@@ -420,35 +376,6 @@
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7b06-a008-690d-47be" includeChildSelections="false"/>
         <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4449-4480-0dfb-2203" includeChildSelections="false"/>
       </constraints>
-    </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Blunderbuss" hidden="false" id="781f-09a9-aeb8-be5f" sortIndex="1" defaultAmount="1">
-      <profiles>
-        <profile name="Blunderbuss" typeId="0b63-6947-fb08-66eb" typeName="Weapon" hidden="false" id="01af-76d5-1b5f-3f27">
-          <characteristics>
-            <characteristic name="Range" typeId="5b6c-828e-fe65-26a5">4</characteristic>
-            <characteristic name="SN" typeId="b1d6-1660-ac56-c22a">-1</characteristic>
-            <characteristic name="Abilities" typeId="ed37-dbdc-d41b-3af6">Shotgun, Slow Reload</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <infoLinks>
-        <infoLink name="Shotgun" id="b9e5-91b8-e394-e390" hidden="false" type="rule" targetId="d633-ee5f-c6cf-c931"/>
-        <infoLink name="Slow Reload" id="a979-350f-c096-54ce" hidden="false" type="rule" targetId="d313-5d37-5ae4-7b1f"/>
-      </infoLinks>
-    </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Flintlock" hidden="false" id="ce76-13d7-9600-d514" sortIndex="1" defaultAmount="1">
-      <profiles>
-        <profile name="Flintlock" typeId="0b63-6947-fb08-66eb" typeName="Weapon" hidden="false" id="abd4-aea2-1340-54c0">
-          <characteristics>
-            <characteristic name="Range" typeId="5b6c-828e-fe65-26a5">4</characteristic>
-            <characteristic name="SN" typeId="b1d6-1660-ac56-c22a">-1</characteristic>
-            <characteristic name="Abilities" typeId="ed37-dbdc-d41b-3af6">Slow Reload</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <infoLinks>
-        <infoLink name="Slow Reload" id="a209-771f-40d7-2050" hidden="false" type="rule" targetId="d313-5d37-5ae4-7b1f"/>
-      </infoLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Poacher" hidden="false" id="c0b5-c363-d2ea-6693" sortIndex="4">
       <constraints>
@@ -469,7 +396,7 @@
         </profile>
       </profiles>
       <entryLinks>
-        <entryLink import="true" name="Blunderbuss" hidden="false" id="4dd1-6fd0-2e83-4bcb" type="selectionEntry" targetId="781f-09a9-aeb8-be5f"/>
+        <entryLink import="true" name="Blunderbuss" hidden="false" id="4dd1-6fd0-2e83-4bcb" type="selectionEntry" targetId="137a-5aae-2d81-d226"/>
       </entryLinks>
       <categoryLinks>
         <categoryLink targetId="de6b-6ec2-9294-541d" id="1eb8-7346-26d3-ffad" primary="true" name="Unit"/>
@@ -494,7 +421,7 @@
         </profile>
       </profiles>
       <entryLinks>
-        <entryLink import="true" name="Flintlock" hidden="false" id="aacf-2e98-aa3d-8979" type="selectionEntry" targetId="ce76-13d7-9600-d514"/>
+        <entryLink import="true" name="Flyntlock" hidden="false" id="aacf-2e98-aa3d-8979" type="selectionEntry" targetId="56fa-5b0f-3b88-11a8"/>
       </entryLinks>
       <categoryLinks>
         <categoryLink targetId="de6b-6ec2-9294-541d" id="7c40-8dc0-0d57-3aff" primary="true" name="Unit"/>
@@ -522,7 +449,12 @@
         </profile>
       </profiles>
       <entryLinks>
-        <entryLink import="true" name="Pistol" hidden="false" id="71f7-fcd1-0636-c81d" type="selectionEntry" targetId="5c2f-9744-4fc9-747a"/>
+        <entryLink import="true" name="Pistol" hidden="false" id="71f7-fcd1-0636-c81d" type="selectionEntry" targetId="7028-cb77-f695-540d">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f14d-f0ff-b90b-2620-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f14d-f0ff-b90b-2620-max"/>
+          </constraints>
+        </entryLink>
       </entryLinks>
       <categoryLinks>
         <categoryLink targetId="de6b-6ec2-9294-541d" id="6fa9-acbf-e244-74db" primary="true" name="Unit"/>
@@ -540,7 +472,7 @@
         <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="a085-acc6-478a-23af" includeChildSelections="true"/>
       </constraints>
       <entryLinks>
-        <entryLink import="true" name="Harlech Carbine" hidden="false" id="282f-e914-6895-78b2" type="selectionEntry" targetId="a6ad-eeb2-2c68-04d1"/>
+        <entryLink import="true" name="Harlech Carbine" hidden="false" id="282f-e914-6895-78b2" type="selectionEntry" targetId="baf3-abc4-b8f7-0ae8"/>
       </entryLinks>
       <infoLinks>
         <infoLink name="Medic" id="0652-2a37-db4a-da8d" hidden="false" type="rule" targetId="0de6-c532-1b9e-df58"/>
@@ -568,7 +500,7 @@
         <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="9072-e6ca-f33f-be9a" includeChildSelections="true"/>
       </constraints>
       <entryLinks>
-        <entryLink import="true" name="Harlech Carbine" hidden="false" id="6529-96d9-29b9-37ca" type="selectionEntry" targetId="a6ad-eeb2-2c68-04d1"/>
+        <entryLink import="true" name="Harlech Carbine" hidden="false" id="6529-96d9-29b9-37ca" type="selectionEntry" targetId="baf3-abc4-b8f7-0ae8"/>
       </entryLinks>
       <infoLinks>
         <infoLink name="Musician (X)" id="6a40-a374-0e40-da1b" hidden="false" type="rule" targetId="822d-00b5-a47a-4529"/>
@@ -588,6 +520,94 @@
         <categoryLink targetId="de6b-6ec2-9294-541d" id="b026-5da4-9d3b-302c" primary="true" name="Unit"/>
       </categoryLinks>
     </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Skirmish Pistoleers" hidden="false" id="c8e9-cb9f-7b61-3195">
+      <infoLinks>
+        <infoLink name="Skittish" id="dd1c-86b0-544d-3059" hidden="false" type="rule" targetId="61ec-2639-3a0c-b7a0"/>
+        <infoLink name="Multi-Attack (X)" id="1bd3-d255-5593-1618" hidden="false" type="rule" targetId="3376-6936-c8a7-41ea"/>
+        <infoLink name="Cadier" id="104e-236c-2e42-4931" hidden="false" type="rule" targetId="fff3-d972-c7a6-f80c"/>
+        <infoLink name="Thunderous Hooves" id="c5be-59de-e788-9945" hidden="false" type="rule" targetId="7acf-9df6-9b45-8d55"/>
+      </infoLinks>
+      <profiles>
+        <profile name="Mounted Pistoleer" typeId="e0d8-274b-8232-ef1b" typeName="Mounted Unit" hidden="false" id="e476-c55e-bec7-f254">
+          <characteristics>
+            <characteristic name="Sk" typeId="5ad3-1ace-c190-566b">12</characteristic>
+            <characteristic name="Mt" typeId="38b8-ca39-7d11-6eb1">2d6-1</characteristic>
+            <characteristic name="MA" typeId="870d-5722-99b9-21da">8/6</characteristic>
+            <characteristic name="T" typeId="2fcc-4790-c933-ecf8">4</characteristic>
+            <characteristic name="D" typeId="20b1-a32d-e41c-9a37">2</characteristic>
+            <characteristic name="Equipment" typeId="4a61-14de-472f-b84d">Paired Flyntlock Pistols</characteristic>
+            <characteristic name="Special" typeId="c973-830d-f693-f6b1">Multi-Attack (2), Cadier</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Dismounted Pistoleer" typeId="8e73-7370-7f76-a0f6" typeName="Dismounted Unit" hidden="false" id="2404-54b0-eedd-20fc">
+          <characteristics>
+            <characteristic name="Sk" typeId="4359-2c47-8755-0652">12</characteristic>
+            <characteristic name="Mt" typeId="a4d3-c1fb-e3fd-1ec4">2d6</characteristic>
+            <characteristic name="MA" typeId="7454-6341-5be7-ec95">5</characteristic>
+            <characteristic name="T" typeId="d802-8465-1aba-b808">4</characteristic>
+            <characteristic name="Equipment" typeId="eb3d-2bb6-1a43-2302">Paired Flyntlock Pistols</characteristic>
+            <characteristic name="Special" typeId="3587-866b-8fff-d4c0">Multi-Attack (2), Cadier</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="Points" typeId="0bc1-1233-3e53-72ca" value="44"/>
+      </costs>
+      <constraints>
+        <constraint type="max" value="2" field="selections" scope="roster" shared="true" id="6c58-e3ec-48ab-4f7a" includeChildSelections="true" includeChildForces="true"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" value="99" field="6c58-e3ec-48ab-4f7a">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="parent" childId="ef93-ccf7-0645-3110" shared="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <entryLinks>
+        <entryLink import="true" name="Paired Flyntlock Pistols" hidden="false" id="ea82-ab77-e855-c3fb" type="selectionEntry" targetId="56fa-5b0f-3b88-11a8"/>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Skirmish Pistoleer Yawdryl" hidden="false" id="ef93-ccf7-0645-3110">
+      <infoLinks>
+        <infoLink name="Skittish" id="1fc1-0cf0-c1b5-35f1" hidden="false" type="rule" targetId="61ec-2639-3a0c-b7a0"/>
+        <infoLink name="Multi-Attack (X)" id="1ee4-5839-90c5-845e" hidden="false" type="rule" targetId="3376-6936-c8a7-41ea"/>
+        <infoLink name="Cadier" id="3b4e-8d6c-c82c-661d" hidden="false" type="rule" targetId="fff3-d972-c7a6-f80c"/>
+        <infoLink name="Leader (X/Y)" id="9b13-33be-91d8-5cff" hidden="false" type="rule" targetId="ba90-37ff-4384-2bc5"/>
+        <infoLink name="Thunderous Hooves" id="d4ca-0a1b-2f4c-cec9" hidden="false" type="rule" targetId="7acf-9df6-9b45-8d55"/>
+      </infoLinks>
+      <profiles>
+        <profile name="Mounted Pistoleer Yawdryl" typeId="e0d8-274b-8232-ef1b" typeName="Mounted Unit" hidden="false" id="0d45-66bf-0b99-b13e">
+          <characteristics>
+            <characteristic name="Sk" typeId="5ad3-1ace-c190-566b">13</characteristic>
+            <characteristic name="Mt" typeId="38b8-ca39-7d11-6eb1">2d6-1</characteristic>
+            <characteristic name="MA" typeId="870d-5722-99b9-21da">8/6</characteristic>
+            <characteristic name="T" typeId="2fcc-4790-c933-ecf8">4</characteristic>
+            <characteristic name="D" typeId="20b1-a32d-e41c-9a37">2</characteristic>
+            <characteristic name="Equipment" typeId="4a61-14de-472f-b84d">Paired Flyntlock Pistols</characteristic>
+            <characteristic name="Special" typeId="c973-830d-f693-f6b1">Multi-Attack (2), Cadier</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Dismounted Pistoleer Yawdryl" typeId="8e73-7370-7f76-a0f6" typeName="Dismounted Unit" hidden="false" id="9964-09fd-f43f-2765">
+          <characteristics>
+            <characteristic name="Sk" typeId="4359-2c47-8755-0652">13</characteristic>
+            <characteristic name="Mt" typeId="a4d3-c1fb-e3fd-1ec4">2d6</characteristic>
+            <characteristic name="MA" typeId="7454-6341-5be7-ec95">5</characteristic>
+            <characteristic name="T" typeId="d802-8465-1aba-b808">4</characteristic>
+            <characteristic name="Equipment" typeId="eb3d-2bb6-1a43-2302">Paired Flyntlock Pistols</characteristic>
+            <characteristic name="Special" typeId="3587-866b-8fff-d4c0">Multi-Attack (2), Leader (2/4)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="2d80-cb15-3daa-fc52" includeChildSelections="true"/>
+      </constraints>
+      <costs>
+        <cost name="Points" typeId="0bc1-1233-3e53-72ca" value="49"/>
+      </costs>
+      <entryLinks>
+        <entryLink import="true" name="Paired Flyntlock Pistols" hidden="false" id="aa98-74ac-7256-7563" type="selectionEntry" targetId="56fa-5b0f-3b88-11a8"/>
+      </entryLinks>
+    </selectionEntry>
   </sharedSelectionEntries>
   <entryLinks>
     <entryLink import="true" name="is-Caerten" hidden="false" id="6f9d-c35c-8d45-42dd" type="selectionEntry" targetId="e31b-17f7-64ce-302a"/>
@@ -604,7 +624,9 @@
     <entryLink import="true" name="Marksquar" hidden="false" id="0c87-910c-9b70-f603" type="selectionEntry" targetId="a1eb-7b51-a3f8-d21e"/>
     <entryLink import="true" name="Cook" hidden="false" id="338a-69c1-d5c1-54d6" type="selectionEntry" targetId="9a13-ba65-e7df-e75f"/>
     <entryLink import="true" name="Musician" hidden="false" id="1044-484c-e1eb-e944" type="selectionEntry" targetId="aaf4-b6a0-e7f4-4f5a"/>
-    <entryLink import="true" name="Bootlegger" hidden="false" id="794e-d43c-243f-07eb" type="selectionEntry" targetId="708a-d899-7f4d-cb8b"/>
+    <entryLink import="true" name="Skirmish Cavalry Yawdryl" hidden="false" id="794e-d43c-243f-07eb" type="selectionEntry" targetId="ef93-ccf7-0645-3110"/>
     <entryLink import="true" name="Buccaneer" hidden="false" id="fb96-84f0-f03f-45b7" type="selectionEntry" targetId="967a-de62-b97a-c46f"/>
+    <entryLink import="true" name="Bootlegger" hidden="false" id="9fde-219d-9446-dac1" type="selectionEntry" targetId="708a-d899-7f4d-cb8b"/>
+    <entryLink import="true" name="Skirmish Cavalry" hidden="false" id="15ae-ba8e-3a9f-6171" type="selectionEntry" targetId="c8e9-cb9f-7b61-3195"/>
   </entryLinks>
 </catalogue>

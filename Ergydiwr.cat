@@ -1,38 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="5c83-b126-5013-350a" name="Ergydiwr" gameSystemId="sys-dbd1-1d4a-43f9-1e9c" gameSystemRevision="9" revision="2" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="5c83-b126-5013-350a" name="Ergydiwr" gameSystemId="sys-dbd1-1d4a-43f9-1e9c" gameSystemRevision="9" revision="3" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedSelectionEntries>
-    <selectionEntry type="upgrade" import="true" name="Tefsyn Infantry Rhyfle" hidden="false" id="988f-3c41-f039-7609">
-      <profiles>
-        <profile name="Tefsyn Infantry Rhyfle" typeId="0b63-6947-fb08-66eb" typeName="Weapon" hidden="false" id="2067-5c00-816b-c944">
-          <characteristics>
-            <characteristic name="Range" typeId="5b6c-828e-fe65-26a5">8</characteristic>
-            <characteristic name="SN" typeId="b1d6-1660-ac56-c22a">-3</characteristic>
-            <characteristic name="Abilities" typeId="ed37-dbdc-d41b-3af6"/>
-          </characteristics>
-        </profile>
-      </profiles>
-    </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Cidderach LMG" hidden="false" id="53eb-1d73-48c1-a077">
-      <profiles>
-        <profile name="Cidderach LMG" typeId="0b63-6947-fb08-66eb" typeName="Weapon" hidden="false" id="ae60-c2ec-ee59-92b3">
-          <characteristics>
-            <characteristic name="Range" typeId="5b6c-828e-fe65-26a5">8</characteristic>
-            <characteristic name="SN" typeId="b1d6-1660-ac56-c22a">-3</characteristic>
-            <characteristic name="Abilities" typeId="ed37-dbdc-d41b-3af6">Automatic (1), Braced</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <infoLinks>
-        <infoLink name="Automatic (X)" id="01ec-8679-98cf-d05c" hidden="false" type="rule" targetId="321d-91fa-c981-2ce1"/>
-        <infoLink name="Braced" id="5c79-81e9-2124-c141" hidden="false" type="rule" targetId="0b83-b784-dae8-503c"/>
-      </infoLinks>
-    </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Rhyfler" hidden="false" id="4e6e-c9b9-964f-08ba">
+    <selectionEntry type="unit" import="true" name="Rhyfler" hidden="false" id="4e6e-c9b9-964f-08ba" sortIndex="1">
       <costs>
         <cost name="Points" typeId="0bc1-1233-3e53-72ca" value="25"/>
       </costs>
       <entryLinks>
-        <entryLink import="true" name="Tefsyn Infantry Rhyfle" hidden="false" id="2f6d-97e5-f889-cc8a" type="selectionEntry" targetId="988f-3c41-f039-7609">
+        <entryLink import="true" name="Tefsyn Infantry Rhyfle" hidden="false" id="2f6d-97e5-f889-cc8a" type="selectionEntry" targetId="f284-2f48-488a-85e0">
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c794-a2f4-a8d2-a3ec" includeChildSelections="false"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e303-0bfc-5e7f-5f78" includeChildSelections="false"/>
@@ -57,12 +31,12 @@
         <categoryLink targetId="de6b-6ec2-9294-541d" id="12b2-ac7a-81a7-d181" primary="true" name="Unit"/>
       </categoryLinks>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Rhyfler" hidden="false" id="3970-c0b8-4a54-5c05">
+    <selectionEntry type="unit" import="true" name="Rhyfler (LMG)" hidden="false" id="3970-c0b8-4a54-5c05" sortIndex="1">
       <costs>
         <cost name="Points" typeId="0bc1-1233-3e53-72ca" value="32"/>
       </costs>
       <entryLinks>
-        <entryLink import="true" name="Cidderach LMG" hidden="false" id="6693-c0b9-1e33-5b15" type="selectionEntry" targetId="53eb-1d73-48c1-a077">
+        <entryLink import="true" name="Cidderach LMG" hidden="false" id="6693-c0b9-1e33-5b15" type="selectionEntry" targetId="9bcd-41c2-a621-b662">
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="432a-c2ee-f39f-dfc3" includeChildSelections="false"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="66bd-6c13-f789-2501" includeChildSelections="false"/>
@@ -70,7 +44,7 @@
         </entryLink>
       </entryLinks>
       <profiles>
-        <profile name="Rhyfler" typeId="7040-9c4e-1119-a3c5" typeName="Unit" hidden="false" id="dcf9-4c51-0a99-b59c">
+        <profile name="Rhyfler (LMG)" typeId="7040-9c4e-1119-a3c5" typeName="Unit" hidden="false" id="dcf9-4c51-0a99-b59c">
           <characteristics>
             <characteristic name="Sk" typeId="0014-9871-f278-b5f3">12</characteristic>
             <characteristic name="Mt" typeId="d8ef-e518-8f49-8a7b">1d6+2</characteristic>
@@ -87,7 +61,7 @@
         <categoryLink targetId="de6b-6ec2-9294-541d" id="a7d3-a9cd-3f5c-90e2" primary="true" name="Unit"/>
       </categoryLinks>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Milwer" hidden="false" id="5c84-c4f3-5f14-07e8">
+    <selectionEntry type="unit" import="true" name="Milwer" hidden="false" id="5c84-c4f3-5f14-07e8" sortIndex="1">
       <costs>
         <cost name="Points" typeId="0bc1-1233-3e53-72ca" value="35"/>
       </costs>
@@ -95,7 +69,7 @@
         <constraint type="max" value="1" field="selections" scope="force" shared="true" id="c619-00c5-6dd3-bc5a" includeChildSelections="false"/>
       </constraints>
       <entryLinks>
-        <entryLink import="true" name="Cidderach LMG" hidden="false" id="bb8e-bef8-58a6-189f" type="selectionEntry" targetId="53eb-1d73-48c1-a077">
+        <entryLink import="true" name="Cidderach LMG" hidden="false" id="bb8e-bef8-58a6-189f" type="selectionEntry" targetId="9bcd-41c2-a621-b662">
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7eba-0fa3-6e5e-3bea" includeChildSelections="false"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="366c-2a4f-266d-cc72" includeChildSelections="false"/>
@@ -120,7 +94,7 @@
         <categoryLink targetId="de6b-6ec2-9294-541d" id="0d50-c9eb-da27-14f8" primary="true" name="Unit"/>
       </categoryLinks>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Yawdryl" hidden="false" id="e6e1-28fb-7d2c-2f5e">
+    <selectionEntry type="unit" import="true" name="Yawdryl" hidden="false" id="e6e1-28fb-7d2c-2f5e" sortIndex="1">
       <costs>
         <cost name="Points" typeId="0bc1-1233-3e53-72ca" value="33"/>
       </costs>
@@ -128,7 +102,7 @@
         <constraint type="max" value="1" field="selections" scope="force" shared="true" id="d876-cd8b-7215-c066" includeChildSelections="false"/>
       </constraints>
       <entryLinks>
-        <entryLink import="true" name="Tefsyn Infantry Rhyfle" hidden="false" id="0c67-8820-ff77-e2b3" type="selectionEntry" targetId="988f-3c41-f039-7609">
+        <entryLink import="true" name="Tefsyn Infantry Rhyfle" hidden="false" id="0c67-8820-ff77-e2b3" type="selectionEntry" targetId="f284-2f48-488a-85e0">
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6b81-2890-dff6-7dff" includeChildSelections="false"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="420e-d36b-66fd-0401" includeChildSelections="false"/>
@@ -153,7 +127,7 @@
         <categoryLink targetId="de6b-6ec2-9294-541d" id="803c-34de-f0a0-c1be" primary="true" name="Unit"/>
       </categoryLinks>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Hulbough Field Gun" hidden="false" id="b9dc-43c5-83d0-fdd7">
+    <selectionEntry type="unit" import="true" name="Hulbough Field Gun" hidden="false" id="b9dc-43c5-83d0-fdd7" sortIndex="7">
       <costs>
         <cost name="Points" typeId="0bc1-1233-3e53-72ca" value="50"/>
       </costs>
@@ -179,7 +153,7 @@
           <characteristics>
             <characteristic name="Range" typeId="1775-3227-d2ed-93a5">12</characteristic>
             <characteristic name="Arc" typeId="f1e8-b48b-c0f2-c05f">45</characteristic>
-            <characteristic name="Abilities" typeId="bd42-ef04-afe1-f4d4">Carriage, Slow Reload, Blast (M 1d6+2)</characteristic>
+            <characteristic name="Abilities" typeId="bd42-ef04-afe1-f4d4">Carriage, Slow Reload, Blast (Medium, 1d6+2)</characteristic>
           </characteristics>
         </profile>
         <profile name="1-2" typeId="6e06-153b-5181-d39d" typeName="Damage Chart" hidden="false" id="9477-e181-2745-641e">
@@ -192,7 +166,7 @@
             <characteristic typeId="0a18-6bf0-38b6-f7a0">Disabled: Remove from Battlefield</characteristic>
           </characteristics>
         </profile>
-        <profile name="0" typeId="73fd-d87f-c3ca-d678" typeName="Damage Level" hidden="false" id="aabd-f5d4-7be5-d82a">
+        <profile name="0 " typeId="73fd-d87f-c3ca-d678" typeName="Damage Level" hidden="false" id="aabd-f5d4-7be5-d82a">
           <characteristics>
             <characteristic typeId="0a18-6bf0-38b6-f7a0">Fully Operational: All Crew can perform their Task</characteristic>
           </characteristics>
@@ -224,7 +198,7 @@
         <infoLink name="Slow Reload" id="e421-75a9-c66b-935f" hidden="false" type="rule" targetId="d313-5d37-5ae4-7b1f"/>
       </infoLinks>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="is-Caerten" hidden="false" id="e83c-c8be-e948-5014">
+    <selectionEntry type="unit" import="true" name="is-Caerten" hidden="false" id="e83c-c8be-e948-5014" sortIndex="4">
       <costs>
         <cost name="Points" typeId="0bc1-1233-3e53-72ca" value="35"/>
       </costs>
@@ -265,7 +239,7 @@
         <categoryLink targetId="de6b-6ec2-9294-541d" id="37e6-e0cf-385f-6051" primary="true" name="Unit"/>
       </categoryLinks>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Caerten" hidden="false" id="2247-559f-6d15-5057">
+    <selectionEntry type="unit" import="true" name="Caerten" hidden="false" id="2247-559f-6d15-5057" sortIndex="4">
       <costs>
         <cost name="Points" typeId="0bc1-1233-3e53-72ca" value="38"/>
       </costs>
@@ -306,7 +280,7 @@
         <categoryLink targetId="de6b-6ec2-9294-541d" id="8202-0893-380c-70b4" primary="true" name="Unit"/>
       </categoryLinks>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Master Yawdryl" hidden="false" id="690e-11fb-feb3-b21f">
+    <selectionEntry type="unit" import="true" name="Master Yawdryl" hidden="false" id="690e-11fb-feb3-b21f" sortIndex="4">
       <costs>
         <cost name="Points" typeId="0bc1-1233-3e53-72ca" value="41"/>
       </costs>
@@ -320,7 +294,7 @@
         <constraint type="max" value="1" field="selections" scope="force" shared="true" id="ea48-e8c5-6202-5cce" includeChildSelections="false"/>
       </constraints>
       <entryLinks>
-        <entryLink import="true" name="Cidderach LMG" hidden="false" id="6e82-f837-7b24-ddf5" type="selectionEntry" targetId="53eb-1d73-48c1-a077">
+        <entryLink import="true" name="Cidderach LMG" hidden="false" id="6e82-f837-7b24-ddf5" type="selectionEntry" targetId="9bcd-41c2-a621-b662">
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5242-6a62-97f6-9ca7" includeChildSelections="false"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="258d-b5b3-a328-eb05" includeChildSelections="false"/>
@@ -339,7 +313,7 @@
         </profile>
       </profiles>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Cook" hidden="false" id="8be5-e886-3082-d121">
+    <selectionEntry type="unit" import="true" name="Cook" hidden="false" id="8be5-e886-3082-d121" sortIndex="4">
       <categoryLinks>
         <categoryLink targetId="de6b-6ec2-9294-541d" id="9856-5bdd-fdf7-042d" primary="true" name="Unit"/>
       </categoryLinks>
@@ -350,7 +324,7 @@
         <cost name="Points" typeId="0bc1-1233-3e53-72ca" value="30"/>
       </costs>
       <entryLinks>
-        <entryLink import="true" name="Tefsyn Infantry Rhyfle" hidden="false" id="d2e7-c652-86e5-f4e9" type="selectionEntry" targetId="988f-3c41-f039-7609">
+        <entryLink import="true" name="Tefsyn Infantry Rhyfle" hidden="false" id="d2e7-c652-86e5-f4e9" type="selectionEntry" targetId="f284-2f48-488a-85e0">
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="fbfc-e223-b9bd-43a6" includeChildSelections="false"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e430-23d0-9757-d8bc" includeChildSelections="false"/>
@@ -372,7 +346,7 @@
         </profile>
       </profiles>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Musician" hidden="false" id="6bdb-b8fb-450c-e31f">
+    <selectionEntry type="unit" import="true" name="Musician" hidden="false" id="6bdb-b8fb-450c-e31f" sortIndex="4">
       <categoryLinks>
         <categoryLink targetId="de6b-6ec2-9294-541d" id="8090-f1f4-586c-b2a4" primary="true" name="Unit"/>
       </categoryLinks>
@@ -383,7 +357,7 @@
         <cost name="Points" typeId="0bc1-1233-3e53-72ca" value="30"/>
       </costs>
       <entryLinks>
-        <entryLink import="true" name="Tefsyn Infantry Rhyfle" hidden="false" id="6e6e-f5d6-e9c3-4ea9" type="selectionEntry" targetId="988f-3c41-f039-7609">
+        <entryLink import="true" name="Tefsyn Infantry Rhyfle" hidden="false" id="6e6e-f5d6-e9c3-4ea9" type="selectionEntry" targetId="f284-2f48-488a-85e0">
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d504-7cb2-eda8-147f" includeChildSelections="false"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="85c5-8529-8c84-ea81" includeChildSelections="false"/>
@@ -405,7 +379,7 @@
         <infoLink name="Musician (X)" id="d450-17d0-bf49-5eb8" hidden="false" type="rule" targetId="822d-00b5-a47a-4529"/>
       </infoLinks>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Standard Bearer" hidden="false" id="a2b1-c0cd-6462-fd47">
+    <selectionEntry type="unit" import="true" name="Standard Bearer" hidden="false" id="a2b1-c0cd-6462-fd47" sortIndex="4">
       <categoryLinks>
         <categoryLink targetId="de6b-6ec2-9294-541d" id="922e-4b46-9830-3616" primary="true" name="Unit"/>
       </categoryLinks>
@@ -419,7 +393,7 @@
         <infoLink name="Standard" id="d8d2-36a8-9d53-b854" hidden="false" type="rule" targetId="2437-22be-ccb6-5ef4"/>
       </infoLinks>
       <entryLinks>
-        <entryLink import="true" name="Tefsyn Infantry Rhyfle" hidden="false" id="89a0-19fa-84e1-ac51" type="selectionEntry" targetId="988f-3c41-f039-7609">
+        <entryLink import="true" name="Tefsyn Infantry Rhyfle" hidden="false" id="89a0-19fa-84e1-ac51" type="selectionEntry" targetId="f284-2f48-488a-85e0">
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="02ab-63df-3113-d6ae" includeChildSelections="false"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="438b-9258-fd89-f647" includeChildSelections="false"/>
@@ -438,7 +412,7 @@
         </profile>
       </profiles>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Squirrel Handler" hidden="false" id="b2aa-3a65-8cca-e246">
+    <selectionEntry type="unit" import="true" name="Squirrel Handler" hidden="false" id="b2aa-3a65-8cca-e246" sortIndex="4">
       <categoryLinks>
         <categoryLink targetId="de6b-6ec2-9294-541d" id="b686-7160-6ef4-7032" primary="true" name="Unit"/>
       </categoryLinks>
@@ -449,7 +423,7 @@
         <cost name="Points" typeId="0bc1-1233-3e53-72ca" value="30"/>
       </costs>
       <entryLinks>
-        <entryLink import="true" name="Tefsyn Infantry Rhyfle" hidden="false" id="27c9-8b47-f9f5-57dd" type="selectionEntry" targetId="988f-3c41-f039-7609">
+        <entryLink import="true" name="Tefsyn Infantry Rhyfle" hidden="false" id="27c9-8b47-f9f5-57dd" type="selectionEntry" targetId="f284-2f48-488a-85e0">
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="043c-7107-876b-d4b9" includeChildSelections="false"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="672d-1b98-6703-51e7" includeChildSelections="false"/>
@@ -471,9 +445,164 @@
         </profile>
       </profiles>
     </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Tyllwr Autoped Rhyfler" hidden="false" id="b449-f363-676c-7442" sortIndex="5">
+      <profiles>
+        <profile name="Autoped Rhyfler" typeId="e0d8-274b-8232-ef1b" typeName="Mounted Unit" hidden="false" id="cc59-476d-5fe2-5749">
+          <characteristics>
+            <characteristic name="Sk" typeId="5ad3-1ace-c190-566b">12</characteristic>
+            <characteristic name="Mt" typeId="38b8-ca39-7d11-6eb1">1d6+1</characteristic>
+            <characteristic name="MA" typeId="870d-5722-99b9-21da">8/6</characteristic>
+            <characteristic name="T" typeId="2fcc-4790-c933-ecf8">5</characteristic>
+            <characteristic name="D" typeId="20b1-a32d-e41c-9a37">2</characteristic>
+            <characteristic name="Equipment" typeId="4a61-14de-472f-b84d">Pistol</characteristic>
+            <characteristic name="Special" typeId="c973-830d-f693-f6b1">Rattleped</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Dismounted Autoped Rhyfler" typeId="8e73-7370-7f76-a0f6" typeName="Dismounted Unit" hidden="false" id="7508-5582-faa6-8710">
+          <characteristics>
+            <characteristic name="Sk" typeId="4359-2c47-8755-0652">12</characteristic>
+            <characteristic name="Mt" typeId="a4d3-c1fb-e3fd-1ec4">1d6+2</characteristic>
+            <characteristic name="MA" typeId="7454-6341-5be7-ec95">5</characteristic>
+            <characteristic name="T" typeId="d802-8465-1aba-b808">4</characteristic>
+            <characteristic name="Equipment" typeId="eb3d-2bb6-1a43-2302">Pistol</characteristic>
+            <characteristic name="Special" typeId="3587-866b-8fff-d4c0"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="Points" typeId="0bc1-1233-3e53-72ca" value="30"/>
+      </costs>
+      <constraints>
+        <constraint type="max" value="3" field="selections" scope="roster" shared="true" id="5d07-8a3b-c147-3ab9" includeChildSelections="true" includeChildForces="true"/>
+      </constraints>
+      <infoLinks>
+        <infoLink name="Pistol" id="9037-eafb-e43c-ebfc" hidden="false" type="profile" targetId="99bd-7fcc-169d-3745"/>
+      </infoLinks>
+      <modifiers>
+        <modifier type="set" value="990" field="5d07-8a3b-c147-3ab9">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="parent" childId="464c-d778-07fc-a82f" shared="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink targetId="f3df-2a35-71ff-3ff7" id="e1f9-b9ee-cff8-d13c" primary="true" name="Mounted Unit"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Tyllwr Autoped Yawdryl" hidden="false" id="464c-d778-07fc-a82f" sortIndex="5">
+      <profiles>
+        <profile name="Autoped Yawdryl" typeId="e0d8-274b-8232-ef1b" typeName="Mounted Unit" hidden="false" id="979d-418f-7777-5638">
+          <characteristics>
+            <characteristic name="Sk" typeId="5ad3-1ace-c190-566b">12</characteristic>
+            <characteristic name="Mt" typeId="38b8-ca39-7d11-6eb1">1d6+1</characteristic>
+            <characteristic name="MA" typeId="870d-5722-99b9-21da">8/6</characteristic>
+            <characteristic name="T" typeId="2fcc-4790-c933-ecf8">5</characteristic>
+            <characteristic name="D" typeId="20b1-a32d-e41c-9a37">2</characteristic>
+            <characteristic name="Equipment" typeId="4a61-14de-472f-b84d">Pistol</characteristic>
+            <characteristic name="Special" typeId="c973-830d-f693-f6b1">Rattleped</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Dismounted Autoped Yawdryl" typeId="8e73-7370-7f76-a0f6" typeName="Dismounted Unit" hidden="false" id="1cf6-552c-9c7e-b551">
+          <characteristics>
+            <characteristic name="Sk" typeId="4359-2c47-8755-0652">12</characteristic>
+            <characteristic name="Mt" typeId="a4d3-c1fb-e3fd-1ec4">1d6+2</characteristic>
+            <characteristic name="MA" typeId="7454-6341-5be7-ec95">5</characteristic>
+            <characteristic name="T" typeId="d802-8465-1aba-b808">4</characteristic>
+            <characteristic name="Equipment" typeId="eb3d-2bb6-1a43-2302">Pistol</characteristic>
+            <characteristic name="Special" typeId="3587-866b-8fff-d4c0">Leader (2/4)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="Points" typeId="0bc1-1233-3e53-72ca" value="34"/>
+      </costs>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="61fa-31e5-d3bc-13f2" includeChildSelections="true" includeChildForces="true"/>
+      </constraints>
+      <infoLinks>
+        <infoLink name="Pistol" id="54fa-abe7-00ed-454a" hidden="false" type="profile" targetId="99bd-7fcc-169d-3745"/>
+        <infoLink name="Leader (X/Y)" id="7e3c-6b38-2124-f54d" hidden="false" type="rule" targetId="ba90-37ff-4384-2bc5"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink targetId="f3df-2a35-71ff-3ff7" id="c441-e3b1-2e6a-95a5" primary="true" name="Mounted Unit"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Trench Raider" hidden="false" id="3605-ba5b-67cf-fef4" sortIndex="3">
+      <costs>
+        <cost name="Points" typeId="0bc1-1233-3e53-72ca" value="46"/>
+      </costs>
+      <infoLinks>
+        <infoLink name="Infiltrate" id="5e98-ab46-e6b5-1eaa" hidden="false" type="rule" targetId="84eb-5fff-bb46-d164"/>
+        <infoLink name="Bombardier" id="df2d-ed2a-5420-ac82" hidden="false" type="rule" targetId="7cd8-a0d8-921a-ac0c"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink targetId="de6b-6ec2-9294-541d" id="feef-a118-bf78-32f7" primary="true" name="Unit"/>
+      </categoryLinks>
+      <constraints>
+        <constraint type="max" value="3" field="selections" scope="force" shared="true" id="9fdb-cea0-e005-4a29" includeChildSelections="false"/>
+      </constraints>
+      <entryLinks>
+        <entryLink import="true" name="Pistol" hidden="false" id="d813-bd36-7cd2-8247" type="selectionEntry" targetId="7028-cb77-f695-540d">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b042-ea65-d787-b6a2" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5d0f-2992-d335-ddbc" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="122c-4e66-3873-1a45-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="122c-4e66-3873-1a45-max"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <profiles>
+        <profile name="Trench Raider" typeId="7040-9c4e-1119-a3c5" typeName="Unit" hidden="false" id="1471-2e63-74c8-b339">
+          <characteristics>
+            <characteristic name="Sk" typeId="0014-9871-f278-b5f3">13</characteristic>
+            <characteristic name="Mt" typeId="d8ef-e518-8f49-8a7b">2d6+1</characteristic>
+            <characteristic name="MA" typeId="4cd7-b825-6660-1758">6</characteristic>
+            <characteristic name="Toughness" typeId="197d-1c5e-af24-ee6e">4</characteristic>
+            <characteristic name="Special Abilities" typeId="94ec-89a2-8f77-66c3">Bombardier, Infiltrate</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Trench Raider Yawdryl" hidden="false" id="7dd9-d59e-3a45-6581" sortIndex="3">
+      <costs>
+        <cost name="Points" typeId="0bc1-1233-3e53-72ca" value="52"/>
+      </costs>
+      <infoLinks>
+        <infoLink name="Infiltrate" id="052d-27ec-e9db-00d1" hidden="false" type="rule" targetId="84eb-5fff-bb46-d164"/>
+        <infoLink name="Leader (X/Y)" id="c906-8480-957d-2a99" hidden="false" type="rule" targetId="ba90-37ff-4384-2bc5"/>
+        <infoLink name="Pole-arm" id="ac70-d25a-2388-a21c" hidden="false" type="rule" targetId="f30d-f327-d2d7-bc31"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink targetId="de6b-6ec2-9294-541d" id="b10c-803f-7e31-6c97" primary="true" name="Unit"/>
+      </categoryLinks>
+      <constraints>
+        <constraint type="max" value="3" field="selections" scope="force" shared="true" id="ccc0-21d1-74ff-ced1" includeChildSelections="false"/>
+      </constraints>
+      <entryLinks>
+        <entryLink import="true" name="Pistol" hidden="false" id="e9ae-357e-4bfe-330d" type="selectionEntry" targetId="7028-cb77-f695-540d">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="01a8-3af4-2f02-1476" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="84f8-7fa3-4123-e2aa" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="32c0-ab67-f1c6-845b-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="32c0-ab67-f1c6-845b-max"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <profiles>
+        <profile name="Trench Raider Yawdryl" typeId="7040-9c4e-1119-a3c5" typeName="Unit" hidden="false" id="4b21-b82c-bce0-7453">
+          <characteristics>
+            <characteristic name="Sk" typeId="0014-9871-f278-b5f3">13</characteristic>
+            <characteristic name="Mt" typeId="d8ef-e518-8f49-8a7b">2d6+1</characteristic>
+            <characteristic name="MA" typeId="4cd7-b825-6660-1758">6</characteristic>
+            <characteristic name="Toughness" typeId="197d-1c5e-af24-ee6e">4</characteristic>
+            <characteristic name="Special Abilities" typeId="94ec-89a2-8f77-66c3">Leader (3/4), Infiltrate, Polearm</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
   </sharedSelectionEntries>
   <entryLinks>
-    <entryLink import="true" name="Caerten" hidden="false" id="2d1b-6be3-f601-9cec" type="selectionEntry" targetId="2247-559f-6d15-5057"/>
+    <entryLink import="true" name="Tyllwr Autoped Yawdryl" hidden="false" id="2d1b-6be3-f601-9cec" type="selectionEntry" targetId="464c-d778-07fc-a82f"/>
     <entryLink import="true" name="Cook" hidden="false" id="7e82-c069-f0eb-b147" type="selectionEntry" targetId="8be5-e886-3082-d121"/>
     <entryLink import="true" name="Hulbough Field Gun" hidden="false" id="4bc3-43e5-f9f5-ff8d" type="selectionEntry" targetId="b9dc-43c5-83d0-fdd7"/>
     <entryLink import="true" name="is-Caerten" hidden="false" id="c553-6d26-999d-ceb8" type="selectionEntry" targetId="e83c-c8be-e948-5014"/>
@@ -485,5 +614,9 @@
     <entryLink import="true" name="Squirrel Handler" hidden="false" id="6c7c-7b63-a096-88c0" type="selectionEntry" targetId="b2aa-3a65-8cca-e246"/>
     <entryLink import="true" name="Standard Bearer" hidden="false" id="5f73-8e0e-c45b-3e6f" type="selectionEntry" targetId="a2b1-c0cd-6462-fd47"/>
     <entryLink import="true" name="Yawdryl" hidden="false" id="f949-bbb7-809c-af46" type="selectionEntry" targetId="e6e1-28fb-7d2c-2f5e"/>
+    <entryLink import="true" name="Caerten" hidden="false" id="5f8f-3053-987c-1a66" type="selectionEntry" targetId="2247-559f-6d15-5057"/>
+    <entryLink import="true" name="Trench Raider Yawdryl" hidden="false" id="36ba-c7c6-8d24-c397" type="selectionEntry" targetId="7dd9-d59e-3a45-6581"/>
+    <entryLink import="true" name="Tyllwr Autoped Rhyfler" hidden="false" id="c520-8850-6ed5-1bcb" type="selectionEntry" targetId="b449-f363-676c-7442"/>
+    <entryLink import="true" name="Trench Raider" hidden="false" id="ea13-965e-71a0-b91d" type="selectionEntry" targetId="3605-ba5b-67cf-fef4"/>
   </entryLinks>
 </catalogue>

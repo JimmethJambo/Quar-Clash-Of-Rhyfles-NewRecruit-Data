@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="74e6-0dfa-c12e-1334" name="Tollyn Maeryn" gameSystemId="sys-dbd1-1d4a-43f9-1e9c" gameSystemRevision="6" revision="5" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="74e6-0dfa-c12e-1334" name="Tollyn Maeryn" gameSystemId="sys-dbd1-1d4a-43f9-1e9c" gameSystemRevision="6" revision="6" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedSelectionEntries>
     <selectionEntry type="upgrade" import="true" name="Bostad rev53 Rhyfle" hidden="false" id="3538-2208-f905-40bf" sortIndex="1">
       <profiles>
@@ -22,7 +22,7 @@
           <characteristics>
             <characteristic name="Range" typeId="5b6c-828e-fe65-26a5">8</characteristic>
             <characteristic name="SN" typeId="b1d6-1660-ac56-c22a">N/A</characteristic>
-            <characteristic name="Abilities" typeId="ed37-dbdc-d41b-3af6">Indirect Fire, Blast (M, 1d6+2)</characteristic>
+            <characteristic name="Abilities" typeId="ed37-dbdc-d41b-3af6">Indirect Fire, Blast (Medium, 1d6+2)</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -41,8 +41,7 @@
           <characteristics>
             <characteristic name="Range" typeId="5b6c-828e-fe65-26a5">6</characteristic>
             <characteristic name="SN" typeId="b1d6-1660-ac56-c22a">-2</characteristic>
-            <characteristic name="Abilities" typeId="ed37-dbdc-d41b-3af6">
-</characteristic>
+            <characteristic name="Abilities" typeId="ed37-dbdc-d41b-3af6"/>
           </characteristics>
         </profile>
       </profiles>
@@ -434,6 +433,10 @@
       <categoryLinks>
         <categoryLink targetId="de6b-6ec2-9294-541d" id="eaaa-116f-048f-ad86" primary="true" name="Unit"/>
       </categoryLinks>
+      <infoLinks>
+        <infoLink name="Resilient" id="b0fa-d670-3d39-b9db" hidden="false" type="rule" targetId="187f-acdc-843c-93bb"/>
+        <infoLink name="Infiltrate" id="3a44-dc3a-1143-8276" hidden="false" type="rule" targetId="84eb-5fff-bb46-d164"/>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Crusader &quot;Advisor&quot;" hidden="false" id="73b3-b7d1-be77-f4e3" sortIndex="4">
       <costs>
@@ -446,7 +449,12 @@
         <categoryLink targetId="de6b-6ec2-9294-541d" id="eaa7-bd16-df8a-6dbb" primary="true" name="Unit"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink import="true" name="Grifkis Shotgun" hidden="false" id="24cc-1a57-2a22-ce63" type="selectionEntry" targetId="5536-85b4-b70b-8d64"/>
+        <entryLink import="true" name="Grifkis Shotgun" hidden="false" id="24cc-1a57-2a22-ce63" type="selectionEntry" targetId="46ca-f158-077b-1185">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ed4c-1742-3297-8992-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ed4c-1742-3297-8992-max" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
       </entryLinks>
       <profiles>
         <profile name="Crusader &quot;Advisor&quot;" typeId="7040-9c4e-1119-a3c5" typeName="Unit" hidden="false" id="33d7-d6d7-8fed-73f4">
@@ -463,9 +471,6 @@
         <rule name="Advisor" id="0bb5-4f92-d0ae-bbc9" hidden="false" noindex="true">
           <description>Selection of a Crusader Advisor allows the commander to select up to 2 Crusader Specialist rhyflers to add to the Patrol.
 The points total of the specialists and advisor may not exceed the points total of the Patrol&apos;s basic Militia Rhyfler.</description>
-        </rule>
-        <rule name="Crusader &quot;Advisor&quot;" id="8224-a3e4-fa22-2d91" hidden="false">
-          <description>Total Points of Crusader Specialists and Crusader Advisor must be less than the total points of Militia Rhyflers</description>
         </rule>
       </rules>
     </selectionEntry>
@@ -489,27 +494,12 @@ The points total of the specialists and advisor may not exceed the points total 
           <characteristics>
             <characteristic name="Range" typeId="1775-3227-d2ed-93a5">12</characteristic>
             <characteristic name="Arc" typeId="f1e8-b48b-c0f2-c05f">45</characteristic>
-            <characteristic name="Abilities" typeId="bd42-ef04-afe1-f4d4">Green, Gun Shield (-1), Anti-Tractor, Slow Reload, Blast (S, 2d6-1)</characteristic>
+            <characteristic name="Abilities" typeId="bd42-ef04-afe1-f4d4">Green, Gun Shield (-1), Anti-Tractor, Slow Reload, Blast (Small, 2d6-1)</characteristic>
           </characteristics>
         </profile>
         <profile name="1-2" typeId="6e06-153b-5181-d39d" typeName="Damage Chart" hidden="false" id="f3d6-6f62-2858-c608">
           <characteristics>
             <characteristic name="Result" typeId="897e-4ecc-846b-1598">Weapon Crew is Rattled.</characteristic>
-          </characteristics>
-        </profile>
-        <profile name="7+" typeId="6e06-153b-5181-d39d" typeName="Damage Chart" hidden="false" id="80bd-cea2-5ca3-e413">
-          <characteristics>
-            <characteristic name="Result" typeId="897e-4ecc-846b-1598">Weapon Crew are Disabled. Remove from Battlefield.</characteristic>
-          </characteristics>
-        </profile>
-        <profile name="5-6" typeId="6e06-153b-5181-d39d" typeName="Damage Chart" hidden="false" id="fb21-2dba-8c21-b57b">
-          <characteristics>
-            <characteristic name="Result" typeId="897e-4ecc-846b-1598">Weapon Crew suffers 1 point of Damage.</characteristic>
-          </characteristics>
-        </profile>
-        <profile name="3-4" typeId="6e06-153b-5181-d39d" typeName="Damage Chart" hidden="false" id="9c13-bca3-4bc0-ec76">
-          <characteristics>
-            <characteristic name="Result" typeId="897e-4ecc-846b-1598">Weapon Crew is Gobsmacked. Remove Rattled status if present.</characteristic>
           </characteristics>
         </profile>
         <profile name="2" typeId="73fd-d87f-c3ca-d678" typeName="Damage Level" hidden="false" id="36d2-3bf5-b89c-8c8b">
@@ -525,6 +515,21 @@ The points total of the specialists and advisor may not exceed the points total 
         <profile name="1" typeId="73fd-d87f-c3ca-d678" typeName="Damage Level" hidden="false" id="7a9d-892d-87ce-6b72">
           <characteristics>
             <characteristic typeId="0a18-6bf0-38b6-f7a0">Shaken: Attacks are at -4 unless 2 activatiosn are spent by the crew to perform the Combat Task</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="3-4" typeId="6e06-153b-5181-d39d" typeName="Damage Chart" hidden="false" id="7fbe-d346-988f-107f">
+          <characteristics>
+            <characteristic name="Result" typeId="897e-4ecc-846b-1598">Weapon Crew is Gobsmacked. Remove Rattled status if present.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="5-6" typeId="6e06-153b-5181-d39d" typeName="Damage Chart" hidden="false" id="54a3-3cb8-5022-d70e">
+          <characteristics>
+            <characteristic name="Result" typeId="897e-4ecc-846b-1598">Weapon Crew suffers 1 point of Damage.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="7+" typeId="6e06-153b-5181-d39d" typeName="Damage Chart" hidden="false" id="63d4-25b2-1927-41a7">
+          <characteristics>
+            <characteristic name="Result" typeId="897e-4ecc-846b-1598">Weapon Crew are Disabled. Remove from Battlefield.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -544,13 +549,13 @@ The points total of the specialists and advisor may not exceed the points total 
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Faelvor Armored Wagon" hidden="false" id="4df3-eeef-bdf4-f374" sortIndex="6">
       <costs>
-        <cost name="Points" typeId="0bc1-1233-3e53-72ca" value="75"/>
+        <cost name="Points" typeId="0bc1-1233-3e53-72ca" value="65"/>
       </costs>
       <profiles>
         <profile name="Faelvor Armored Wagon" typeId="75e9-4c28-c81b-5327" typeName="Armored Vehicle" hidden="false" id="aa25-e746-eb9b-b426">
           <characteristics>
             <characteristic name="Crew" typeId="7ff3-eaea-87c6-deaa">2</characteristic>
-            <characteristic name="Skill" typeId="645c-7e75-7b5f-36cd">12</characteristic>
+            <characteristic name="Skill" typeId="645c-7e75-7b5f-36cd">11</characteristic>
             <characteristic name="MA" typeId="6128-a30c-557d-656a">5/3</characteristic>
             <characteristic name="Abilities" typeId="7a58-8944-3a3e-1e25">Turretless, Agile</characteristic>
             <characteristic name="Tread Damage Points" typeId="0e57-b754-a0ab-64ca">2</characteristic>
@@ -586,7 +591,7 @@ The points total of the specialists and advisor may not exceed the points total 
           <characteristics>
             <characteristic name="Range" typeId="c5be-3871-71dd-dfae">10</characteristic>
             <characteristic name="Arc" typeId="07d6-44a1-b3f8-b02e">45</characteristic>
-            <characteristic name="Abilities" typeId="8ceb-604c-397c-d679">Blast (S, 2d6-1), Precision Fire</characteristic>
+            <characteristic name="Abilities" typeId="8ceb-604c-397c-d679">Blast (Small, 2d6-1), Precision Fire</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -599,6 +604,9 @@ The points total of the specialists and advisor may not exceed the points total 
       <categoryLinks>
         <categoryLink targetId="e009-498c-bf4e-66d2" id="cf07-6181-2cae-c410" primary="true" name="Armored Vehicle"/>
       </categoryLinks>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="b98e-13c9-9149-2cc3" includeChildSelections="true" includeChildForces="true"/>
+      </constraints>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Crusader Specialist" hidden="false" id="540f-72b3-4c51-f269">
       <modifiers>
@@ -732,6 +740,283 @@ The points total of the specialists and advisor may not exceed the points total 
         <categoryLink targetId="de6b-6ec2-9294-541d" id="a0b9-5311-bbfe-7fd7" primary="true" name="Unit"/>
       </categoryLinks>
     </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Volunteer Bicycle Dragoon" hidden="false" id="5647-2fa1-1327-2482">
+      <costs>
+        <cost name="Points" typeId="0bc1-1233-3e53-72ca" value="28"/>
+      </costs>
+      <profiles>
+        <profile name="Bicycle Dragoon" typeId="8e73-7370-7f76-a0f6" typeName="Dismounted Unit" hidden="false" id="4148-81fb-322f-01d0">
+          <characteristics>
+            <characteristic name="Sk" typeId="4359-2c47-8755-0652">10</characteristic>
+            <characteristic name="Mt" typeId="a4d3-c1fb-e3fd-1ec4">1d6+2</characteristic>
+            <characteristic name="MA" typeId="7454-6341-5be7-ec95">5</characteristic>
+            <characteristic name="T" typeId="d802-8465-1aba-b808">4</characteristic>
+            <characteristic name="Equipment" typeId="eb3d-2bb6-1a43-2302">Aup rev27 SMG</characteristic>
+            <characteristic name="Special" typeId="3587-866b-8fff-d4c0">Green</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="1-2" typeId="6e06-153b-5181-d39d" typeName="Damage Chart" hidden="false" id="3e4d-530f-74e4-6ed3" noindex="false">
+          <characteristics>
+            <characteristic name="Result" typeId="897e-4ecc-846b-1598">That was close! Rider is rattled.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Bicycle Dragoon" typeId="e0d8-274b-8232-ef1b" typeName="Mounted Unit" hidden="false" id="ad5d-de67-52b0-16ab">
+          <characteristics>
+            <characteristic name="Sk" typeId="5ad3-1ace-c190-566b">10</characteristic>
+            <characteristic name="Mt" typeId="38b8-ca39-7d11-6eb1">NA</characteristic>
+            <characteristic name="MA" typeId="870d-5722-99b9-21da">7</characteristic>
+            <characteristic name="T" typeId="2fcc-4790-c933-ecf8">4</characteristic>
+            <characteristic name="D" typeId="20b1-a32d-e41c-9a37">1</characteristic>
+            <characteristic name="Equipment" typeId="4a61-14de-472f-b84d">Aup rev27 SMG</characteristic>
+            <characteristic name="Special" typeId="c973-830d-f693-f6b1">Green, Ranged (-2), Bicycle, Flying Dismount</characteristic>
+          </characteristics>
+          <attributes>
+            <attribute typeId="031c-0d07-1b90-9ff5" name="New Attribute Type"/>
+          </attributes>
+        </profile>
+        <profile name="3-4" typeId="6e06-153b-5181-d39d" typeName="Damage Chart" hidden="false" id="5326-7b97-e5ea-707c">
+          <characteristics>
+            <characteristic name="Result" typeId="897e-4ecc-846b-1598">Flat Tire! Bicycle is broken. Remove the model, replace with dismounted rider. the rider is prone.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="5" typeId="6e06-153b-5181-d39d" typeName="Damage Chart" hidden="false" id="7c34-3b53-d464-f57d">
+          <characteristics>
+            <characteristic name="Result" typeId="897e-4ecc-846b-1598">Stick in the spokes!! Bicycle is wrecked. Replace the model with a dismounted rider and the rider is gobsmacked</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="6" typeId="6e06-153b-5181-d39d" typeName="Damage Chart" hidden="false" id="cdd3-7da4-eb77-3e5f">
+          <characteristics>
+            <characteristic name="Result" typeId="897e-4ecc-846b-1598">Unit OOA. Remove model and replace with OOA dismounted rider. Bicycle is unusable</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <entryLinks>
+        <entryLink import="true" name="Aup rev27 SMG" hidden="false" id="d895-afd3-b4d3-1b1e" type="selectionEntry" targetId="54e2-a3ea-9763-2fff"/>
+      </entryLinks>
+      <rules>
+        <rule name="Flying dismount" id="034a-dbe1-8f6b-eb35" hidden="false">
+          <description>At the end of a move you may perform a flying dismount. Roll on this chart then replace the model with a dismounted rider and riderless bicycle and the rider performs a normal move but cannot end engaged. You may flying dismount after a sprint but read one row lower on the 6/6 chart.
+
+
+
+6/6 Wicked Drop! – The Dismounted Rider may move an additional 2” and may choose to go Prone. Bicycle may be Remounted.
+6/- Cool Moves!! – The Rider dismounts at the end of the second movement and may elect to go Prone. Bicycle may be Remounted.
+6/1 Meh. – The Rider dismounts successfully but the bicycle is damaged and may not be remounted.
+-/- Decent Landing! – Rider must make a Skill Check to dismount successfully. If the Check is failed the rider is Prone and the bicycle is too damaged to be remounted.
+1/- That’s Going to Leave a Mark! – The Rider crashes while dismounting during the second move. The Dismounted Rhyfler is placed halfway along the path of the second Movement Task Gobsmacked.
+1/1 Yiiiiiikes!! – The Rider crashes while dismounting during the second move. The Dismounted Rhyfler is placed halfway along the path of the second Movement Task Out of Action.</description>
+        </rule>
+        <rule name="Bicycle" id="bb3b-be20-d5d6-7b11" hidden="false">
+          <description>If this unit moves in a straight line add 2 to MA. Cannot cross difficult terrain. May perform a flying dismount</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink targetId="f3df-2a35-71ff-3ff7" id="7b64-bdd3-03ac-8f11" primary="true" name="Mounted Unit"/>
+      </categoryLinks>
+      <constraints>
+        <constraint type="max" value="3" field="selections" scope="roster" shared="true" id="3a1d-ca34-324b-723e" includeChildSelections="true" includeChildForces="true"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" value="99" field="3a1d-ca34-324b-723e">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="parent" childId="359a-c5fe-4352-68c5" shared="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Volunteer Bicycle Dragoon Yawdryl" hidden="false" id="359a-c5fe-4352-68c5">
+      <costs>
+        <cost name="Points" typeId="0bc1-1233-3e53-72ca" value="36"/>
+      </costs>
+      <profiles>
+        <profile name="Dismounted Bicycle Dragoon Yawdryl" typeId="8e73-7370-7f76-a0f6" typeName="Dismounted Unit" hidden="false" id="9020-71ea-850b-2cbf">
+          <characteristics>
+            <characteristic name="Sk" typeId="4359-2c47-8755-0652">12</characteristic>
+            <characteristic name="Mt" typeId="a4d3-c1fb-e3fd-1ec4">1d6+2</characteristic>
+            <characteristic name="MA" typeId="7454-6341-5be7-ec95">5</characteristic>
+            <characteristic name="T" typeId="d802-8465-1aba-b808">4</characteristic>
+            <characteristic name="Equipment" typeId="eb3d-2bb6-1a43-2302">Aup rev27 SMG</characteristic>
+            <characteristic name="Special" typeId="3587-866b-8fff-d4c0">Leader (2/5)</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="1-2" typeId="6e06-153b-5181-d39d" typeName="Damage Chart" hidden="false" id="b610-d509-c4b2-78cd" noindex="false">
+          <characteristics>
+            <characteristic name="Result" typeId="897e-4ecc-846b-1598">That was close! Rider is rattled.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Bicycle Dragoon Yawdryl" typeId="e0d8-274b-8232-ef1b" typeName="Mounted Unit" hidden="false" id="9e2b-bf54-c58a-6368">
+          <characteristics>
+            <characteristic name="Sk" typeId="5ad3-1ace-c190-566b">12</characteristic>
+            <characteristic name="Mt" typeId="38b8-ca39-7d11-6eb1">NA</characteristic>
+            <characteristic name="MA" typeId="870d-5722-99b9-21da">7</characteristic>
+            <characteristic name="T" typeId="2fcc-4790-c933-ecf8">4</characteristic>
+            <characteristic name="D" typeId="20b1-a32d-e41c-9a37">1</characteristic>
+            <characteristic name="Equipment" typeId="4a61-14de-472f-b84d">Aup rev27 SMG</characteristic>
+            <characteristic name="Special" typeId="c973-830d-f693-f6b1">Ranged (-2), Bicycle, Flying Dismount</characteristic>
+          </characteristics>
+          <attributes>
+            <attribute typeId="031c-0d07-1b90-9ff5" name="New Attribute Type"/>
+          </attributes>
+        </profile>
+        <profile name="3-4" typeId="6e06-153b-5181-d39d" typeName="Damage Chart" hidden="false" id="3eb5-7d9b-8baf-aee9">
+          <characteristics>
+            <characteristic name="Result" typeId="897e-4ecc-846b-1598">Flat Tire! Bicycle is broken. Remove the model, replace with dismounted rider. the rider is prone.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="5" typeId="6e06-153b-5181-d39d" typeName="Damage Chart" hidden="false" id="fbff-11c3-087b-a276">
+          <characteristics>
+            <characteristic name="Result" typeId="897e-4ecc-846b-1598">Stacked it. Bicycle is damaged. Replace with gobsmacked dismounted rider.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="6" typeId="6e06-153b-5181-d39d" typeName="Damage Chart" hidden="false" id="4a78-24f4-9c1d-1646">
+          <characteristics>
+            <characteristic name="Result" typeId="897e-4ecc-846b-1598">Rider is hit and taken OOA. Remove from battlefield and replace with OOA Dismounted Rider.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <entryLinks>
+        <entryLink import="true" name="Aup rev27 SMG" hidden="false" id="d218-1291-9d36-fdd6" type="selectionEntry" targetId="54e2-a3ea-9763-2fff"/>
+      </entryLinks>
+      <rules>
+        <rule name="Flying dismount" id="521c-a0c7-dc9b-840a" hidden="false">
+          <description>At the end of a move you may perform a flying dismount. Roll on this chart then replace the model with a dismounted rider and riderless bicycle and the rider performs a normal move but cannot end engaged. You may flying dismount after a sprint but read one row lower on the 6/6 chart.
+
+
+
+6/6 Wicked Drop! – The Dismounted Rider may move an additional 2” and may choose to go Prone. Bicycle may be Remounted.
+6/- Cool Moves!! – The Rider dismounts at the end of the second movement and may elect to go Prone. Bicycle may be Remounted.
+6/1 Meh. – The Rider dismounts successfully but the bicycle is damaged and may not be remounted.
+-/- Decent Landing! – Rider must make a Skill Check to dismount successfully. If the Check is failed the rider is Prone and the bicycle is too damaged to be remounted.
+1/- That’s Going to Leave a Mark! – The Rider crashes while dismounting during the second move. The Dismounted Rhyfler is placed halfway along the path of the second Movement Task Gobsmacked.
+1/1 Yiiiiiikes!! – The Rider crashes while dismounting during the second move. The Dismounted Rhyfler is placed halfway along the path of the second Movement Task Out of Action.</description>
+        </rule>
+        <rule name="Bicycle" id="5acd-0bf8-6af8-0693" hidden="false">
+          <description>If this unit moves in a straight line add 2 to MA. Cannot cross difficult terrain. May perform a flying dismount</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink targetId="f3df-2a35-71ff-3ff7" id="ef26-82a9-c73c-b7a9" primary="true" name="Mounted Unit"/>
+      </categoryLinks>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="c245-0134-184f-6c5f" includeChildSelections="true" includeChildForces="true"/>
+      </constraints>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Dogar Armored Wagon" hidden="false" id="8fd2-e822-80a3-1ccb" sortIndex="6">
+      <costs>
+        <cost name="Points" typeId="0bc1-1233-3e53-72ca" value="65"/>
+      </costs>
+      <profiles>
+        <profile name="Dogar Armored Wagon" typeId="75e9-4c28-c81b-5327" typeName="Armored Vehicle" hidden="false" id="5339-08e6-c9e9-186f">
+          <characteristics>
+            <characteristic name="Crew" typeId="7ff3-eaea-87c6-deaa">2</characteristic>
+            <characteristic name="Skill" typeId="645c-7e75-7b5f-36cd">11</characteristic>
+            <characteristic name="MA" typeId="6128-a30c-557d-656a">5/4</characteristic>
+            <characteristic name="Abilities" typeId="7a58-8944-3a3e-1e25">Turretless</characteristic>
+            <characteristic name="Tread Damage Points" typeId="0e57-b754-a0ab-64ca">2</characteristic>
+            <characteristic name="Hull Damage Points" typeId="a109-8831-0b1f-a416">2</characteristic>
+            <characteristic name="Engine Damage Points" typeId="3d59-9a3d-5eeb-f18d">2</characteristic>
+            <characteristic name="Tread Armor Value" typeId="52ab-ad8e-f3fd-740c">4/5/5</characteristic>
+            <characteristic name="Hull Armor Value" typeId="38e8-4c6d-9751-9ec2">7/6/6</characteristic>
+            <characteristic name="Engine Armore Value" typeId="c053-6c95-fc2e-f984">5</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Rear" typeId="bf17-75fe-032b-a8eb" typeName="Tractor Damage Area" hidden="false" id="5f20-3da6-cfe7-31d4">
+          <characteristics>
+            <characteristic name="Tread" typeId="6193-4d0a-5399-c05d">1-2</characteristic>
+            <characteristic name="Hull" typeId="2882-bfcc-2f15-a801">3-5</characteristic>
+            <characteristic name="Engine" typeId="609f-652d-ea95-f699">6</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Front" typeId="bf17-75fe-032b-a8eb" typeName="Tractor Damage Area" hidden="false" id="f332-7b97-6689-d2c3">
+          <characteristics>
+            <characteristic name="Tread" typeId="6193-4d0a-5399-c05d">1-2</characteristic>
+            <characteristic name="Hull" typeId="2882-bfcc-2f15-a801">3-6</characteristic>
+            <characteristic name="Engine" typeId="609f-652d-ea95-f699"/>
+          </characteristics>
+        </profile>
+        <profile name="Side" typeId="bf17-75fe-032b-a8eb" typeName="Tractor Damage Area" hidden="false" id="86ef-b7e8-5b35-d0ae">
+          <characteristics>
+            <characteristic name="Tread" typeId="6193-4d0a-5399-c05d">1-2</characteristic>
+            <characteristic name="Hull" typeId="2882-bfcc-2f15-a801">3-4</characteristic>
+            <characteristic name="Engine" typeId="609f-652d-ea95-f699">5-6</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Aus rev33 MMG" typeId="18ca-a698-c38f-f8de" typeName="Integral Weapon" hidden="false" id="2af1-963f-7bbd-6446">
+          <characteristics>
+            <characteristic name="Range" typeId="c5be-3871-71dd-dfae">10</characteristic>
+            <characteristic name="Arc" typeId="07d6-44a1-b3f8-b02e">90</characteristic>
+            <characteristic name="Abilities" typeId="8ceb-604c-397c-d679">Automatic (0)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Turretless" id="f648-563c-0ae1-4e2c" hidden="false" type="rule" targetId="a3fc-1bc1-8cfe-1886"/>
+        <infoLink name="Automatic (X)" id="b339-00dc-d339-dbf8" hidden="false" type="rule" targetId="321d-91fa-c981-2ce1"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink targetId="e009-498c-bf4e-66d2" id="e084-f03b-339a-5c3f" primary="true" name="Armored Vehicle"/>
+      </categoryLinks>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="4db9-3be0-80ff-1ba9" includeChildSelections="true" includeChildForces="true"/>
+      </constraints>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Torwyth Medium Assault Tractor" hidden="false" id="c89c-b45e-a098-7342" sortIndex="6">
+      <costs>
+        <cost name="Points" typeId="0bc1-1233-3e53-72ca" value="110"/>
+      </costs>
+      <profiles>
+        <profile name="Torwyth Medium Assault Tractor" typeId="75e9-4c28-c81b-5327" typeName="Armored Vehicle" hidden="false" id="fa8d-5747-b89d-ec7d">
+          <characteristics>
+            <characteristic name="Crew" typeId="7ff3-eaea-87c6-deaa">3</characteristic>
+            <characteristic name="Skill" typeId="645c-7e75-7b5f-36cd">11</characteristic>
+            <characteristic name="MA" typeId="6128-a30c-557d-656a">4/3</characteristic>
+            <characteristic name="Abilities" typeId="7a58-8944-3a3e-1e25">Turretless, Lumbering</characteristic>
+            <characteristic name="Tread Damage Points" typeId="0e57-b754-a0ab-64ca">3</characteristic>
+            <characteristic name="Hull Damage Points" typeId="a109-8831-0b1f-a416">4</characteristic>
+            <characteristic name="Engine Damage Points" typeId="3d59-9a3d-5eeb-f18d">2</characteristic>
+            <characteristic name="Tread Armor Value" typeId="52ab-ad8e-f3fd-740c">6</characteristic>
+            <characteristic name="Hull Armor Value" typeId="38e8-4c6d-9751-9ec2">7</characteristic>
+            <characteristic name="Engine Armore Value" typeId="c053-6c95-fc2e-f984">5</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Rear" typeId="bf17-75fe-032b-a8eb" typeName="Tractor Damage Area" hidden="false" id="4718-f74e-209b-c879">
+          <characteristics>
+            <characteristic name="Tread" typeId="6193-4d0a-5399-c05d">1-2</characteristic>
+            <characteristic name="Hull" typeId="2882-bfcc-2f15-a801">3</characteristic>
+            <characteristic name="Engine" typeId="609f-652d-ea95-f699">4-6</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Front" typeId="bf17-75fe-032b-a8eb" typeName="Tractor Damage Area" hidden="false" id="9fe9-3fa3-b6c0-ea82">
+          <characteristics>
+            <characteristic name="Tread" typeId="6193-4d0a-5399-c05d">1-2</characteristic>
+            <characteristic name="Hull" typeId="2882-bfcc-2f15-a801">3-6</characteristic>
+            <characteristic name="Engine" typeId="609f-652d-ea95-f699"/>
+          </characteristics>
+        </profile>
+        <profile name="Side" typeId="bf17-75fe-032b-a8eb" typeName="Tractor Damage Area" hidden="false" id="20d8-1604-e5ea-518a">
+          <characteristics>
+            <characteristic name="Tread" typeId="6193-4d0a-5399-c05d">1-2</characteristic>
+            <characteristic name="Hull" typeId="2882-bfcc-2f15-a801">3-5</characteristic>
+            <characteristic name="Engine" typeId="609f-652d-ea95-f699">5-6</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="SB135 rev21 Smoothbore Cannon" typeId="b654-1c6a-7803-6882" typeName="Tractor Weapon" hidden="false" id="2545-3031-fed9-2cfc">
+          <characteristics>
+            <characteristic name="Range" typeId="206b-98a7-3ceb-bc0e">N/A</characteristic>
+            <characteristic name="Arc" typeId="7f52-7175-881e-a429">45</characteristic>
+            <characteristic name="Abilities" typeId="0095-18c0-009f-e488">Blast (Large, 2d6-1)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Lumbering" id="6b42-e311-6865-8e63" hidden="false" type="rule" targetId="b56a-718b-b381-2b1b"/>
+        <infoLink name="Blast (X,Y)" id="099a-be45-6254-4194" hidden="false" type="rule" targetId="b4b8-45d7-e9bb-1444"/>
+        <infoLink name="Turretless" id="9528-5868-5a40-a761" hidden="false" type="rule" targetId="a3fc-1bc1-8cfe-1886"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink targetId="e009-498c-bf4e-66d2" id="22c5-2a83-49de-2948" primary="true" name="Armored Vehicle"/>
+      </categoryLinks>
+    </selectionEntry>
   </sharedSelectionEntries>
   <entryLinks>
     <entryLink import="true" name="Crusader Specialist" hidden="false" id="cc9b-5050-7e97-bd07" type="selectionEntry" targetId="540f-72b3-4c51-f269">
@@ -741,7 +1026,11 @@ The points total of the specialists and advisor may not exceed the points total 
     </entryLink>
     <entryLink import="true" name="Faelvor Armored Wagon" hidden="false" id="dd89-ad62-c80d-81be" type="selectionEntry" targetId="4df3-eeef-bdf4-f374"/>
     <entryLink import="true" name="Militia Grenadiers" hidden="false" id="e7d8-c867-2885-ff95" type="selectionEntry" targetId="7e19-2954-f52b-15d4"/>
-    <entryLink import="true" name="Auld Buck Veteran" hidden="false" id="547d-8549-4077-30ae" type="selectionEntry" targetId="749e-783a-22b3-0f8b"/>
+    <entryLink import="true" name="Bicycle Dragoon" hidden="false" id="547d-8549-4077-30ae" type="selectionEntry" targetId="5647-2fa1-1327-2482">
+      <categoryLinks>
+        <categoryLink targetId="f3df-2a35-71ff-3ff7" id="00ea-7b96-7d8d-1eb3" primary="true" name="Mounted Unit"/>
+      </categoryLinks>
+    </entryLink>
     <entryLink import="true" name="Auld Buck Yawdryl" hidden="false" id="6d05-c61e-0905-863d" type="selectionEntry" targetId="9b3f-c8b6-7977-c7d7"/>
     <entryLink import="true" name="Milwer" hidden="false" id="b2b1-9f05-1d75-4b7f" type="selectionEntry" targetId="1085-258a-f24f-90a5"/>
     <entryLink import="true" name="Militia Pykpluckers" hidden="false" id="df5d-9733-f599-268a" type="selectionEntry" targetId="8cfa-6adb-c45b-097b"/>
@@ -751,6 +1040,10 @@ The points total of the specialists and advisor may not exceed the points total 
     <entryLink import="true" name="Militia Rhyfler" hidden="false" id="ad80-6b3b-394f-c175" type="selectionEntry" targetId="e5b2-706e-e148-2514"/>
     <entryLink import="true" name="Crusader &quot;Advisor&quot;" hidden="false" id="57cc-29b6-9314-1a01" type="selectionEntry" targetId="73b3-b7d1-be77-f4e3"/>
     <entryLink import="true" name="Militia Gunner" hidden="false" id="6372-f753-3160-b3a1" type="selectionEntry" targetId="6f3f-5d2b-3c1e-9a80"/>
+    <entryLink import="true" name="Auld Buck Veteran" hidden="false" id="0408-38b5-a7b3-027c" type="selectionEntry" targetId="749e-783a-22b3-0f8b"/>
+    <entryLink import="true" name="Volunteer Bicycle Dragoon Yawdryl" hidden="false" id="0332-dd11-e966-c754" type="selectionEntry" targetId="359a-c5fe-4352-68c5"/>
+    <entryLink import="true" name="Dogar Armored Wagon" hidden="false" id="c4f2-8ece-5b95-5afb" type="selectionEntry" targetId="8fd2-e822-80a3-1ccb"/>
+    <entryLink import="true" name="Torwyth Medium Assault Tractor" hidden="false" id="c18d-5cb7-ebae-816b" type="selectionEntry" targetId="c89c-b45e-a098-7342"/>
   </entryLinks>
   <sharedProfiles>
     <profile name="New Profile" typeId="7040-9c4e-1119-a3c5" typeName="Unit" hidden="false" id="c823-ddab-aac4-a267">

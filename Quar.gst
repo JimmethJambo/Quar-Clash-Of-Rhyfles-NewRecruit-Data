@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="sys-dbd1-1d4a-43f9-1e9c" name="Quar - Clash of Rhyfles" battleScribeVersion="2.03" revision="12" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" authorName="Jim Jambo" authorUrl="jimjambo.gay">
+<gameSystem id="sys-dbd1-1d4a-43f9-1e9c" name="Quar - Clash of Rhyfles" battleScribeVersion="2.03" revision="13" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" authorName="Jim Jambo" authorUrl="jimjambo.gay">
   <categoryEntries>
     <categoryEntry name="Unit" id="de6b-6ec2-9294-541d" hidden="false"/>
     <categoryEntry name="Armored Vehicle" id="e009-498c-bf4e-66d2" hidden="false"/>
@@ -167,7 +167,7 @@ If a standard bearer is Gobsmacked they will cling to the standard whatever the
 Any rhyfler who picks up their sides’ standard gains the Standard Special Ability. If an enemy rhyfler captures it, the standard’s commander gives them 3 Pluck, or all that is available. If the original owner regains their standard they take back 3 Pluck, or all that remains.</description>
     </rule>
     <rule name="Anti-Tractor" id="7cb8-57db-5ced-b54a" hidden="false">
-      <description>Smooth Bore Main Guns with this Trait add an additional 1d6 to Might Rolls versus Armored Vehicles. This additional Might does not affect standard vehicles or rhyflers.</description>
+      <description>Guns with this Trait add an additional 1d6 to Might Rolls versus Armored Vehicles. This additional Might does not affect standard vehicles or rhyflers.</description>
     </rule>
     <rule name="Creature" id="cc28-67f0-d116-2b5d" hidden="false">
       <description>Utilizing natural weapons such as claws or teeth, these beasts are very effective against soft targets. Creatures may only use the equipment listed on their profile, and do not come equipped with grenades.</description>
@@ -260,9 +260,7 @@ At any point during a commander’s round a Pykpyk may be exchanged to reveal t
     <rule name="Automatic (X)" id="321d-91fa-c981-2ce1" hidden="false">
       <description>Weapons with a higher rate of fire are capable of targeting multiple opponents with one attack, but at reduced accuracy. X is the additional penalty given to each shot when firing at multiple targets while performing the Area Fire Task.
 
-
 Area Fire – A rhyfler with an Automatic weapon may attack several rhyflers in a group. Place a Medium template to cover an area containing the desired targets. All targets even partially within the area of the template are affected. These targets will then individually decide to Skedaddle or Return Fire.
-
 
 A Skill Check to hit is made for each individual target with the appropriate modifiers for their response, range, any cover, and the Automatic ability, X. In addition this attack subtracts one from penalties due to Obstructing Cover; Light Obstructing Cover is negated, Normal becomes -1, etc. The attacks are performed one by one until all of them have been resolved. If the firing unit is wounded due to Return Fire during an attack any remaining attacks are resolved as normal before the unit is marked OOA or damaged.
 Area Fire may not be used as a Reaction.</description>
@@ -284,7 +282,6 @@ A commander’s Patrol may only include one Hero for every 100 points gathered,
     </rule>
     <rule name="Infiltrate" id="84eb-5fff-bb46-d164" hidden="false">
       <description>A rhyfler with this ability may start the Skirmish off the battlefield. When Activated the rhyfler may perform the Infiltrate Task. Rhyflers may not React to this Task with either Snapshot or Overwatch.
-
 
 Infiltrate – The active commander designates a point on the battlefield as the Infiltrator’s Entry Point and rolls on the Infiltrate Chart (p31). This entry Point must be at least 4” from an enemy rhyfler.</description>
     </rule>
@@ -313,8 +310,11 @@ If the firing rhyfler is in base contact with this designated rhyfler, increase 
     <rule name="Melee (X)" id="ba7b-d442-85f1-d45d" hidden="false">
       <description>Rhyflers receive extensive training in the weapons they are issued, allowing them to add this value to the target number when performing a melee attack.</description>
     </rule>
-    <rule name="Resilient" id="e177-01dd-6ddd-72c1" hidden="false">
-      <description>Tougher than his companions, a Resilient rhyfler can do a Tend Wounded action on himself.</description>
+    <rule name="Smoke Pot" id="e177-01dd-6ddd-72c1" hidden="false">
+      <description>Originally designed to flush game from cover, the HVR quickly learned the utility of these devices upon the battlefield. 
+
+
+Smoke Pots may only be thrown up to one Range Band and follow the normal Blast rules for template placement. After the attack is resolved the template is left in place until the controlling commander’s next Active Round, and counts as a Smoke Grenade template granting Obscuring cover of -1.</description>
     </rule>
     <rule name="Shotgun" id="d633-ee5f-c6cf-c931" hidden="false">
       <description>Originally hunting weapons, Shotguns have found favor in the trenches. These weapons fire a group of small projectiles that cover an area, but lose effectiveness over range. Shotguns do not gather penalties for Range, but use the following modifiers instead.
@@ -466,7 +466,9 @@ Rattlepeds do not incur movement penalties from difficult terrain
 Rattleped riders cannot perform melee attacks.</description>
     </rule>
     <rule name="Cadier" id="fff3-d972-c7a6-f80c" hidden="false">
-      <description>Cadier have the Thunderous Hooves and Skittish special abilities.</description>
+      <description>Cadier have the Thunderous Hooves and Skittish special abilities.
+
+Additionally, a cadier that is affected by the 2-5/ 2-5 result on the Fragmentation Grenade chart is Rattled instead of going Prone.</description>
     </rule>
     <rule name="Thunderous Hooves" id="7acf-9df6-9b45-8d55" hidden="false">
       <description>A rhyfler that is Charged by a Mounted Unit with this ability may choose to Skedaddle as a reaction to the Melee attack. This is resolved using the Ranged Attack Reaction rules</description>
@@ -486,16 +488,64 @@ Opposed rhyflers without this ability may not perform Melee Attacks against rhy
 If the target of such an attack is Gobsmacked or taken OOA the throwing rhyfler may attempt to recover their weapon by moving up to the target and spending an Activation to retrieve it. If they do so they may throw the weapon again at a later point in the battle.</description>
     </rule>
     <rule name="Burly" id="9817-9031-bff6-c548" hidden="false">
-      <description>Burly rhyfler ignores the penalty gathered by the
-equipment trait Braced, and counts as two rhyflers when moving objects with the
-Heavy trait.</description>
+      <description>Burly rhyfler ignores the penalty gathered by the equipment trait Braced, and counts as two rhyflers when moving objects with the Heavy trait.</description>
+    </rule>
+    <rule name="Tractor Slugs" id="617e-3e42-572e-6821" hidden="false">
+      <description>Specialist rhyflers armed with shotguns occasionally carry solid slug ammunition to deal with heavily armored targets. 
+
+
+In order to use them the rhyfler must first perform the Prepare Weapon Task to load these solid slugs.
+
+
+Targets with an Armor Value hit by Tractor Slugs suffer a Might Roll based on how close the attacker is when the attack is performed. Within the weapon’s first Range Band the slug’s Might Value is 2d6, 1d6+2 within the second, and 1d6 in the third. Even with slugs, shotguns may not fire beyond three range bands.</description>
+    </rule>
+    <rule name="Brutal Attack" id="ac07-dcea-c022-e6cf" hidden="false">
+      <description>Armed with devastating weapons no ordinary quar would consider carrying, these rhyflers are unmatched in their lethality upon the battlefield. When performing a Powerful Blow attack this rhyfler does not gain the Skill increase, but instead adds +2 to their Might value for the attack.</description>
+    </rule>
+    <rule name="Switch Ammo" id="5021-d5da-5190-6fc9" hidden="false">
+      <description>A Specialist Loader with this ability usually accompanies another specialist carrying a weapon with two Blast Values listed on its profile. The first Blast Value is the weapon’s default armament. The Loader may switch the weapon to the second Blast Value by performing the Prepare Weapon Task. This must be performed every time the specialists wish to use the secondary Blast Value.</description>
+    </rule>
+    <rule name="Staff" id="89c8-2627-901b-2a2b" hidden="false">
+      <description>A rhyfler with this Ability may only be selected for a Patrol if they are part of the Retinue of another rhyfler.</description>
+    </rule>
+    <rule name="Pack Leader (X)" id="83e4-3977-218a-6a08" hidden="false">
+      <description>This Ability removes the Force Allowance restriction of the selected Pack Creatures. Additionally the rhyfler may perform the following Task.
+
+On Their Scent – The Pack Leader may Group Move themselves and up to X Pack Creatures regardless of their distance from said Pack Leader. This counts as one Activation for all units moved.</description>
+    </rule>
+    <rule name="Retinue (X)" id="46c8-f262-6527-7dca" hidden="false">
+      <description>It is the loyal Gamesquar who actually run the grand estates of the Hoblyn Valley Noblebucks, with the assistance of their Staff. Be that the talented Bushbuck hunters stalking their quarry, the Flushing Bucks digging out hidden prey, or the Kennel Master and his Coursers that run the game to ground, a Gamesquar must make the tough choice of which Staff to bring on the hunt.
+
+
+Rhyflers with this Ability may bring up to X rhyflers with the Staff Ability. They must still adhere to the Force Allowance restrictions set in their profiles.</description>
+    </rule>
+    <rule name="Resilient" id="187f-acdc-843c-93bb" hidden="false">
+      <description>Tougher than his companions, a Resilient rhyfler can do a Tend Wounded action on himself.</description>
+    </rule>
+    <rule name="Trench Armor" id="d292-fce8-55c1-94ee" hidden="false">
+      <description>Rhyflers with this ability halve the Might Roll of Fragmentation grenade attacks made against them. In addition they count as always passing Take Cover tests when suffering a Blast attack.</description>
+    </rule>
+    <rule name="Saddle-born" id="419b-c051-43b1-e47f" hidden="false">
+      <description>Creevin cavalry rhyflers train with their mounts from a very young age,
+making them more comfortable and capable while riding on the battlefield. This comfort allows them to ignore the Snapshot penalty from firing during a Standard or Sprint Movement Task. Firing during a Sprint still carries the -2 penalty due to the rapid movement of the mount.</description>
+    </rule>
+    <rule name="Lumbering" id="b56a-718b-b381-2b1b" hidden="false">
+      <description>Lumbering vehicles are larger and heavier than most others. They may ignore any movement penalties from transversing difficult terrain. They may cross Light or Normal Obstructing terrain features up to half their height, destroying the feature. However, due to their slower nature, they are unable to Gun It! in an attempt to gain more speed.</description>
+    </rule>
+    <rule name="Cautious" id="66cb-7a18-f708-4efa" hidden="false">
+      <description>Having never been trained well, or regularly, the bulk of the Hoblyn Valley Rangers are very tentative on the battlefield. Rhyflers with this ability gain Ranged (+1) when positioned behind Obstructing Cover</description>
+    </rule>
+    <rule name="Tune Up (X)" id="7351-040f-8de3-b385" hidden="false">
+      <description>A rhyfler with this ability gives disadvantage when their opponent rolls to damage a Vehicle X times per battle.
+When rolling on a Standard Vehicle or Rattleped Damage chart their controller can ask their opponent to roll two dice and take the lowest.
+Against Armored Vehicles this can temporarily increase the AV of the location hit by one before the Might roll is made.</description>
     </rule>
   </sharedRules>
   <publications>
     <publication name="GitHub" id="fe1b-d682-3c7e-a8e0" hidden="false" publisherUrl="https://github.com/JimmethJambo/Quar-Clash-Of-Rhyfles-NewRecruit-Data"/>
   </publications>
   <sharedSelectionEntries>
-    <selectionEntry type="upgrade" import="true" name="Pistol" hidden="false" id="7028-cb77-f695-540d">
+    <selectionEntry type="upgrade" import="true" name="Pistol" hidden="false" id="7028-cb77-f695-540d" defaultAmount="1">
       <profiles>
         <profile name="Pistol" typeId="0b63-6947-fb08-66eb" typeName="Weapon" hidden="false" id="73d9-a05f-95b2-65e2">
           <characteristics>
@@ -523,6 +573,678 @@ Heavy trait.</description>
         <infoLink name="Automatic (X)" id="6c62-b746-db07-5817" hidden="false" type="rule" targetId="321d-91fa-c981-2ce1"/>
         <infoLink name="Loader" id="53e6-5161-a0b2-1d22" hidden="false" type="rule" targetId="877f-75ce-5dc9-010e"/>
       </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Sprygt Mk3 &quot;Sketych&quot;" hidden="false" id="547e-4532-6467-254d" defaultAmount="1">
+      <profiles>
+        <profile name="Sprygt Mk3 &quot;Sketych&quot;" typeId="0b63-6947-fb08-66eb" typeName="Weapon" hidden="false" id="19ea-1610-767f-7af3">
+          <characteristics>
+            <characteristic name="Range" typeId="5b6c-828e-fe65-26a5">6</characteristic>
+            <characteristic name="SN" typeId="b1d6-1660-ac56-c22a">-2</characteristic>
+            <characteristic name="Abilities" typeId="ed37-dbdc-d41b-3af6"/>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="is-Haem Long Rhyfle" hidden="false" id="4335-70fb-198d-c82c" defaultAmount="1">
+      <profiles>
+        <profile name="is-Haem Long Rhyfle" typeId="0b63-6947-fb08-66eb" typeName="Weapon" hidden="false" id="7aec-f4a1-686d-6cfe">
+          <characteristics>
+            <characteristic name="Range" typeId="5b6c-828e-fe65-26a5">10</characteristic>
+            <characteristic name="SN" typeId="b1d6-1660-ac56-c22a">-3</characteristic>
+            <characteristic name="Abilities" typeId="ed37-dbdc-d41b-3af6"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="68bb-e496-aa3f-0560-min"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="68bb-e496-aa3f-0560-max"/>
+      </constraints>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="GMK4 Lance" hidden="false" id="da4f-4178-40ce-34f4" defaultAmount="1">
+      <profiles>
+        <profile name="GMK4 Lance" typeId="0b63-6947-fb08-66eb" typeName="Weapon" hidden="false" id="dae7-94aa-521b-7262">
+          <characteristics>
+            <characteristic name="Range" typeId="5b6c-828e-fe65-26a5">6&quot; Only</characteristic>
+            <characteristic name="SN" typeId="b1d6-1660-ac56-c22a"/>
+            <characteristic name="Abilities" typeId="ed37-dbdc-d41b-3af6">Grafaenk Lance</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Grafaenk Mk4 Lance" id="c3c8-58b9-32a3-3e30" hidden="false" type="rule" targetId="9bca-a0a1-75d8-4d95"/>
+      </infoLinks>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="690b-8205-696d-ca2c-min"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="690b-8205-696d-ca2c-max"/>
+      </constraints>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="FF10 Shotgun" hidden="false" id="917b-207c-77a6-6820" defaultAmount="1">
+      <profiles>
+        <profile name="FF10 Shotgun" typeId="0b63-6947-fb08-66eb" typeName="Weapon" hidden="false" id="3c87-efa7-cfbc-c1cf">
+          <characteristics>
+            <characteristic name="Range" typeId="5b6c-828e-fe65-26a5">4</characteristic>
+            <characteristic name="SN" typeId="b1d6-1660-ac56-c22a">-2</characteristic>
+            <characteristic name="Abilities" typeId="ed37-dbdc-d41b-3af6"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Shotgun" id="8133-8e7b-a943-f6f3" hidden="false" type="rule" targetId="d633-ee5f-c6cf-c931"/>
+      </infoLinks>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7cdd-38cf-c6bd-c924-min"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7cdd-38cf-c6bd-c924-max"/>
+      </constraints>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Bensa F6" hidden="false" id="a997-e84a-28c3-9b83" defaultAmount="1">
+      <profiles>
+        <profile name="Bensa F6" typeId="0b63-6947-fb08-66eb" typeName="Weapon" hidden="false" id="f755-fdc5-0dcc-12d8">
+          <characteristics>
+            <characteristic name="Range" typeId="5b6c-828e-fe65-26a5">6</characteristic>
+            <characteristic name="SN" typeId="b1d6-1660-ac56-c22a">-2</characteristic>
+            <characteristic name="Abilities" typeId="ed37-dbdc-d41b-3af6">Select Fire(2), Large Caliber</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Select Fire(X)" id="253f-b677-288e-55ef" hidden="false" type="rule" targetId="8c44-111c-27c4-4a9b"/>
+        <infoLink name="Large Caliber" id="9964-920b-8013-2039" hidden="false" type="rule" targetId="8eb8-8a48-5420-a303"/>
+      </infoLinks>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2236-0fae-9c08-121f-min"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2236-0fae-9c08-121f-max"/>
+      </constraints>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Gybyl-Hawlyr Rhyfle" hidden="false" id="e1d7-e64a-e874-b554" defaultAmount="1">
+      <profiles>
+        <profile name="Gybyl-Hawlyr Rhyfle" typeId="0b63-6947-fb08-66eb" typeName="Weapon" hidden="false" id="f5d2-7f16-5a7d-78ce">
+          <characteristics>
+            <characteristic name="Range" typeId="5b6c-828e-fe65-26a5">8</characteristic>
+            <characteristic name="SN" typeId="b1d6-1660-ac56-c22a">-3</characteristic>
+            <characteristic name="Abilities" typeId="ed37-dbdc-d41b-3af6"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="bed9-5957-8657-b8c2-min"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bed9-5957-8657-b8c2-max"/>
+      </constraints>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Naenyd mk4a LMG" hidden="false" id="ea6d-ce50-fac6-c747" defaultAmount="1">
+      <infoLinks>
+        <infoLink name="Automatic (X)" id="a304-1825-e369-c4d5" hidden="false" type="rule" targetId="321d-91fa-c981-2ce1"/>
+      </infoLinks>
+      <profiles>
+        <profile name="Naenyd mk4a LMG" typeId="0b63-6947-fb08-66eb" typeName="Weapon" hidden="false" id="309e-5717-22ba-8184">
+          <characteristics>
+            <characteristic name="Range" typeId="5b6c-828e-fe65-26a5">8</characteristic>
+            <characteristic name="SN" typeId="b1d6-1660-ac56-c22a">-3</characteristic>
+            <characteristic name="Abilities" typeId="ed37-dbdc-d41b-3af6">Automatic (2)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a8cb-0d44-6b79-e406-min"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a8cb-0d44-6b79-e406-max"/>
+      </constraints>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Moog-C SMG" hidden="false" id="e85d-c1ed-ca20-fe6e" defaultAmount="1">
+      <profiles>
+        <profile name="Moog-C SMG" typeId="0b63-6947-fb08-66eb" typeName="Weapon" hidden="false" id="ce22-bc67-04b7-616a">
+          <characteristics>
+            <characteristic name="Range" typeId="5b6c-828e-fe65-26a5">4</characteristic>
+            <characteristic name="SN" typeId="b1d6-1660-ac56-c22a">-1</characteristic>
+            <characteristic name="Abilities" typeId="ed37-dbdc-d41b-3af6">Select Fire (2)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Select Fire(X)" id="d740-c5db-d505-0b74" hidden="false" type="rule" targetId="8c44-111c-27c4-4a9b"/>
+      </infoLinks>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="959c-89de-f73b-8668-min"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="959c-89de-f73b-8668-max"/>
+      </constraints>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Rg7/7 Shotgun" hidden="false" id="7a44-f452-a3e5-36f1" defaultAmount="1">
+      <profiles>
+        <profile name="Rg7/7 Shotgun" typeId="0b63-6947-fb08-66eb" typeName="Weapon" hidden="false" id="d06f-06aa-7d4e-d7ea">
+          <characteristics>
+            <characteristic name="Range" typeId="5b6c-828e-fe65-26a5">4</characteristic>
+            <characteristic name="SN" typeId="b1d6-1660-ac56-c22a">-2</characteristic>
+            <characteristic name="Abilities" typeId="ed37-dbdc-d41b-3af6">Shotgun, Tractor Slugs</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Shotgun" id="d3a7-6afc-cad8-1e8d" hidden="false" type="rule" targetId="d633-ee5f-c6cf-c931"/>
+        <infoLink name="Tractor Slugs" id="c1a1-7469-e7ba-ab75" hidden="false" type="rule" targetId="617e-3e42-572e-6821"/>
+      </infoLinks>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="83bb-7ac3-3de5-ad08-min"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="83bb-7ac3-3de5-ad08-max"/>
+      </constraints>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Trench Pistol" hidden="false" id="db9d-50eb-3653-3030" defaultAmount="1">
+      <profiles>
+        <profile name="Trench Pistol" typeId="0b63-6947-fb08-66eb" typeName="Weapon" hidden="false" id="bcf2-67b2-e7ea-f090">
+          <characteristics>
+            <characteristic name="Range" typeId="5b6c-828e-fe65-26a5">4</characteristic>
+            <characteristic name="SN" typeId="b1d6-1660-ac56-c22a">-1</characteristic>
+            <characteristic name="Abilities" typeId="ed37-dbdc-d41b-3af6">Large Caliber</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Large Caliber" id="47b4-3a53-bf4a-3c75" hidden="false" type="rule" targetId="8eb8-8a48-5420-a303"/>
+      </infoLinks>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8187-4ca0-4374-37cd-min"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8187-4ca0-4374-37cd-max"/>
+      </constraints>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Bogen" hidden="false" id="f079-15b9-ac4f-a133" defaultAmount="1">
+      <profiles>
+        <profile name="Bogen" typeId="0b63-6947-fb08-66eb" typeName="Weapon" hidden="false" id="5c66-3729-a50b-6abf">
+          <characteristics>
+            <characteristic name="Range" typeId="5b6c-828e-fe65-26a5">6</characteristic>
+            <characteristic name="SN" typeId="b1d6-1660-ac56-c22a">-2</characteristic>
+            <characteristic name="Abilities" typeId="ed37-dbdc-d41b-3af6"/>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Ryshi" hidden="false" id="fad3-6fc6-250f-0230" defaultAmount="1">
+      <infoLinks>
+        <infoLink name="Large Caliber" id="e5a5-1d63-9524-2d4e" hidden="false" type="rule" targetId="8eb8-8a48-5420-a303"/>
+      </infoLinks>
+      <profiles>
+        <profile name="Ryshi" typeId="0b63-6947-fb08-66eb" typeName="Weapon" hidden="false" id="3e8b-e91c-f631-8eed">
+          <characteristics>
+            <characteristic name="Range" typeId="5b6c-828e-fe65-26a5">8</characteristic>
+            <characteristic name="SN" typeId="b1d6-1660-ac56-c22a">-3</characteristic>
+            <characteristic name="Abilities" typeId="ed37-dbdc-d41b-3af6">Large Caliber</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c8c2-26a7-dcdc-79a8-min"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c8c2-26a7-dcdc-79a8-max"/>
+      </constraints>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="H-11a" hidden="false" id="9369-572e-6440-2f0d" defaultAmount="1">
+      <infoLinks>
+        <infoLink name="Loader" id="592f-3c2b-6ff3-1fac" hidden="false" type="rule" targetId="877f-75ce-5dc9-010e"/>
+        <infoLink name="Automatic (X)" id="a208-3263-cd67-1645" hidden="false" type="rule" targetId="321d-91fa-c981-2ce1"/>
+      </infoLinks>
+      <profiles>
+        <profile name="H-11a" typeId="0b63-6947-fb08-66eb" typeName="Weapon" hidden="false" id="7c45-d4ad-b567-4486">
+          <characteristics>
+            <characteristic name="Range" typeId="5b6c-828e-fe65-26a5">10</characteristic>
+            <characteristic name="SN" typeId="b1d6-1660-ac56-c22a">-3</characteristic>
+            <characteristic name="Abilities" typeId="ed37-dbdc-d41b-3af6">Automatic (2), Loader</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="dfef-5d37-6f97-9a23-min"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="dfef-5d37-6f97-9a23-max"/>
+      </constraints>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Grifkis Shotgun" hidden="false" id="46ca-f158-077b-1185" defaultAmount="1">
+      <profiles>
+        <profile name="Grifkis Shotgun" typeId="0b63-6947-fb08-66eb" typeName="Weapon" hidden="false" id="34cd-f0ff-0ad9-84be">
+          <characteristics>
+            <characteristic name="Range" typeId="5b6c-828e-fe65-26a5">4</characteristic>
+            <characteristic name="SN" typeId="b1d6-1660-ac56-c22a">-1</characteristic>
+            <characteristic name="Abilities" typeId="ed37-dbdc-d41b-3af6">Shotgun</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Shotgun" id="5f22-4917-f984-db4b" hidden="false" type="rule" targetId="d633-ee5f-c6cf-c931"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Sio-Cly Derringer" hidden="false" id="3758-f39a-4fc1-0b1f" defaultAmount="1">
+      <infoLinks>
+        <infoLink name="Shotgun" id="3dda-2011-c31e-2b79" hidden="false" type="rule" targetId="d633-ee5f-c6cf-c931"/>
+      </infoLinks>
+      <profiles>
+        <profile name="Sio-Cly Derringer" typeId="0b63-6947-fb08-66eb" typeName="Weapon" hidden="false" id="c33b-9169-f58e-9245">
+          <characteristics>
+            <characteristic name="Range" typeId="5b6c-828e-fe65-26a5">4</characteristic>
+            <characteristic name="SN" typeId="b1d6-1660-ac56-c22a">-1</characteristic>
+            <characteristic name="Abilities" typeId="ed37-dbdc-d41b-3af6">Shotgun</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="db5e-6020-54fd-a3ba-min"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="db5e-6020-54fd-a3ba-max"/>
+      </constraints>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Gorga MOD(2)" hidden="false" id="1960-8eb7-a64d-a3dd" defaultAmount="1">
+      <infoLinks>
+        <infoLink name="Shotgun" id="89b9-4c4a-cb32-69e0" hidden="false" type="rule" targetId="d633-ee5f-c6cf-c931"/>
+      </infoLinks>
+      <profiles>
+        <profile name="Gorga MOD(2)" typeId="0b63-6947-fb08-66eb" typeName="Weapon" hidden="false" id="12a3-dbef-1d32-a539">
+          <characteristics>
+            <characteristic name="Range" typeId="5b6c-828e-fe65-26a5">4</characteristic>
+            <characteristic name="SN" typeId="b1d6-1660-ac56-c22a">-2</characteristic>
+            <characteristic name="Abilities" typeId="ed37-dbdc-d41b-3af6">Shotgun</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="95a9-e23c-5fdf-edb0-min"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="95a9-e23c-5fdf-edb0-max"/>
+      </constraints>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Splagen Torpedo" hidden="false" id="bc2d-b7e7-440a-aee2" defaultAmount="1">
+      <profiles>
+        <profile name="Splagen Torpedo" typeId="0b63-6947-fb08-66eb" typeName="Weapon" hidden="false" id="2fbe-45b9-7a49-e4c6">
+          <characteristics>
+            <characteristic name="Range" typeId="5b6c-828e-fe65-26a5">6</characteristic>
+            <characteristic name="SN" typeId="b1d6-1660-ac56-c22a">NA</characteristic>
+            <characteristic name="Abilities" typeId="ed37-dbdc-d41b-3af6">Blast (Small, 2d6-1), Loader</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Blast (X,Y)" id="5a10-67e5-b29d-d907" hidden="false" type="rule" targetId="b4b8-45d7-e9bb-1444"/>
+        <infoLink name="Loader" id="f301-871f-e294-3d41" hidden="false" type="rule" targetId="877f-75ce-5dc9-010e"/>
+      </infoLinks>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2d4a-0065-13d5-0cdf-min"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2d4a-0065-13d5-0cdf-max"/>
+      </constraints>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="M8-c MMG" hidden="false" id="f1f7-6210-5df6-3d4a" defaultAmount="1">
+      <profiles>
+        <profile name="M8-c MMG" typeId="0b63-6947-fb08-66eb" typeName="Weapon" hidden="false" id="d4c9-a5b3-882b-609f">
+          <characteristics>
+            <characteristic name="Range" typeId="5b6c-828e-fe65-26a5">8</characteristic>
+            <characteristic name="SN" typeId="b1d6-1660-ac56-c22a">-3</characteristic>
+            <characteristic name="Abilities" typeId="ed37-dbdc-d41b-3af6">Automatic (1), Braced, Heavy (2,3)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Heavy (X,Y)" id="dba3-3d48-2116-7414" hidden="false" type="rule" targetId="4003-0b0e-9906-58c4"/>
+        <infoLink name="Automatic (X)" id="26bc-8968-4b66-f0de" hidden="false" type="rule" targetId="321d-91fa-c981-2ce1"/>
+        <infoLink name="Braced" id="74fe-cca7-3d15-a760" hidden="false" type="rule" targetId="0b83-b784-dae8-503c"/>
+      </infoLinks>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2f3e-d08c-3c3e-7b64-min"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2f3e-d08c-3c3e-7b64-max"/>
+      </constraints>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="MAR SMG" hidden="false" id="3dc0-4a89-33c5-b8d1" defaultAmount="1">
+      <profiles>
+        <profile name="MAR SMG" typeId="0b63-6947-fb08-66eb" typeName="Weapon" hidden="false" id="0a24-79ed-ed62-7dcc">
+          <characteristics>
+            <characteristic name="Range" typeId="5b6c-828e-fe65-26a5">6</characteristic>
+            <characteristic name="SN" typeId="b1d6-1660-ac56-c22a">-2</characteristic>
+            <characteristic name="Abilities" typeId="ed37-dbdc-d41b-3af6"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="282a-5637-51b3-7bc2-min"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="282a-5637-51b3-7bc2-max"/>
+      </constraints>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="KEEGY Hvy Rhyfle" hidden="false" id="5d6a-e107-ecfe-3bbc" defaultAmount="1">
+      <profiles>
+        <profile name="KEEGY Hvy Rhyfle" typeId="0b63-6947-fb08-66eb" typeName="Weapon" hidden="false" id="3a70-b5e0-919f-b8cb">
+          <characteristics>
+            <characteristic name="Range" typeId="5b6c-828e-fe65-26a5">8</characteristic>
+            <characteristic name="SN" typeId="b1d6-1660-ac56-c22a">-3</characteristic>
+            <characteristic name="Abilities" typeId="ed37-dbdc-d41b-3af6">Large Caliber</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Large Caliber" id="2474-5634-928f-939c" hidden="false" type="rule" targetId="8eb8-8a48-5420-a303"/>
+      </infoLinks>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9aa5-0472-e8dc-4196-min"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9aa5-0472-e8dc-4196-max"/>
+      </constraints>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Gree Pistol" hidden="false" id="dc94-742d-70d6-5eb0" defaultAmount="1">
+      <profiles>
+        <profile name="Gree Pistol" typeId="0b63-6947-fb08-66eb" typeName="Weapon" hidden="false" id="8840-b045-5200-452f">
+          <characteristics>
+            <characteristic name="Range" typeId="5b6c-828e-fe65-26a5">4</characteristic>
+            <characteristic name="SN" typeId="b1d6-1660-ac56-c22a">-1</characteristic>
+            <characteristic name="Abilities" typeId="ed37-dbdc-d41b-3af6"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a4d8-c005-5f7c-0a37-min"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a4d8-c005-5f7c-0a37-max"/>
+      </constraints>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="PYN-64 Bolt Action Rhyfle" hidden="false" id="fb51-a4fd-5c91-55b0" defaultAmount="1">
+      <profiles>
+        <profile name="PYN-64 Bolt Action Rhyfle" typeId="0b63-6947-fb08-66eb" typeName="Weapon" hidden="false" id="7787-3e04-32d5-7f77">
+          <characteristics>
+            <characteristic name="Range" typeId="5b6c-828e-fe65-26a5">10</characteristic>
+            <characteristic name="SN" typeId="b1d6-1660-ac56-c22a">-3</characteristic>
+            <characteristic name="Abilities" typeId="ed37-dbdc-d41b-3af6">Large Caliber, Bolt Action</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Large Caliber" id="895a-67b8-4a68-2768" hidden="false" type="rule" targetId="8eb8-8a48-5420-a303"/>
+        <infoLink name="Bolt Action" id="bd6d-0f8d-00e3-da18" hidden="false" type="rule" targetId="7dca-e5c7-0f9d-62a1"/>
+      </infoLinks>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="804b-5569-735e-b402-min"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="804b-5569-735e-b402-max"/>
+      </constraints>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Derringer" hidden="false" id="ef1b-9f4a-8157-46f3" defaultAmount="1">
+      <profiles>
+        <profile name="Derringer" typeId="0b63-6947-fb08-66eb" typeName="Weapon" hidden="false" id="0168-4b92-b188-5f83">
+          <characteristics>
+            <characteristic name="Range" typeId="5b6c-828e-fe65-26a5">2</characteristic>
+            <characteristic name="SN" typeId="b1d6-1660-ac56-c22a">-1</characteristic>
+            <characteristic name="Abilities" typeId="ed37-dbdc-d41b-3af6">Large Caliber</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Large Caliber" id="a778-fd66-4312-d81f" hidden="false" type="rule" targetId="8eb8-8a48-5420-a303"/>
+      </infoLinks>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4734-d85b-cc94-871f-min"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4734-d85b-cc94-871f-max"/>
+      </constraints>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Carbine" hidden="false" id="c4ed-38f3-45c1-3f44" defaultAmount="1">
+      <profiles>
+        <profile name="Carbine" typeId="0b63-6947-fb08-66eb" typeName="Weapon" hidden="false" id="bfe6-7c19-e88d-36e4">
+          <characteristics>
+            <characteristic name="Range" typeId="5b6c-828e-fe65-26a5">6</characteristic>
+            <characteristic name="SN" typeId="b1d6-1660-ac56-c22a">-2</characteristic>
+            <characteristic name="Abilities" typeId="ed37-dbdc-d41b-3af6"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5820-0eb3-793a-d1fa-min"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5820-0eb3-793a-d1fa-max"/>
+      </constraints>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Deck-Swabber Rhyfle Grenade" hidden="false" id="4fe6-4270-225a-7431" defaultAmount="1">
+      <profiles>
+        <profile name="Deck-Swabber Rhyfle Grenade" typeId="0b63-6947-fb08-66eb" typeName="Weapon" hidden="false" id="e305-bc8e-0c55-8c0d">
+          <characteristics>
+            <characteristic name="Range" typeId="5b6c-828e-fe65-26a5">6</characteristic>
+            <characteristic name="SN" typeId="b1d6-1660-ac56-c22a">NA</characteristic>
+            <characteristic name="Abilities" typeId="ed37-dbdc-d41b-3af6">Indirect Fire, Blast (Medium, 1d6+2)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Indirect Fire" id="13e6-98ea-485f-a07b" hidden="false" type="rule" targetId="dcad-8f82-bf82-81ec"/>
+        <infoLink name="Blast (X,Y)" id="5f77-7c73-4bfc-6e59" hidden="false" type="rule" targetId="b4b8-45d7-e9bb-1444"/>
+      </infoLinks>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="09e9-a59e-183e-8c85-min"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="09e9-a59e-183e-8c85-max"/>
+      </constraints>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Blunderbuss" hidden="false" id="137a-5aae-2d81-d226" defaultAmount="1">
+      <profiles>
+        <profile name="Blunderbuss" typeId="0b63-6947-fb08-66eb" typeName="Weapon" hidden="false" id="966e-72c3-abc5-8c95">
+          <characteristics>
+            <characteristic name="Range" typeId="5b6c-828e-fe65-26a5">4</characteristic>
+            <characteristic name="SN" typeId="b1d6-1660-ac56-c22a">-1</characteristic>
+            <characteristic name="Abilities" typeId="ed37-dbdc-d41b-3af6">Shotgun, Slow Reload</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Slow Reload" id="c244-7e6d-fa2b-b334" hidden="false" type="rule" targetId="d313-5d37-5ae4-7b1f"/>
+        <infoLink name="Shotgun" id="218c-c198-8398-42e1" hidden="false" type="rule" targetId="d633-ee5f-c6cf-c931"/>
+      </infoLinks>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2a8a-07b0-5edc-7206-min"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2a8a-07b0-5edc-7206-max"/>
+      </constraints>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Harlech Carbine" hidden="false" id="baf3-abc4-b8f7-0ae8" defaultAmount="1">
+      <profiles>
+        <profile name="Harlech Carbine" typeId="0b63-6947-fb08-66eb" typeName="Weapon" hidden="false" id="39c1-58f2-740b-5207">
+          <characteristics>
+            <characteristic name="Range" typeId="5b6c-828e-fe65-26a5">6</characteristic>
+            <characteristic name="SN" typeId="b1d6-1660-ac56-c22a">-2</characteristic>
+            <characteristic name="Abilities" typeId="ed37-dbdc-d41b-3af6"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8b9d-21f7-c88d-0cd8-min"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8b9d-21f7-c88d-0cd8-max"/>
+      </constraints>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="SG-3 Scattergun" hidden="false" id="2b03-bdf0-e791-a2d1" defaultAmount="1">
+      <profiles>
+        <profile name="SG-3 Scattergun" typeId="0b63-6947-fb08-66eb" typeName="Weapon" hidden="false" id="3bf3-5414-bef7-9b12">
+          <characteristics>
+            <characteristic name="Range" typeId="5b6c-828e-fe65-26a5">12</characteristic>
+            <characteristic name="SN" typeId="b1d6-1660-ac56-c22a">NA</characteristic>
+            <characteristic name="Abilities" typeId="ed37-dbdc-d41b-3af6">Scattergun, Large Caliber</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Large Caliber" id="9ce1-917e-7d96-5b07" hidden="false" type="rule" targetId="8eb8-8a48-5420-a303"/>
+        <infoLink name="Scattergun" id="031b-d73c-734a-4dd1" hidden="false" type="rule" targetId="1bbc-4d05-2fec-3696"/>
+      </infoLinks>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4ce3-ef91-76ae-1673-min"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4ce3-ef91-76ae-1673-max"/>
+      </constraints>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="MTR(22)" hidden="false" id="d282-62af-41f6-5f23" defaultAmount="1">
+      <profiles>
+        <profile name="MTR(22)" typeId="0b63-6947-fb08-66eb" typeName="Weapon" hidden="false" id="ef15-ec23-2ce6-2c6b">
+          <characteristics>
+            <characteristic name="Range" typeId="5b6c-828e-fe65-26a5">10</characteristic>
+            <characteristic name="SN" typeId="b1d6-1660-ac56-c22a">NA</characteristic>
+            <characteristic name="Abilities" typeId="ed37-dbdc-d41b-3af6">Braced, Indirect Fire, Blast(Medium, 2d6-1)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Indirect Fire" id="447e-76e9-bcb9-9fce" hidden="false" type="rule" targetId="dcad-8f82-bf82-81ec"/>
+        <infoLink name="Blast (X,Y)" id="a971-2cc7-df2c-e488" hidden="false" type="rule" targetId="b4b8-45d7-e9bb-1444"/>
+        <infoLink name="Braced" id="0d26-7750-bb4b-8b2f" hidden="false" type="rule" targetId="0b83-b784-dae8-503c"/>
+      </infoLinks>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="33f0-e4b7-3ee2-e061-min"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="33f0-e4b7-3ee2-e061-max"/>
+      </constraints>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Tefsyn Infantry Rhyfle" hidden="false" id="f284-2f48-488a-85e0" defaultAmount="1">
+      <profiles>
+        <profile name="Tefsyn Infantry Rhyfle" typeId="0b63-6947-fb08-66eb" typeName="Weapon" hidden="false" id="7cac-c108-c860-e6a7">
+          <characteristics>
+            <characteristic name="Range" typeId="5b6c-828e-fe65-26a5">8</characteristic>
+            <characteristic name="SN" typeId="b1d6-1660-ac56-c22a">-3</characteristic>
+            <characteristic name="Abilities" typeId="ed37-dbdc-d41b-3af6"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0822-2ade-071f-610f-min"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0822-2ade-071f-610f-max"/>
+      </constraints>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Cidderach LMG" hidden="false" id="9bcd-41c2-a621-b662" defaultAmount="1">
+      <profiles>
+        <profile name="Cidderach LMG" typeId="0b63-6947-fb08-66eb" typeName="Weapon" hidden="false" id="6657-4592-f54d-3690">
+          <characteristics>
+            <characteristic name="Range" typeId="5b6c-828e-fe65-26a5">8</characteristic>
+            <characteristic name="SN" typeId="b1d6-1660-ac56-c22a">-3</characteristic>
+            <characteristic name="Abilities" typeId="ed37-dbdc-d41b-3af6">Automatic (1), Braced</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Braced" id="bb68-e795-831e-3be2" hidden="false" type="rule" targetId="0b83-b784-dae8-503c"/>
+        <infoLink name="Automatic (X)" id="89d7-0b97-4ec3-2bdb" hidden="false" type="rule" targetId="321d-91fa-c981-2ce1"/>
+      </infoLinks>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="181b-7288-b363-6144-min"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="181b-7288-b363-6144-max"/>
+      </constraints>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Paired Flyntlock Pistols" hidden="false" id="56fa-5b0f-3b88-11a8" defaultAmount="1">
+      <profiles>
+        <profile name="Paired Flyntlock Pistols" typeId="0b63-6947-fb08-66eb" typeName="Weapon" hidden="false" id="c7ba-cc51-e13f-c475">
+          <characteristics>
+            <characteristic name="Range" typeId="5b6c-828e-fe65-26a5">4</characteristic>
+            <characteristic name="SN" typeId="b1d6-1660-ac56-c22a">-1</characteristic>
+            <characteristic name="Abilities" typeId="ed37-dbdc-d41b-3af6">Large Caliber</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Large Caliber" id="bc78-8eb6-d176-47f3" hidden="false" type="rule" targetId="8eb8-8a48-5420-a303"/>
+      </infoLinks>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="95b7-7622-de1b-23e9-min"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="95b7-7622-de1b-23e9-max"/>
+      </constraints>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="&quot;Fythll&quot; Hunting Rhyfle" hidden="false" id="975d-e2d0-5bf7-890f" defaultAmount="1">
+      <profiles>
+        <profile name="&quot;Fythll&quot; Hunting Flyntlock" typeId="0b63-6947-fb08-66eb" typeName="Weapon" hidden="false" id="c000-d930-572d-e61b">
+          <characteristics>
+            <characteristic name="Range" typeId="5b6c-828e-fe65-26a5">10</characteristic>
+            <characteristic name="SN" typeId="b1d6-1660-ac56-c22a">NA</characteristic>
+            <characteristic name="Abilities" typeId="ed37-dbdc-d41b-3af6">Large Caliber</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Large Caliber" id="8c4b-04a3-b1aa-1953" hidden="false" type="rule" targetId="8eb8-8a48-5420-a303"/>
+      </infoLinks>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2f4f-84cc-0455-2a45-min"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2f4f-84cc-0455-2a45-max"/>
+      </constraints>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Jangalar Battle Rhyfle" hidden="false" id="e7ba-c42a-769f-77f7" defaultAmount="1">
+      <profiles>
+        <profile name="Jangalar Battle Rhyfle" typeId="0b63-6947-fb08-66eb" typeName="Weapon" hidden="false" id="35b0-1f26-f684-3c09">
+          <characteristics>
+            <characteristic name="Range" typeId="5b6c-828e-fe65-26a5">8</characteristic>
+            <characteristic name="SN" typeId="b1d6-1660-ac56-c22a">-2</characteristic>
+            <characteristic name="Abilities" typeId="ed37-dbdc-d41b-3af6"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0f29-a8a8-f3b1-cd62-min"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0f29-a8a8-f3b1-cd62-max"/>
+      </constraints>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Jokyn SMG" hidden="false" id="55f7-d2ee-f240-3d22" defaultAmount="1">
+      <profiles>
+        <profile name="Jokyn SMG" typeId="0b63-6947-fb08-66eb" typeName="Weapon" hidden="false" id="61b4-2c74-31f4-1884">
+          <characteristics>
+            <characteristic name="Range" typeId="5b6c-828e-fe65-26a5">6</characteristic>
+            <characteristic name="SN" typeId="b1d6-1660-ac56-c22a">-2</characteristic>
+            <characteristic name="Abilities" typeId="ed37-dbdc-d41b-3af6"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="47d7-a865-f29f-a5e4-min"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="47d7-a865-f29f-a5e4-max"/>
+      </constraints>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Splagen B.e" hidden="false" id="b57a-59ee-5662-8367" defaultAmount="1">
+      <profiles>
+        <profile name="Splagen B.e" typeId="0b63-6947-fb08-66eb" typeName="Weapon" hidden="false" id="2ba2-4d54-95bb-77b5">
+          <characteristics>
+            <characteristic name="Range" typeId="5b6c-828e-fe65-26a5">6</characteristic>
+            <characteristic name="SN" typeId="b1d6-1660-ac56-c22a">NA</characteristic>
+            <characteristic name="Abilities" typeId="ed37-dbdc-d41b-3af6">AP Shell (Medium, 1d6+1), AT Shell (Small, 2d6), Loader</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Blast (X,Y)" id="9503-7c22-66db-a69b" hidden="false" type="rule" targetId="b4b8-45d7-e9bb-1444"/>
+        <infoLink name="Switch Ammo" id="dd40-0f9c-a402-f3e8" hidden="false" type="rule" targetId="bea6-8d8d-8afc-d192"/>
+        <infoLink name="Loader" id="e46b-aa75-ffe8-f934" hidden="false" type="rule" targetId="877f-75ce-5dc9-010e"/>
+      </infoLinks>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d194-bd03-05df-9dec-min"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d194-bd03-05df-9dec-max"/>
+      </constraints>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Ceremonial Spear" hidden="false" id="4032-7de7-6d3e-1477" defaultAmount="1">
+      <profiles>
+        <profile name="Ceremonial Spear" typeId="0b63-6947-fb08-66eb" typeName="Weapon" hidden="false" id="d5d1-111a-7bf2-e074">
+          <characteristics>
+            <characteristic name="Range" typeId="5b6c-828e-fe65-26a5">4</characteristic>
+            <characteristic name="SN" typeId="b1d6-1660-ac56-c22a">NA</characteristic>
+            <characteristic name="Abilities" typeId="ed37-dbdc-d41b-3af6">Thrown Weapon</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Thrown Weapon" id="d861-7e78-fa6a-f12c" hidden="false" type="rule" targetId="6030-13b7-0bf6-8b79"/>
+      </infoLinks>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="eb52-479a-3269-a3f5-min"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="eb52-479a-3269-a3f5-max"/>
+      </constraints>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Dinas Carbine" hidden="false" id="b628-52b6-bf76-307f" defaultAmount="1">
+      <profiles>
+        <profile name="Dinas Carbine" typeId="0b63-6947-fb08-66eb" typeName="Weapon" hidden="false" id="35ac-78d9-6132-5209">
+          <characteristics>
+            <characteristic name="Range" typeId="5b6c-828e-fe65-26a5">6</characteristic>
+            <characteristic name="SN" typeId="b1d6-1660-ac56-c22a">-2</characteristic>
+            <characteristic name="Abilities" typeId="ed37-dbdc-d41b-3af6"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Thrown Weapon" id="b677-625c-3853-dbea" hidden="false" type="rule" targetId="6030-13b7-0bf6-8b79"/>
+      </infoLinks>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7c17-d7cf-ca4f-e947-min"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7c17-d7cf-ca4f-e947-max"/>
+      </constraints>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="LC Pistol" hidden="false" id="1266-e348-250e-3caf" defaultAmount="1">
+      <profiles>
+        <profile name="LC Pistol" typeId="0b63-6947-fb08-66eb" typeName="Weapon" hidden="false" id="6294-d26e-b5f5-a888">
+          <characteristics>
+            <characteristic name="Range" typeId="5b6c-828e-fe65-26a5">4</characteristic>
+            <characteristic name="SN" typeId="b1d6-1660-ac56-c22a">-1</characteristic>
+            <characteristic name="Abilities" typeId="ed37-dbdc-d41b-3af6">Large Caliber</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Large Caliber" id="f74f-c90d-7410-dbd6" hidden="false" type="rule" targetId="8eb8-8a48-5420-a303"/>
+      </infoLinks>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f152-7776-b6ca-b023-min"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f152-7776-b6ca-b023-max"/>
+      </constraints>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedProfiles>
