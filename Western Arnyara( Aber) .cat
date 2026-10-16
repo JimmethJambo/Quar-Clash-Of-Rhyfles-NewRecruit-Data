@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="a06a-3543-ab12-f426" name="Western Arnyara (Aber)" gameSystemId="sys-dbd1-1d4a-43f9-1e9c" gameSystemRevision="3" revision="7" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="a06a-3543-ab12-f426" name="Western Arnyara (Aber)" gameSystemId="sys-dbd1-1d4a-43f9-1e9c" gameSystemRevision="3" revision="8" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedSelectionEntries>
     <selectionEntry type="unit" import="true" name="Able (MAR SMG)" hidden="false" id="335b-70fb-03a7-6ee3" sortIndex="2">
       <categoryLinks>
@@ -453,13 +453,14 @@
             <characteristic name="Mt" typeId="d8ef-e518-8f49-8a7b">2d6-1</characteristic>
             <characteristic name="MA" typeId="4cd7-b825-6660-1758">6</characteristic>
             <characteristic name="Toughness" typeId="197d-1c5e-af24-ee6e">4</characteristic>
-            <characteristic name="Special Abilities" typeId="94ec-89a2-8f77-66c3">Ranged (+1), Hardened</characteristic>
+            <characteristic name="Special Abilities" typeId="94ec-89a2-8f77-66c3">Ranged (+1), Hardened, AT Grenades</characteristic>
           </characteristics>
         </profile>
       </profiles>
       <infoLinks>
         <infoLink name="Ranged (X)" id="18e3-5aad-8fa8-72d0" hidden="false" type="rule" targetId="54f4-6c58-08c6-8d46"/>
-        <infoLink name="Hardened" id="09c5-df35-3da3-635b" hidden="false" type="rule" targetId="e0a0-779f-2ccc-df59"/>
+        <infoLink name="AT Grenades" id="09c5-df35-3da3-635b" hidden="false" type="rule" targetId="bf13-7d8d-e01d-98dc"/>
+        <infoLink name="Hardened" id="a8b0-6994-5b0e-54dd" hidden="false" type="rule" targetId="e0a0-779f-2ccc-df59"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink targetId="de6b-6ec2-9294-541d" id="7098-c683-f6cc-7e7e" primary="true" name="Unit"/>

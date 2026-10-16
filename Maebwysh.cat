@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="1d11-b5d2-22a7-26bf" name="Maebwysh" gameSystemId="sys-dbd1-1d4a-43f9-1e9c" gameSystemRevision="9" revision="3" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="1d11-b5d2-22a7-26bf" name="Maebwysh" gameSystemId="sys-dbd1-1d4a-43f9-1e9c" gameSystemRevision="9" revision="4" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedSelectionEntries>
     <selectionEntry type="unit" import="true" name="Rhyfler" hidden="false" id="4110-6fb3-a15b-c906">
       <entryLinks>
@@ -625,7 +625,7 @@
       <profiles>
         <profile name="Thalvar Armored Wagon" typeId="75e9-4c28-c81b-5327" typeName="Armored Vehicle" hidden="false" id="49b2-b4c2-fea0-7dae">
           <characteristics>
-            <characteristic name="Crew" typeId="7ff3-eaea-87c6-deaa">1</characteristic>
+            <characteristic name="Crew" typeId="7ff3-eaea-87c6-deaa">2</characteristic>
             <characteristic name="Skill" typeId="645c-7e75-7b5f-36cd">12</characteristic>
             <characteristic name="MA" typeId="6128-a30c-557d-656a">6/3</characteristic>
             <characteristic name="Abilities" typeId="7a58-8944-3a3e-1e25">Turret, Agile, Individual Activation</characteristic>
