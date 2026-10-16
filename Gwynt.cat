@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="da4e-ede1-f965-99f0" name="Gwynt" gameSystemId="sys-dbd1-1d4a-43f9-1e9c" gameSystemRevision="3" revision="8" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="da4e-ede1-f965-99f0" name="Gwynt" gameSystemId="sys-dbd1-1d4a-43f9-1e9c" gameSystemRevision="3" revision="9" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedSelectionEntries>
     <selectionEntry type="upgrade" import="true" name="RCO-M60" hidden="false" id="1955-b615-f701-0665" sortIndex="1" defaultAmount="1">
       <constraints>
@@ -1144,7 +1144,7 @@
             <characteristic name="T" typeId="2fcc-4790-c933-ecf8">4</characteristic>
             <characteristic name="D" typeId="20b1-a32d-e41c-9a37">2</characteristic>
             <characteristic name="Equipment" typeId="4a61-14de-472f-b84d">Harlech Carbine</characteristic>
-            <characteristic name="Special" typeId="c973-830d-f693-f6b1">Cadier, Ranged (+1)</characteristic>
+            <characteristic name="Special" typeId="c973-830d-f693-f6b1">Cadier</characteristic>
           </characteristics>
           <attributes>
             <attribute typeId="031c-0d07-1b90-9ff5" name="New Attribute Type"/>
@@ -1157,7 +1157,7 @@
             <characteristic name="MA" typeId="7454-6341-5be7-ec95">5</characteristic>
             <characteristic name="T" typeId="d802-8465-1aba-b808">4</characteristic>
             <characteristic name="Equipment" typeId="eb3d-2bb6-1a43-2302">Harlech Carbine</characteristic>
-            <characteristic name="Special" typeId="3587-866b-8fff-d4c0">Ranged (+1)</characteristic>
+            <characteristic name="Special" typeId="3587-866b-8fff-d4c0"/>
           </characteristics>
         </profile>
         <profile name="1-2" typeId="6e06-153b-5181-d39d" typeName="Damage Chart" hidden="false" id="481f-05f5-8eaa-53fd">
@@ -1184,7 +1184,6 @@
       <infoLinks>
         <infoLink name="Cadier" id="c432-5268-fcac-9a1c" hidden="false" type="rule" targetId="fff3-d972-c7a6-f80c"/>
         <infoLink name="Skittish" id="af2e-4b05-72c4-39d7" hidden="false" type="rule" targetId="61ec-2639-3a0c-b7a0"/>
-        <infoLink name="Ranged (X)" id="dded-d546-3b18-f09e" hidden="false" type="rule" targetId="54f4-6c58-08c6-8d46"/>
         <infoLink name="Thunderous Hooves" id="4fb1-d8eb-1eed-b99b" hidden="false" type="rule" targetId="7acf-9df6-9b45-8d55"/>
       </infoLinks>
       <constraints>
