@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="bc1c-f2a9-5c33-03a4" name="Hoblyn Valley Rangers" gameSystemId="sys-dbd1-1d4a-43f9-1e9c" gameSystemRevision="12" revision="1" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="bc1c-f2a9-5c33-03a4" name="Hoblyn Valley Rangers" gameSystemId="sys-dbd1-1d4a-43f9-1e9c" gameSystemRevision="12" revision="2" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedSelectionEntries>
     <selectionEntry type="unit" import="true" name="Gaefyn (Sketych)" hidden="false" id="b2bd-f4f5-4067-7c48">
       <costs>
@@ -54,7 +54,7 @@
         <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="ba6f-0114-79ff-33ac"/>
       </constraints>
       <entryLinks>
-        <entryLink import="true" name="&quot;Fythll&quot; Hunting Flyntlock" hidden="false" id="9339-876e-c158-6cb0" type="selectionEntry" targetId="975d-e2d0-5bf7-890f"/>
+        <entryLink import="true" name="&quot;Fythll&quot; Hunting Rhyfle" hidden="false" id="9339-876e-c158-6cb0" type="selectionEntry" targetId="975d-e2d0-5bf7-890f"/>
       </entryLinks>
       <categoryLinks>
         <categoryLink targetId="de6b-6ec2-9294-541d" id="5c66-1b34-3be7-b3c2" primary="true" name="Unit"/>
@@ -431,24 +431,24 @@
             <characteristic name="Special" typeId="3587-866b-8fff-d4c0">Leader (4/6), Grafaenk Lance</characteristic>
           </characteristics>
         </profile>
-        <profile name="6" typeId="6e06-153b-5181-d39d" typeName="Damage Chart" hidden="false" id="2a9a-37d7-1c5e-b13e">
-          <characteristics>
-            <characteristic name="Result" typeId="897e-4ecc-846b-1598">Rider is hit and Taken OOA. Remove Mount from the battlefield and replace with OOA Dismounted Rider. Passenger makes a Mounted Crash Skill Check before being placed on the battlefield.</characteristic>
-          </characteristics>
-        </profile>
-        <profile name="1-2" typeId="6e06-153b-5181-d39d" typeName="Damage Chart" hidden="false" id="933e-ce59-5f62-cd0a">
+        <profile name="1-2" typeId="6e06-153b-5181-d39d" typeName="Damage Chart" hidden="false" id="7a74-9fb8-26c8-a37a">
           <characteristics>
             <characteristic name="Result" typeId="897e-4ecc-846b-1598">Mounted Rhyfler is Rattled. Unit may not Charge until Rattled is cleared.</characteristic>
           </characteristics>
         </profile>
-        <profile name="5" typeId="6e06-153b-5181-d39d" typeName="Damage Chart" hidden="false" id="0670-d511-7d91-23c0">
+        <profile name="3-4" typeId="6e06-153b-5181-d39d" typeName="Damage Chart" hidden="false" id="a22d-11a3-97fd-5656">
+          <characteristics>
+            <characteristic name="Result" typeId="897e-4ecc-846b-1598">Mount is wounded. Unit’s MA reduced to second value. If this result is rolled again treat it as a roll of 5.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="5" typeId="6e06-153b-5181-d39d" typeName="Damage Chart" hidden="false" id="4692-e1cb-f116-8174">
           <characteristics>
             <characteristic name="Result" typeId="897e-4ecc-846b-1598">Mount is taken OOA. Replace mounted unit with dismounted Rider and Passenger. Both make a Mounted Crash Skill Check.</characteristic>
           </characteristics>
         </profile>
-        <profile name="3-4" typeId="6e06-153b-5181-d39d" typeName="Damage Chart" hidden="false" id="6bba-5f48-7ad7-f53e">
+        <profile name="6" typeId="6e06-153b-5181-d39d" typeName="Damage Chart" hidden="false" id="3302-ac7a-75e8-e19e">
           <characteristics>
-            <characteristic name="Result" typeId="897e-4ecc-846b-1598">Mount is wounded. Unit’s MA reduced to second value. If this result is rolled again treat it as a roll of 5.</characteristic>
+            <characteristic name="Result" typeId="897e-4ecc-846b-1598">Rider is hit and Taken OOA. Remove Mount from the battlefield and replace with OOA Dismounted Rider. Passenger makes a Mounted Crash Skill Check before being placed on the battlefield.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -512,31 +512,6 @@
             <characteristic name="Abilities" typeId="bd42-ef04-afe1-f4d4">Large Caliber</characteristic>
           </characteristics>
         </profile>
-        <profile name="3-4" typeId="6e06-153b-5181-d39d" typeName="Damage Chart" hidden="false" id="4061-f993-4f19-16c9">
-          <characteristics>
-            <characteristic name="Result" typeId="897e-4ecc-846b-1598">Hunting Party is Gobsmacked. Remove Rattled if present.</characteristic>
-          </characteristics>
-        </profile>
-        <profile name="1-2" typeId="6e06-153b-5181-d39d" typeName="Damage Chart" hidden="false" id="9311-33e3-7884-b261">
-          <characteristics>
-            <characteristic name="Result" typeId="897e-4ecc-846b-1598">Hunting Party Becomes Rattled</characteristic>
-          </characteristics>
-        </profile>
-        <profile name="5-6" typeId="6e06-153b-5181-d39d" typeName="Damage Chart" hidden="false" id="bb91-785d-30bc-27d2">
-          <characteristics>
-            <characteristic name="Result" typeId="897e-4ecc-846b-1598">Hunting Party suffers 1 point of Damage</characteristic>
-          </characteristics>
-        </profile>
-        <profile name="7" typeId="6e06-153b-5181-d39d" typeName="Damage Chart" hidden="false" id="0d51-8a6a-a0df-d78f">
-          <characteristics>
-            <characteristic name="Result" typeId="897e-4ecc-846b-1598">Hunting Party suffers 2 points of Damage.</characteristic>
-          </characteristics>
-        </profile>
-        <profile name="8+" typeId="6e06-153b-5181-d39d" typeName="Damage Chart" hidden="false" id="2ffb-6d94-88ba-4d5e">
-          <characteristics>
-            <characteristic name="Result" typeId="897e-4ecc-846b-1598">Weapon Crew are Disabled. Remove from battlefield.</characteristic>
-          </characteristics>
-        </profile>
         <profile name="0" typeId="73fd-d87f-c3ca-d678" typeName="Damage Level" hidden="false" id="4004-ecdd-c2e6-ec6f">
           <characteristics>
             <characteristic typeId="0a18-6bf0-38b6-f7a0">Fully Operational: All members of the Hunting Party may perform their Tasks</characteristic>
@@ -560,6 +535,31 @@
         <profile name="4" typeId="73fd-d87f-c3ca-d678" typeName="Damage Level" hidden="false" id="b033-2560-3c12-493b">
           <characteristics>
             <characteristic typeId="0a18-6bf0-38b6-f7a0">Disbanded: Hunting Party is removed from Battlefield.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="1-2" typeId="6e06-153b-5181-d39d" typeName="Damage Chart" hidden="false" id="31b2-d527-da09-2703">
+          <characteristics>
+            <characteristic name="Result" typeId="897e-4ecc-846b-1598">Hunting Party Becomes Rattled</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="3-4" typeId="6e06-153b-5181-d39d" typeName="Damage Chart" hidden="false" id="814e-2f8f-6415-7167">
+          <characteristics>
+            <characteristic name="Result" typeId="897e-4ecc-846b-1598">Hunting Party is Gobsmacked. Remove Rattled if present.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="5-6" typeId="6e06-153b-5181-d39d" typeName="Damage Chart" hidden="false" id="1704-e2df-00d6-5ee6">
+          <characteristics>
+            <characteristic name="Result" typeId="897e-4ecc-846b-1598">Hunting Party suffers 1 point of Damage</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="7" typeId="6e06-153b-5181-d39d" typeName="Damage Chart" hidden="false" id="35bf-cb74-746c-6667">
+          <characteristics>
+            <characteristic name="Result" typeId="897e-4ecc-846b-1598">Hunting Party suffers 2 points of Damage.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="8+" typeId="6e06-153b-5181-d39d" typeName="Damage Chart" hidden="false" id="7722-490a-fd92-1bac">
+          <characteristics>
+            <characteristic name="Result" typeId="897e-4ecc-846b-1598">Weapon Crew are Disabled. Remove from battlefield.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -596,26 +596,26 @@
             <characteristic name="Abilities" typeId="8ceb-604c-397c-d679">Automatic (0), Rear Facing</characteristic>
           </characteristics>
         </profile>
-        <profile name="7+" typeId="6e06-153b-5181-d39d" typeName="Damage Chart" hidden="false" id="d495-7023-e7a8-f7a0">
-          <characteristics>
-            <characteristic name="Result" typeId="897e-4ecc-846b-1598">Vehicle is Disabled. Place a Smoke Template under the vehicle. Rhyflers within 4” of the wreck become Gobsmacked at the loss of the liquid courage.</characteristic>
-          </characteristics>
-        </profile>
-        <profile name="1-2" typeId="6e06-153b-5181-d39d" typeName="Damage Chart" hidden="false" id="aee5-9040-6a48-e69a">
+        <profile name="1-2" typeId="6e06-153b-5181-d39d" typeName="Damage Chart" hidden="false" id="01b3-807f-9044-4641">
           <characteristics>
             <characteristic name="Result" typeId="897e-4ecc-846b-1598">Vehicle becomes Rattled.</characteristic>
           </characteristics>
         </profile>
-        <profile name="6" typeId="6e06-153b-5181-d39d" typeName="Damage Chart" hidden="false" id="c6b2-834c-d08b-c105">
+        <profile name="3-5" typeId="6e06-153b-5181-d39d" typeName="Damage Chart" hidden="false" id="15d8-ef76-8525-000d">
+          <characteristics>
+            <characteristic name="Result" typeId="897e-4ecc-846b-1598">Vehicle Suffers 1 Damage point. The M8-c MMG gains
+Automatic (1) for the rest of the battle.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="6" typeId="6e06-153b-5181-d39d" typeName="Damage Chart" hidden="false" id="7b6a-47c6-5be7-3daa">
           <characteristics>
             <characteristic name="Result" typeId="897e-4ecc-846b-1598">Vehicle Suffers 2 Damage Points. The Casganarwyn may no
 longer adjust their level of Inspiring Presence.</characteristic>
           </characteristics>
         </profile>
-        <profile name="3-5" typeId="6e06-153b-5181-d39d" typeName="Damage Chart" hidden="false" id="e006-607a-c5dd-6557">
+        <profile name="7+" typeId="6e06-153b-5181-d39d" typeName="Damage Chart" hidden="false" id="6624-493f-66bc-cd21">
           <characteristics>
-            <characteristic name="Result" typeId="897e-4ecc-846b-1598">Vehicle Suffers 1 Damage point. The M8-c MMG gains
-Automatic (1) for the rest of the battle.</characteristic>
+            <characteristic name="Result" typeId="897e-4ecc-846b-1598">Vehicle is Disabled. Place a Smoke Template under the vehicle. Rhyflers within 4” of the wreck become Gobsmacked at the loss of the liquid courage.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -638,7 +638,7 @@ After a rhyfler makes use of an Inspiring Presence bonus they must then roll on
   <entryLinks>
     <entryLink import="true" name="Yawdryl" hidden="false" id="7d03-b216-c545-f2f2" type="selectionEntry" targetId="c879-6ceb-0437-900f"/>
     <entryLink import="true" name="Gamesquar" hidden="false" id="1627-8d57-7688-6de6" type="selectionEntry" targetId="88b2-5e39-7c7b-9ca5"/>
-    <entryLink import="true" name="Gaefyn (Bensa)" hidden="false" id="21a7-add9-f4cb-2a9d" type="selectionEntry" targetId="3ed9-4ec1-58a4-3bd3"/>
+    <entryLink import="true" name="han-Gaefyn" hidden="false" id="21a7-add9-f4cb-2a9d" type="selectionEntry" targetId="3ed9-4ec1-58a4-3bd3"/>
     <entryLink import="true" name="Gaefyn (Fythll)" hidden="false" id="f0cf-0c59-d833-8d96" type="selectionEntry" targetId="77cb-4906-35a3-ee23"/>
     <entryLink import="true" name="Noblebuck Lancer" hidden="false" id="d6a6-bb2b-86dc-3bb8" type="selectionEntry" targetId="3193-2059-563d-5415"/>
     <entryLink import="true" name="Gaefyn (Sketych)" hidden="false" id="d51d-7d40-42fd-0f07" type="selectionEntry" targetId="b2bd-f4f5-4067-7c48"/>
