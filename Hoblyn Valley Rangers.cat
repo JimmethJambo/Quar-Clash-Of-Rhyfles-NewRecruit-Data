@@ -114,6 +114,10 @@
       <categoryLinks>
         <categoryLink targetId="de6b-6ec2-9294-541d" id="76fe-e311-4c81-b332" primary="true" name="Unit"/>
       </categoryLinks>
+      <infoLinks>
+        <infoLink name="Cautious" id="5192-b4e5-2b11-f453" hidden="false" type="rule" targetId="66cb-7a18-f708-4efa"/>
+        <infoLink name="Leader (X/Y)" id="38a0-0f00-805a-a57b" hidden="false" type="rule" targetId="ba90-37ff-4384-2bc5"/>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Fynrydhad &quot;Slugs&quot;" hidden="false" id="1538-2e52-4c53-21a2">
       <costs>
@@ -408,7 +412,7 @@
             <characteristic name="T" typeId="2fcc-4790-c933-ecf8">5</characteristic>
             <characteristic name="D" typeId="20b1-a32d-e41c-9a37">2</characteristic>
             <characteristic name="Equipment" typeId="4a61-14de-472f-b84d">Pistol, GMK4 Lance</characteristic>
-            <characteristic name="Special" typeId="c973-830d-f693-f6b1">Cadier, Retinue (1), Grafaenk Lance</characteristic>
+            <characteristic name="Special" typeId="c973-830d-f693-f6b1">Cadier, Retinue (1)</characteristic>
           </characteristics>
         </profile>
         <profile name="Dismounted Rider" typeId="8e73-7370-7f76-a0f6" typeName="Dismounted Unit" hidden="false" id="3824-4dbf-4629-e59b">

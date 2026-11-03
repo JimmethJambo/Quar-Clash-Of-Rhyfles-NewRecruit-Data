@@ -114,7 +114,8 @@
         <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="ea82-bc89-1bde-2aee" includeChildSelections="true"/>
       </constraints>
       <infoLinks>
-        <infoLink name="Support" id="a414-8521-ebe3-93cf" hidden="false" type="rule" targetId="c0d3-909a-ca80-1be2"/>
+        <infoLink name="Leader (X/Y)" id="a414-8521-ebe3-93cf" hidden="false" type="rule" targetId="ba90-37ff-4384-2bc5"/>
+        <infoLink name="Support" id="7033-eb55-f194-c0be" hidden="false" type="rule" targetId="c0d3-909a-ca80-1be2"/>
       </infoLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Standard Bearer" hidden="false" id="3879-5230-34b7-ec08" sortIndex="3">
@@ -491,6 +492,9 @@
       <constraints>
         <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="6a44-82d0-5d6f-2c2c" includeChildSelections="true"/>
       </constraints>
+      <infoLinks>
+        <infoLink name="Leader (X/Y)" id="b2d4-56db-617f-fdc0" hidden="false" type="rule" targetId="ba90-37ff-4384-2bc5"/>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="is-Caerten" hidden="false" id="deac-97b4-4ef0-3cc7" sortIndex="3">
       <costs>
