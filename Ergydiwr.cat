@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="5c83-b126-5013-350a" name="Ergydiwr" gameSystemId="sys-dbd1-1d4a-43f9-1e9c" gameSystemRevision="9" revision="3" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="5c83-b126-5013-350a" name="Ergydiwr" gameSystemId="sys-dbd1-1d4a-43f9-1e9c" gameSystemRevision="9" revision="4" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedSelectionEntries>
     <selectionEntry type="unit" import="true" name="Rhyfler" hidden="false" id="4e6e-c9b9-964f-08ba" sortIndex="1">
       <costs>
@@ -166,7 +166,7 @@
             <characteristic typeId="0a18-6bf0-38b6-f7a0">Disabled: Remove from Battlefield</characteristic>
           </characteristics>
         </profile>
-        <profile name="0 " typeId="73fd-d87f-c3ca-d678" typeName="Damage Level" hidden="false" id="aabd-f5d4-7be5-d82a">
+        <profile name="0" typeId="73fd-d87f-c3ca-d678" typeName="Damage Level" hidden="false" id="aabd-f5d4-7be5-d82a">
           <characteristics>
             <characteristic typeId="0a18-6bf0-38b6-f7a0">Fully Operational: All Crew can perform their Task</characteristic>
           </characteristics>
@@ -368,7 +368,7 @@
         <profile name="Musician" typeId="7040-9c4e-1119-a3c5" typeName="Unit" hidden="false" id="13a0-c72c-2c4c-9ccf">
           <characteristics>
             <characteristic name="Sk" typeId="0014-9871-f278-b5f3">12</characteristic>
-            <characteristic name="Mt" typeId="d8ef-e518-8f49-8a7b">1d6+2</characteristic>
+            <characteristic name="Mt" typeId="d8ef-e518-8f49-8a7b">2d6</characteristic>
             <characteristic name="MA" typeId="4cd7-b825-6660-1758">5</characteristic>
             <characteristic name="Toughness" typeId="197d-1c5e-af24-ee6e">4</characteristic>
             <characteristic name="Special Abilities" typeId="94ec-89a2-8f77-66c3">Musician (4)</characteristic>
@@ -610,7 +610,7 @@
     <entryLink import="true" name="Milwer" hidden="false" id="3c5d-e717-93dd-028a" type="selectionEntry" targetId="5c84-c4f3-5f14-07e8"/>
     <entryLink import="true" name="Musician" hidden="false" id="0689-fdd4-8fdc-315a" type="selectionEntry" targetId="6bdb-b8fb-450c-e31f"/>
     <entryLink import="true" name="Rhyfler" hidden="false" id="d62f-161f-a950-d255" type="selectionEntry" targetId="4e6e-c9b9-964f-08ba"/>
-    <entryLink import="true" name="Rhyfler" hidden="false" id="481b-253e-a59f-d94d" type="selectionEntry" targetId="3970-c0b8-4a54-5c05"/>
+    <entryLink import="true" name="Rhyfler (LMG)" hidden="false" id="481b-253e-a59f-d94d" type="selectionEntry" targetId="3970-c0b8-4a54-5c05"/>
     <entryLink import="true" name="Squirrel Handler" hidden="false" id="6c7c-7b63-a096-88c0" type="selectionEntry" targetId="b2aa-3a65-8cca-e246"/>
     <entryLink import="true" name="Standard Bearer" hidden="false" id="5f73-8e0e-c45b-3e6f" type="selectionEntry" targetId="a2b1-c0cd-6462-fd47"/>
     <entryLink import="true" name="Yawdryl" hidden="false" id="f949-bbb7-809c-af46" type="selectionEntry" targetId="e6e1-28fb-7d2c-2f5e"/>

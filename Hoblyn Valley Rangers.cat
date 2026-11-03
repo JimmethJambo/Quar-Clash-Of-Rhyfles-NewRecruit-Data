@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="bc1c-f2a9-5c33-03a4" name="Hoblyn Valley Rangers" gameSystemId="sys-dbd1-1d4a-43f9-1e9c" gameSystemRevision="12" revision="2" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="bc1c-f2a9-5c33-03a4" name="Hoblyn Valley Rangers" gameSystemId="sys-dbd1-1d4a-43f9-1e9c" gameSystemRevision="12" revision="3" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedSelectionEntries>
     <selectionEntry type="unit" import="true" name="Gaefyn (Sketych)" hidden="false" id="b2bd-f4f5-4067-7c48">
       <costs>
@@ -43,7 +43,7 @@
             <characteristic name="Mt" typeId="d8ef-e518-8f49-8a7b">1d6+1</characteristic>
             <characteristic name="MA" typeId="4cd7-b825-6660-1758">5</characteristic>
             <characteristic name="Toughness" typeId="197d-1c5e-af24-ee6e">4</characteristic>
-            <characteristic name="Special Abilities" typeId="94ec-89a2-8f77-66c3">Dead-Eye, Cautious</characteristic>
+            <characteristic name="Special Abilities" typeId="94ec-89a2-8f77-66c3">Cautious</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -84,6 +84,9 @@
       <categoryLinks>
         <categoryLink targetId="de6b-6ec2-9294-541d" id="e2fe-b0a2-c06c-45fe" primary="true" name="Unit"/>
       </categoryLinks>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="d1ae-6b26-1289-6961" includeChildSelections="true"/>
+      </constraints>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Yawdryl" hidden="false" id="c879-6ceb-0437-900f">
       <costs>
@@ -256,8 +259,6 @@
         </selectionEntry>
       </selectionEntries>
       <constraints>
-        <constraint type="min" value="1" field="selections" scope="self" shared="true" id="af3c-006e-fc8e-3580-min"/>
-        <constraint type="max" value="1" field="selections" scope="self" shared="true" id="af3c-006e-fc8e-3580-max"/>
         <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="ca4f-90ac-1c19-b6c7" includeChildSelections="true"/>
       </constraints>
     </selectionEntry>

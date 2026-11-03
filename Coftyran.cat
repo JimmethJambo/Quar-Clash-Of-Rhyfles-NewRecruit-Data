@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="8579-b42c-53b1-1cba" name="Coftyran" gameSystemId="sys-dbd1-1d4a-43f9-1e9c" gameSystemRevision="1" revision="15" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="8579-b42c-53b1-1cba" name="Coftyran" gameSystemId="sys-dbd1-1d4a-43f9-1e9c" gameSystemRevision="1" revision="16" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedSelectionEntries>
     <selectionEntry type="model" import="true" name="is-Caerten (Pistol, Sword)" hidden="false" id="528f-29fc-4aca-9939" defaultAmount="0" sortIndex="-1">
       <constraints>
@@ -188,6 +188,20 @@
             <characteristic name="Special Abilities" typeId="94ec-89a2-8f77-66c3">Inspiring Presence (3), Melee +1</characteristic>
           </characteristics>
         </profile>
+        <profile name="Pistol" typeId="0b63-6947-fb08-66eb" typeName="Weapon" hidden="false" id="20b8-9788-75c8-9783">
+          <characteristics>
+            <characteristic name="Range" typeId="5b6c-828e-fe65-26a5">4</characteristic>
+            <characteristic name="SN" typeId="b1d6-1660-ac56-c22a">-1</characteristic>
+            <characteristic name="Abilities" typeId="ed37-dbdc-d41b-3af6"/>
+          </characteristics>
+        </profile>
+        <profile name="Sword" typeId="0b63-6947-fb08-66eb" typeName="Weapon" hidden="false" id="4b29-1bc1-b73c-a3e9">
+          <characteristics>
+            <characteristic name="Range" typeId="5b6c-828e-fe65-26a5"/>
+            <characteristic name="SN" typeId="b1d6-1660-ac56-c22a"/>
+            <characteristic name="Abilities" typeId="ed37-dbdc-d41b-3af6"/>
+          </characteristics>
+        </profile>
       </profiles>
       <infoLinks>
         <infoLink name="Inspiring Presence (X)" id="6afb-2eaf-a08e-a9fb" hidden="false" type="rule" targetId="7ebb-1cf5-bdb6-2c2e"/>
@@ -196,14 +210,6 @@
       <constraints>
         <constraint type="max" value="1" field="selections" scope="force" shared="true" id="0ccc-2a55-253f-3c8b" includeChildSelections="false"/>
       </constraints>
-      <entryLinks>
-        <entryLink import="true" name="Pistol" hidden="false" id="c357-508a-90cc-f880" type="selectionEntry" targetId="7028-cb77-f695-540d">
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="self" shared="true" id="a32a-c316-8f7f-80a4-min" includeChildSelections="false"/>
-            <constraint type="max" value="1" field="selections" scope="self" shared="true" id="a32a-c316-8f7f-80a4-max" includeChildSelections="false"/>
-          </constraints>
-        </entryLink>
-      </entryLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Master Yawdryl" hidden="false" id="61fa-ae80-b16e-42ce" sortIndex="3">
       <categoryLinks>
